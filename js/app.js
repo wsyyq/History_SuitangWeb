@@ -7,7 +7,7 @@
   const pages=Object.fromEntries(Object.values(sections).flatMap(s=>s.assets.map((asset,i)=>{
     const id=`${s.id}--${asset}`;return [id,{id,asset,section:s.id,module:s.module,index:i}];
   })));
-  let current,nav={},savedScroll=new Map();
+  let current,nav={};
   const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const link=(id,label,cls='nav-button')=>`<a class="${cls}" href="#${esc(id)}">${esc(label)}</a>`;
   const first=s=>`${s}--${sections[s].assets[0]}`;
@@ -49,8 +49,7 @@
   function render(){
     const incoming=parse(location.hash);
     if(!incoming){location.replace('#title');return;}
-    const viewport=document.querySelector('#textbook-viewport');
-    if(current?.level===3&&viewport)savedScroll.set(current.id,viewport.scrollTop);
+    window.dispatchEvent(new Event('lesson:before-navigate'));
     current=incoming;configureNav(current);const s=current;
     document.body.dataset.level=String(s.level);document.body.dataset.pageId=s.id;
     if(s.id==='title'){
@@ -65,11 +64,10 @@
       const m=moduleById[s.module];main.innerHTML=head(`模块 0${modules.indexOf(m)+1} / ${m.eyebrow}`,m.title,m.description)+`<div class="section-menu">${m.sections.map((id,i)=>`<a class="section-link" href="#${first(id)}"><span>0${i+1}</span><strong>${sections[id].title}</strong><small>${sections[id].assets.length} 个教材片段</small><span aria-hidden="true">→</span></a>`).join('')}</div>`;
     }else if(s.level===3){
       const section=sections[s.section],asset=assets[s.asset];
-      main.innerHTML=`<section class="reader-page">${head('教材研读 / 第三级',`${section.title}<small>${asset.title}</small>`)}<div class="reader-controls"><label for="fragment">教材片段</label><select id="fragment" aria-label="选择教材片段">${section.assets.map((a,i)=>`<option value="${section.id}--${a}" ${a===s.asset?'selected':''}>${i+1}/${section.assets.length} · ${assets[a].title}</option>`).join('')}</select><span class="source-label">PDF 第 ${asset.pdfPage}/6 页｜教材第 ${asset.printedPage} 页 · 阅读区可上下滚动</span></div><div class="reader-layout"><div id="textbook-viewport" tabindex="0" aria-label="教材阅读区，可上下滚动"><figure id="textbook-surface" data-asset-id="${asset.id}" style="--image-width:${asset.displayWidth}px"><img src="${asset.path}" alt="${asset.title}，教材第${asset.printedPage}页"><div id="annotation-layer" aria-hidden="true"></div></figure></div><div class="hotspots"><span class="label">${section.flows.length?'课堂问题 · 点选进入':'本段无四级问题入口'}　</span>${section.flows.map(f=>link(flowRoute(f,s.id),flows[f].title+' ↗','hotspot')).join('')}</div></div></section>`;
+      main.innerHTML=`<section class="reader-page">${head('教材研读 / 第三级',`${section.title}<small>${asset.title}</small>`)}<div class="reader-controls"><label for="fragment">教材片段</label><select id="fragment" aria-label="选择教材片段">${section.assets.map((a,i)=>`<option value="${section.id}--${a}" ${a===s.asset?'selected':''}>${i+1}/${section.assets.length} · ${assets[a].title}</option>`).join('')}</select><span class="source-label">PDF 第 ${asset.pdfPage}/6 页｜教材第 ${asset.printedPage} 页 · 滚轮阅读 · 白板可缩放移动</span></div><div class="reader-layout"><div id="textbook-viewport" tabindex="0" aria-label="教材阅读区，可上下滚动"><figure id="textbook-surface" data-asset-id="${asset.id}" style="--image-width:${asset.displayWidth}px"><img src="${asset.path}" alt="${asset.title}，教材第${asset.printedPage}页"><div id="annotation-layer" aria-hidden="true"></div></figure></div><div class="hotspots"><span class="label">${section.flows.length?'课堂问题 · 点选进入':'本段无四级问题入口'}　</span>${section.flows.map(f=>link(flowRoute(f,s.id),flows[f].title+' ↗','hotspot')).join('')}</div></div></section>`;
       main.querySelector('select').addEventListener('change',e=>{location.hash=e.target.value;});
       const img=main.querySelector('img');img.addEventListener('error',()=>{img.insertAdjacentHTML('afterend','<p class="image-error">教材图片加载失败，请检查本地素材文件是否完整。</p>');});
-      const restore=()=>{document.querySelector('#textbook-viewport').scrollTop=savedScroll.get(s.id)||0;};
-      img.addEventListener('load',restore,{once:true});if(img.complete)restore();
+
     }else if(s.level===4){
       const f=flows[s.flow];main.innerHTML=head('课堂问题 / 第四级','问题链')+`<section class="flow-box"><span class="badge">互动占位 · 尚未填充</span><h2>${f.title}</h2><p class="pending">互动内容将在后续阶段填充。</p><p>本阶段保留问题链入口；正式问题、答案与逐步揭示流程尚未启用。</p>${s.flow==='canal'?'<div class="missing-inline">待补素材：隋大运河—仓储—洛阳分布图</div>':''}${f.audits.length?'<p>相关解释尚待核实与教师确认。</p>':''}${link(s.origin,'返回触发此问题的教材片段','primary')}</section>`;
     }
@@ -84,7 +82,7 @@
     const target=e.key==='ArrowRight'?nav.next:e.key==='ArrowLeft'?nav.prev:e.key==='Escape'?nav.up:null;
     if(target){e.preventDefault();location.hash=target;}
   });
-  // Stage 3 can subscribe to lesson:navigate and mount an independent annotation layer.
+  // Whiteboard lifecycle is driven by before-navigate / navigate events.
   window.LessonApp={getState:()=>({...current}),getPages:()=>({...pages})};
   render();
 })();
