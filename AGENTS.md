@@ -4,3 +4,5 @@
 - 课程教学、导航、问答、地图及史实相关任务使用 `$sui-tang-lesson`，读取 [.agents/skills/sui-tang-lesson/SKILL.md](.agents/skills/sui-tang-lesson/SKILL.md)。
 - 尊重并保留原始资料；课堂结构以教师框架为准，历史事实与教师拓展分开标注，疑点交教师裁决。
 - Codex 不自行执行 Git add、commit、push 或创建 PR；提交由教师负责。
+- 网页唯一主入口为根目录 `index.html`；统一隋唐主题配色，优先中文系统字体链与离线回退，所有必要资源本地相对引用，兼容直接 `file://` 打开及项目子路径。
+- 教师最新阶段指令优先于旧风格建议；可最小修订冲突开发规范并登记，不借此改变教学结构或历史内容。

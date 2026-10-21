@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "offline": true,
+  "resolution": "1280x720",
+  "bottomReadability": [
+    {
+      "id": "tang-relations--map-669",
+      "scrollTop": 283,
+      "imageBottom": 557.671875,
+      "viewportBottom": 578
+    },
+    {
+      "id": "five--map-five",
+      "scrollTop": 823,
+      "imageBottom": 557.0625,
+      "viewportBottom": 578
+    },
+    {
+      "id": "an-impact--army-source",
+      "scrollTop": 1693,
+      "imageBottom": 557.828125,
+      "viewportBottom": 578
+    }
+  ],
+  "navigationClicks": 122
+}

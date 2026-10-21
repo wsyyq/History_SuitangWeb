@@ -1,0 +1,905 @@
+{
+  "source": "中外历史纲要上_PDF第41-46页.pdf",
+  "sourceSha256": "6adc270673507556fa3b03c53143f1ad9564130c41d87f1cbe2b240a64e540ba",
+  "coordinateSystem": "top-left pixels on 3000px-high Poppler renders; measured from inspected 1061x1500 reference",
+  "slices": [
+    {
+      "id": "canal-photo",
+      "path": "./assets/textbook/canal-photo.png",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "title": "大运河今貌（含图注）",
+      "section": "cover",
+      "pageId": "title",
+      "sourceBounds": [
+        116,
+        740,
+        750,
+        1240
+      ],
+      "referenceBounds": [
+        58,
+        370,
+        375,
+        620
+      ],
+      "width": 634,
+      "height": 500,
+      "displayWidth": 480,
+      "sha256": "4a20059496534e689b4e24a3a6b5ffeb42eabab6f3151fe063054c6b5eabc9b6",
+      "pageIds": [
+        "title"
+      ]
+    },
+    {
+      "id": "sui-found",
+      "path": "./assets/textbook/sui-found.png",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "title": "隋朝建立与统一",
+      "section": "sui-found",
+      "pageId": "sui-found--sui-found",
+      "sourceBounds": [
+        780,
+        1430,
+        1950,
+        1740
+      ],
+      "referenceBounds": [
+        390,
+        715,
+        975,
+        870
+      ],
+      "width": 1170,
+      "height": 310,
+      "displayWidth": 1080,
+      "sha256": "9f6d4943b2cfc3e2fb53a5dc57fa84c02bc5738b1cb7c3c511dd53b67d8bc5b5",
+      "pageIds": [
+        "sui-found--sui-found"
+      ]
+    },
+    {
+      "id": "sui-prosper",
+      "path": "./assets/textbook/sui-prosper.png",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "title": "仓储、两都与大运河",
+      "section": "sui-prosper",
+      "pageId": "sui-prosper--sui-prosper",
+      "sourceBounds": [
+        780,
+        1740,
+        1950,
+        2180
+      ],
+      "referenceBounds": [
+        390,
+        870,
+        975,
+        1090
+      ],
+      "width": 1170,
+      "height": 440,
+      "displayWidth": 1080,
+      "sha256": "d7935698721c690679c53bbaf6fb085ab8595c09a64c12d2742db42d1f519094",
+      "pageIds": [
+        "sui-prosper--sui-prosper"
+      ]
+    },
+    {
+      "id": "sui-end",
+      "path": "./assets/textbook/sui-end.png",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "title": "隋朝灭亡",
+      "section": "sui-end",
+      "pageId": "sui-end--sui-end",
+      "sourceBounds": [
+        780,
+        2180,
+        1950,
+        2480
+      ],
+      "referenceBounds": [
+        390,
+        1090,
+        975,
+        1240
+      ],
+      "width": 1170,
+      "height": 300,
+      "displayWidth": 1080,
+      "sha256": "ea96d6eccba4d44652fb849d8858fc330debda5e3ca2df9fd871b05c51bc99d6",
+      "pageIds": [
+        "sui-end--sui-end"
+      ]
+    },
+    {
+      "id": "sui-poem",
+      "path": "./assets/textbook/sui-poem.png",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "title": "学思之窗：皮日休诗与提问",
+      "section": "sui-end",
+      "pageId": "sui-end--sui-poem",
+      "sourceBounds": [
+        200,
+        1690,
+        740,
+        2696
+      ],
+      "referenceBounds": [
+        100,
+        845,
+        370,
+        1348
+      ],
+      "width": 540,
+      "height": 1006,
+      "displayWidth": 530,
+      "sha256": "f788f9232f1507014eebb93fa031e438d4b02a7a5c1a42601a99f2f5f056a0c9",
+      "pageIds": [
+        "sui-end--sui-poem"
+      ]
+    },
+    {
+      "id": "tang-found",
+      "path": "./assets/textbook/tang-found.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "唐朝建立",
+      "section": "tang-found",
+      "pageId": "tang-found--tang-found",
+      "sourceBounds": [
+        230,
+        324,
+        1340,
+        484
+      ],
+      "referenceBounds": [
+        115,
+        162,
+        670,
+        242
+      ],
+      "width": 1110,
+      "height": 160,
+      "displayWidth": 1080,
+      "sha256": "f0a8d5c948cb63fbbd62e548b16d7823ce8fd9767b79e81162a93a90924f3e97",
+      "pageIds": [
+        "tang-found--tang-found"
+      ]
+    },
+    {
+      "id": "tang-zhenguan",
+      "path": "./assets/textbook/tang-zhenguan.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "贞观之治",
+      "section": "tang-prosper",
+      "pageId": "tang-prosper--tang-zhenguan",
+      "sourceBounds": [
+        230,
+        484,
+        1340,
+        688
+      ],
+      "referenceBounds": [
+        115,
+        242,
+        670,
+        344
+      ],
+      "width": 1110,
+      "height": 204,
+      "displayWidth": 1080,
+      "sha256": "ea9132e7a8e6cabb11cc1bb18eea26f0cad7a206bade941a8bd0499ae14b3c47",
+      "pageIds": [
+        "tang-prosper--tang-zhenguan"
+      ]
+    },
+    {
+      "id": "tang-prosper",
+      "path": "./assets/textbook/tang-prosper.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "武则天时期与开元盛世",
+      "section": "tang-prosper",
+      "pageId": "tang-prosper--tang-prosper",
+      "sourceBounds": [
+        230,
+        696,
+        1340,
+        1148
+      ],
+      "referenceBounds": [
+        115,
+        348,
+        670,
+        574
+      ],
+      "width": 1110,
+      "height": 452,
+      "displayWidth": 1080,
+      "sha256": "bc9f6a911767976d5927b9efafd22734144d16c0db68e0a4d8c9b8ab36a1af46",
+      "pageIds": [
+        "tang-prosper--tang-prosper"
+      ]
+    },
+    {
+      "id": "plough-text",
+      "path": "./assets/textbook/plough-text.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "历史纵横：唐朝曲辕犁",
+      "section": "tang-prosper",
+      "pageId": "tang-prosper--plough-text",
+      "sourceBounds": [
+        228,
+        1220,
+        1346,
+        1804
+      ],
+      "referenceBounds": [
+        114,
+        610,
+        673,
+        902
+      ],
+      "width": 1118,
+      "height": 584,
+      "displayWidth": 1060,
+      "sha256": "910c769213fa6f167d342a951ab17bbcd363f55887090db3580d8b2bb07bb7c8",
+      "pageIds": [
+        "tang-prosper--plough-text"
+      ]
+    },
+    {
+      "id": "plough-image",
+      "path": "./assets/textbook/plough-image.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "敦煌莫高窟壁画唐朝牛耕图中的曲辕犁",
+      "section": "tang-prosper",
+      "pageId": "tang-prosper--plough-image",
+      "sourceBounds": [
+        224,
+        1860,
+        840,
+        2494
+      ],
+      "referenceBounds": [
+        112,
+        930,
+        420,
+        1247
+      ],
+      "width": 616,
+      "height": 634,
+      "displayWidth": 650,
+      "sha256": "39274ffc51d40bdd91d933dea316b5dfb8d66044a6f5ab8d477884910d091b7c",
+      "pageIds": [
+        "tang-prosper--plough-image"
+      ]
+    },
+    {
+      "id": "sancai",
+      "path": "./assets/textbook/sancai.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "唐三彩盘及说明",
+      "section": "tang-prosper",
+      "pageId": "tang-prosper--sancai",
+      "sourceBounds": [
+        842,
+        1860,
+        1360,
+        2428
+      ],
+      "referenceBounds": [
+        421,
+        930,
+        680,
+        1214
+      ],
+      "width": 518,
+      "height": 568,
+      "displayWidth": 580,
+      "sha256": "7224667ef08a6013b2bdac4971f1282479abda3396f588aa49a86ca914648d94",
+      "pageIds": [
+        "tang-prosper--sancai"
+      ]
+    },
+    {
+      "id": "turks-intro",
+      "path": "./assets/textbook/turks-intro.png",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "title": "突厥兴起与分裂（接下片）",
+      "section": "tang-relations",
+      "pageId": "tang-relations--turks-intro",
+      "sourceBounds": [
+        230,
+        2556,
+        1950,
+        2704
+      ],
+      "referenceBounds": [
+        115,
+        1278,
+        975,
+        1352
+      ],
+      "width": 1720,
+      "height": 148,
+      "displayWidth": 1150,
+      "sha256": "2e9382ed65645ed99fbd46679e27513c97424d1aa49560ae5beb0055e3a79571",
+      "pageIds": [
+        "tang-relations--turks-intro"
+      ]
+    },
+    {
+      "id": "turks",
+      "path": "./assets/textbook/turks.png",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "title": "突厥、安西与北庭都护府",
+      "section": "tang-relations",
+      "pageId": "tang-relations--turks",
+      "sourceBounds": [
+        780,
+        200,
+        1930,
+        788
+      ],
+      "referenceBounds": [
+        390,
+        100,
+        965,
+        394
+      ],
+      "width": 1150,
+      "height": 588,
+      "displayWidth": 1080,
+      "sha256": "29ce843244679a586ecf93747c0eedb3f4c8abe7bf9e3f3a7ea49d06a2dbdef5",
+      "pageIds": [
+        "tang-relations--turks"
+      ]
+    },
+    {
+      "id": "huihe",
+      "path": "./assets/textbook/huihe.png",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "title": "历史纵横：回纥",
+      "section": "tang-relations",
+      "pageId": "tang-relations--huihe",
+      "sourceBounds": [
+        202,
+        200,
+        746,
+        1572
+      ],
+      "referenceBounds": [
+        101,
+        100,
+        373,
+        786
+      ],
+      "width": 544,
+      "height": 1372,
+      "displayWidth": 550,
+      "sha256": "79801e5e0fa277d5997e906088b67e789ce7e8eefc12f4d4147c63fe67919fc5",
+      "pageIds": [
+        "tang-relations--huihe"
+      ]
+    },
+    {
+      "id": "jiaohe",
+      "path": "./assets/textbook/jiaohe.png",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "title": "交河故城及图注",
+      "section": "tang-relations",
+      "pageId": "tang-relations--jiaohe",
+      "sourceBounds": [
+        780,
+        832,
+        1906,
+        1554
+      ],
+      "referenceBounds": [
+        390,
+        416,
+        953,
+        777
+      ],
+      "width": 1126,
+      "height": 722,
+      "displayWidth": 1000,
+      "sha256": "e9eea2d7b2d80720df51c2956264ca7ef8131fba10e1fca1755c9cec4b74436c",
+      "pageIds": [
+        "tang-relations--jiaohe"
+      ]
+    },
+    {
+      "id": "tribute",
+      "path": "./assets/textbook/tribute.png",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "title": "《职贡图》及图注",
+      "section": "tang-relations",
+      "pageId": "tang-relations--tribute",
+      "sourceBounds": [
+        202,
+        1590,
+        1902,
+        2290
+      ],
+      "referenceBounds": [
+        101,
+        795,
+        951,
+        1145
+      ],
+      "width": 1700,
+      "height": 700,
+      "displayWidth": 1150,
+      "sha256": "a706659435bb5667ee95d0555f65f132f99cd867dece298e78190fa77a772551",
+      "pageIds": [
+        "tang-relations--tribute"
+      ]
+    },
+    {
+      "id": "tubo",
+      "path": "./assets/textbook/tubo.png",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "title": "吐蕃与文成公主（末句接下片）",
+      "section": "tang-relations",
+      "pageId": "tang-relations--tubo",
+      "sourceBounds": [
+        780,
+        2298,
+        1934,
+        2672
+      ],
+      "referenceBounds": [
+        390,
+        1149,
+        967,
+        1336
+      ],
+      "width": 1154,
+      "height": 374,
+      "displayWidth": 1080,
+      "sha256": "0e17c5fcfba2eb3775196ac79f8f845c343e96d7e6a40424e067841a405860f3",
+      "pageIds": [
+        "tang-relations--tubo"
+      ]
+    },
+    {
+      "id": "frontier",
+      "path": "./assets/textbook/frontier.png",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "title": "唐蕃会盟、靺鞨与边疆开发（续前片）",
+      "section": "tang-relations",
+      "pageId": "tang-relations--frontier",
+      "sourceBounds": [
+        230,
+        200,
+        916,
+        798
+      ],
+      "referenceBounds": [
+        115,
+        100,
+        458,
+        399
+      ],
+      "width": 686,
+      "height": 598,
+      "displayWidth": 700,
+      "sha256": "ef389a4e463c893c9d2bb98d5d70cec3e11d3138ede8cf0b74a1357885f3a889",
+      "pageIds": [
+        "tang-relations--frontier"
+      ]
+    },
+    {
+      "id": "alliance",
+      "path": "./assets/textbook/alliance.png",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "title": "唐蕃会盟碑及说明（保留邻近思考点）",
+      "section": "tang-relations",
+      "pageId": "tang-relations--alliance",
+      "sourceBounds": [
+        954,
+        172,
+        1930,
+        970
+      ],
+      "referenceBounds": [
+        477,
+        86,
+        965,
+        485
+      ],
+      "width": 976,
+      "height": 798,
+      "displayWidth": 950,
+      "sha256": "43f80417f262f2b29d9258738907351b29e07aa89fea1b41a450a423db8db78a",
+      "pageIds": [
+        "tang-relations--alliance"
+      ]
+    },
+    {
+      "id": "map-669",
+      "path": "./assets/textbook/map-669.png",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "title": "唐朝前期形势和边疆各族分布图（669年）及古今地名表",
+      "section": "tang-relations",
+      "pageId": "tang-relations--map-669",
+      "sourceBounds": [
+        224,
+        982,
+        1920,
+        1876
+      ],
+      "referenceBounds": [
+        112,
+        491,
+        960,
+        938
+      ],
+      "width": 1696,
+      "height": 894,
+      "displayWidth": 1380,
+      "sha256": "c44351404719684cfc32b437d935be3f1ad2ec5ffe270ffd480c715611000708",
+      "pageIds": [
+        "tang-relations--map-669"
+      ]
+    },
+    {
+      "id": "an-cause",
+      "path": "./assets/textbook/an-cause.png",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "title": "安史之乱原因",
+      "section": "an-cause",
+      "pageId": "an-cause--an-cause",
+      "sourceBounds": [
+        230,
+        2032,
+        1352,
+        2402
+      ],
+      "referenceBounds": [
+        115,
+        1016,
+        676,
+        1201
+      ],
+      "width": 1122,
+      "height": 370,
+      "displayWidth": 1080,
+      "sha256": "00d881a6fb374e776c330071691f0067b53d2a550cf38f82e26f6d12799c7ead",
+      "pageIds": [
+        "an-cause--an-cause"
+      ]
+    },
+    {
+      "id": "an-process",
+      "path": "./assets/textbook/an-process.png",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "title": "安史之乱过程及影响开端（续下页）",
+      "section": "an-process",
+      "pageId": "an-process--an-process",
+      "sourceBounds": [
+        230,
+        2412,
+        1352,
+        2762
+      ],
+      "referenceBounds": [
+        115,
+        1206,
+        676,
+        1381
+      ],
+      "width": 1122,
+      "height": 350,
+      "displayWidth": 1080,
+      "sha256": "8808874aac625bbdb0166d47bc94279d340bd0478ae8306fb8eee3957603158b",
+      "pageIds": [
+        "an-process--an-process",
+        "an-impact--an-process"
+      ]
+    },
+    {
+      "id": "an-impact",
+      "path": "./assets/textbook/an-impact.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "安史之乱影响（承教材37页末句）",
+      "section": "an-impact",
+      "pageId": "an-impact--an-impact",
+      "sourceBounds": [
+        780,
+        198,
+        1940,
+        268
+      ],
+      "referenceBounds": [
+        390,
+        99,
+        970,
+        134
+      ],
+      "width": 1160,
+      "height": 70,
+      "displayWidth": 1080,
+      "sha256": "ad925cb602c44647474f5b9816879178ddcc091979bb262bef85243e3c494292",
+      "pageIds": [
+        "an-impact--an-impact"
+      ]
+    },
+    {
+      "id": "fanzhen",
+      "path": "./assets/textbook/fanzhen.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "藩镇割据",
+      "section": "an-impact",
+      "pageId": "an-impact--fanzhen",
+      "sourceBounds": [
+        780,
+        276,
+        1940,
+        560
+      ],
+      "referenceBounds": [
+        390,
+        138,
+        970,
+        280
+      ],
+      "width": 1160,
+      "height": 284,
+      "displayWidth": 1080,
+      "sha256": "c61a10f2a6078072277c91c3238c74daea26252fc2a52dc22a14198ff7b5ca18",
+      "pageIds": [
+        "an-impact--fanzhen"
+      ]
+    },
+    {
+      "id": "army-source",
+      "path": "./assets/textbook/army-source.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "史料阅读：《新唐书·兵志》",
+      "section": "an-impact",
+      "pageId": "an-impact--army-source",
+      "sourceBounds": [
+        202,
+        202,
+        748,
+        2166
+      ],
+      "referenceBounds": [
+        101,
+        101,
+        374,
+        1083
+      ],
+      "width": 546,
+      "height": 1964,
+      "displayWidth": 560,
+      "sha256": "4ab1c25ff06ded3aa23b8dc4d2a1593d25f9ebfc508281b34d59dd4c362f1220",
+      "pageIds": [
+        "an-impact--army-source"
+      ]
+    },
+    {
+      "id": "huangchao",
+      "path": "./assets/textbook/huangchao.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "黄巢起义与朱温废唐（末行接下片）",
+      "section": "tang-end",
+      "pageId": "tang-end--huangchao",
+      "sourceBounds": [
+        780,
+        570,
+        1950,
+        1026
+      ],
+      "referenceBounds": [
+        390,
+        285,
+        975,
+        513
+      ],
+      "width": 1170,
+      "height": 456,
+      "displayWidth": 1080,
+      "sha256": "d6a874f2450913afa61b841240e3b3aaed109b6baa2dfc1dcbdf8cdd987ff0c8",
+      "pageIds": [
+        "tang-end--huangchao"
+      ]
+    },
+    {
+      "id": "five",
+      "path": "./assets/textbook/five.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "五代与十国的定义（含衔接上文）",
+      "section": "five",
+      "pageId": "five--five",
+      "sourceBounds": [
+        780,
+        960,
+        1950,
+        1316
+      ],
+      "referenceBounds": [
+        390,
+        480,
+        975,
+        658
+      ],
+      "width": 1170,
+      "height": 356,
+      "displayWidth": 1080,
+      "sha256": "53bff78ca1c74fa73ed731cc830521b11f2f67a82d0016036a09ea32223d3b88",
+      "pageIds": [
+        "five--five",
+        "tang-end--five"
+      ]
+    },
+    {
+      "id": "chairong",
+      "path": "./assets/textbook/chairong.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "后周世宗柴荣",
+      "section": "five",
+      "pageId": "five--chairong",
+      "sourceBounds": [
+        780,
+        1322,
+        1950,
+        1536
+      ],
+      "referenceBounds": [
+        390,
+        661,
+        975,
+        768
+      ],
+      "width": 1170,
+      "height": 214,
+      "displayWidth": 1080,
+      "sha256": "b04aa5448efb298832de0ee5ed8b4904dae0acd39818db1c4d5d0f1414c132cb",
+      "pageIds": [
+        "five--chairong"
+      ]
+    },
+    {
+      "id": "map-five",
+      "path": "./assets/textbook/map-five.png",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "title": "五代十国形势图（后周时期）",
+      "section": "five",
+      "pageId": "five--map-five",
+      "sourceBounds": [
+        780,
+        1588,
+        1700,
+        2590
+      ],
+      "referenceBounds": [
+        390,
+        794,
+        850,
+        1295
+      ],
+      "width": 920,
+      "height": 1002,
+      "displayWidth": 1050,
+      "sha256": "9a9f7349ad8a9e2756f6234754767d9111074703251db5a545340f7a40c1b16f",
+      "pageIds": [
+        "five--map-five"
+      ]
+    },
+    {
+      "id": "granary",
+      "path": "./assets/textbook/granary.png",
+      "pdfPage": 6,
+      "printedPage": 39,
+      "title": "问题探究：《通典·食货典》仓储材料",
+      "section": "sui-prosper",
+      "pageId": "sui-prosper--granary",
+      "sourceBounds": [
+        658,
+        360,
+        1914,
+        1022
+      ],
+      "referenceBounds": [
+        329,
+        180,
+        957,
+        511
+      ],
+      "width": 1256,
+      "height": 662,
+      "displayWidth": 1080,
+      "sha256": "b42b5aaa5394634e9b7c2c3050d8bca6c772ef146f26cc5d484e29b45c495348",
+      "pageIds": [
+        "sui-prosper--granary"
+      ]
+    },
+    {
+      "id": "yangdi",
+      "path": "./assets/textbook/yangdi.png",
+      "pdfPage": 6,
+      "printedPage": 39,
+      "title": "《资治通鉴》炀帝材料与隋亡提问",
+      "section": "sui-end",
+      "pageId": "sui-end--yangdi",
+      "sourceBounds": [
+        658,
+        1040,
+        1914,
+        2048
+      ],
+      "referenceBounds": [
+        329,
+        520,
+        957,
+        1024
+      ],
+      "width": 1256,
+      "height": 1008,
+      "displayWidth": 1080,
+      "sha256": "9666b46eff824c980ad52c30de97f120b8f3187f837f52575b9990294eeb6dcd",
+      "pageIds": [
+        "sui-end--yangdi"
+      ]
+    },
+    {
+      "id": "ethnic-policy",
+      "path": "./assets/textbook/ethnic-policy.png",
+      "pdfPage": 6,
+      "printedPage": 39,
+      "title": "学习拓展：隋唐民族政策",
+      "section": "tang-relations",
+      "pageId": "tang-relations--ethnic-policy",
+      "sourceBounds": [
+        658,
+        2096,
+        1914,
+        2412
+      ],
+      "referenceBounds": [
+        329,
+        1048,
+        957,
+        1206
+      ],
+      "width": 1256,
+      "height": 316,
+      "displayWidth": 1080,
+      "sha256": "a267dee35438428283f019d2087287320568334801e72ac1a0dc2733f974438f",
+      "pageIds": [
+        "tang-relations--ethnic-policy"
+      ]
+    }
+  ]
+}
