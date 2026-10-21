@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "browser": "155.0.4283.62",
+  "offlineFile": true,
+  "routeCount": 114,
+  "layoutChecks": 342,
+  "hotspotRoundTrips": 68,
+  "alignmentErrorPixels": [
+    0.000016958549723723308,
+    0.00004715138647181104,
+    0.00004715138647181104,
+    0.00003540039071579266,
+    0.000023953274016050907,
+    0.00002837314279744508,
+    0.00001495563704538559,
+    0.00002926029469577169,
+    0.00002357385099208592,
+    0.000016958549723723308,
+    0.000023953274016050907
+  ],
+  "maxAlignmentError": 0.00004715138647181104,
+  "resizeResolutions": [
+    "1920x1080",
+    "1366x768",
+    "1280x720"
+  ],
+  "repeatCycles": 12,
+  "consecutiveUndos": 24,
+  "mouse": "automated actual input passed",
+  "touchPen": "synthetic events only; physical hardware untested",
+  "dpr2": true,
+  "localProjectSubpath": true,
+  "refreshClears": true,
+  "consoleErrors": [],
+  "externalRequests": [],
+  "manualRouteSimulations": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

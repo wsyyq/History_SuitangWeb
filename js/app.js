@@ -7,7 +7,7 @@
   const pages=Object.fromEntries(Object.values(sections).flatMap(s=>s.assets.map((asset,i)=>{
     const id=`${s.id}--${asset}`;return [id,{id,asset,section:s.id,module:s.module,index:i}];
   })));
-  let current,nav={};
+  let current,nav={},question={index:0,revealed:false},lastAdvance=-Infinity;
   const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const link=(id,label,cls='nav-button')=>`<a class="${cls}" href="#${esc(id)}">${esc(label)}</a>`;
   const first=s=>`${s}--${sections[s].assets[0]}`;
@@ -25,41 +25,79 @@
   }
   function head(k,title,sub=''){return `<div class="page-head"><div><div class="eyebrow">${k}</div><h1 tabindex="-1">${title}</h1></div>${sub?`<p>${sub}</p>`:''}</div>`;}
   function renderStandards(){return `<figure class="standards-image"><img src="./课标截图.png" alt="课程标准：三国两晋南北朝的民族交融与隋唐大一统的发展"><figcaption>课程标准 · 教师提供截图</figcaption></figure>`;}
-  function moduleCards(){return `<div class="module-grid">${modules.map((m,i)=>`<a class="module-card" href="#${m.id}"><span class="number">0${i+1} / ${m.eyebrow}</span><span class="arrow" aria-hidden="true">↗</span><h2>${m.title}</h2><p>${m.description}</p></a>`).join('')}</div>`;}
+  const cumulative=i=>modules.slice(0,i+1).reduce((n,m)=>n+m.targetMinutes,0);
+  const nextModule=s=>modules[modules.findIndex(m=>m.id===s.module)+1];
+  function moduleCards(){return `<div class="module-grid">${modules.map((m,i)=>`<a class="module-card" href="#${m.id}"><span class="number">0${i+1} / ${m.eyebrow}</span><span class="arrow" aria-hidden="true">↗</span><h2>${m.title}</h2><p>${m.description}</p><small class="module-time">参考 ${m.targetMinutes} 分钟 · 累计 ${cumulative(i)} 分钟</small></a>`).join('')}</div>`;}
+  const items=()=>flows[current.flow]?.items||[];
+  function questionLabel(){return items().length?`第 ${question.index+1}/${items().length} 题 · ${question.revealed?'答案栏已揭示':'答案待揭示'}`:'预备题组 · 内容待配置';}
+  function renderProgress(s){
+    const i=modules.findIndex(m=>m.id===s.module),m=modules[i];
+    const detail=s.level===4?`${sections[s.section].title} · ${questionLabel()}`:s.level===3?`${sections[s.section].title} · 片段 ${s.index+1}/${sections[s.section].assets.length}`:s.module==='review'?`回顾 ${(s.reviewIndex??0)+1}/${reviews.length} · 题目与答案栏同时展示`:m?'模块目录 · 可自由选择教学路线':'课程准备 · 选择模块开始授课';
+    document.querySelector('#lesson-progress').innerHTML=`<strong>${m?`${esc(m.title)} · ${i+1}/${modules.length}`:`${window.LESSON.totalMinutes}分钟课堂`}</strong><span>${esc(detail)}</span><span class="reference-time">${m?`本模块参考 ${m.targetMinutes} 分钟<br>累计参考 ${cumulative(i)} / ${window.LESSON.totalMinutes} 分钟`:`整课参考 ${window.LESSON.totalMinutes} 分钟 · 非实际计时`}</span>`;
+  }
+  function renderQuestion(s){
+    const f=flows[s.flow],q=items()[question.index];
+    // The first question retains the former group board key; later questions are isolated.
+    s.boardKey=question.index===0?`flow/${s.flow}`:`flow/${s.flow}/question/${q.questionId}`;
+    s.questionId=q?.questionId||null;
+    return head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card"><span class="badge">预备题组 · 答案待填充</span><h2 id="question-prompt">${esc(q?.prompt||'此问题组内容待后续阶段配置')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert><h3>答案与解释</h3><p>${esc(q.answer||'答案与解析待第五／六阶段填充。')}</p><p>${esc(q.explanation||'')}</p></div><p class="question-source">来源：${esc(q.sourceRef||'待对应来源')}<br>内容状态：待后续核对填充${f.audits.length?` · 审核项 ${esc(f.audits.join('、'))}`:''}</p>`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}${s.flow==='canal'?'<div class="missing-inline">待补素材：隋大运河—仓储—洛阳分布图</div>':''}</section>`;
+  }
+  function advanceQuestion(event,previous=false){
+    if(current.level!==4||event?.repeat||event?.detail>1)return;
+    const now=performance.now();if(now-lastAdvance<250)return;
+    const list=items();if(!list.length||previous&&question.index===0)return;
+    lastAdvance=now;
+    if(previous){question.index--;question.revealed=false;render(false);return;}
+    if(!question.revealed){
+      question.revealed=true;
+      const answer=document.querySelector('#qa-answer');answer.hidden=false;answer.setAttribute('aria-hidden','false');answer.inert=false;
+      // Only visibility changes; stage geometry, transform and ink remain untouched.
+      renderNavigation(current);renderProgress(current);
+      document.querySelector('[data-qa-action="continue"]').focus({preventScroll:true});return;
+    }
+    if(question.index+1<list.length){question.index++;question.revealed=false;render(false);}
+    else location.hash=current.origin;
+  }
   function configureNav(s){
     nav={};let siblings=[];
     if(s.level===1){siblings=top;nav.up=s.id==='title'?null:'title';}
     else if(s.level===2){siblings=modules.map(m=>m.id);nav.up='outline';if(s.module==='review'){siblings=reviews.map((_,i)=>`review/${i}`);nav.prev=s.reviewIndex>0?`review/${s.reviewIndex-1}`:null;nav.next=(s.reviewIndex??0)<3?`review/${(s.reviewIndex??0)+1}`:null;return;}const m=moduleById[s.module];nav.down=m.sections.length?first(m.sections[0]):null;}
     else if(s.level===3){siblings=moduleById[s.module].sections.flatMap(id=>sections[id].assets.map(a=>`${id}--${a}`));nav.up=s.module;nav.down=sections[s.section].flows.length?flowRoute(sections[s.section].flows[0],s.id):null;}
-    else {siblings=sections[s.section].flows.map(f=>flowRoute(f,s.origin));nav.up=s.origin;}
+    else {nav.up=s.origin;return;}
     const index=siblings.indexOf(s.id);nav.prev=siblings[index-1]||null;nav.next=siblings[index+1]||null;
     if(s.level===1&&s.id==='outline')nav.down='standards';
   }
   function renderNavigation(s){
     const control=(id,label,why)=>id?link(id,label):`<button class="nav-button" disabled title="${why}">${label}</button>`;
-    document.querySelector('#navigation').innerHTML=control(nav.up,s.level===4?'返回原教材页':s.level===3?'返回本模块菜单':'返回上一级', '当前已是首页')+control(nav.prev,'← 上一页','已是本级第一页')+control(nav.next,'下一页 →','已是本级末页')+(s.level===3&&!nav.next?link(s.module,'完成本模块','primary'):'')+(nav.down?link(nav.down,s.level===3?'进入问题链':'进入下一级','primary'):'');
+    let nextLabel='下一页 →';
+    if(s.level===2&&s.module!=='review'&&nav.next)nextLabel=`下一模块：${moduleById[nav.next].title} →`;
+    if(s.level===3&&nav.next)nextLabel=pages[nav.next].section===s.section?'下一片段 →':'下一子目 →';
+    const next=nextModule(s);
+    document.querySelector('#navigation').innerHTML=s.level===4?
+      link(s.origin,'返回原教材页')+`<button class="nav-button" data-qa-action="previous" ${question.index===0?'disabled':''}>← 上一题</button>`+(items().length?`<button class="primary" data-qa-action="continue">${!question.revealed?'揭示答案':question.index+1<items().length?'下一题 →':'完成并返回教材'}</button>`:''):
+      control(nav.up,s.level===3?'返回本模块菜单':'返回上一级', '当前已是首页')+control(nav.prev,'← 上一页','已是本级第一页')+control(nav.next,nextLabel,'已是本级末页')+(s.level===3&&!nav.next&&next?link(next.id,`下一模块：${next.title} →`,'primary'):'')+(s.module==='review'&&(s.reviewIndex??0)===reviews.length-1?link('outline','结束回顾 · 返回课堂脉络','primary'):'')+(nav.down?link(nav.down,s.level===3?'进入问题链':'进入下一级','primary'):'');
     const crumbs=[link('title','首页','crumb')];
     if(s.id!=='title')crumbs.push(link('outline','课堂脉络','crumb'));
     if(s.module)crumbs.push(link(s.module,moduleById[s.module].title,'crumb'));
     if(s.section)crumbs.push(link(first(s.section),sections[s.section].title,'crumb'));
-    if(s.level===4)crumbs.push('<span>问题链占位</span>');
+    if(s.level===4)crumbs.push('<span>课堂问题</span>');
     else if(s.id==='standard')crumbs.push('<span>课标要求</span>');
     document.querySelector('#breadcrumbs').innerHTML=crumbs.join('<span aria-hidden="true">/</span>');
   }
-  function render(){
+  function render(resetQuestion=true){
     const incoming=parse(location.hash);
     if(!incoming){location.replace('#title');return;}
     window.dispatchEvent(new Event('lesson:before-navigate'));
-    current=incoming;configureNav(current);const s=current;
+    current=incoming;if(resetQuestion)question={index:0,revealed:false};configureNav(current);const s=current;
     document.body.dataset.level=String(s.level);document.body.dataset.pageId=s.id;
     if(s.id==='title'){
-      main.innerHTML=`<section class="hero"><div><div class="eyebrow">高中历史 · 第六课</div><h1>从隋唐盛世<span>到五代十国</span></h1><p>循着统一、繁荣与分合的脉络，<br>走进隋唐历史。</p>${link('standard','开始授课　→','primary')}<div class="course-meta" style="margin-top:40px">中外历史纲要 · 上　/　40 分钟课堂</div></div><figure class="hero-art"><img src="${assets['canal-photo'].path}" alt="教材插图：大运河今貌"><figcaption>大运河今貌 · 教材原图<br>PDF 第 1/6 页｜教材第 34 页</figcaption></figure></section>`;
+      main.innerHTML=`<section class="hero"><div><div class="eyebrow">高中历史 · 第六课</div><h1>从隋唐盛世<span>到五代十国</span></h1><p>循着统一、繁荣与分合的脉络，<br>走进隋唐历史。</p>${link('standard','开始授课　→','primary')}<div class="course-meta" style="margin-top:40px">中外历史纲要 · 上　/　${window.LESSON.totalMinutes} 分钟课堂</div></div><figure class="hero-art"><img src="${assets['canal-photo'].path}" alt="教材插图：大运河今貌"><figcaption>大运河今貌 · 教材原图<br>PDF 第 1/6 页｜教材第 34 页</figcaption></figure></section>`;
     }else if(s.id==='standard'||s.module==='standards'){
       main.innerHTML=head(s.level===1?'课程导入 / 02':'模块 01 / 课标研读','课标要求')+renderStandards();
     }else if(s.id==='outline'){
       main.innerHTML=head('课程导入 / 03','课堂脉络','选择一个模块，开始阅读与思考。')+moduleCards();
     }else if(s.module==='review'){
-      main.innerHTML=head('模块 06 / 二级内容','内容回顾','问题与答案直接呈现 · 本阶段保留待填充卡片')+`<div class="review-grid">${reviews.map((title,i)=>`<article id="review-card-${i}" class="review-card ${i===(s.reviewIndex??0)?'active':''}"><a href="#review/${i}" aria-label="选择回顾${i+1}：${title}"><span class="badge">回顾 0${i+1}</span><h2>${title}</h2></a><p>答案待填充<br>回顾内容待第五／六阶段核实与填充。</p></article>`).join('')}</div>`;
+      main.innerHTML=head('模块 06 / 二级内容','内容回顾','问题与答案栏同时展示 · 答案待后续填充')+`<div class="review-grid">${window.LESSON.reviewItems.map((q,i)=>`<article id="review-card-${i}" class="review-card ${i===(s.reviewIndex??0)?'active':''}"><a href="#review/${i}" aria-label="选择回顾${i+1}：${esc(q.prompt)}"><span class="badge">回顾 0${i+1}</span><h2>${esc(q.prompt)}</h2></a><p class="review-answer">答案区域<br>${esc(q.answer)}</p></article>`).join('')}</div>`;
     }else if(s.level===2){
       const m=moduleById[s.module];main.innerHTML=head(`模块 0${modules.indexOf(m)+1} / ${m.eyebrow}`,m.title,m.description)+`<div class="section-menu">${m.sections.map((id,i)=>`<a class="section-link" href="#${first(id)}"><span>0${i+1}</span><strong>${sections[id].title}</strong><small>${sections[id].assets.length} 个教材片段</small><span aria-hidden="true">→</span></a>`).join('')}</div>`;
     }else if(s.level===3){
@@ -69,20 +107,22 @@
       const img=main.querySelector('img');img.addEventListener('error',()=>{img.insertAdjacentHTML('afterend','<p class="image-error">教材图片加载失败，请检查本地素材文件是否完整。</p>');});
 
     }else if(s.level===4){
-      const f=flows[s.flow];main.innerHTML=head('课堂问题 / 第四级','问题链')+`<section class="flow-box"><span class="badge">互动占位 · 尚未填充</span><h2>${f.title}</h2><p class="pending">互动内容将在后续阶段填充。</p><p>本阶段保留问题链入口；正式问题、答案与逐步揭示流程尚未启用。</p>${s.flow==='canal'?'<div class="missing-inline">待补素材：隋大运河—仓储—洛阳分布图</div>':''}${f.audits.length?'<p>相关解释尚待核实与教师确认。</p>':''}${link(s.origin,'返回触发此问题的教材片段','primary')}</section>`;
+      main.innerHTML=renderQuestion(s);
     }
-    renderNavigation(s);main.scrollTop=0;
+    renderNavigation(s);renderProgress(s);main.scrollTop=0;
     const heading=main.querySelector('h1');if(heading)heading.focus({preventScroll:true});
     document.title=`${s.level===4?flows[s.flow].title:s.level===3?sections[s.section].title:s.module?moduleById[s.module].title:'从隋唐盛世到五代十国'} · 历史课堂`;
     window.dispatchEvent(new CustomEvent('lesson:navigate',{detail:{...s,interactionMode:'select'}}));
   }
-  window.addEventListener('hashchange',render);
+  window.addEventListener('hashchange',()=>render());
+  document.querySelector('#navigation').addEventListener('click',e=>{const b=e.target.closest('[data-qa-action]');if(b&&!b.disabled)advanceQuestion(e,b.dataset.qaAction==='previous');});
   document.addEventListener('keydown',e=>{
     if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+    if(current.level===4&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();advanceQuestion(e,e.key==='ArrowLeft');return;}
     const target=e.key==='ArrowRight'?nav.next:e.key==='ArrowLeft'?nav.prev:e.key==='Escape'?nav.up:null;
     if(target){e.preventDefault();location.hash=target;}
   });
   // Whiteboard lifecycle is driven by before-navigate / navigate events.
-  window.LessonApp={getState:()=>({...current}),getPages:()=>({...pages})};
+  window.LessonApp={getState:()=>({...current,...(current.level===4?{questionIndex:question.index,revealed:question.revealed,questionCount:items().length}:{})}),getPages:()=>({...pages})};
   render();
 })();

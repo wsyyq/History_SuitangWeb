@@ -1,12 +1,12 @@
-/* Stable curriculum model. No historical answers are populated in stage 2. */
+/* Stable curriculum model; stage 4 reference minutes, no historical answers. */
 (() => {
   const modules = [
-    {id:'standards',title:'课标研读',eyebrow:'明晰目标',description:'从课程要求出发，把握本课学习线索。',sections:[]},
-    {id:'sui',title:'隋',eyebrow:'统一与兴亡',description:'建立、兴盛与灭亡，读懂盛极一时的隋朝。',sections:['sui-found','sui-prosper','sui-end']},
-    {id:'tang',title:'唐',eyebrow:'盛世与交融',description:'从繁荣景象走向民族关系与区域开发。',sections:['tang-found','tang-prosper','tang-relations']},
-    {id:'anshi',title:'安史之乱',eyebrow:'盛衰的转折',description:'梳理原因、过程与影响，辨析藩镇割据。',sections:['an-cause','an-process','an-impact']},
-    {id:'fall',title:'唐的灭亡',eyebrow:'王朝与分合',description:'黄巢起义、朱温废唐与五代十国。',sections:['tang-end','five']},
-    {id:'review',title:'内容回顾',eyebrow:'回望与贯通',description:'回到四个问题，整理本课的思考方法。',sections:[]}
+    {id:'standards',targetMinutes:3,title:'课标研读',eyebrow:'明晰目标',description:'从课程要求出发，把握本课学习线索。',sections:[]},
+    {id:'sui',targetMinutes:8,title:'隋',eyebrow:'统一与兴亡',description:'建立、兴盛与灭亡，读懂盛极一时的隋朝。',sections:['sui-found','sui-prosper','sui-end']},
+    {id:'tang',targetMinutes:13,title:'唐',eyebrow:'盛世与交融',description:'从繁荣景象走向民族关系与区域开发。',sections:['tang-found','tang-prosper','tang-relations']},
+    {id:'anshi',targetMinutes:7,title:'安史之乱',eyebrow:'盛衰的转折',description:'梳理原因、过程与影响，辨析藩镇割据。',sections:['an-cause','an-process','an-impact']},
+    {id:'fall',targetMinutes:6,title:'唐的灭亡',eyebrow:'王朝与分合',description:'黄巢起义、朱温废唐与五代十国。',sections:['tang-end','five']},
+    {id:'review',targetMinutes:3,title:'内容回顾',eyebrow:'回望与贯通',description:'回到四个问题，整理本课的思考方法。',sections:[]}
   ];
   const defs = [
     ['sui-found','建立','sui',['sui-found'],[]],
@@ -37,7 +37,8 @@
     ['fanzhen-flow','藩镇割据与唐朝统治',['Q20','Q21'],['A10']],
     ['five-flow','五代十国与唐末藩镇',['Q23'],['A15']]
   ];
-  const flows=Object.fromEntries(flowDefs.map(([id,title,qids,audits])=>[id,{id,title,qids,audits,status:'placeholder',questionIndex:null,revealState:'unpopulated'}]));
+  const flows=Object.fromEntries(flowDefs.map(([id,title,qids,audits])=>[id,{id,title,qids,audits,status:'pending'}]));
   const reviews=['修路、修运河作用','经济重心南移阶段','如何回答两者之间的关系类问题','如何区分民族边疆关系与对外外交关系'];
-  window.LESSON={modules,sections,flows,reviews,interactionMode:'select',futureModes:['move','zoom','select','draw']};
+  const totalMinutes=modules.reduce((sum,m)=>sum+m.targetMinutes,0);
+  window.LESSON={modules,sections,flows,reviews,totalMinutes,interactionMode:'select',futureModes:['move','zoom','select','draw']};
 })();
