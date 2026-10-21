@@ -1,0 +1,6 @@
+# 仓库规则
+
+- 本项目共七阶段；每一阶段须教师确认授权，完成后等待验收，不自行进入下一阶段。
+- 课程教学、导航、问答、地图及史实相关任务使用 `$sui-tang-lesson`，读取 [.agents/skills/sui-tang-lesson/SKILL.md](.agents/skills/sui-tang-lesson/SKILL.md)。
+- 尊重并保留原始资料；课堂结构以教师框架为准，历史事实与教师拓展分开标注，疑点交教师裁决。
+- Codex 不自行执行 Git add、commit、push 或创建 PR；提交由教师负责。

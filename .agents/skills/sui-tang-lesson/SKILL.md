@@ -1,0 +1,21 @@
+---
+name: sui-tang-lesson
+description: 在分析《从隋唐盛世到五代十国》教学内容、制作或修改横屏授课页面、教材导航、课堂问答、地图交互以及历史事实审查时使用。
+---
+
+# 隋唐课堂教学契约
+
+实施前核对教师已确认的阶段范围和当前任务指令。项目共七阶段；第一阶段只分析、建档与验收，不制作 HTML/CSS/JavaScript、原型、页面截图或教材裁切图。未经再次授权不进入第二阶段。本 Skill 是开发时的参考，不是网页运行时依赖。
+
+按任务选择阅读：
+
+- 结构、层级、导航与回顾特例：[lesson-outline.md](references/lesson-outline.md)。
+- 教材事实、双页码、图片边界：[textbook-map.md](references/textbook-map.md)；同时核对 [historical-fact-audit.md](references/historical-fact-audit.md) 的未决项。
+- 问题链与复习问答：[question-bank.md](references/question-bank.md)。
+- 来源、权威范围、缺失素材：[source-manifest.md](references/source-manifest.md)。
+
+课堂组织服从教师框架；事实证据优先所提供教材。教师拓展、教材推论不得伪装成教材原句；待裁决内容不得直接进入确定答案。引用教材必须同时给 PDF 内页与教材印刷页码。教材跨页段落保留上下文，地图保留标题、年代、图例和后置年份注记。
+
+六模块顺序与四级菜单契约不得擅改。四级仅为候选问题链，不因有解释就强制建立；内容回顾四项直接属于二级内容，不用教材截图，不套四级逐步揭示。问题库不是定稿脚本或最终页数。
+
+不修改原始资料，不自行 Git 暂存、提交、推送或创建 PR。完成授权范围后报告实际检查结果、缺口和人工复查事项。
