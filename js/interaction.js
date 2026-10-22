@@ -152,6 +152,9 @@
     update();
     await Promise.all([...content.querySelectorAll('img')].map(img=>img.decode().catch(()=>{})));
     if(active!==a)return;measure();redraw();a.ready=true;viewport.dataset.ready='true';update();
+    const revealTarget=el=>{const box=el.getBoundingClientRect(),view=viewport.getBoundingClientRect();if(box.top<view.top||box.bottom>view.bottom){a.y+=view.top+12-box.top;transform();}};
+    if(page.module==='review'&&page.reviewIndex>=2)revealTarget(content.querySelector(`#review-card-${page.reviewIndex}`));
+    viewport.addEventListener('focusin',e=>{if(mode==='select'&&e.target.closest('.review-card,.map-guide'))revealTarget(e.target);},options);
   }
   let resizeFrame;
   window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{finish(true);measure();});});

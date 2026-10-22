@@ -34,3 +34,7 @@ PDF 第 1/6、2/6、3/6、4/6、5/6、6/6 页分别对应教材印刷第 34、35
 |MX-T01_CODEX_INSTRUCTION.md|c2b270b940a00a20ad3b96ce00dbb47b3de09d0e4a5e1e353539b055d56ee53b|
 
 整页核对预览位于仓库外 `C:/Users/29824/.codex/visualizations/2026/10/21/01a15eed-295f-7551-85fc-9b575529b3e0/textbook-page-1.png` 至 `textbook-page-6.png`，仅为原教材整页渲染，不是裁切资产或授课页面截图，不作为后续运行时依赖。
+
+## 第六阶段现状核验（2026-10-22）
+
+上文缺图为第一阶段历史记录。当前课标截图.png与32教材PNG可用；隋运河仓储真实图仍缺。没有取得新版地图或外部研究材料。原PDF由UGit Git LFS管理，本地SHA-256与HEAD指针oid一致；框架、讲稿、教材图及课标图未改。新内容来源见STAGE6_CONTENT_AUDIT.md。

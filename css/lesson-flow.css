@@ -36,3 +36,25 @@ body{grid-template-rows:70px 110px 52px minmax(0,1fr) 66px}
 .board-content .teaching-note h2{font-size:29px}.board-content .teaching-note p{white-space:pre-line}
 .board-content .teaching-note .note-source{font-size:16px;color:var(--muted);margin-top:16px}
 .board-content .teaching-note .note-boundary{font-size:19px;color:var(--blue);margin-top:16px}
+
+/* Stage 6: shared-stage reading and non-destructive map location overlays. */
+.history-sequence{margin:24px 0;border-top:2px solid var(--gold);padding-top:18px}
+.history-sequence figcaption{font-size:24px;color:var(--red);font-weight:bold}
+.history-sequence ol{list-style:none;padding:0;margin:20px 0;display:grid;gap:28px}
+.history-sequence li{position:relative;border-left:4px solid var(--gold);background:#faf6ed;padding:16px 22px}
+.history-sequence li+li:before{content:'↓';position:absolute;left:24px;top:-30px;color:var(--red);font-size:24px}
+.board-content .history-sequence h3{font-size:25px}.board-content .history-sequence p{font-size:23px;line-height:1.6;margin:8px 0}
+.board-content .history-sequence .sequence-source{font-size:16px;color:var(--muted)}
+.map-guide{padding:16px;border:1px solid var(--line);background:var(--paper);margin-bottom:20px}
+.map-options{display:flex;gap:12px}.map-options button{padding:10px 20px;min-height:48px;background:#faf6ed;color:var(--ink);border:1px solid var(--gold);font:22px var(--sans);cursor:pointer}
+.map-options button[aria-pressed="true"]{color:white;background:var(--red)}
+.map-options button:focus-visible,.review-card a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.map-panels{display:grid;margin:12px 0}.map-panel{grid-area:1/1;font-size:22px;line-height:1.6;margin:0}
+.map-panel[hidden]{display:block;visibility:hidden;pointer-events:none}
+.map-source{font-size:16px;color:var(--muted);margin:8px 0}
+.location-map{position:relative;padding:0!important}.location-map img{display:block;width:100%}
+.map-locations{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.map-locations rect{fill:none;stroke:var(--red);stroke-width:4;stroke-dasharray:12 5}
+.board-content .review-complete .review-answer{font-size:23px;line-height:1.65;white-space:pre-line;color:var(--ink)}
+.board-content .review-complete .review-boundary{font-size:18px;color:var(--blue)}
+.board-content .review-complete .review-source{font-size:16px;color:var(--muted)}

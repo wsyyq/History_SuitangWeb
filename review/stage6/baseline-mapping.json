@@ -1,0 +1,307 @@
+[
+  {
+    "groupId": "two-capitals",
+    "sectionId": "sui-prosper",
+    "origins": [
+      "sui-prosper--sui-prosper",
+      "sui-prosper--granary"
+    ],
+    "items": [
+      {
+        "id": "Q02",
+        "before": "textbook-supported",
+        "after": "textbook-supported",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛1；审核 A01；question-bank.md · Q02"
+      }
+    ]
+  },
+  {
+    "groupId": "granaries",
+    "sectionId": "sui-prosper",
+    "origins": [
+      "sui-prosper--sui-prosper",
+      "sui-prosper--granary"
+    ],
+    "items": [
+      {
+        "id": "Q03",
+        "before": "textbook-supported",
+        "after": "textbook-supported",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛2；审核 A02、A13；question-bank.md · Q03"
+      }
+    ]
+  },
+  {
+    "groupId": "canal",
+    "sectionId": "sui-prosper",
+    "origins": [
+      "sui-prosper--sui-prosper",
+      "sui-prosper--granary"
+    ],
+    "items": [
+      {
+        "id": "Q04",
+        "before": "textbook-supported",
+        "after": "textbook-supported",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；讲稿·修路的好处；框架·隋/兴盛3；审核 A03；question-bank.md · Q04"
+      },
+      {
+        "id": "Q05",
+        "before": "teacher-extension",
+        "after": "teacher-extension",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·仓库、洛阳与运河整体规划；审核 A03；question-bank.md · Q05"
+      },
+      {
+        "id": "Q06",
+        "before": "needs-verification",
+        "after": "needs-verification",
+        "version": "stage5",
+        "source": "教师框架·隋/兴盛3；讲稿·经济重心南移回顾；本课教材 PDF 1—6/6｜印刷第34—39页未完整论证该过程；审核 A04、A09；question-bank.md · Q06"
+      }
+    ]
+  },
+  {
+    "groupId": "goguryeo",
+    "sectionId": "sui-end",
+    "origins": [
+      "sui-end--sui-end",
+      "sui-end--sui-poem",
+      "sui-end--yangdi"
+    ],
+    "items": [
+      {
+        "id": "Q07",
+        "before": "needs-verification",
+        "after": "needs-verification",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·高句丽和高丽的区别；审核 A05；question-bank.md · Q07"
+      },
+      {
+        "id": "Q08",
+        "before": "needs-verification",
+        "after": "needs-verification",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·防止两个政权联合；审核 A06；question-bank.md · Q08"
+      }
+    ]
+  },
+  {
+    "groupId": "sui-burden",
+    "sectionId": "sui-end",
+    "origins": [
+      "sui-end--sui-end",
+      "sui-end--sui-poem",
+      "sui-end--yangdi"
+    ],
+    "items": [
+      {
+        "id": "Q09",
+        "before": "textbook-supported",
+        "after": "textbook-supported",
+        "version": "stage5",
+        "source": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·国富而不与民共享；审核 A12、A13；question-bank.md · Q09"
+      }
+    ]
+  },
+  {
+    "groupId": "economy",
+    "sectionId": "tang-prosper",
+    "origins": [
+      "tang-prosper--tang-zhenguan",
+      "tang-prosper--tang-prosper",
+      "tang-prosper--plough-text",
+      "tang-prosper--plough-image",
+      "tang-prosper--sancai"
+    ],
+    "items": [
+      {
+        "id": "Q11",
+        "before": "textbook-supported",
+        "after": "textbook-supported",
+        "version": "stage5",
+        "source": "教材 PDF 2/6｜印刷第35页｜历史纵横·唐朝曲辕犁及唐三彩盘图注；框架·唐/繁荣/经济；审核 A14；question-bank.md · Q11"
+      }
+    ]
+  },
+  {
+    "groupId": "relations",
+    "sectionId": "tang-relations",
+    "origins": [
+      "tang-relations--turks-intro",
+      "tang-relations--turks",
+      "tang-relations--huihe",
+      "tang-relations--jiaohe",
+      "tang-relations--tribute",
+      "tang-relations--tubo",
+      "tang-relations--frontier",
+      "tang-relations--alliance",
+      "tang-relations--map-669",
+      "tang-relations--ethnic-policy"
+    ],
+    "items": [
+      {
+        "id": "Q12",
+        "before": "pending",
+        "after": "textbook-supported",
+        "version": "stage6",
+        "source": "教材 PDF 3/6｜印刷第36页突厥正文、回纥栏、吐蕃段；教材 PDF 4/6｜印刷第37页靺鞨与边疆开发；question-bank.md · Q12"
+      },
+      {
+        "id": "Q13",
+        "before": "pending",
+        "after": "textbook-supported",
+        "version": "stage6",
+        "source": "教材 PDF 3/6｜印刷第36页吐蕃段续教材 PDF 4/6｜印刷第37页首段及唐蕃会盟碑图注；question-bank.md · Q13"
+      }
+    ]
+  },
+  {
+    "groupId": "map-reading",
+    "sectionId": "tang-relations",
+    "origins": [
+      "tang-relations--turks-intro",
+      "tang-relations--turks",
+      "tang-relations--huihe",
+      "tang-relations--jiaohe",
+      "tang-relations--tribute",
+      "tang-relations--tubo",
+      "tang-relations--frontier",
+      "tang-relations--alliance",
+      "tang-relations--map-669",
+      "tang-relations--ethnic-policy"
+    ],
+    "items": [
+      {
+        "id": "Q14",
+        "before": "pending",
+        "after": "needs-verification",
+        "version": "stage6",
+        "source": "教材 PDF 4/6｜印刷第37页《唐朝前期形势和边疆各族分布图（669年）》；教材 PDF 3/6｜印刷第36页突厥正文；审核A07；question-bank.md · Q14"
+      }
+    ]
+  },
+  {
+    "groupId": "perspectives",
+    "sectionId": "tang-relations",
+    "origins": [
+      "tang-relations--turks-intro",
+      "tang-relations--turks",
+      "tang-relations--huihe",
+      "tang-relations--jiaohe",
+      "tang-relations--tribute",
+      "tang-relations--tubo",
+      "tang-relations--frontier",
+      "tang-relations--alliance",
+      "tang-relations--map-669",
+      "tang-relations--ethnic-policy"
+    ],
+    "items": [
+      {
+        "id": "Q15",
+        "before": "pending",
+        "after": "teacher-extension",
+        "version": "stage6",
+        "source": "教师框架·唐/民族2及讲稿“一方、另一方”；教材 PDF 3/6｜印刷第36页—教材 PDF 4/6｜印刷第37页仅支持唐蕃交流例证；审核A16；question-bank.md · Q15"
+      }
+    ]
+  },
+  {
+    "groupId": "concepts",
+    "sectionId": "tang-relations",
+    "origins": [
+      "tang-relations--turks-intro",
+      "tang-relations--turks",
+      "tang-relations--huihe",
+      "tang-relations--jiaohe",
+      "tang-relations--tribute",
+      "tang-relations--tubo",
+      "tang-relations--frontier",
+      "tang-relations--alliance",
+      "tang-relations--map-669",
+      "tang-relations--ethnic-policy"
+    ],
+    "items": [
+      {
+        "id": "Q16",
+        "before": "pending",
+        "after": "teacher-extension",
+        "version": "stage6",
+        "source": "教师框架·唐/民族3、讲稿及MX-T06第4.4节的必要限缩；教材 PDF 3/6｜印刷第36页《职贡图》图注；教材 PDF 4/6｜印刷第37页边疆开发；审核A08；question-bank.md · Q16"
+      }
+    ]
+  },
+  {
+    "groupId": "impact",
+    "sectionId": "an-impact",
+    "origins": [
+      "an-impact--an-process",
+      "an-impact--an-impact",
+      "an-impact--fanzhen",
+      "an-impact--army-source"
+    ],
+    "items": [
+      {
+        "id": "Q18",
+        "before": "pending",
+        "after": "textbook-supported",
+        "version": "stage6",
+        "source": "教材 PDF 4/6｜印刷第37页安史之乱段跨页续教材 PDF 5/6｜印刷第38页首句；概念提示来自教师讲稿；审核A16；question-bank.md · Q18"
+      },
+      {
+        "id": "Q19",
+        "before": "pending",
+        "after": "needs-verification",
+        "version": "stage6",
+        "source": "教师框架·安史/影响1及讲稿；教材 PDF 4/6｜印刷第37页—教材 PDF 5/6｜印刷第38页为战争背景，不是完整南移论证；审核A04/A09；question-bank.md · Q19"
+      }
+    ]
+  },
+  {
+    "groupId": "fanzhen-flow",
+    "sectionId": "an-impact",
+    "origins": [
+      "an-impact--an-process",
+      "an-impact--an-impact",
+      "an-impact--fanzhen",
+      "an-impact--army-source"
+    ],
+    "items": [
+      {
+        "id": "Q20",
+        "before": "pending",
+        "after": "textbook-supported",
+        "version": "stage6",
+        "source": "教材 PDF 5/6｜印刷第38页藩镇段与《新唐书·兵志》史料阅读；question-bank.md · Q20"
+      },
+      {
+        "id": "Q21",
+        "before": "pending",
+        "after": "textbook-supported",
+        "version": "stage6",
+        "source": "教材 PDF 5/6｜印刷第38页藩镇段、史料阅读；教师框架·安史/影响2；审核A10；question-bank.md · Q21"
+      }
+    ]
+  },
+  {
+    "groupId": "five-flow",
+    "sectionId": "five",
+    "origins": [
+      "five--five",
+      "five--chairong",
+      "five--map-five"
+    ],
+    "items": [
+      {
+        "id": "Q23",
+        "before": "pending",
+        "after": "textbook-supported",
+        "version": "stage6",
+        "source": "教材 PDF 5/6｜印刷第38页五代十国段、柴荣段、《五代十国形势图（后周时期）》；审核A15；question-bank.md · Q23"
+      }
+    ]
+  }
+]
