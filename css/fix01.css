@@ -18,3 +18,23 @@ button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid var(
 .thinking-point{margin:18px auto;max-width:530px}.thinking-point img{display:block;width:100%;height:auto}.thinking-point figcaption{font-size:13px;color:var(--muted)}
 .board-content .qa-answer .core-answer{white-space:pre-line;font-size:26px;line-height:1.8}.board-content .qa-card:has(.teacher-map){min-height:0}
 @media(max-width:1000px){.masthead{right:290px}#lesson-progress{width:270px}.reference-time{display:none}#breadcrumbs{display:none}}
+
+/* MX-FIX02: move existing global actions left; retain the shared board transform. */
+.masthead{left:8px;right:auto;width:60px;height:96px;display:block}
+.brand{display:grid;place-items:center;width:60px;height:44px;min-height:44px}
+.seal{display:grid;place-items:center;line-height:1;padding:0;letter-spacing:0;text-indent:0}
+.outline-link{position:absolute;top:50px;left:8px;display:grid;place-items:center;width:44px;height:44px;padding:9px;border:1px solid var(--line);border-radius:7px;background:#fbf8f1}
+.outline-link svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#breadcrumbs{position:fixed;left:84px;top:12px;right:430px;height:36px;display:flex;justify-content:flex-start}
+#interaction-toolbar{top:114px;bottom:12px}
+.mode-dock{gap:6px}
+#main-content{bottom:8px}
+footer{left:8px;right:auto;bottom:12px;width:60px;height:auto}
+footer #navigation{display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid var(--line);border-radius:12px;background:#eee5d5}
+footer .primary{width:44px;height:44px;min-height:44px;padding:3px;display:grid;place-items:center;font-size:13px;line-height:1.3;text-align:center;white-space:normal;word-break:break-all}
+footer .primary span{max-width:28px}
+#navigation a,#navigation button,.mode-dock button,.outline-link{position:relative}
+.outline-link{position:absolute}
+#navigation [aria-label]:is(:hover,:focus-visible)::after,.mode-dock [aria-label]:is(:hover,:focus-visible)::after,.outline-link:is(:hover,:focus-visible)::after{content:attr(aria-label);position:absolute;left:calc(100% + 12px);top:50%;translate:0 -50%;white-space:nowrap;padding:6px 10px;border:1px solid var(--line);border-radius:5px;background:#fbf8f1;color:var(--ink);font:14px var(--sans);pointer-events:none;z-index:30}
+footer{z-index:6}.masthead{z-index:6}
+@media(max-height:680px){.mode-dock{gap:2px}#interaction-toolbar{top:108px}footer #navigation{gap:2px}}

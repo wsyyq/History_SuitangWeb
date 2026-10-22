@@ -126,6 +126,11 @@
       link(s.origin,'返回原教材页')+`<button class="nav-button" data-qa-action="previous" ${question.index===0?'disabled':''}>← 上一题</button>`+(items().length?`<button class="primary" data-qa-action="continue">${!question.revealed?'揭示答案':question.index+1<items().length?'下一题 →':'完成并返回教材'}</button>`:''):
       control(nav.up,s.level===3?'返回本模块菜单':'返回上一级', '当前已是首页')+control(nav.prev,'← 上一页','已是本级第一页')+control(nav.next,nextLabel,'已是本级末页')+(s.level===3&&!nav.next&&next?link(next.id,`下一模块：${next.title} →`,'primary'):'')+(s.module==='review'&&(s.reviewIndex??0)===reviews.length-1?link('outline','结束回顾 · 返回课堂脉络','primary'):'')+(nav.down?link(nav.down,s.level===3?'进入问题链':'进入下一级','primary'):'');
     document.querySelectorAll('#navigation .nav-button').forEach((b,i)=>{const label=b.textContent;b.setAttribute('aria-label',label);b.title=label;b.innerHTML=`<span aria-hidden="true">${i===0?'↩':i===1?'←':'→'}</span>`;});
+    document.querySelectorAll('#navigation .primary').forEach(b=>{
+      const label=b.textContent;b.setAttribute('aria-label',label);b.title=label;
+      const short=label==='揭示答案'?'揭示答案':label.startsWith('下一题')?'下一题':label.startsWith('完成')?'完成返回':label.startsWith('进入问题')?'进入问题':label.startsWith('进入')?'进入下级':label.startsWith('下一模块')?'下一模块':'结束回顾';
+      b.innerHTML=`<span aria-hidden="true">${short}</span>`;
+    });
     const crumbs=[link('title','首页','crumb')];
     if(s.id!=='title')crumbs.push(link('outline','课堂脉络','crumb'));
     if(s.module)crumbs.push(link(s.module,moduleById[s.module].title,'crumb'));
@@ -174,6 +179,7 @@
   document.querySelector('#navigation').addEventListener('click',e=>{const b=e.target.closest('[data-qa-action]');if(b&&!b.disabled)advanceQuestion(e,b.dataset.qaAction==='previous');});
   document.addEventListener('keydown',e=>{
     if(e.defaultPrevented)return;
+    if(e.key===' '&&e.target.matches('.brand,.outline-link,#navigation a')){e.preventDefault();e.target.click();return;}
     if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.target.closest('input,textarea,select,[contenteditable="true"]'))return;
     if(current.level===4&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();advanceQuestion(e,e.key==='ArrowLeft');return;}
     const target=e.key==='ArrowRight'?nav.next:e.key==='ArrowLeft'?nav.prev:e.key==='Escape'?nav.up:null;
