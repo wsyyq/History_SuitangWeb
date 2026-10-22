@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "browser": "155.0.4283.62",
+  "modules": [
+    {
+      "id": "standards",
+      "minutes": 3
+    },
+    {
+      "id": "sui",
+      "minutes": 8
+    },
+    {
+      "id": "tang",
+      "minutes": 13
+    },
+    {
+      "id": "anshi",
+      "minutes": 7
+    },
+    {
+      "id": "fall",
+      "minutes": 6
+    },
+    {
+      "id": "review",
+      "minutes": 3
+    }
+  ],
+  "totalMinutes": 40,
+  "groups": 13,
+  "questions": 19,
+  "candidateBankCount": 23,
+  "thirdLevelFragmentVisits": 33,
+  "hotspotGroupEntries": 68,
+  "questionAnswerOperations": 186,
+  "questionAnswerLayoutChecks": 114,
+  "maxRevealShiftCssPixels": 0,
+  "extraPreviousRevealNextOperations": 36,
+  "questionReturnCycles": 12,
+  "emptySingleMultiGroups": true,
+  "duplicateClickGuard": true,
+  "longAnswerGeometry": true,
+  "safeTextRendering": true,
+  "browserHistory": true,
+  "questionInkIsolation": true,
+  "refreshClears": true,
+  "offlineFile": true,
+  "localProjectSubpath": true,
+  "consoleErrors": [],
+  "externalRequests": [],
+  "sourceHashes": {
+    "隋唐讲解框架.md": "25353d34e15813425abb6e24cff65ec3dc49cc93958265f125a0cc23f640312b",
+    "隋唐讲解原文.md": "a372d2f67027211d8418b7f41680a5e0377a23a787370120ead8dc404260dbd9",
+    "中外历史纲要上_PDF第41-46页.pdf": "6adc270673507556fa3b03c53143f1ad9564130c41d87f1cbe2b240a64e540ba"
+  },
+  "stage4RouteRegression": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "stage5ContentTest": "see content-results.json",
+  "physicalTouchPen": "not tested"
+}

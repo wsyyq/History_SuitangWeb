@@ -29,6 +29,21 @@
   const nextModule=s=>modules[modules.findIndex(m=>m.id===s.module)+1];
   function moduleCards(){return `<div class="module-grid">${modules.map((m,i)=>`<a class="module-card" href="#${m.id}"><span class="number">0${i+1} / ${m.eyebrow}</span><span class="arrow" aria-hidden="true">↗</span><h2>${m.title}</h2><p>${m.description}</p><small class="module-time">参考 ${m.targetMinutes} 分钟 · 累计 ${cumulative(i)} 分钟</small></a>`).join('')}</div>`;}
   const items=()=>flows[current.flow]?.items||[];
+  const evidenceLabel=type=>({'textbook-supported':'教材事实','teacher-extension':'课堂拓展','needs-verification':'待核对','pending':'答案待填充'}[type]||'待核对');
+  function contentBlocks(blocks,cls='content-blocks'){
+    return `<div class="${cls}">${blocks.map(b=>`<section class="content-block"><span class="evidence-label">${evidenceLabel(b.evidenceType)}</span><h3>${esc(b.title)}</h3><p>${esc(b.text)}</p></section>`).join('')}</div>`;
+  }
+  function teachingNote(id){
+    const note=window.LESSON.teachingNotes?.[id];if(!note)return '';
+    return `<aside class="teaching-note" aria-label="教材后的讲解要点"><h2>${esc(note.title)}</h2>${contentBlocks(note.blocks)}${note.note?`<p class="note-boundary">${esc(note.note)}</p>`:''}<p class="note-source">来源：${esc(note.sourceRef)}</p></aside>`;
+  }
+  function answerContent(q){
+    const title=q.contentStatus==='needs-verification'?'待核对：讨论思路':q.contentStatus==='teacher-extension'?'课堂拓展：讲解模型':'答案与解释';
+    const core=q.answerBlocks?contentBlocks(q.answerBlocks):`<p class="core-answer">${esc(q.answer||'答案与解析待第五／六阶段填充。')}</p>`;
+    const diagram=q.diagram?`<figure class="concept-model"><figcaption>${esc(q.diagram.title)}</figcaption><ol>${q.diagram.nodes.map(n=>`<li>${esc(n)}</li>`).join('')}</ol></figure>`:'';
+    const timeline=q.timeline?`<h3 class="timeline-title">四个复习节点 · 待纵向核验</h3>${contentBlocks(q.timeline,'content-blocks timeline')}`:'';
+    return `<h3>${title}</h3>${core}${diagram}${timeline}<p class="answer-explanation">${esc(q.explanation||'')}</p>${q.reviewNote?`<p class="review-note"><strong>证据边界：</strong>${esc(q.reviewNote)}</p>`:''}`;
+  }
   function questionLabel(){return items().length?`第 ${question.index+1}/${items().length} 题 · ${question.revealed?'答案栏已揭示':'答案待揭示'}`:'预备题组 · 内容待配置';}
   function renderProgress(s){
     const i=modules.findIndex(m=>m.id===s.module),m=modules[i];
@@ -40,7 +55,8 @@
     // The first question retains the former group board key; later questions are isolated.
     s.boardKey=question.index===0?`flow/${s.flow}`:`flow/${s.flow}/question/${q.questionId}`;
     s.questionId=q?.questionId||null;
-    return head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card"><span class="badge">预备题组 · 答案待填充</span><h2 id="question-prompt">${esc(q?.prompt||'此问题组内容待后续阶段配置')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert><h3>答案与解释</h3><p>${esc(q.answer||'答案与解析待第五／六阶段填充。')}</p><p>${esc(q.explanation||'')}</p></div><p class="question-source">来源：${esc(q.sourceRef||'待对应来源')}<br>内容状态：待后续核对填充${f.audits.length?` · 审核项 ${esc(f.audits.join('、'))}`:''}</p>`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}${s.flow==='canal'?'<div class="missing-inline">待补素材：隋大运河—仓储—洛阳分布图</div>':''}</section>`;
+    s.readableFlow=q?.contentVersion==='stage5';
+    return `<div class="${s.readableFlow?'teaching-flow':''}">`+head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card"><span class="badge">${q?.contentStatus==='pending'?'预备题组 · 答案待填充':evidenceLabel(q?.contentStatus)}</span>${s.readableFlow?'<span class="reading-hint">滚轮向下阅读答案、解析与来源</span>':''}<h2 id="question-prompt">${esc(q?.prompt||'此问题组内容待后续阶段配置')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert>${answerContent(q)}</div><p class="question-source">来源：${esc(q.sourceRef||'待对应来源')}<br>内容状态：${evidenceLabel(q.contentStatus)}${f.audits.length?` · 审核项 ${esc(f.audits.join('、'))}`:''}</p>`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}${s.flow==='canal'?'<div class="missing-inline">待补素材：隋大运河—仓储—洛阳分布图</div>':''}</section></div>`;
   }
   function advanceQuestion(event,previous=false){
     if(current.level!==4||event?.repeat||event?.detail>1)return;
@@ -104,6 +120,7 @@
       const section=sections[s.section],asset=assets[s.asset];
       main.innerHTML=`<section class="reader-page">${head('教材研读 / 第三级',`${section.title}<small>${asset.title}</small>`)}<div class="reader-controls"><label for="fragment">教材片段</label><select id="fragment" aria-label="选择教材片段">${section.assets.map((a,i)=>`<option value="${section.id}--${a}" ${a===s.asset?'selected':''}>${i+1}/${section.assets.length} · ${assets[a].title}</option>`).join('')}</select><span class="source-label">PDF 第 ${asset.pdfPage}/6 页｜教材第 ${asset.printedPage} 页 · 滚轮阅读 · 白板可缩放移动</span></div><div class="reader-layout"><div id="textbook-viewport" tabindex="0" aria-label="教材阅读区，可上下滚动"><figure id="textbook-surface" data-asset-id="${asset.id}" style="--image-width:${asset.displayWidth}px"><img src="${asset.path}" alt="${asset.title}，教材第${asset.printedPage}页"><div id="annotation-layer" aria-hidden="true"></div></figure></div><div class="hotspots"><span class="label">${section.flows.length?'课堂问题 · 点选进入':'本段无四级问题入口'}　</span>${section.flows.map(f=>link(flowRoute(f,s.id),flows[f].title+' ↗','hotspot')).join('')}</div></div></section>`;
       main.querySelector('select').addEventListener('change',e=>{location.hash=e.target.value;});
+      const note=teachingNote(s.id);if(note)main.querySelector('#textbook-viewport').insertAdjacentHTML('beforeend',note);
       const img=main.querySelector('img');img.addEventListener('error',()=>{img.insertAdjacentHTML('afterend','<p class="image-error">教材图片加载失败，请检查本地素材文件是否完整。</p>');});
 
     }else if(s.level===4){

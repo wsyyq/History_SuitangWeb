@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "browser": "155.0.4283.62",
+  "filledGroups": 6,
+  "handledQuestions": 9,
+  "textbookCoreQuestions": 5,
+  "teacherModelQuestions": 1,
+  "verificationMethodQuestions": 3,
+  "unchangedLaterQuestions": 10,
+  "unchangedReviewCards": 4,
+  "teachingAnchorPages": 12,
+  "anchorLayoutChecks": 36,
+  "answerScrollChecks": 27,
+  "minCoreTextCssPixels": 23.69,
+  "answerInkErrorPixels": [
+    0.0000030517578295530257,
+    0.00003662109384094947,
+    0.000048828125045474735,
+    0.0000030517578295530257
+  ],
+  "unchangedAssetFiles": 33,
+  "offlineFile": true,
+  "consoleErrors": [],
+  "externalRequests": [],
+  "manualRouteCoverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "physicalDeviceTest": false
+}

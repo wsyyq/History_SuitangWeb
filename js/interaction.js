@@ -124,8 +124,8 @@
   function measure(reset=true){
     if(!active)return;const a=active;a.height=Math.max(540,a.content.scrollHeight);
     a.svg.setAttribute('viewBox',`0 0 ${WIDTH} ${a.height}`);a.svg.setAttribute('width',WIDTH);a.svg.setAttribute('height',a.height);a.stage.style.height=a.height+'px';
-    // Menus fit wholly; textbook keeps a readable width and scrolls/pans vertically.
-    a.base=a.page.level===3?a.viewport.clientWidth/WIDTH:Math.min(a.viewport.clientWidth/WIDTH,a.viewport.clientHeight/a.height);
+    // Long teaching answers, like textbooks, keep readable type and use shared-stage scrolling.
+    a.base=a.page.level===3||a.page.readableFlow?a.viewport.clientWidth/WIDTH:Math.min(a.viewport.clientWidth/WIDTH,a.viewport.clientHeight/a.height);
     if(reset){a.zoom=1;a.x=0;a.y=0;}transform();
   }
   async function mount(page){
