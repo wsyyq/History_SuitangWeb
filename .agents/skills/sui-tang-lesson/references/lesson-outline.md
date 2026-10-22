@@ -1,5 +1,42 @@
 # 课堂结构与导航契约
 
+## MX-FIX01 当前有效规范
+
+MX-FIX01（2026-10-22）为第六阶段后专项修订，不启动第七阶段。当前有效结构：一级3页、二级6模块、11子目23教材片段、12组15题、二级4项回顾；参考时间3/8/13/7/6/3共40分钟。教师本次定稿优先于下列历史规范。
+
+|子目|当前教材片段顺序（完整路由）|活动题组/题序|
+|---|---|---|
+|sui-found|sui-found--sui-found|无|
+|sui-prosper|sui-prosper--sui-prosper|two-capitals: Q02；granaries: Q03；canal: Q04,Q05,Q06|
+|sui-end|sui-end--sui-end → sui-end--sui-poem|goguryeo: Q07,Q08；sui-burden: Q09|
+|tang-found|tang-found--tang-found|无|
+|tang-prosper|tang-prosper--tang-zhenguan → tang-prosper--tang-prosper → tang-prosper--plough-text → tang-prosper--plough-image → tang-prosper--sancai|economy: Q11|
+|tang-relations|tang-relations--turks-intro → tang-relations--turks → tang-relations--huihe → tang-relations--tubo → tang-relations--frontier → tang-relations--map-669|relations: Q12；perspectives: Q15；concepts: Q16|
+|an-cause|an-cause--an-cause|无|
+|an-process|an-process--an-process|无|
+|an-impact|an-impact--an-impact → an-impact--fanzhen|impact: Q18；fanzhen-flow: Q21|
+|tang-end|tang-end--huangchao|无|
+|five|five--five → five--map-five|five-flow: Q23|
+
+
+非活动/教师要求移除：Q13、Q14、Q19、Q20及map-reading组。不得自动恢复；Q12、Q18、Q21各为所在组唯一题。删除的是课堂入口，原教材证据仍存。
+
+删页（原证据不删）：
+- `sui-prosper--granary`
+- `sui-end--yangdi`
+- `tang-relations--jiaohe`
+- `tang-relations--tribute`
+- `tang-relations--alliance`
+- `tang-relations--ethnic-policy`
+- `an-impact--army-source`
+- `tang-end--five`
+- `five--chairong`
+- `an-impact--an-process`
+
+前后导航由当前数组派生；旧hash按app.js显式迁移表就近返回同子目有效页。四级完成回本次来源；Q21首题板书键为flow/fanzhen-flow，各题独立。回顾仍二级四卡直接显示。左侧60px图标坞，辅助面板可收起且占用独立空间；顶部/底部各预留60px，保留固定1200逻辑坐标及共同缩放层。
+
+## 历史记录（截至第六阶段）
+
 ## 第四阶段实施补充（MX-T04 授权）
 
 六模块沿用 `standards / sui / tang / anshi / fall / review`，参考时间依次为 3、8、13、7、6、3 分钟，共 40 分钟，配置维护于 `js/lesson-data.js`。进度只表示浏览位置和参考安排，不表示讲授完成或实际用时。三级按现有子目/片段顺序推进，末片段另提供下一模块入口；回顾末卡提供结束回顾、返回课堂脉络。

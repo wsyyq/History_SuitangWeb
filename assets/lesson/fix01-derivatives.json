@@ -1,0 +1,63 @@
+{
+  "an-impact-crosspage-merged.png": {
+    "sources": [
+      {
+        "path": "assets/textbook/an-process.png",
+        "crop": [
+          0,
+          0,
+          1122,
+          292
+        ],
+        "destination": [
+          0,
+          0
+        ],
+        "pdfPage": 4,
+        "printedPage": 37
+      },
+      {
+        "path": "assets/textbook/an-impact.png",
+        "crop": [
+          0,
+          0,
+          1160,
+          70
+        ],
+        "destination": [
+          0,
+          300
+        ],
+        "pdfPage": 5,
+        "printedPage": 38
+      }
+    ],
+    "note": "原像素1:1；仅去除第37页段落末尾白边，保留完整四行，下一行接“占领河西陇右地区”。",
+    "sha256": "106fb1e3eb2c46ceefe4629c51d2c76b142aa8e2a931fbb152d01c04c6106c45",
+    "size": [
+      1160,
+      370
+    ]
+  },
+  "tang-thinking-point.png": {
+    "sources": [
+      {
+        "path": "assets/textbook/alliance.png",
+        "crop": [
+          430,
+          35,
+          960,
+          252
+        ],
+        "pdfPage": 4,
+        "printedPage": 37
+      }
+    ],
+    "note": "仅保留右上思考点，附于frontier页面，无新路由。",
+    "sha256": "aecfae63169575788a44c03acaab14c1ba1467f4695a7499047740907ca9010a",
+    "size": [
+      530,
+      217
+    ]
+  }
+}

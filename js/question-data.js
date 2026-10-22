@@ -3,25 +3,25 @@
   const bank={
   "Q02": {
     "questionId": "Q02",
-    "prompt": "为什么同时出现长安、洛阳两都？什么是“两京制”？",
-    "answer": "教材同时提到长安、洛阳两都，以及两都和地方的仓库；隋炀帝还兴建了宏伟壮丽的洛阳城。",
-    "explanation": "课堂分析：可以把两都、仓储与城市建设联系起来，讨论国家治理与物资供应。教材的“两都”表述，不等于已经说明都城之间完整的制度关系。",
-    "contentStatus": "textbook-supported",
+    "prompt": "为什么同时出现长安、洛阳两都？",
+    "answer": "两京制。隋文帝定都长安，隋炀帝迁都洛阳，将长安降为陪都。",
+    "contentStatus": "needs-verification",
     "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛1；审核 A01；question-bank.md · Q02",
-    "evidenceType": "textbook-supported",
+    "evidenceType": "needs-verification",
     "reviewNote": "“迁都洛阳”“长安降为陪都”及“两京制”的具体制度、时点仍待补证；不作为教材直接结论。",
-    "contentVersion": "stage5"
+    "contentVersion": "stage5",
+    "compact": true
   },
   "Q03": {
     "questionId": "Q03",
-    "prompt": "义仓是什么、起什么作用、后来怎样变化？",
-    "answer": "义仓是遍置乡间、备水旱赈济的仓储。隋朝还设有供应朝廷粮食和物资的仓库，二者用途应区分。",
-    "explanation": "课堂分析：仓储有助于应急储备和物资调配；积储丰富不自动意味着所有民众都获得有效救济。",
-    "contentStatus": "textbook-supported",
+    "prompt": "义仓的功能及影响是什么？",
+    "answer": "功能：秋收后按收成缴纳粮食，饥荒时开仓赈灾。\n影响：初期备荒救灾稳定社会，后期官办化、赋税化。",
+    "contentStatus": "needs-verification",
     "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛2；审核 A02、A13；question-bank.md · Q03",
-    "evidenceType": "textbook-supported",
+    "evidenceType": "needs-verification",
     "reviewNote": "具体征粮规则、官办化与赋税化的演变及开仓审批制度，尚缺本课教材之外的依据。",
-    "contentVersion": "stage5"
+    "contentVersion": "stage5",
+    "compact": true
   },
   "Q04": {
     "questionId": "Q04",
@@ -54,23 +54,20 @@
   "Q05": {
     "questionId": "Q05",
     "prompt": "仓库、洛阳与运河为什么一起建设，怎样联系？",
-    "answer": "可把交通、仓储与都城供应联系起来理解：南北物资经交通运输、中转和仓储调度，支持都城供应。这是教师讲解模型，不是已证的唯一修河动机。",
-    "explanation": "教材事实：两都及地方广设仓库、隋炀帝兴建洛阳、大运河贯通南北并利于转输。课堂模型据此讨论洛阳中转与仓储、长安所在关中的都城供应之间的联系；各地具体角色与运输路线仍需空间史料核对。",
+    "answer": "大运河连接经济与政治军事中心。",
     "contentStatus": "teacher-extension",
-    "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·仓库、洛阳与运河整体规划；审核 A03；question-bank.md · Q05",
+    "sourceRef": "教师提供图片 assets/teacher/sui_canal_granary_map.png；MX-FIX01；question-bank.md · Q05",
     "evidenceType": "teacher-extension",
-    "reviewNote": "不把“南北各有一个经济中心”“洛阳是唯一中转中心”等概括写成史实。真实运河—仓储分布图仍待教师提供。",
+    "reviewNote": "教师指定课堂概括，配图已按交付SHA-256验证；非教材PDF原图。",
     "contentVersion": "stage5",
-    "diagram": {
-      "title": "教师讲解示意，非历史地图",
-      "nodes": [
-        "南北物资运输",
-        "交通中转（讨论洛阳）",
-        "仓储调度",
-        "都城供应（讨论关中）"
-      ]
-    },
-    "assetStatus": "asset-missing"
+    "assetStatus": "asset-missing",
+    "compact": true,
+    "image": {
+      "path": "./assets/teacher/sui_canal_granary_map.png",
+      "alt": "隋运河、粮仓分布示意图（教师提供）",
+      "width": 416,
+      "height": 404
+    }
   },
   "Q06": {
     "questionId": "Q06",
@@ -157,22 +154,6 @@
     "contentStatus": "pending",
     "sourceRef": "question-bank.md · Q12；框架·唐/民族1；讲稿“圈起来”；PDF p2/6（教材35页）T35-E、p3/6（教材36页）T36-A/B/D、p4/6（教材37页）T37-A/B"
   },
-  "Q13": {
-    "questionId": "Q13",
-    "prompt": "唐与吐蕃和亲、会盟有什么作用？",
-    "answer": "答案与解析待第五／六阶段填充。",
-    "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
-    "contentStatus": "pending",
-    "sourceRef": "question-bank.md · Q13；框架·唐/民族1—2；PDF p3/6（教材36页）T36-D、p4/6（教材37页）T37-A"
-  },
-  "Q14": {
-    "questionId": "Q14",
-    "prompt": "如何理解669年图上的突厥名称与后置年份？",
-    "answer": "答案与解析待第五／六阶段填充。",
-    "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
-    "contentStatus": "pending",
-    "sourceRef": "question-bank.md · Q14；讲稿“它这里肯定标注错误了”；PDF p4/6（教材37页）T37-B、p3/6（教材36页）T36-A；A07"
-  },
   "Q15": {
     "questionId": "Q15",
     "prompt": "两者关系类题如何找分析角度？",
@@ -191,31 +172,15 @@
   },
   "Q18": {
     "questionId": "Q18",
-    "prompt": "中央集权、边防和盛衰受到什么影响？",
+    "prompt": "安史之乱的影响",
     "answer": "答案与解析待第五／六阶段填充。",
     "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
     "contentStatus": "pending",
     "sourceRef": "question-bank.md · Q18；框架·安史/影响1；讲稿“中央和地方”；PDF p4/6（教材37页）T37-E续p5/6（教材38页）T38-A；A16"
   },
-  "Q19": {
-    "questionId": "Q19",
-    "prompt": "北方战乱、人口南迁和经济重心有何联系？",
-    "answer": "答案与解析待第五／六阶段填充。",
-    "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
-    "contentStatus": "pending",
-    "sourceRef": "question-bank.md · Q19；框架·安史/影响1；讲稿“经济重心开始南移”；PDF p4—5/6（教材37—38页）仅支持战争与盛衰；A04、A09"
-  },
-  "Q20": {
-    "questionId": "Q20",
-    "prompt": "安史之乱、设置藩镇、藩镇割据是一回事吗？",
-    "answer": "答案与解析待第五／六阶段填充。",
-    "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
-    "contentStatus": "pending",
-    "sourceRef": "question-bank.md · Q20；框架·安史/影响；讲稿“不是所有的藩镇都割据”；PDF p5/6（教材38页）T38-A/B"
-  },
   "Q21": {
     "questionId": "Q21",
-    "prompt": "藩镇割据怎样影响中央集权和唐朝延续？",
+    "prompt": "藩镇割据的影响",
     "answer": "答案与解析待第五／六阶段填充。",
     "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
     "contentStatus": "pending",

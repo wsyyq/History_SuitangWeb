@@ -1,0 +1,1907 @@
+{
+  "sections": {
+    "sui-found": {
+      "id": "sui-found",
+      "title": "建立",
+      "module": "sui",
+      "assets": [
+        "sui-found"
+      ],
+      "flows": []
+    },
+    "sui-prosper": {
+      "id": "sui-prosper",
+      "title": "兴盛",
+      "module": "sui",
+      "assets": [
+        "sui-prosper",
+        "granary"
+      ],
+      "flows": [
+        "two-capitals",
+        "granaries",
+        "canal"
+      ]
+    },
+    "sui-end": {
+      "id": "sui-end",
+      "title": "灭亡",
+      "module": "sui",
+      "assets": [
+        "sui-end",
+        "sui-poem",
+        "yangdi"
+      ],
+      "flows": [
+        "goguryeo",
+        "sui-burden"
+      ]
+    },
+    "tang-found": {
+      "id": "tang-found",
+      "title": "建立",
+      "module": "tang",
+      "assets": [
+        "tang-found"
+      ],
+      "flows": []
+    },
+    "tang-prosper": {
+      "id": "tang-prosper",
+      "title": "繁荣与盛世表现",
+      "module": "tang",
+      "assets": [
+        "tang-zhenguan",
+        "tang-prosper",
+        "plough-text",
+        "plough-image",
+        "sancai"
+      ],
+      "flows": [
+        "economy"
+      ]
+    },
+    "tang-relations": {
+      "id": "tang-relations",
+      "title": "民族关系与区域开发",
+      "module": "tang",
+      "assets": [
+        "turks-intro",
+        "turks",
+        "huihe",
+        "jiaohe",
+        "tribute",
+        "tubo",
+        "frontier",
+        "alliance",
+        "map-669",
+        "ethnic-policy"
+      ],
+      "flows": [
+        "relations",
+        "map-reading",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    "an-cause": {
+      "id": "an-cause",
+      "title": "原因",
+      "module": "anshi",
+      "assets": [
+        "an-cause"
+      ],
+      "flows": []
+    },
+    "an-process": {
+      "id": "an-process",
+      "title": "过程",
+      "module": "anshi",
+      "assets": [
+        "an-process"
+      ],
+      "flows": []
+    },
+    "an-impact": {
+      "id": "an-impact",
+      "title": "影响",
+      "module": "anshi",
+      "assets": [
+        "an-process",
+        "an-impact",
+        "fanzhen",
+        "army-source"
+      ],
+      "flows": [
+        "impact",
+        "fanzhen-flow"
+      ]
+    },
+    "tang-end": {
+      "id": "tang-end",
+      "title": "黄巢起义与朱温废唐称帝",
+      "module": "fall",
+      "assets": [
+        "huangchao",
+        "five"
+      ],
+      "flows": []
+    },
+    "five": {
+      "id": "five",
+      "title": "五代十国",
+      "module": "fall",
+      "assets": [
+        "five",
+        "chairong",
+        "map-five"
+      ],
+      "flows": [
+        "five-flow"
+      ]
+    }
+  },
+  "flows": {
+    "two-capitals": {
+      "id": "two-capitals",
+      "title": "长安、洛阳与两京制",
+      "qids": [
+        "Q02"
+      ],
+      "audits": [
+        "A01"
+      ],
+      "status": "pending",
+      "moduleId": "sui",
+      "subtopicId": "sui-prosper",
+      "items": [
+        {
+          "questionId": "Q02",
+          "prompt": "为什么同时出现长安、洛阳两都？什么是“两京制”？",
+          "answer": "教材同时提到长安、洛阳两都，以及两都和地方的仓库；隋炀帝还兴建了宏伟壮丽的洛阳城。",
+          "explanation": "课堂分析：可以把两都、仓储与城市建设联系起来，讨论国家治理与物资供应。教材的“两都”表述，不等于已经说明都城之间完整的制度关系。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛1；审核 A01；question-bank.md · Q02",
+          "evidenceType": "textbook-supported",
+          "reviewNote": "“迁都洛阳”“长安降为陪都”及“两京制”的具体制度、时点仍待补证；不作为教材直接结论。",
+          "contentVersion": "stage5"
+        }
+      ],
+      "contentStatus": "stage5-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "granaries": {
+      "id": "granaries",
+      "title": "义仓的含义与制度演变",
+      "qids": [
+        "Q03"
+      ],
+      "audits": [
+        "A02"
+      ],
+      "status": "pending",
+      "moduleId": "sui",
+      "subtopicId": "sui-prosper",
+      "items": [
+        {
+          "questionId": "Q03",
+          "prompt": "义仓是什么、起什么作用、后来怎样变化？",
+          "answer": "义仓是遍置乡间、备水旱赈济的仓储。隋朝还设有供应朝廷粮食和物资的仓库，二者用途应区分。",
+          "explanation": "课堂分析：仓储有助于应急储备和物资调配；积储丰富不自动意味着所有民众都获得有效救济。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛2；审核 A02、A13；question-bank.md · Q03",
+          "evidenceType": "textbook-supported",
+          "reviewNote": "具体征粮规则、官办化与赋税化的演变及开仓审批制度，尚缺本课教材之外的依据。",
+          "contentVersion": "stage5"
+        }
+      ],
+      "contentStatus": "stage5-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "canal": {
+      "id": "canal",
+      "title": "大运河：作用、联系与经济重心",
+      "qids": [
+        "Q04",
+        "Q05",
+        "Q06"
+      ],
+      "audits": [
+        "A03",
+        "A04"
+      ],
+      "status": "pending",
+      "moduleId": "sui",
+      "subtopicId": "sui-prosper",
+      "items": [
+        {
+          "questionId": "Q04",
+          "prompt": "修大运河或修路有什么政治、经济、文化作用？",
+          "answer": "政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。",
+          "explanation": "运河作为水路，解决南北交通和物资转输问题。迁移到“修路作用”题时，按政治、经济、文化组织分析，但须结合具体材料选择角度，不能把三点机械套用于所有交通工程。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；讲稿·修路的好处；框架·隋/兴盛3；审核 A03；question-bank.md · Q04",
+          "evidenceType": "textbook-supported",
+          "reviewNote": "“加强中央与地方联系”和文化影响属于课堂分析；不冒充教材第34页原句。",
+          "contentVersion": "stage5",
+          "answerBlocks": [
+            {
+              "title": "政治",
+              "text": "巩固统一。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "经济",
+              "text": "促进南北经济交流，带动运河沿岸城市发展。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "文化",
+              "text": "有利于人员往来与南北文化交流。",
+              "evidenceType": "teacher-extension"
+            }
+          ]
+        },
+        {
+          "questionId": "Q05",
+          "prompt": "仓库、洛阳与运河为什么一起建设，怎样联系？",
+          "answer": "可把交通、仓储与都城供应联系起来理解：南北物资经交通运输、中转和仓储调度，支持都城供应。这是教师讲解模型，不是已证的唯一修河动机。",
+          "explanation": "教材事实：两都及地方广设仓库、隋炀帝兴建洛阳、大运河贯通南北并利于转输。课堂模型据此讨论洛阳中转与仓储、长安所在关中的都城供应之间的联系；各地具体角色与运输路线仍需空间史料核对。",
+          "contentStatus": "teacher-extension",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·仓库、洛阳与运河整体规划；审核 A03；question-bank.md · Q05",
+          "evidenceType": "teacher-extension",
+          "reviewNote": "不把“南北各有一个经济中心”“洛阳是唯一中转中心”等概括写成史实。真实运河—仓储分布图仍待教师提供。",
+          "contentVersion": "stage5",
+          "diagram": {
+            "title": "教师讲解示意，非历史地图",
+            "nodes": [
+              "南北物资运输",
+              "交通中转（讨论洛阳）",
+              "仓储调度",
+              "都城供应（讨论关中）"
+            ]
+          },
+          "assetStatus": "asset-missing"
+        },
+        {
+          "questionId": "Q06",
+          "prompt": "经济重心南移经历了哪些阶段？",
+          "answer": "沿教师框架，用四个时间节点回顾经济重心南移这一长期过程；以下是复习线索，不是本课教材已经完整论证的断代结论。",
+          "explanation": "江南开发、重心逐渐南移与完成南移不是同一概念。不能把某次战乱当作唯一原因，或把一个事件直接当作开始、完成的精确时点。此处不展开安史之乱的详细影响。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教师框架·隋/兴盛3；讲稿·经济重心南移回顾；本课教材 PDF 1—6/6｜印刷第34—39页未完整论证该过程；审核 A04、A09；question-bank.md · Q06",
+          "evidenceType": "needs-verification",
+          "reviewNote": "四阶段简语仍待纵向教材与教师核定，尤其“开始/完成”的标准和断代；不将靖康事件与完成南移机械等同。",
+          "contentVersion": "stage5",
+          "timeline": [
+            {
+              "title": "魏晋以前",
+              "text": "北方为主的经济格局：复习线索。",
+              "evidenceType": "needs-verification"
+            },
+            {
+              "title": "魏晋南北朝",
+              "text": "江南逐步开发：复习线索。",
+              "evidenceType": "needs-verification"
+            },
+            {
+              "title": "安史之乱后",
+              "text": "南方进一步发展与南移：待纵向核验。",
+              "evidenceType": "needs-verification"
+            },
+            {
+              "title": "靖康之变后",
+              "text": "联系南宋阶段；完成标准与时点待核。",
+              "evidenceType": "needs-verification"
+            }
+          ]
+        }
+      ],
+      "contentStatus": "stage5-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "goguryeo": {
+      "id": "goguryeo",
+      "title": "高句丽、高丽与征伐背景",
+      "qids": [
+        "Q07",
+        "Q08"
+      ],
+      "audits": [
+        "A05",
+        "A06"
+      ],
+      "status": "pending",
+      "moduleId": "sui",
+      "subtopicId": "sui-end",
+      "items": [
+        {
+          "questionId": "Q07",
+          "prompt": "高句丽与高丽如何区分？教材“征伐高丽”如何读？",
+          "answer": "先核对时代、政权名称、活动地域与史料称谓，不能仅凭名称相同就认定为同一政权。教材“高丽”原字保留，不直接宣布教材错误。",
+          "explanation": "教材记载隋炀帝三次大举征伐“高丽”；教师讲稿拟辨析高句丽与后世同名政权。辨名需将教材用语、历史异称和不同时代政权分开核验。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·高句丽和高丽的区别；审核 A05；question-bank.md · Q07",
+          "evidenceType": "needs-verification",
+          "reviewNote": "本仓库尚无独立可靠资料补齐精确起讫年代、疆界和称谓沿革；此页提供核对方法，不给未经验证的标准断代。",
+          "contentVersion": "stage5"
+        },
+        {
+          "questionId": "Q08",
+          "prompt": "征伐是否为了防止突厥与高句丽联合？",
+          "answer": "仅据本课教材，不能确认“防止突厥与高句丽联合”就是征伐动机，更不能把它作为唯一原因。",
+          "explanation": "教材记载的是三次大举征伐及生产破坏、民生困境等后果。“防止联合”来自教师讲解，是可以讨论、但仍需史料支持的背景假说。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·防止两个政权联合；审核 A06；question-bank.md · Q08",
+          "evidenceType": "needs-verification",
+          "reviewNote": "需要核对战争背景、同时代政治关系及可追溯史料；目前不输出确定的动机结论。",
+          "contentVersion": "stage5"
+        }
+      ],
+      "contentStatus": "stage5-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "sui-burden": {
+      "id": "sui-burden",
+      "title": "隋亡：建设与民力负担",
+      "qids": [
+        "Q09"
+      ],
+      "audits": [
+        "A12",
+        "A13"
+      ],
+      "status": "pending",
+      "moduleId": "sui",
+      "subtopicId": "sui-end",
+      "items": [
+        {
+          "questionId": "Q09",
+          "prompt": "隋朝富强为何仍灭亡？建设如何影响生产？",
+          "answer": "大兴土木、穷奢极欲与三次大举征伐，加重社会负担，生产严重破坏、民不聊生，最终引发大规模起义。618年，隋炀帝在江都被部将杀死，隋朝灭亡。",
+          "explanation": "课堂解释：“夺农时”可理解为徭役、兵役占用关键农时会妨碍生产，不能据此断定具体征役的月份。工程功效与民力负担应分开评价；国家工程和物资积累反映国力，治理仍须顾及社会承受能力。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·国富而不与民共享；审核 A12、A13；question-bank.md · Q09",
+          "evidenceType": "textbook-supported",
+          "reviewNote": "不以修大运河解释隋亡全部原因；不使用仓粮可食五六十年或地方官一律无权开仓等未经核实说法。“国富民困”只作材料讨论。",
+          "contentVersion": "stage5"
+        }
+      ],
+      "contentStatus": "stage5-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "economy": {
+      "id": "economy",
+      "title": "曲辕犁与唐三彩",
+      "qids": [
+        "Q11"
+      ],
+      "audits": [
+        "A14"
+      ],
+      "status": "pending",
+      "moduleId": "tang",
+      "subtopicId": "tang-prosper",
+      "items": [
+        {
+          "questionId": "Q11",
+          "prompt": "曲辕犁和唐三彩分别说明什么？",
+          "answer": "曲辕犁体现农业生产工具的改进：短曲辕、加装犁评以调节深浅、改进犁壁；在江南水田推广。\n唐三彩盘可从手工业中的陶瓷工艺与装饰技术角度观察（课堂归纳）。",
+          "explanation": "教材图注：三彩盘出土于陕西乾县唐永泰公主墓，釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。短曲辕比长直辕轻便；工具改良提高耕作便利性、适应性是课堂分析。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜历史纵横·唐朝曲辕犁及唐三彩盘图注；框架·唐/繁荣/经济；审核 A14；question-bank.md · Q11",
+          "evidenceType": "textbook-supported",
+          "reviewNote": "保留“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”图题，不由壁画地点推断技术起源或推广地域；不凭一件文物推定贸易规模，不把三色当唐三彩的严格定义。",
+          "contentVersion": "stage5"
+        }
+      ],
+      "contentStatus": "stage5-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "relations": {
+      "id": "relations",
+      "title": "民族关系的处理方式",
+      "qids": [
+        "Q12",
+        "Q13"
+      ],
+      "audits": [],
+      "status": "pending",
+      "moduleId": "tang",
+      "subtopicId": "tang-relations",
+      "items": [
+        {
+          "questionId": "Q12",
+          "prompt": "与突厥、回纥、吐蕃、靺鞨分别怎样交往？",
+          "answer": "突厥：战争、联合行动；唐在西域设置安西、北庭都护府。\n回纥：合作、册封首领。\n吐蕃：和亲、会盟。\n靺鞨粟末部：册封首领。",
+          "explanation": "唐太宗反击东突厥，被草原各族尊为“天可汗”；唐高宗联合回纥灭西突厥。682年后突厥建立，744年唐与回纥等联手平定。玄宗册封骨力裴罗为怀仁可汗、大祚荣为渤海郡王。周边民族政权为边疆开发作出积极贡献。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 3/6｜印刷第36页突厥正文、回纥栏、吐蕃段；教材 PDF 4/6｜印刷第37页靺鞨与边疆开发；question-bank.md · Q12",
+          "reviewNote": "这些事件跨越不同时期，不都发生在669年；一种交往方式不等于永久关系，设置都护府也不等于直接管辖图中所有周边政权。",
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        },
+        {
+          "questionId": "Q13",
+          "prompt": "唐与吐蕃和亲、会盟有什么作用？",
+          "answer": "和亲：唐太宗将文成公主嫁给松赞干布，促进汉藏友好关系和经济文化交流。\n交流：带去手工艺品、多种技术和医药书籍。\n会盟：9世纪前期唐蕃会盟，此后基本停止纷争。",
+          "explanation": "先定位吐蕃，再以和亲、会盟两种方式观察交往。会盟碑是唐穆宗时长庆会盟的遗物，和亲与会盟不是同一次事件。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 3/6｜印刷第36页吐蕃段续教材 PDF 4/6｜印刷第37页首段及唐蕃会盟碑图注；question-bank.md · Q13",
+          "reviewNote": "“基本停止纷争”不等于从此永无冲突；不能由和亲推出唐直接统治吐蕃全境。",
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "map-reading": {
+      "id": "map-reading",
+      "title": "669年地图的阅读与辨析",
+      "qids": [
+        "Q14"
+      ],
+      "audits": [
+        "A07"
+      ],
+      "status": "pending",
+      "moduleId": "tang",
+      "subtopicId": "tang-relations",
+      "items": [
+        {
+          "questionId": "Q14",
+          "prompt": "如何理解669年图上的突厥名称与后置年份？",
+          "answer": "先核对图题、669年、图例及各处注记，再区分族群分布称谓与具体汗国政权。\n图中保留东、西突厥字样，还注有北庭702年、渤海713年、黑水726年置。",
+          "explanation": "这幅图兼有形势与边疆各族分布信息，不能把所有标注读成669年同时存在的政权或机构。仅凭一处族名不能判定同名汗国仍在，也不足以宣布教材错误。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教材 PDF 4/6｜印刷第37页《唐朝前期形势和边疆各族分布图（669年）》；教材 PDF 3/6｜印刷第36页突厥正文；审核A07；question-bank.md · Q14",
+          "reviewNote": "具体编图意图、标签性质和疆界解释仍需编图说明或可靠补证；讲稿的630、657年及新版地图对比未在本课资料中核准。",
+          "contentVersion": "stage6",
+          "evidenceType": "needs-verification"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "perspectives": {
+      "id": "perspectives",
+      "title": "两者关系题的四个视角",
+      "qids": [
+        "Q15"
+      ],
+      "audits": [
+        "A16"
+      ],
+      "status": "pending",
+      "moduleId": "tang",
+      "subtopicId": "tang-relations",
+      "items": [
+        {
+          "questionId": "Q15",
+          "prompt": "两者关系类题如何找分析角度？",
+          "answer": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n角度用于组织思路，每项结论仍须史实支持，不必凑齐四项。",
+          "explanation": "例：唐与吐蕃。吐蕃方面可找工艺、技术、书籍交流；双方可谈友好和经济文化交流。唐朝治理稳定是有条件的分析角度，不能直接冒充本段结论。迁移到甲午题，只提出中国、日本、双方关系、其他国家的观察问题，不用本课教材编写近代史答案。",
+          "contentStatus": "teacher-extension",
+          "sourceRef": "教师框架·唐/民族2及讲稿“一方、另一方”；教材 PDF 3/6｜印刷第36页—教材 PDF 4/6｜印刷第37页仅支持唐蕃交流例证；审核A16；question-bank.md · Q15",
+          "reviewNote": "其他因素须题目涉及且有证据；甲午与1931不是同一事件，方法不能替代史实。",
+          "contentVersion": "stage6",
+          "evidenceType": "teacher-extension"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "concepts": {
+      "id": "concepts",
+      "title": "民族边疆与对外外交关系",
+      "qids": [
+        "Q16"
+      ],
+      "audits": [
+        "A08"
+      ],
+      "status": "pending",
+      "moduleId": "tang",
+      "subtopicId": "tang-relations",
+      "items": [
+        {
+          "questionId": "Q16",
+          "prompt": "民族/边疆关系与外交/对外关系怎样区分？",
+          "answer": "先看时代、交往主体、当时管辖与交往方式，再看教材和题目的叙述框架。\n现代疆域可辅助定位，不能直接倒推古代管辖或无条件认定为现代“内政”。",
+          "explanation": "本课在民族交融与边疆开发框架下讨论唐与吐蕃；这不等于唐直接治理吐蕃全境。近代中国与日本可作对外关系的对比，具体判断仍依历史语境。",
+          "contentStatus": "teacher-extension",
+          "sourceRef": "教师框架·唐/民族3、讲稿及MX-T06第4.4节的必要限缩；教材 PDF 3/6｜印刷第36页《职贡图》图注；教材 PDF 4/6｜印刷第37页边疆开发；审核A08；question-bank.md · Q16",
+          "reviewNote": "反例：“今天属于中国，所以唐朝必然直接治理”不成立。保留分类训练目标，取消仅凭现代国界判题的绝对口诀。",
+          "contentVersion": "stage6",
+          "evidenceType": "teacher-extension"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "impact": {
+      "id": "impact",
+      "title": "安史之乱的影响",
+      "qids": [
+        "Q18",
+        "Q19"
+      ],
+      "audits": [
+        "A09",
+        "A16"
+      ],
+      "status": "pending",
+      "moduleId": "anshi",
+      "subtopicId": "an-impact",
+      "items": [
+        {
+          "questionId": "Q18",
+          "prompt": "中央集权、边防和盛衰受到什么影响？",
+          "answer": "中央集权：平叛将领拥兵自重，中央集权被削弱。\n边防：边防空虚，吐蕃趁机占领河西、陇右。\n盛衰：唐朝由盛转衰。",
+          "explanation": "课堂概念提示：中央集权侧重中央与地方权力关系；君主专制侧重皇权决策与政治权力配置。依题目材料辨析，不用“只要干扰皇帝就只能选君主专制”的绝对规则。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 4/6｜印刷第37页安史之乱段跨页续教材 PDF 5/6｜印刷第38页首句；概念提示来自教师讲稿；审核A16；question-bank.md · Q18",
+          "reviewNote": "图示将教材事实按教学顺序连接，不把每条背景当成单独必然导致叛乱的原因。",
+          "sequence": {
+            "title": "因果关系示意 · 教师据教材整理（不是单因决定论）",
+            "nodes": [
+              {
+                "title": "三类背景",
+                "text": "边疆形势紧张；军镇增设、节度使兵力扩大，外重内轻；玄宗后期朝政腐败。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "755年起 · 历时八年",
+                "text": "安禄山在范阳起兵，与史思明发动叛乱，后被唐平定。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "平叛与盛衰转折",
+                "text": "将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "期间及以后 · 部分藩镇割据",
+                "text": "内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "长期政治格局",
+                "text": "上述变化是理解唐末衰败及五代十国分裂的重要线索之一，并非唯一原因。",
+                "evidenceType": "teacher-extension"
+              }
+            ],
+            "sourceRef": "教材 PDF 4/6｜印刷第37页原因、过程；教材 PDF 5/6｜印刷第38页影响、藩镇与五代十国"
+          },
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        },
+        {
+          "questionId": "Q19",
+          "prompt": "北方战乱、人口南迁和经济重心有何联系？",
+          "answer": "可沿“北方战乱 → 人口迁移与南方开发 → 经济格局逐步变化”提出纵向复习问题。\n这一讲解链还需跨课教材或史料支持，不能把安史之乱定为南移瞬时开始或完成的唯一原因。",
+          "explanation": "本课37—38页直接支持战争、政治影响与盛衰转折，没有完整证明人口迁移规模和经济重心南移分期。与隋兴盛Q06保持同一证据口径。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教师框架·安史/影响1及讲稿；教材 PDF 4/6｜印刷第37页—教材 PDF 5/6｜印刷第38页为战争背景，不是完整南移论证；审核A04/A09；question-bank.md · Q19",
+          "reviewNote": "北方经济受损程度、迁徙范围、各阶段开始和完成标准仍待补证。保留长期过程思路，不填未经核实的断代。",
+          "diagram": {
+            "title": "课堂拓展 · 待跨课核验的关系示意",
+            "nodes": [
+              "北方战乱",
+              "人口迁移 / 南方开发",
+              "经济格局逐步变化"
+            ]
+          },
+          "contentVersion": "stage6",
+          "evidenceType": "needs-verification"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "fanzhen-flow": {
+      "id": "fanzhen-flow",
+      "title": "藩镇割据与唐朝统治",
+      "qids": [
+        "Q20",
+        "Q21"
+      ],
+      "audits": [
+        "A10"
+      ],
+      "status": "pending",
+      "moduleId": "anshi",
+      "subtopicId": "an-impact",
+      "items": [
+        {
+          "questionId": "Q20",
+          "prompt": "安史之乱、设置藩镇、藩镇割据是一回事吗？",
+          "answer": "不是一回事。安史之乱是叛乱事件；设置藩镇是军事与地方管理安排；部分藩镇独立性很强，形成割据局面。\n教材写的是“有些”，不是所有藩镇都割据。",
+          "explanation": "安史之乱期间和以后，内地陆续增设藩镇。可概括为战乱推动割据局面形成，但不同地区与时期的中央—地方关系并不相同。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 5/6｜印刷第38页藩镇段与《新唐书·兵志》史料阅读；question-bank.md · Q20",
+          "reviewNote": "不能把安史之乱、藩镇设置、藩镇割据画等号，也不能说所有藩镇同年同时割据。",
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        },
+        {
+          "questionId": "Q21",
+          "prompt": "藩镇割据怎样影响中央集权和唐朝延续？",
+          "answer": "教材结论：藩镇割据持续100多年，严重削弱唐朝统治力量，不利于中央对地方的控制。\n“不同藩镇相互制约而延续唐统治”是待证的有条件解释，不能由持续时间直接推出因果。",
+          "explanation": "开放讨论可比较地方势力差异、中央与地方互动和彼此制约，需要具体案例与时段。没有补证时，不把“割据延续统治”作为单一标准结论。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 5/6｜印刷第38页藩镇段、史料阅读；教师框架·安史/影响2；审核A10；question-bank.md · Q21",
+          "reviewNote": "教材支持削弱统治；延续机制仍待史学证据。不能写成割据加强中央集权或所有藩镇主动维护唐朝。",
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    },
+    "five-flow": {
+      "id": "five-flow",
+      "title": "五代十国与唐末藩镇",
+      "qids": [
+        "Q23"
+      ],
+      "audits": [
+        "A15"
+      ],
+      "status": "pending",
+      "moduleId": "fall",
+      "subtopicId": "five",
+      "items": [
+        {
+          "questionId": "Q23",
+          "prompt": "什么是五代十国？它与唐末藩镇割据有何联系？",
+          "answer": "五代：黄河流域先后出现后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余四代都开封。\n十国：南方先后九个割据政权，加五代末期在山西建立的北汉。",
+          "explanation": "课堂历史归纳：五代十国分裂局面承续并演变了唐末藩镇割据格局，不是毫无变化的等号。后周世宗柴荣清除弊政、增强实力，为北宋结束分裂奠定基础。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 5/6｜印刷第38页五代十国段、柴荣段、《五代十国形势图（后周时期）》；审核A15；question-bank.md · Q23",
+          "reviewNote": "地图是后周时点，不是十国同时存在的全景；建立者身份与具体延续机制不作无证扩写。",
+          "sequence": {
+            "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+            "nodes": [
+              {
+                "title": "875年 · 黄巢起义",
+                "text": "起义军一度攻占长安，沉重打击唐朝统治。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "朱温降唐 · 逐渐掌权",
+                "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "907年 · 废唐建梁",
+                "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "五代相继更替",
+                "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "后周世宗柴荣",
+                "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。",
+                "evidenceType": "textbook-supported"
+              }
+            ],
+            "sourceRef": "教材 PDF 5/6｜印刷第38页黄巢、五代十国及柴荣段"
+          },
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        }
+      ],
+      "contentStatus": "stage6-populated",
+      "mappingStatus": "既有分组沿用，题序待教师复查"
+    }
+  },
+  "pages": {
+    "sui-found--sui-found": {
+      "id": "sui-found--sui-found",
+      "asset": "sui-found",
+      "section": "sui-found",
+      "module": "sui",
+      "index": 0
+    },
+    "sui-prosper--sui-prosper": {
+      "id": "sui-prosper--sui-prosper",
+      "asset": "sui-prosper",
+      "section": "sui-prosper",
+      "module": "sui",
+      "index": 0
+    },
+    "sui-prosper--granary": {
+      "id": "sui-prosper--granary",
+      "asset": "granary",
+      "section": "sui-prosper",
+      "module": "sui",
+      "index": 1
+    },
+    "sui-end--sui-end": {
+      "id": "sui-end--sui-end",
+      "asset": "sui-end",
+      "section": "sui-end",
+      "module": "sui",
+      "index": 0
+    },
+    "sui-end--sui-poem": {
+      "id": "sui-end--sui-poem",
+      "asset": "sui-poem",
+      "section": "sui-end",
+      "module": "sui",
+      "index": 1
+    },
+    "sui-end--yangdi": {
+      "id": "sui-end--yangdi",
+      "asset": "yangdi",
+      "section": "sui-end",
+      "module": "sui",
+      "index": 2
+    },
+    "tang-found--tang-found": {
+      "id": "tang-found--tang-found",
+      "asset": "tang-found",
+      "section": "tang-found",
+      "module": "tang",
+      "index": 0
+    },
+    "tang-prosper--tang-zhenguan": {
+      "id": "tang-prosper--tang-zhenguan",
+      "asset": "tang-zhenguan",
+      "section": "tang-prosper",
+      "module": "tang",
+      "index": 0
+    },
+    "tang-prosper--tang-prosper": {
+      "id": "tang-prosper--tang-prosper",
+      "asset": "tang-prosper",
+      "section": "tang-prosper",
+      "module": "tang",
+      "index": 1
+    },
+    "tang-prosper--plough-text": {
+      "id": "tang-prosper--plough-text",
+      "asset": "plough-text",
+      "section": "tang-prosper",
+      "module": "tang",
+      "index": 2
+    },
+    "tang-prosper--plough-image": {
+      "id": "tang-prosper--plough-image",
+      "asset": "plough-image",
+      "section": "tang-prosper",
+      "module": "tang",
+      "index": 3
+    },
+    "tang-prosper--sancai": {
+      "id": "tang-prosper--sancai",
+      "asset": "sancai",
+      "section": "tang-prosper",
+      "module": "tang",
+      "index": 4
+    },
+    "tang-relations--turks-intro": {
+      "id": "tang-relations--turks-intro",
+      "asset": "turks-intro",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 0
+    },
+    "tang-relations--turks": {
+      "id": "tang-relations--turks",
+      "asset": "turks",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 1
+    },
+    "tang-relations--huihe": {
+      "id": "tang-relations--huihe",
+      "asset": "huihe",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 2
+    },
+    "tang-relations--jiaohe": {
+      "id": "tang-relations--jiaohe",
+      "asset": "jiaohe",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 3
+    },
+    "tang-relations--tribute": {
+      "id": "tang-relations--tribute",
+      "asset": "tribute",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 4
+    },
+    "tang-relations--tubo": {
+      "id": "tang-relations--tubo",
+      "asset": "tubo",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 5
+    },
+    "tang-relations--frontier": {
+      "id": "tang-relations--frontier",
+      "asset": "frontier",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 6
+    },
+    "tang-relations--alliance": {
+      "id": "tang-relations--alliance",
+      "asset": "alliance",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 7
+    },
+    "tang-relations--map-669": {
+      "id": "tang-relations--map-669",
+      "asset": "map-669",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 8
+    },
+    "tang-relations--ethnic-policy": {
+      "id": "tang-relations--ethnic-policy",
+      "asset": "ethnic-policy",
+      "section": "tang-relations",
+      "module": "tang",
+      "index": 9
+    },
+    "an-cause--an-cause": {
+      "id": "an-cause--an-cause",
+      "asset": "an-cause",
+      "section": "an-cause",
+      "module": "anshi",
+      "index": 0
+    },
+    "an-process--an-process": {
+      "id": "an-process--an-process",
+      "asset": "an-process",
+      "section": "an-process",
+      "module": "anshi",
+      "index": 0
+    },
+    "an-impact--an-process": {
+      "id": "an-impact--an-process",
+      "asset": "an-process",
+      "section": "an-impact",
+      "module": "anshi",
+      "index": 0
+    },
+    "an-impact--an-impact": {
+      "id": "an-impact--an-impact",
+      "asset": "an-impact",
+      "section": "an-impact",
+      "module": "anshi",
+      "index": 1
+    },
+    "an-impact--fanzhen": {
+      "id": "an-impact--fanzhen",
+      "asset": "fanzhen",
+      "section": "an-impact",
+      "module": "anshi",
+      "index": 2
+    },
+    "an-impact--army-source": {
+      "id": "an-impact--army-source",
+      "asset": "army-source",
+      "section": "an-impact",
+      "module": "anshi",
+      "index": 3
+    },
+    "tang-end--huangchao": {
+      "id": "tang-end--huangchao",
+      "asset": "huangchao",
+      "section": "tang-end",
+      "module": "fall",
+      "index": 0
+    },
+    "tang-end--five": {
+      "id": "tang-end--five",
+      "asset": "five",
+      "section": "tang-end",
+      "module": "fall",
+      "index": 1
+    },
+    "five--five": {
+      "id": "five--five",
+      "asset": "five",
+      "section": "five",
+      "module": "fall",
+      "index": 0
+    },
+    "five--chairong": {
+      "id": "five--chairong",
+      "asset": "chairong",
+      "section": "five",
+      "module": "fall",
+      "index": 1
+    },
+    "five--map-five": {
+      "id": "five--map-five",
+      "asset": "map-five",
+      "section": "five",
+      "module": "fall",
+      "index": 2
+    }
+  },
+  "routes": [
+    {
+      "route": "sui-found--sui-found",
+      "module": "sui",
+      "boardKey": "sui-found--sui-found",
+      "entries": []
+    },
+    {
+      "route": "sui-prosper--sui-prosper",
+      "module": "sui",
+      "boardKey": "sui-prosper--sui-prosper",
+      "entries": [
+        {
+          "route": "flow/two-capitals/sui-prosper--sui-prosper",
+          "questions": [
+            {
+              "id": "Q02",
+              "boardKey": "flow/two-capitals"
+            }
+          ]
+        },
+        {
+          "route": "flow/granaries/sui-prosper--sui-prosper",
+          "questions": [
+            {
+              "id": "Q03",
+              "boardKey": "flow/granaries"
+            }
+          ]
+        },
+        {
+          "route": "flow/canal/sui-prosper--sui-prosper",
+          "questions": [
+            {
+              "id": "Q04",
+              "boardKey": "flow/canal"
+            },
+            {
+              "id": "Q05",
+              "boardKey": "flow/canal/question/Q05"
+            },
+            {
+              "id": "Q06",
+              "boardKey": "flow/canal/question/Q06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "sui-prosper--granary",
+      "module": "sui",
+      "boardKey": "sui-prosper--granary",
+      "entries": [
+        {
+          "route": "flow/two-capitals/sui-prosper--granary",
+          "questions": [
+            {
+              "id": "Q02",
+              "boardKey": "flow/two-capitals"
+            }
+          ]
+        },
+        {
+          "route": "flow/granaries/sui-prosper--granary",
+          "questions": [
+            {
+              "id": "Q03",
+              "boardKey": "flow/granaries"
+            }
+          ]
+        },
+        {
+          "route": "flow/canal/sui-prosper--granary",
+          "questions": [
+            {
+              "id": "Q04",
+              "boardKey": "flow/canal"
+            },
+            {
+              "id": "Q05",
+              "boardKey": "flow/canal/question/Q05"
+            },
+            {
+              "id": "Q06",
+              "boardKey": "flow/canal/question/Q06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "sui-end--sui-end",
+      "module": "sui",
+      "boardKey": "sui-end--sui-end",
+      "entries": [
+        {
+          "route": "flow/goguryeo/sui-end--sui-end",
+          "questions": [
+            {
+              "id": "Q07",
+              "boardKey": "flow/goguryeo"
+            },
+            {
+              "id": "Q08",
+              "boardKey": "flow/goguryeo/question/Q08"
+            }
+          ]
+        },
+        {
+          "route": "flow/sui-burden/sui-end--sui-end",
+          "questions": [
+            {
+              "id": "Q09",
+              "boardKey": "flow/sui-burden"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "sui-end--sui-poem",
+      "module": "sui",
+      "boardKey": "sui-end--sui-poem",
+      "entries": [
+        {
+          "route": "flow/goguryeo/sui-end--sui-poem",
+          "questions": [
+            {
+              "id": "Q07",
+              "boardKey": "flow/goguryeo"
+            },
+            {
+              "id": "Q08",
+              "boardKey": "flow/goguryeo/question/Q08"
+            }
+          ]
+        },
+        {
+          "route": "flow/sui-burden/sui-end--sui-poem",
+          "questions": [
+            {
+              "id": "Q09",
+              "boardKey": "flow/sui-burden"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "sui-end--yangdi",
+      "module": "sui",
+      "boardKey": "sui-end--yangdi",
+      "entries": [
+        {
+          "route": "flow/goguryeo/sui-end--yangdi",
+          "questions": [
+            {
+              "id": "Q07",
+              "boardKey": "flow/goguryeo"
+            },
+            {
+              "id": "Q08",
+              "boardKey": "flow/goguryeo/question/Q08"
+            }
+          ]
+        },
+        {
+          "route": "flow/sui-burden/sui-end--yangdi",
+          "questions": [
+            {
+              "id": "Q09",
+              "boardKey": "flow/sui-burden"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-found--tang-found",
+      "module": "tang",
+      "boardKey": "tang-found--tang-found",
+      "entries": []
+    },
+    {
+      "route": "tang-prosper--tang-zhenguan",
+      "module": "tang",
+      "boardKey": "tang-prosper--tang-zhenguan",
+      "entries": [
+        {
+          "route": "flow/economy/tang-prosper--tang-zhenguan",
+          "questions": [
+            {
+              "id": "Q11",
+              "boardKey": "flow/economy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-prosper--tang-prosper",
+      "module": "tang",
+      "boardKey": "tang-prosper--tang-prosper",
+      "entries": [
+        {
+          "route": "flow/economy/tang-prosper--tang-prosper",
+          "questions": [
+            {
+              "id": "Q11",
+              "boardKey": "flow/economy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-prosper--plough-text",
+      "module": "tang",
+      "boardKey": "tang-prosper--plough-text",
+      "entries": [
+        {
+          "route": "flow/economy/tang-prosper--plough-text",
+          "questions": [
+            {
+              "id": "Q11",
+              "boardKey": "flow/economy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-prosper--plough-image",
+      "module": "tang",
+      "boardKey": "tang-prosper--plough-image",
+      "entries": [
+        {
+          "route": "flow/economy/tang-prosper--plough-image",
+          "questions": [
+            {
+              "id": "Q11",
+              "boardKey": "flow/economy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-prosper--sancai",
+      "module": "tang",
+      "boardKey": "tang-prosper--sancai",
+      "entries": [
+        {
+          "route": "flow/economy/tang-prosper--sancai",
+          "questions": [
+            {
+              "id": "Q11",
+              "boardKey": "flow/economy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--turks-intro",
+      "module": "tang",
+      "boardKey": "tang-relations--turks-intro",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--turks-intro",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--turks-intro",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--turks-intro",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--turks-intro",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--turks",
+      "module": "tang",
+      "boardKey": "tang-relations--turks",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--turks",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--turks",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--turks",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--turks",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--huihe",
+      "module": "tang",
+      "boardKey": "tang-relations--huihe",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--huihe",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--huihe",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--huihe",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--huihe",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--jiaohe",
+      "module": "tang",
+      "boardKey": "tang-relations--jiaohe",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--jiaohe",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--jiaohe",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--jiaohe",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--jiaohe",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--tribute",
+      "module": "tang",
+      "boardKey": "tang-relations--tribute",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--tribute",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--tribute",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--tribute",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--tribute",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--tubo",
+      "module": "tang",
+      "boardKey": "tang-relations--tubo",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--tubo",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--tubo",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--tubo",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--tubo",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--frontier",
+      "module": "tang",
+      "boardKey": "tang-relations--frontier",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--frontier",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--frontier",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--frontier",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--frontier",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--alliance",
+      "module": "tang",
+      "boardKey": "tang-relations--alliance",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--alliance",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--alliance",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--alliance",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--alliance",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--map-669",
+      "module": "tang",
+      "boardKey": "tang-relations--map-669",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--map-669",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--map-669",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--map-669",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--map-669",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-relations--ethnic-policy",
+      "module": "tang",
+      "boardKey": "tang-relations--ethnic-policy",
+      "entries": [
+        {
+          "route": "flow/relations/tang-relations--ethnic-policy",
+          "questions": [
+            {
+              "id": "Q12",
+              "boardKey": "flow/relations"
+            },
+            {
+              "id": "Q13",
+              "boardKey": "flow/relations/question/Q13"
+            }
+          ]
+        },
+        {
+          "route": "flow/map-reading/tang-relations--ethnic-policy",
+          "questions": [
+            {
+              "id": "Q14",
+              "boardKey": "flow/map-reading"
+            }
+          ]
+        },
+        {
+          "route": "flow/perspectives/tang-relations--ethnic-policy",
+          "questions": [
+            {
+              "id": "Q15",
+              "boardKey": "flow/perspectives"
+            }
+          ]
+        },
+        {
+          "route": "flow/concepts/tang-relations--ethnic-policy",
+          "questions": [
+            {
+              "id": "Q16",
+              "boardKey": "flow/concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "an-cause--an-cause",
+      "module": "anshi",
+      "boardKey": "an-cause--an-cause",
+      "entries": []
+    },
+    {
+      "route": "an-process--an-process",
+      "module": "anshi",
+      "boardKey": "an-process--an-process",
+      "entries": []
+    },
+    {
+      "route": "an-impact--an-process",
+      "module": "anshi",
+      "boardKey": "an-impact--an-process",
+      "entries": [
+        {
+          "route": "flow/impact/an-impact--an-process",
+          "questions": [
+            {
+              "id": "Q18",
+              "boardKey": "flow/impact"
+            },
+            {
+              "id": "Q19",
+              "boardKey": "flow/impact/question/Q19"
+            }
+          ]
+        },
+        {
+          "route": "flow/fanzhen-flow/an-impact--an-process",
+          "questions": [
+            {
+              "id": "Q20",
+              "boardKey": "flow/fanzhen-flow"
+            },
+            {
+              "id": "Q21",
+              "boardKey": "flow/fanzhen-flow/question/Q21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "an-impact--an-impact",
+      "module": "anshi",
+      "boardKey": "an-impact--an-impact",
+      "entries": [
+        {
+          "route": "flow/impact/an-impact--an-impact",
+          "questions": [
+            {
+              "id": "Q18",
+              "boardKey": "flow/impact"
+            },
+            {
+              "id": "Q19",
+              "boardKey": "flow/impact/question/Q19"
+            }
+          ]
+        },
+        {
+          "route": "flow/fanzhen-flow/an-impact--an-impact",
+          "questions": [
+            {
+              "id": "Q20",
+              "boardKey": "flow/fanzhen-flow"
+            },
+            {
+              "id": "Q21",
+              "boardKey": "flow/fanzhen-flow/question/Q21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "an-impact--fanzhen",
+      "module": "anshi",
+      "boardKey": "an-impact--fanzhen",
+      "entries": [
+        {
+          "route": "flow/impact/an-impact--fanzhen",
+          "questions": [
+            {
+              "id": "Q18",
+              "boardKey": "flow/impact"
+            },
+            {
+              "id": "Q19",
+              "boardKey": "flow/impact/question/Q19"
+            }
+          ]
+        },
+        {
+          "route": "flow/fanzhen-flow/an-impact--fanzhen",
+          "questions": [
+            {
+              "id": "Q20",
+              "boardKey": "flow/fanzhen-flow"
+            },
+            {
+              "id": "Q21",
+              "boardKey": "flow/fanzhen-flow/question/Q21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "an-impact--army-source",
+      "module": "anshi",
+      "boardKey": "an-impact--army-source",
+      "entries": [
+        {
+          "route": "flow/impact/an-impact--army-source",
+          "questions": [
+            {
+              "id": "Q18",
+              "boardKey": "flow/impact"
+            },
+            {
+              "id": "Q19",
+              "boardKey": "flow/impact/question/Q19"
+            }
+          ]
+        },
+        {
+          "route": "flow/fanzhen-flow/an-impact--army-source",
+          "questions": [
+            {
+              "id": "Q20",
+              "boardKey": "flow/fanzhen-flow"
+            },
+            {
+              "id": "Q21",
+              "boardKey": "flow/fanzhen-flow/question/Q21"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "tang-end--huangchao",
+      "module": "fall",
+      "boardKey": "tang-end--huangchao",
+      "entries": []
+    },
+    {
+      "route": "tang-end--five",
+      "module": "fall",
+      "boardKey": "tang-end--five",
+      "entries": []
+    },
+    {
+      "route": "five--five",
+      "module": "fall",
+      "boardKey": "five--five",
+      "entries": [
+        {
+          "route": "flow/five-flow/five--five",
+          "questions": [
+            {
+              "id": "Q23",
+              "boardKey": "flow/five-flow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "five--chairong",
+      "module": "fall",
+      "boardKey": "five--chairong",
+      "entries": [
+        {
+          "route": "flow/five-flow/five--chairong",
+          "questions": [
+            {
+              "id": "Q23",
+              "boardKey": "flow/five-flow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "five--map-five",
+      "module": "fall",
+      "boardKey": "five--map-five",
+      "entries": [
+        {
+          "route": "flow/five-flow/five--map-five",
+          "questions": [
+            {
+              "id": "Q23",
+              "boardKey": "flow/five-flow"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "board": {
+        "x": 22,
+        "y": 250,
+        "width": 1876,
+        "height": 750
+      }
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "board": {
+        "x": 22,
+        "y": 240,
+        "width": 1322,
+        "height": 454
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "board": {
+        "x": 22,
+        "y": 240,
+        "width": 1236,
+        "height": 406
+      }
+    }
+  ]
+}

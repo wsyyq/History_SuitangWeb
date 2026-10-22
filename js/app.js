@@ -12,6 +12,21 @@
   const link=(id,label,cls='nav-button')=>`<a class="${cls}" href="#${esc(id)}">${esc(label)}</a>`;
   const first=s=>`${s}--${sections[s].assets[0]}`;
   const flowRoute=(f,p)=>`flow/${f}/${p}`;
+  // FIX01 bookmarks migrate inside the original subtopic. Source artwork remains archived.
+  const migrations={
+    'sui-prosper--granary':'sui-prosper--sui-prosper','sui-end--yangdi':'sui-end--sui-poem',
+    'tang-relations--jiaohe':'tang-relations--huihe','tang-relations--tribute':'tang-relations--tubo',
+    'tang-relations--alliance':'tang-relations--frontier','tang-relations--ethnic-policy':'tang-relations--map-669',
+    'an-impact--an-process':'an-impact--an-impact','an-impact--army-source':'an-impact--fanzhen',
+    'tang-end--five':'tang-end--huangchao','five--chairong':'five--five'
+  };
+  function migrate(hash){
+    const id=hash.replace(/^#/,'');if(migrations[id])return migrations[id];
+    const [kind,flow,origin]=id.split('/');
+    if(kind==='flow'&&flow==='map-reading')return 'tang-relations--map-669';
+    if(kind==='flow'&&flows[flow]&&migrations[origin])return flowRoute(flow,migrations[origin]);
+    return id;
+  }
   function parse(hash){
     const id=hash.replace(/^#/,'')||'title';
     if(top.includes(id))return {id,level:1};
@@ -45,7 +60,7 @@
     const config=window.LESSON.map669,host=main.querySelector('#textbook-viewport'),figure=main.querySelector('#textbook-surface');
     figure.classList.add('location-map');
     figure.insertAdjacentHTML('beforeend',`<svg class="map-locations" viewBox="0 0 ${config.width} ${config.height}" aria-hidden="true">${config.objects.map(o=>`<g data-map-mark="${o.id}" visibility="${mapSelection===o.id?'visible':'hidden'}">${o.boxes.map(b=>`<rect x="${b[0]}" y="${b[1]}" width="${b[2]}" height="${b[3]}" rx="9"/>`).join('')}</g>`).join('')}</svg>`);
-    host.insertAdjacentHTML('afterbegin',`<section class="map-guide" aria-label="669年地图定位"><div class="map-options" role="group" aria-label="选择定位对象">${config.objects.map(o=>`<button type="button" data-map-object="${o.id}" aria-pressed="${mapSelection===o.id}">${esc(o.name)}</button>`).join('')}<button type="button" data-map-object="">清除定位</button></div><div class="map-panels" aria-live="polite"><p class="map-panel" data-map-panel="" ${mapSelection?'hidden':''}>先选择对象，再向下读图。朱砂框只定位文字，不代表疆域。可使用白板放大、移动；图题、图例与全部年代注记均保留。</p>${config.objects.map(o=>`<p class="map-panel" data-map-panel="${o.id}" ${mapSelection===o.id?'':'hidden'}><strong>${esc(o.name)} · ${esc(o.position)}</strong><br>${esc(o.text)}</p>`).join('')}</div><p class="map-source">${esc(config.sourceRef)} · 定位示意，非政治边界</p>${link(flowRoute('relations',s.id),'交往方式问答 ↗','nav-button map-question')} ${link(flowRoute('map-reading',s.id),'地图辨析问答 ↗','map-question nav-button')}</section>`);
+    host.insertAdjacentHTML('afterbegin',`<section class="map-guide" aria-label="669年地图定位"><div class="map-options" role="group" aria-label="选择定位对象">${config.objects.map(o=>`<button type="button" data-map-object="${o.id}" aria-pressed="${mapSelection===o.id}">${esc(o.name)}</button>`).join('')}<button type="button" data-map-object="">清除定位</button></div><div class="map-panels" aria-live="polite"><p class="map-panel" data-map-panel="" ${mapSelection?'hidden':''}>先选择对象，再向下读图。朱砂框只定位文字，不代表疆域。可使用白板放大、移动；图题、图例与全部年代注记均保留。</p>${config.objects.map(o=>`<p class="map-panel" data-map-panel="${o.id}" ${mapSelection===o.id?'':'hidden'}><strong>${esc(o.name)} · ${esc(o.position)}</strong><br>${esc(o.text)}</p>`).join('')}</div><p class="map-source">${esc(config.sourceRef)} · 定位示意，非政治边界</p>${link(flowRoute('relations',s.id),'交往方式问答 ↗','nav-button map-question')}</section>`);
     host.querySelector('.map-guide').addEventListener('click',e=>{
       const b=e.target.closest('[data-map-object]');if(!b||window.LESSON.interactionMode!=='select')return;
       mapSelection=b.dataset.mapObject||null;
@@ -55,6 +70,7 @@
     });
   }
   function answerContent(q){
+    if(q.compact)return `<p class="core-answer">${esc(q.answer)}</p>${q.image?`<figure class="teacher-map"><img src="${esc(q.image.path)}" width="${q.image.width}" height="${q.image.height}" alt="${esc(q.image.alt)}"></figure>`:''}`;
     const title=q.contentStatus==='needs-verification'?'待核对：讨论思路':q.contentStatus==='teacher-extension'?'课堂拓展：讲解模型':'答案与解释';
     const core=q.answerBlocks?contentBlocks(q.answerBlocks):`<p class="core-answer">${esc(q.answer||'答案与解析待第五／六阶段填充。')}</p>`;
     const diagram=q.diagram?`<figure class="concept-model"><figcaption>${esc(q.diagram.title)}</figcaption><ol>${q.diagram.nodes.map(n=>`<li>${esc(n)}</li>`).join('')}</ol></figure>`:'';
@@ -73,7 +89,7 @@
     s.boardKey=question.index===0?`flow/${s.flow}`:`flow/${s.flow}/question/${q.questionId}`;
     s.questionId=q?.questionId||null;
     s.readableFlow=['stage5','stage6'].includes(q?.contentVersion);
-    return `<div class="${s.readableFlow?'teaching-flow':''}">`+head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card"><span class="badge">${q?.contentStatus==='pending'?'预备题组 · 答案待填充':evidenceLabel(q?.contentStatus)}</span>${s.readableFlow?'<span class="reading-hint">滚轮向下阅读答案、解析与来源</span>':''}<h2 id="question-prompt">${esc(q?.prompt||'此问题组内容待后续阶段配置')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert>${answerContent(q)}</div><p class="question-source">来源：${esc(q.sourceRef||'待对应来源')}<br>内容状态：${evidenceLabel(q.contentStatus)}${f.audits.length?` · 审核项 ${esc(f.audits.join('、'))}`:''}</p>`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}${s.flow==='canal'?'<div class="missing-inline">待补素材：隋大运河—仓储—洛阳分布图</div>':''}</section></div>`;
+    return `<div class="${s.readableFlow?'teaching-flow':''}">`+head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card">${q?.compact?'':`<span class="badge">${q?.contentStatus==='pending'?'预备题组 · 答案待填充':evidenceLabel(q?.contentStatus)}</span>${s.readableFlow?'<span class="reading-hint">滚轮向下阅读答案、解析与来源</span>':''}`} <h2 id="question-prompt">${esc(q?.prompt||'此问题组内容待后续阶段配置')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert>${answerContent(q)}</div>${q.compact?'':`<p class="question-source">来源：${esc(q.sourceRef||'待对应来源')}<br>内容状态：${evidenceLabel(q.contentStatus)}${f.audits.length?` · 审核项 ${esc(f.audits.join('、'))}`:''}</p>`}`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}</section></div>`;
   }
   function advanceQuestion(event,previous=false){
     if(current.level!==4||event?.repeat||event?.detail>1)return;
@@ -109,6 +125,7 @@
     document.querySelector('#navigation').innerHTML=s.level===4?
       link(s.origin,'返回原教材页')+`<button class="nav-button" data-qa-action="previous" ${question.index===0?'disabled':''}>← 上一题</button>`+(items().length?`<button class="primary" data-qa-action="continue">${!question.revealed?'揭示答案':question.index+1<items().length?'下一题 →':'完成并返回教材'}</button>`:''):
       control(nav.up,s.level===3?'返回本模块菜单':'返回上一级', '当前已是首页')+control(nav.prev,'← 上一页','已是本级第一页')+control(nav.next,nextLabel,'已是本级末页')+(s.level===3&&!nav.next&&next?link(next.id,`下一模块：${next.title} →`,'primary'):'')+(s.module==='review'&&(s.reviewIndex??0)===reviews.length-1?link('outline','结束回顾 · 返回课堂脉络','primary'):'')+(nav.down?link(nav.down,s.level===3?'进入问题链':'进入下一级','primary'):'');
+    document.querySelectorAll('#navigation .nav-button').forEach((b,i)=>{const label=b.textContent;b.setAttribute('aria-label',label);b.title=label;b.innerHTML=`<span aria-hidden="true">${i===0?'↩':i===1?'←':'→'}</span>`;});
     const crumbs=[link('title','首页','crumb')];
     if(s.id!=='title')crumbs.push(link('outline','课堂脉络','crumb'));
     if(s.module)crumbs.push(link(s.module,moduleById[s.module].title,'crumb'));
@@ -118,6 +135,8 @@
     document.querySelector('#breadcrumbs').innerHTML=crumbs.join('<span aria-hidden="true">/</span>');
   }
   function render(resetQuestion=true){
+    const migrated=migrate(location.hash);
+    if(migrated!==location.hash.replace(/^#/,'')){location.replace('#'+migrated);return;}
     const incoming=parse(location.hash);
     if(!incoming){location.replace('#title');return;}
     window.dispatchEvent(new Event('lesson:before-navigate'));
@@ -131,13 +150,14 @@
       main.innerHTML=head('课程导入 / 03','课堂脉络','选择一个模块，开始阅读与思考。')+moduleCards();
     }else if(s.module==='review'){
       s.readableFlow=true;
-      main.innerHTML=head('模块 06 / 二级内容','内容回顾','四项题答直接展示 · 向下滚动阅读')+`<div class="review-grid review-complete">${window.LESSON.reviewItems.map((q,i)=>`<article id="review-card-${i}" class="review-card ${i===(s.reviewIndex??0)?'active':''}"><a href="#review/${i}" aria-label="选择回顾${i+1}：${esc(q.prompt)}"><span class="badge">回顾 0${i+1}</span><h2>${esc(q.prompt)}</h2></a><span class="evidence-label">${evidenceLabel(q.contentStatus)}</span><p class="review-answer">${esc(q.answer)}</p><p class="review-boundary">${esc(q.reviewNote)}</p><p class="review-source">来源：${esc(q.sourceRef)}</p></article>`).join('')}</div>`;
+      main.innerHTML=head('模块 06 / 二级内容','内容回顾','四项题答直接展示 · 向下滚动阅读')+`<div class="review-grid review-complete">${window.LESSON.reviewItems.map((q,i)=>`<article id="review-card-${i}" class="review-card ${i===(s.reviewIndex??0)?'active':''}"><a href="#review/${i}" aria-label="选择回顾${i+1}：${esc(q.prompt)}"><span class="badge">回顾 0${i+1}</span><h2>${esc(q.prompt)}</h2></a>${q.compact?'':`<span class="evidence-label">${evidenceLabel(q.contentStatus)}</span>`}<p class="review-answer">${esc(q.answer)}</p>${q.compact?'':`<p class="review-boundary">${esc(q.reviewNote)}</p><p class="review-source">来源：${esc(q.sourceRef)}</p>`}</article>`).join('')}</div>`;
     }else if(s.level===2){
       const m=moduleById[s.module];main.innerHTML=head(`模块 0${modules.indexOf(m)+1} / ${m.eyebrow}`,m.title,m.description)+`<div class="section-menu">${m.sections.map((id,i)=>`<a class="section-link" href="#${first(id)}"><span>0${i+1}</span><strong>${sections[id].title}</strong><small>${sections[id].assets.length} 个教材片段</small><span aria-hidden="true">→</span></a>`).join('')}</div>`;
     }else if(s.level===3){
       const section=sections[s.section],asset=assets[s.asset];
       main.innerHTML=`<section class="reader-page">${head('教材研读 / 第三级',`${section.title}<small>${asset.title}</small>`)}<div class="reader-controls"><label for="fragment">教材片段</label><select id="fragment" aria-label="选择教材片段">${section.assets.map((a,i)=>`<option value="${section.id}--${a}" ${a===s.asset?'selected':''}>${i+1}/${section.assets.length} · ${assets[a].title}</option>`).join('')}</select><span class="source-label">PDF 第 ${asset.pdfPage}/6 页｜教材第 ${asset.printedPage} 页 · 滚轮阅读 · 白板可缩放移动</span></div><div class="reader-layout"><div id="textbook-viewport" tabindex="0" aria-label="教材阅读区，可上下滚动"><figure id="textbook-surface" data-asset-id="${asset.id}" style="--image-width:${asset.displayWidth}px"><img src="${asset.path}" alt="${asset.title}，教材第${asset.printedPage}页"><div id="annotation-layer" aria-hidden="true"></div></figure></div><div class="hotspots"><span class="label">${section.flows.length?'课堂问题 · 点选进入':'本段无四级问题入口'}　</span>${section.flows.map(f=>link(flowRoute(f,s.id),flows[f].title+' ↗','hotspot')).join('')}</div></div></section>`;
       main.querySelector('select').addEventListener('change',e=>{location.hash=e.target.value;});
+      if(s.id==='tang-relations--frontier')main.querySelector('#textbook-viewport').insertAdjacentHTML('beforeend','<figure class="thinking-point"><img src="./assets/lesson/tang-thinking-point.png" width="530" height="217" alt="教材思考点：隋唐盛世形成的原因有哪些？"><figcaption>教材 PDF 第4/6页｜印刷第37页 · 保留思考点</figcaption></figure>');
       const note=teachingNote(s.id);if(note)main.querySelector('#textbook-viewport').insertAdjacentHTML('beforeend',note);
       if(s.asset==='map-669')mountMap(s);
       const img=main.querySelector('img');img.addEventListener('error',()=>{img.insertAdjacentHTML('afterend','<p class="image-error">教材图片加载失败，请检查本地素材文件是否完整。</p>');});
@@ -153,6 +173,7 @@
   window.addEventListener('hashchange',()=>render());
   document.querySelector('#navigation').addEventListener('click',e=>{const b=e.target.closest('[data-qa-action]');if(b&&!b.disabled)advanceQuestion(e,b.dataset.qaAction==='previous');});
   document.addEventListener('keydown',e=>{
+    if(e.defaultPrevented)return;
     if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey||e.target.closest('input,textarea,select,[contenteditable="true"]'))return;
     if(current.level===4&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();advanceQuestion(e,e.key==='ArrowLeft');return;}
     const target=e.key==='ArrowRight'?nav.next:e.key==='ArrowLeft'?nav.prev:e.key==='Escape'?nav.up:null;

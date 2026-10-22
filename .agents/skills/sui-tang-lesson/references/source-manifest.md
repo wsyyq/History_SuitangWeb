@@ -1,5 +1,21 @@
 # 来源清单
 
+## MX-FIX01 当前有效规范
+
+MX-FIX01（2026-10-22）为第六阶段后专项修订，不启动第七阶段。当前有效结构：一级3页、二级6模块、11子目23教材片段、12组15题、二级4项回顾；参考时间3/8/13/7/6/3共40分钟。教师本次定稿优先于下列历史规范。
+
+新增授权：根目录MX-FIX01_CODEX_INSTRUCTION.md；隋唐第六阶段内容检查.md为教师复查输入，均不改。
+
+- 教师原图 `assets/teacher/sui_canal_granary_map.png`：416×404，SHA-256 `5a0a0492417368bb290ebe702317f9b6f3ec0dbb8093ad3e26e29a048785591f`，Q05引用；非原教材PDF插图，原样使用，原“缺图”状态已解除。课标截图已存在。
+- `assets/lesson/an-impact-crosspage-merged.png`：1160×370。来自PDF4—5/6、印刷37—38页；an-process.png裁框[0,0,1122,292]原像素置于[0,0]，an-impact.png完整[0,0,1160,70]置于[0,300]。仅去尾部白边，无缩放、无重写；“占”接下一行“领河西陇右地区。从此，唐朝由盛转衰。”原段落四行与续句完整。
+- 原图PDF页内来源坐标仍见HEAD的textbook-assets.js原目录及当前an-process条目；完整派生坐标、尺寸与SHA见 `assets/lesson/fix01-derivatives.json`。`an-process--an-process`不变；只合并影响子目的两张图。
+- `assets/lesson/tang-thinking-point.png`：530×217，从alliance.png的[430,35,960,252]原像素裁出，附在tang-relations--frontier教材正文后；无独立新页。保留“隋唐盛世形成的原因有哪些？”，不带会盟碑及图注。
+- 32张原教材PNG、PDF、框架、讲稿、课标图共36个原件与HEAD逐字节或LFS oid比对通过；详情 `review/fix01/source-and-content-check.json`。
+
+原框架、讲稿、PDF及前阶段报告均保留。没有取得新版地图或新增外部史学证据。
+
+## 历史记录（截至第六阶段）
+
 核对日期：2026-10-21。仓库根目录：`D:/UGit/History_SuitangWeb`。初始仅有下列四个根目录文件及 `.git`，无既有 AGENTS.md、Skill 或其他教材版本。三个核心文件均完整可读；PDF 使用 pypdf 提取全部文字，并用 Poppler 渲染整页、逐页目视检查。未联网研究。
 
 |真实相对路径|类型、版本与读取结果|用途与权威范围|

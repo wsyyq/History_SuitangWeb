@@ -1,5 +1,31 @@
 # 教材双页码与未来裁图单元索引
 
+## MX-FIX01 当前有效规范
+
+MX-FIX01（2026-10-22）为第六阶段后专项修订，不启动第七阶段。当前有效结构：一级3页、二级6模块、11子目23教材片段、12组15题、二级4项回顾；参考时间3/8/13/7/6/3共40分钟。教师本次定稿优先于下列历史规范。
+
+- 教师原图 `assets/teacher/sui_canal_granary_map.png`：416×404，SHA-256 `5a0a0492417368bb290ebe702317f9b6f3ec0dbb8093ad3e26e29a048785591f`，Q05引用；非原教材PDF插图，原样使用，原“缺图”状态已解除。课标截图已存在。
+- `assets/lesson/an-impact-crosspage-merged.png`：1160×370。来自PDF4—5/6、印刷37—38页；an-process.png裁框[0,0,1122,292]原像素置于[0,0]，an-impact.png完整[0,0,1160,70]置于[0,300]。仅去尾部白边，无缩放、无重写；“占”接下一行“领河西陇右地区。从此，唐朝由盛转衰。”原段落四行与续句完整。
+- 原图PDF页内来源坐标仍见HEAD的textbook-assets.js原目录及当前an-process条目；完整派生坐标、尺寸与SHA见 `assets/lesson/fix01-derivatives.json`。`an-process--an-process`不变；只合并影响子目的两张图。
+- `assets/lesson/tang-thinking-point.png`：530×217，从alliance.png的[430,35,960,252]原像素裁出，附在tang-relations--frontier教材正文后；无独立新页。保留“隋唐盛世形成的原因有哪些？”，不带会盟碑及图注。
+- 32张原教材PNG、PDF、框架、讲稿、课标图共36个原件与HEAD逐字节或LFS oid比对通过；详情 `review/fix01/source-and-content-check.json`。
+
+活动页面完整目录见lesson-outline.md；以下删页仅退出授课展示，原素材索引仍存：
+- `sui-prosper--granary`
+- `sui-end--yangdi`
+- `tang-relations--jiaohe`
+- `tang-relations--tribute`
+- `tang-relations--alliance`
+- `tang-relations--ethnic-policy`
+- `an-impact--army-source`
+- `tang-end--five`
+- `five--chairong`
+- `an-impact--an-process`
+
+非活动/教师要求移除：Q13、Q14、Q19、Q20及map-reading组。不得自动恢复；Q12、Q18、Q21各为所在组唯一题。删除的是课堂入口，原教材证据仍存。
+
+## 历史记录（截至第六阶段）
+
 六页均已完成可提取文字阅读与整页图像检查。下列“教材概述”均是摘要，不冒充逐字引文；引号内才是已核对短引文。教材推论是基于材料作出的解释，教师拓展须另行标记，风险见 [审核表](historical-fact-audit.md)。所有裁图单元只是内容边界描述，本阶段未裁切、无像素坐标。
 
 ## PDF p1/6（教材34页）

@@ -10,16 +10,16 @@
   ];
   const defs = [
     ['sui-found','建立','sui',['sui-found'],[]],
-    ['sui-prosper','兴盛','sui',['sui-prosper','granary'],['two-capitals','granaries','canal']],
-    ['sui-end','灭亡','sui',['sui-end','sui-poem','yangdi'],['goguryeo','sui-burden']],
+    ['sui-prosper','兴盛','sui',['sui-prosper'],['two-capitals','granaries','canal']],
+    ['sui-end','灭亡','sui',['sui-end','sui-poem'],['goguryeo','sui-burden']],
     ['tang-found','建立','tang',['tang-found'],[]],
     ['tang-prosper','繁荣与盛世表现','tang',['tang-zhenguan','tang-prosper','plough-text','plough-image','sancai'],['economy']],
-    ['tang-relations','民族关系与区域开发','tang',['turks-intro','turks','huihe','jiaohe','tribute','tubo','frontier','alliance','map-669','ethnic-policy'],['relations','map-reading','perspectives','concepts']],
+    ['tang-relations','民族关系与区域开发','tang',['turks-intro','turks','huihe','tubo','frontier','map-669'],['relations','perspectives','concepts']],
     ['an-cause','原因','anshi',['an-cause'],[]],
     ['an-process','过程','anshi',['an-process'],[]],
-    ['an-impact','影响','anshi',['an-process','an-impact','fanzhen','army-source'],['impact','fanzhen-flow']],
-    ['tang-end','黄巢起义与朱温废唐称帝','fall',['huangchao','five'],[]],
-    ['five','五代十国','fall',['five','chairong','map-five'],['five-flow']]
+    ['an-impact','影响','anshi',['an-impact','fanzhen'],['impact','fanzhen-flow']],
+    ['tang-end','黄巢起义与朱温废唐称帝','fall',['huangchao'],[]],
+    ['five','五代十国','fall',['five','map-five'],['five-flow']]
   ];
   const sections=Object.fromEntries(defs.map(([id,title,module,assets,flows])=>[id,{id,title,module,assets,flows}]));
   const flowDefs=[
@@ -29,12 +29,11 @@
     ['goguryeo','高句丽、高丽与征伐背景',['Q07','Q08'],['A05','A06']],
     ['sui-burden','隋亡：建设与民力负担',['Q09'],['A12','A13']],
     ['economy','曲辕犁与唐三彩',['Q11'],['A14']],
-    ['relations','民族关系的处理方式',['Q12','Q13'],[]],
-    ['map-reading','669年地图的阅读与辨析',['Q14'],['A07']],
+    ['relations','民族关系的处理方式',['Q12'],[]],
     ['perspectives','两者关系题的四个视角',['Q15'],['A16']],
     ['concepts','民族边疆与对外外交关系',['Q16'],['A08']],
-    ['impact','安史之乱的影响',['Q18','Q19'],['A09','A16']],
-    ['fanzhen-flow','藩镇割据与唐朝统治',['Q20','Q21'],['A10']],
+    ['impact','安史之乱的影响',['Q18'],['A09','A16']],
+    ['fanzhen-flow','藩镇割据与唐朝统治',['Q21'],['A10']],
     ['five-flow','五代十国与唐末藩镇',['Q23'],['A15']]
   ];
   const flows=Object.fromEntries(flowDefs.map(([id,title,qids,audits])=>[id,{id,title,qids,audits,status:'pending'}]));
