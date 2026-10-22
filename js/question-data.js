@@ -60,7 +60,7 @@
     "evidenceType": "teacher-extension",
     "reviewNote": "教师指定课堂概括，配图已按交付SHA-256验证；非教材PDF原图。",
     "contentVersion": "stage5",
-    "assetStatus": "asset-missing",
+    "assetStatus": "available",
     "compact": true,
     "image": {
       "path": "./assets/teacher/sui_canal_granary_map.png",
@@ -72,68 +72,36 @@
   "Q06": {
     "questionId": "Q06",
     "prompt": "经济重心南移经历了哪些阶段？",
-    "answer": "沿教师框架，用四个时间节点回顾经济重心南移这一长期过程；以下是复习线索，不是本课教材已经完整论证的断代结论。",
+    "answer": "魏晋以前：经济重心主要在北方。\n魏晋南北朝：江南逐步开发，南北经济差距缩小。\n安史之乱后：南方经济进一步发展，经济重心逐渐南移。\n靖康之变后：南方经济地位进一步提升，至南宋时期经济重心南移完成。",
     "explanation": "江南开发、重心逐渐南移与完成南移不是同一概念。不能把某次战乱当作唯一原因，或把一个事件直接当作开始、完成的精确时点。此处不展开安史之乱的详细影响。",
     "contentStatus": "needs-verification",
-    "sourceRef": "教师框架·隋/兴盛3；讲稿·经济重心南移回顾；本课教材 PDF 1—6/6｜印刷第34—39页未完整论证该过程；审核 A04、A09；question-bank.md · Q06",
+    "sourceRef": "教师框架·隋/兴盛3；讲稿·经济重心南移回顾；本课教材 PDF 1—6/6｜印刷第34—39页未完整论证该过程；审核 A04、A09；question-bank.md · Q06；MX-FIX03教师四行定稿",
     "evidenceType": "needs-verification",
-    "reviewNote": "四阶段简语仍待纵向教材与教师核定，尤其“开始/完成”的标准和断代；不将靖康事件与完成南移机械等同。",
+    "reviewNote": "教师已批准四节点与四条现状的课堂措辞；纵向分期仍需跨课补证，不将靖康当天视作完成南移。",
     "contentVersion": "stage5",
     "timeline": [
       {
         "title": "魏晋以前",
-        "text": "北方为主的经济格局：复习线索。",
+        "text": "经济重心主要在北方。",
         "evidenceType": "needs-verification"
       },
       {
         "title": "魏晋南北朝",
-        "text": "江南逐步开发：复习线索。",
+        "text": "江南逐步开发，南北经济差距缩小。",
         "evidenceType": "needs-verification"
       },
       {
         "title": "安史之乱后",
-        "text": "南方进一步发展与南移：待纵向核验。",
+        "text": "南方经济进一步发展，经济重心逐渐南移。",
         "evidenceType": "needs-verification"
       },
       {
         "title": "靖康之变后",
-        "text": "联系南宋阶段；完成标准与时点待核。",
+        "text": "南方经济地位进一步提升，至南宋时期经济重心南移完成。",
         "evidenceType": "needs-verification"
       }
-    ]
-  },
-  "Q07": {
-    "questionId": "Q07",
-    "prompt": "高句丽与高丽如何区分？教材“征伐高丽”如何读？",
-    "answer": "先核对时代、政权名称、活动地域与史料称谓，不能仅凭名称相同就认定为同一政权。教材“高丽”原字保留，不直接宣布教材错误。",
-    "explanation": "教材记载隋炀帝三次大举征伐“高丽”；教师讲稿拟辨析高句丽与后世同名政权。辨名需将教材用语、历史异称和不同时代政权分开核验。",
-    "contentStatus": "needs-verification",
-    "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·高句丽和高丽的区别；审核 A05；question-bank.md · Q07",
-    "evidenceType": "needs-verification",
-    "reviewNote": "本仓库尚无独立可靠资料补齐精确起讫年代、疆界和称谓沿革；此页提供核对方法，不给未经验证的标准断代。",
-    "contentVersion": "stage5"
-  },
-  "Q08": {
-    "questionId": "Q08",
-    "prompt": "征伐是否为了防止突厥与高句丽联合？",
-    "answer": "仅据本课教材，不能确认“防止突厥与高句丽联合”就是征伐动机，更不能把它作为唯一原因。",
-    "explanation": "教材记载的是三次大举征伐及生产破坏、民生困境等后果。“防止联合”来自教师讲解，是可以讨论、但仍需史料支持的背景假说。",
-    "contentStatus": "needs-verification",
-    "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·防止两个政权联合；审核 A06；question-bank.md · Q08",
-    "evidenceType": "needs-verification",
-    "reviewNote": "需要核对战争背景、同时代政治关系及可追溯史料；目前不输出确定的动机结论。",
-    "contentVersion": "stage5"
-  },
-  "Q09": {
-    "questionId": "Q09",
-    "prompt": "隋朝富强为何仍灭亡？建设如何影响生产？",
-    "answer": "大兴土木、穷奢极欲与三次大举征伐，加重社会负担，生产严重破坏、民不聊生，最终引发大规模起义。618年，隋炀帝在江都被部将杀死，隋朝灭亡。",
-    "explanation": "课堂解释：“夺农时”可理解为徭役、兵役占用关键农时会妨碍生产，不能据此断定具体征役的月份。工程功效与民力负担应分开评价；国家工程和物资积累反映国力，治理仍须顾及社会承受能力。",
-    "contentStatus": "textbook-supported",
-    "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·国富而不与民共享；审核 A12、A13；question-bank.md · Q09",
-    "evidenceType": "textbook-supported",
-    "reviewNote": "不以修大运河解释隋亡全部原因；不使用仓粮可食五六十年或地方官一律无权开仓等未经核实说法。“国富民困”只作材料讨论。",
-    "contentVersion": "stage5"
+    ],
+    "presentation": "four-stages"
   },
   "Q11": {
     "questionId": "Q11",
@@ -193,6 +161,112 @@
     "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
     "contentStatus": "pending",
     "sourceRef": "question-bank.md · Q23；框架·唐的灭亡2；讲稿“本质”；PDF p5/6（教材38页）T38-C/D/E；A15"
+  },
+  "Q24": {
+    "questionId": "Q24",
+    "prompt": "秦和隋朝的相似之处",
+    "answer": "建立：结束了长期分裂的局面，实现了全国的统一。\n发展：都修建了举世闻名的工程，都制定了许多影响深远的制度。\n灭亡：统治时间短，都因为暴政二世而亡。",
+    "presentation": "comparison",
+    "answerSections": [
+      {
+        "title": "建立",
+        "items": [
+          "结束了长期分裂的局面，实现了全国的统一。"
+        ]
+      },
+      {
+        "title": "发展",
+        "items": [
+          "都修建了举世闻名的工程，都制定了许多影响深远的制度。"
+        ]
+      },
+      {
+        "title": "灭亡",
+        "items": [
+          "统治时间短，都因为暴政二世而亡。"
+        ]
+      }
+    ],
+    "contentVersion": "fix03",
+    "contentStatus": "teacher-extension",
+    "evidenceType": "teacher-extension",
+    "sourceRef": "教师MX-FIX03§2定稿；教材PDF1—4/6｜印刷34—37页相关背景；MX_FIX03_CONTENT_AUDIT.md",
+    "reviewNote": "二世而亡是高度概括，不能当作无例外的帝王人数统计；秦朝部分需跨课补证。"
+  },
+  "Q25": {
+    "questionId": "Q25",
+    "prompt": "隋朝大运河的功过",
+    "answer": "利：连接了经济中心与政治中心。 连接南北，加强中央集权，加强了对地方的控制。\n弊：滥用民力。 破坏农业。 激化了阶级矛盾。",
+    "presentation": "merits",
+    "answerSections": [
+      {
+        "title": "利",
+        "items": [
+          "连接了经济中心与政治中心。",
+          "连接南北，加强中央集权，加强了对地方的控制。"
+        ]
+      },
+      {
+        "title": "弊",
+        "items": [
+          "滥用民力。",
+          "破坏农业。",
+          "激化了阶级矛盾。"
+        ]
+      }
+    ],
+    "contentVersion": "fix03",
+    "contentStatus": "teacher-extension",
+    "evidenceType": "teacher-extension",
+    "sourceRef": "教师MX-FIX03§2定稿；教材PDF1—4/6｜印刷34—37页相关背景；MX_FIX03_CONTENT_AUDIT.md",
+    "reviewNote": "教师组织的评价角度，不逐句等同教材原文，不将隋亡全部归因于运河。"
+  },
+  "Q26": {
+    "questionId": "Q26",
+    "prompt": "隋唐盛世的形成原因",
+    "answer": "政治：国家统一，疆域辽阔。 三省六部制、科举制的确立，对于国家治理和人才选拔起到了积极作用。 统治者吸取历史教训，保证了政局的稳定和政策的连续性。\n经济：生产力的进步。 统治者重视发展生产，施行有利于经济发展的措施。\n文化：科举制重视人才的选拔。 开放的对外政策与频繁的中外文化交流。\n军事：兵制改革，提升军队战斗力。\n民族关系：开明的民族政策，促进了民族交融与边疆地区的稳定。",
+    "presentation": "causes",
+    "answerSections": [
+      {
+        "title": "政治",
+        "items": [
+          "国家统一，疆域辽阔。",
+          "三省六部制、科举制的确立，对于国家治理和人才选拔起到了积极作用。",
+          "统治者吸取历史教训，保证了政局的稳定和政策的连续性。"
+        ]
+      },
+      {
+        "title": "经济",
+        "items": [
+          "生产力的进步。",
+          "统治者重视发展生产，施行有利于经济发展的措施。"
+        ]
+      },
+      {
+        "title": "文化",
+        "items": [
+          "科举制重视人才的选拔。",
+          "开放的对外政策与频繁的中外文化交流。"
+        ]
+      },
+      {
+        "title": "军事",
+        "items": [
+          "兵制改革，提升军队战斗力。"
+        ]
+      },
+      {
+        "title": "民族关系",
+        "items": [
+          "开明的民族政策，促进了民族交融与边疆地区的稳定。"
+        ]
+      }
+    ],
+    "contentVersion": "fix03",
+    "contentStatus": "teacher-extension",
+    "evidenceType": "teacher-extension",
+    "sourceRef": "教师MX-FIX03§2定稿；教材PDF1—4/6｜印刷34—37页相关背景；MX_FIX03_CONTENT_AUDIT.md",
+    "reviewNote": "制度形成发展有隋唐阶段差异；军事直接因果及部分制度文化结论需相应史料支持。"
   }
 };
   const lesson=window.LESSON;
@@ -200,7 +274,7 @@
     const section=Object.values(lesson.sections).find(s=>s.flows.includes(group.id));
     group.moduleId=section.module;group.subtopicId=section.id;
     group.items=group.qids.map(q=>({...bank[q]}));
-    group.contentStatus=group.items.every(q=>q.contentVersion==='stage5')?'stage5-populated':'pending';group.mappingStatus='既有分组沿用，题序待教师复查';
+    group.contentStatus=group.items.every(q=>q.contentVersion)?'populated':'pending';group.mappingStatus='既有分组沿用，题序待教师复查';
   }
   lesson.reviewItems=lesson.reviews.map((prompt,i)=>({questionId:`R0${i+1}`,prompt,
     answer:'答案与解析待第五／六阶段填充。',contentStatus:'pending',sourceRef:`question-bank.md · R0${i+1}`}));

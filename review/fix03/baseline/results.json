@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "counts": {
+    "top": 3,
+    "modules": 6,
+    "fragments": 23,
+    "groups": 12,
+    "questions": 15,
+    "reviews": 4
+  },
+  "layouts": 216,
+  "entries": 36,
+  "operations": 80,
+  "migrated": 34,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "before": {
+        "x": 22,
+        "y": 250,
+        "width": 1876,
+        "height": 750
+      },
+      "after": {
+        "x": 80,
+        "y": 64,
+        "width": 1828,
+        "height": 1004
+      },
+      "heightGain": 254
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "before": {
+        "x": 22,
+        "y": 240,
+        "width": 1322,
+        "height": 454
+      },
+      "after": {
+        "x": 80,
+        "y": 64,
+        "width": 1274,
+        "height": 692
+      },
+      "heightGain": 238
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "before": {
+        "x": 22,
+        "y": 240,
+        "width": 1236,
+        "height": 406
+      },
+      "after": {
+        "x": 80,
+        "y": 64,
+        "width": 1188,
+        "height": 644
+      },
+      "heightGain": 238
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "hardware": "Headless Edge; no physical whiteboard or public deployment tested"
+}

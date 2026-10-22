@@ -1,0 +1,142 @@
+{
+  "started": "2026-10-22T13:35:14.013Z",
+  "url": "https://wsyyq.github.io/History_SuitangWeb/",
+  "status": "Loaded",
+  "errors": [],
+  "resources": [
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/css/tools.css",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/css/style.css",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/css/fix01.css",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/css/lesson-flow.css",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/textbook-assets.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/stage6-content.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/question-data.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/teaching-notes.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/lesson-data.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/app.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/js/interaction.js",
+      "status": 200
+    },
+    {
+      "url": "https://wsyyq.github.io/History_SuitangWeb/assets/textbook/canal-photo.png",
+      "status": 200
+    }
+  ],
+  "model": {
+    "seal": "历",
+    "pages": 23,
+    "groups": 12,
+    "questions": 15,
+    "minus": true
+  },
+  "comparison": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "matchesLocal": true,
+      "sha256": "640fc883e665ca2aa96441a1afc3c1c4257cd404605fd3638cdbb14d61c6fcf8"
+    },
+    {
+      "file": "css/fix01.css",
+      "status": 200,
+      "matchesLocal": false,
+      "sha256": "d14cc997d362e582a7c00eac0ec643dd5cd75cb965a106a3410952d17825f814"
+    },
+    {
+      "file": "css/lesson-flow.css",
+      "status": 200,
+      "matchesLocal": true,
+      "sha256": "87ef866c237c7406d81a61a497ed5ec25cc11e5c86833bb4454f5ac3ff245ffe"
+    },
+    {
+      "file": "css/style.css",
+      "status": 200,
+      "matchesLocal": true,
+      "sha256": "7e6ea6631913c000d730522b77956c2a26b5eaf3a7417175e90e999a5d10424c"
+    },
+    {
+      "file": "css/tools.css",
+      "status": 200,
+      "matchesLocal": true,
+      "sha256": "7872523289da81ba80ceafdf2bb5a42f73e9d0af1976bbc552e270b9acd9539a"
+    },
+    {
+      "file": "js/app.js",
+      "status": 200,
+      "matchesLocal": false,
+      "sha256": "cdf539d7a36285966bd0e0b94e2ddbf2faa02675abcca21a35bf6a5b57fe0411"
+    },
+    {
+      "file": "js/interaction.js",
+      "status": 200,
+      "matchesLocal": true,
+      "sha256": "d7f82af1ac198287ff06a73f8bb4d85ba26555ee6e26e8d8bde62b29685f7eeb"
+    },
+    {
+      "file": "js/lesson-data.js",
+      "status": 200,
+      "matchesLocal": false,
+      "sha256": "71ff28cf64f52e8868cb12a5885f0cd6b73eb833279da0dcfcce45ac4f5caa6d"
+    },
+    {
+      "file": "js/question-data.js",
+      "status": 200,
+      "matchesLocal": false,
+      "sha256": "200f61f8940045582e81d701db130849e809168134d8e4375f4c76a6cd8ccfe0"
+    },
+    {
+      "file": "js/stage6-content.js",
+      "status": 200,
+      "matchesLocal": false,
+      "sha256": "7b36e138d7ea7f3a4fcaeb7375b6ae3d41ee5a240aff4b748960fc6579022081"
+    },
+    {
+      "file": "js/teaching-notes.js",
+      "status": 200,
+      "matchesLocal": false,
+      "sha256": "945d8dd7c3d453ab5d76671830a52c917ca22c19fcde037b6681e2a6b0410b1f"
+    },
+    {
+      "file": "js/textbook-assets.js",
+      "status": 200,
+      "matchesLocal": true,
+      "sha256": "aecba6a32e3fc12648da38f87b62f6dfd51efdca7a12533dd50fb9ee273c164d"
+    }
+  ],
+  "ended": "2026-10-22T13:35:22.850Z"
+}

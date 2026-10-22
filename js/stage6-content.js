@@ -37,14 +37,17 @@
   notes['an-process--an-process']=note('755年起兵，历时八年',[block('人物与地点','身兼三镇节度使的安禄山在范阳起兵，与部将史思明发动叛乱。'),block('结束与转折','叛乱历时八年，后被唐平定；影响跨页接读第38页。')],p37+'过程段',{note:'沿用教材“历时八年”，不凭推算补写精确结束年份或皇帝行程。'});
   notes['an-impact--an-impact']=note('安史之乱的影响',[...chain.nodes.slice(2,4)],p37+'—'+p38+'跨页正文',{sequence:chain});
   notes['an-impact--fanzhen']=note('藩镇不等于割据',[block('范围与影响','有些藩镇独立性强，形成割据局面；持续100多年，严重削弱唐朝统治。'),block('讨论边界','不同藩镇互相制约而延续统治是待证解释，不能从“持续100多年”直接推出因果。','needs-verification')],p38+'藩镇段；审核A10');
+  notes['an-impact--fanzhen'].blocks[1].presentationOnly=false;
+  notes['an-process--an-process'].presentationNote='沿用教材“历时八年”。';
   const endNote=note('黄巢与朱温：打击统治和政治终结',[block('背景与起义','唐后期宦官专权、朋党之争加剧。875年黄巢起义，一度攻占长安，沉重打击统治。'),block('谁在907年废唐？','朱温先降唐任节度使，联合藩镇镇压起义并逐渐掌权；907年废唐建后梁。黄巢没有建立后梁。')],p38+'黄巢起义至五代十国段',{sequence:endTimeline});
   notes['tang-end--huangchao']=endNote;
   notes['five--five']=note('五代十国：顺序与构成',[block('五代','后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余都开封。'),block('十国','南方先后九个割据政权，加山西的北汉；不是南方十国，也不都同时存在。'),block('课堂历史归纳','唐末藩镇割据局面的延续与演变，不是完全不变的等号。','teacher-extension')],p38+'五代十国段',{sequence:endTimeline});
   notes['five--map-five']=note('后周时点，不是十国全同期',[block('先读图题与注记','图为后周时期，标951—960年，并有“951年，南唐灭楚”注记。'),block('结合正文看构成','正文的十国是南方先后九政权加北汉，不能只数这一个时点的图上政权。','teacher-extension')],p38+'《五代十国形势图（后周时期）》与正文');
-  const q04=L.flows.canal.items[0],q06=L.flows.canal.items[2];
+  const byId=id=>Object.values(L.flows).flatMap(g=>g.items).find(q=>q.questionId===id);
+  const q04=byId('Q04'),q06=byId('Q06');
   const reviewData=[
     {answer:q04.answer,contentStatus:'textbook-supported',sourceRef:'教材 PDF 1/6｜印刷第34页；Q04',reviewNote:'文化交流为课堂拓展；按题目材料选角度。'},
-    {answer:q06.timeline.map(b=>b.title+'：'+b.text).join('\n'),contentStatus:'needs-verification',sourceRef:'教师框架四节点；Q06；本课六页无完整断代依据',reviewNote:'跨课知识复习：分期需核对。安史、靖康不是瞬时完成南移的时点。'},
+    {answer:q06.answer,presentation:'four-stages',timeline:q06.timeline,contentStatus:'needs-verification',sourceRef:'教师框架四节点；Q06；本课六页无完整断代依据',reviewNote:'跨课知识复习：分期需核对。安史、靖康不是瞬时完成南移的时点。'},
     {answer:'一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n先找角度，再用史实证明；不强凑四点。',contentStatus:'teacher-extension',sourceRef:'教师框架·内容回顾3；Q15；唐蕃例证见教材 PDF 3—4/6｜印刷36—37页',reviewNote:'方法不能替代历史证据。'},
     {answer:additions.Q16.answer,compact:true,contentStatus:'needs-verification',sourceRef:'教师MX-FIX01定稿·内容回顾4；Q16；教材 PDF 3—4/6｜印刷36—37页为背景，不证明现代国界通则',reviewNote:'教师简化表述/有局限，待课堂审定；详见MX_FIX01_CONTENT_AUDIT.md。'}
   ];

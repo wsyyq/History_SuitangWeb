@@ -1,0 +1,88 @@
+{
+  "started": "2026-10-22T13:32:29.664Z",
+  "status": "failed",
+  "scans": [
+    "1920:title:question",
+    "1920:standard:question",
+    "1920:outline:question",
+    "1920:standards:question",
+    "1920:sui:question",
+    "1920:tang:question",
+    "1920:anshi:question",
+    "1920:fall:question",
+    "1920:review:question",
+    "1920:sui-found--sui-found:question",
+    "1920:sui-prosper--sui-prosper:question",
+    "1920:sui-end--sui-end:question",
+    "1920:sui-end--sui-poem:question",
+    "1920:tang-found--tang-found:question",
+    "1920:tang-prosper--tang-zhenguan:question",
+    "1920:tang-prosper--tang-prosper:question",
+    "1920:tang-prosper--plough-text:question",
+    "1920:tang-prosper--plough-image:question",
+    "1920:tang-prosper--sancai:question",
+    "1920:tang-relations--turks-intro:question",
+    "1920:tang-relations--turks:question",
+    "1920:tang-relations--huihe:question",
+    "1920:tang-relations--tubo:question",
+    "1920:tang-relations--frontier:question",
+    "1920:tang-relations--map-669:question",
+    "1920:map:turks",
+    "1920:map:huihe",
+    "1920:map:tubo",
+    "1920:map:mohe",
+    "1920:an-cause--an-cause:question",
+    "1920:an-process--an-process:question",
+    "1920:an-impact--an-impact:question",
+    "1920:an-impact--fanzhen:question",
+    "1920:tang-end--huangchao:question",
+    "1920:five--five:question",
+    "1920:five--map-five:question",
+    "1920:flow/two-capitals/sui-prosper--sui-prosper:question",
+    "1920:flow/two-capitals/sui-prosper--sui-prosper:Q02:answer",
+    "1920:flow/granaries/sui-prosper--sui-prosper:question",
+    "1920:flow/granaries/sui-prosper--sui-prosper:Q03:answer",
+    "1920:flow/canal/sui-prosper--sui-prosper:question",
+    "1920:flow/canal/sui-prosper--sui-prosper:Q04:answer",
+    "1920:flow/canal/sui-prosper--sui-prosper:Q05:answer",
+    "1920:flow/canal/sui-prosper--sui-prosper:Q06:answer"
+  ],
+  "reveals": [
+    {
+      "width": 1920,
+      "id": "flow/two-capitals/sui-prosper--sui-prosper",
+      "question": "Q02"
+    },
+    {
+      "width": 1920,
+      "id": "flow/granaries/sui-prosper--sui-prosper",
+      "question": "Q03"
+    },
+    {
+      "width": 1920,
+      "id": "flow/canal/sui-prosper--sui-prosper",
+      "question": "Q04"
+    },
+    {
+      "width": 1920,
+      "id": "flow/canal/sui-prosper--sui-prosper",
+      "question": "Q05"
+    },
+    {
+      "width": 1920,
+      "id": "flow/canal/sui-prosper--sui-prosper",
+      "question": "Q06"
+    }
+  ],
+  "migrations": [],
+  "newBoards": [],
+  "screens": [
+    "1920-Q06-answer"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "browser": "155.0.4283.62",
+  "routeCount": 77,
+  "failure": "AssertionError [ERR_ASSERTION]: Q06 last line\n    at lastLine (D:\\UGit\\History_SuitangWeb\\tools\\check_fix03.cjs:20:328)\n    at async D:\\UGit\\History_SuitangWeb\\tools\\check_fix03.cjs:35:163",
+  "ended": "2026-10-22T13:32:34.620Z"
+}

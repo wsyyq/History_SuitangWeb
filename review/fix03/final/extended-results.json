@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-10-22T13:29:12.429Z",
+  "results": [
+    {
+      "width": 1600,
+      "height": 900,
+      "overlaps": [],
+      "offscreen": [],
+      "board": {
+        "x": 80,
+        "y": 64,
+        "width": 1508,
+        "height": 824,
+        "top": 64,
+        "right": 1588,
+        "bottom": 888,
+        "left": 80
+      },
+      "alignment": 0.000042396374462746224
+    },
+    {
+      "width": 960,
+      "height": 600,
+      "overlaps": [],
+      "offscreen": [],
+      "board": {
+        "x": 148,
+        "y": 64,
+        "width": 800,
+        "height": 524,
+        "top": 64,
+        "right": 948,
+        "bottom": 588,
+        "left": 148
+      },
+      "alignment": 0.000017794653000136968
+    },
+    {
+      "width": 1024,
+      "height": 576,
+      "overlaps": [],
+      "offscreen": [],
+      "board": {
+        "x": 148,
+        "y": 64,
+        "width": 864,
+        "height": 500,
+        "top": 64,
+        "right": 1012,
+        "bottom": 564,
+        "left": 148
+      },
+      "alignment": 0.000021847261176668792
+    },
+    {
+      "width": 853,
+      "height": 480,
+      "overlaps": [],
+      "offscreen": [],
+      "board": {
+        "x": 148,
+        "y": 64,
+        "width": 693,
+        "height": 404,
+        "top": 64,
+        "right": 841,
+        "bottom": 468,
+        "left": 148
+      },
+      "alignment": 0.000012969970704546085
+    }
+  ],
+  "browserZoom": "Not tested; 1024x576 and 853x480 are CSS viewport stress cases, not real 125%/150% browser zoom."
+}

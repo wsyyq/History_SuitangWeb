@@ -1,0 +1,5 @@
+// Run unchanged accepted assertions, writing only this iteration's evidence.
+const fs=require('fs'),path=require('path'),{spawn}=require('child_process');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'review/fix03/baseline');fs.mkdirSync(out,{recursive:true});
+if(process.argv[2]){const name=process.argv[2],file=name==='routes'?'check_fix02.cjs':`check_fix02_${name}.cjs`;module._compile(fs.readFileSync(path.join(__dirname,file),'utf8').replaceAll('review/fix02','review/fix03/baseline'),__filename);}
+else{const start=new Date().toISOString();Promise.all(['routes','whiteboard','details','ui'].map(name=>new Promise(resolve=>{let log='';const p=spawn(process.execPath,[__filename,name],{env:process.env,windowsHide:true});p.stdout.on('data',b=>log+=b);p.stderr.on('data',b=>log+=b);p.on('close',code=>{fs.writeFileSync(path.join(out,name+'.log'),log);console.log(name+': '+code);resolve({name,exitCode:code});});}))).then(tests=>{fs.writeFileSync(path.join(out,'run.json'),JSON.stringify({start,end:new Date().toISOString(),tests},null,2));process.exitCode=tests.some(t=>t.exitCode!==0)?1:0;});}

@@ -1,5 +1,33 @@
 # 课堂结构与导航契约
 
+## MX-FIX03 当前有效规范（2026-10-22）
+
+教师已授权第七阶段后的定向迭代，不是第八阶段。以下旧阶段“当前”或暂停条款仅作历史档案；与本段冲突时，以根目录MX-FIX03_CODEX_INSTRUCTION.md为准。保留3一级、6模块、23教材片段、4回顾及40分钟；现为13组15题。新增Q24秦隋比较、Q25运河功过、Q26盛世成因；Q07/Q08/Q09和goguryeo/sui-burden退出活动库。旧题链接回有效原片段，否则回sui-end--sui-end，不转成新题。
+
+Q06/R02共用Q06.timeline四行数据，通过questionId查询；新题定稿逐字保留。课堂不渲染审核状态、reviewNote及无关sourceRef长段，内部needs-verification/teacher-extension不变。地图的真实图题、年份、图例和“不代表疆界”等教学限定保留。新答案仍在1200逻辑舞台内预留布局，揭示不重排板书。
+
+验收依据：MX_FIX03_REVIEW.md、MX_FIX03_CONTENT_AUDIT.md、MX_FIX03_TEST_MATRIX.md及review/fix03/；自动化不等于真实触控笔/投影验收，不自行Git暂存、提交、推送、PR或部署。
+
+|活动题组|活动题号|来源子目与返源|
+|---|---|---|
+|two-capitals|Q02|sui-prosper；完成返回本次触发片段|
+|granaries|Q03|sui-prosper；完成返回本次触发片段|
+|canal|Q04, Q05, Q06|sui-prosper；完成返回本次触发片段|
+|sui-qin-comparison|Q24|sui-end；完成返回本次触发片段|
+|sui-canal-merits|Q25|sui-end；完成返回本次触发片段|
+|economy|Q11|tang-prosper；完成返回本次触发片段|
+|sui-tang-prosperity-causes|Q26|tang-prosper；完成返回本次触发片段|
+|relations|Q12|tang-relations；完成返回本次触发片段|
+|perspectives|Q15|tang-relations；完成返回本次触发片段|
+|concepts|Q16|tang-relations；完成返回本次触发片段|
+|impact|Q18|an-impact；完成返回本次触发片段|
+|fanzhen-flow|Q21|an-impact；完成返回本次触发片段|
+|five-flow|Q23|five；完成返回本次触发片段|
+
+教材片段顺序全部不变；新单题组分别允许隋亡2个来源、唐繁荣5个来源；各组首题键独立为flow/组ID。
+
+## 以下为历史阶段记录（勿按旧题数恢复入口）
+
 ## MX-FIX02 界面规范增量
 
 本轮仅移位全局操作：左上“历”居中，目录及原右下导航集中左侧；左侧保留四模式并增加独立缩小画面按钮。44px触控目标、动态导航语义与问答来源不变。顶部60px信息区保留，底部改为8px余量，取代下文FIX01“底部60px/浮动底部导航”的布局约定。缩小使用原1×—4×、0.5×步长共享变换，最小倍率禁用；辅助面板保留复位与放大一级。教学树和内容完全沿用FIX01，不进入第七阶段。实测见根目录MX_FIX02_REVIEW.md。

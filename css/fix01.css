@@ -44,3 +44,16 @@ footer{z-index:6}.masthead{z-index:6}
   footer{left:76px}
   #tool-panel{left:136px}
 }
+
+/* MX-FIX03: large classroom answers share the unchanged 1200-unit ink stage. */
+.answer-sections{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:8px 0}
+.answer-sections.comparison{grid-template-columns:repeat(3,1fr)}
+.answer-sections section{padding:18px;border:1px solid var(--line);background:#faf6ed}
+.board-content .answer-sections h3{font-size:27px;margin:0 0 12px}
+.board-content .answer-sections p,.board-content .answer-sections li{font-size:26px;line-height:1.7}
+.answer-sections ol{margin:0;padding-left:1.3em}.answer-sections li+li{margin-top:8px}
+.four-stages{margin:0;white-space:normal}
+.four-stages>div{display:grid;grid-template-columns:190px 1fr;gap:18px;padding:18px 12px;border-bottom:1px solid var(--line)}
+.four-stages>div:last-child{border-bottom:0}.four-stages dt{font-weight:bold;color:var(--red)}
+.four-stages dd{margin:0}.board-content .four-stages{font-size:26px;line-height:1.7}
+.review-card .four-stages>div{grid-template-columns:1fr;gap:4px;padding:12px 0}

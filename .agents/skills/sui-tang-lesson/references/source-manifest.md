@@ -1,5 +1,17 @@
 # 来源清单
 
+## MX-FIX03 当前有效规范（2026-10-22）
+
+教师已授权第七阶段后的定向迭代，不是第八阶段。以下旧阶段“当前”或暂停条款仅作历史档案；与本段冲突时，以根目录MX-FIX03_CODEX_INSTRUCTION.md为准。保留3一级、6模块、23教材片段、4回顾及40分钟；现为13组15题。新增Q24秦隋比较、Q25运河功过、Q26盛世成因；Q07/Q08/Q09和goguryeo/sui-burden退出活动库。旧题链接回有效原片段，否则回sui-end--sui-end，不转成新题。
+
+Q06/R02共用Q06.timeline四行数据，通过questionId查询；新题定稿逐字保留。课堂不渲染审核状态、reviewNote及无关sourceRef长段，内部needs-verification/teacher-extension不变。地图的真实图题、年份、图例和“不代表疆界”等教学限定保留。新答案仍在1200逻辑舞台内预留布局，揭示不重排板书。
+
+验收依据：MX_FIX03_REVIEW.md、MX_FIX03_CONTENT_AUDIT.md、MX_FIX03_TEST_MATRIX.md及review/fix03/；自动化不等于真实触控笔/投影验收，不自行Git暂存、提交、推送、PR或部署。
+
+新增授权来源：MX-FIX03_CODEX_INSTRUCTION.md（教师三新题、四阶段及界面清理定稿）。本轮未新增外部史学证据。原PDF/框架/讲稿/全部素材与开工快照SHA-256一致，见review/fix03/{baseline,final}/model.json。Q05图片assetStatus修正为available，仅修复已存在图片的陈旧缺图元数据，不代表其他史实获证。
+
+## 以下为历史阶段记录（勿按旧题数恢复入口）
+
 ## MX-FIX01 当前有效规范
 
 MX-FIX01（2026-10-22）为第六阶段后专项修订，不启动第七阶段。当前有效结构：一级3页、二级6模块、11子目23教材片段、12组15题、二级4项回顾；参考时间3/8/13/7/6/3共40分钟。教师本次定稿优先于下列历史规范。

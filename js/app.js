@@ -23,6 +23,10 @@
   function migrate(hash){
     const id=hash.replace(/^#/,'');if(migrations[id])return migrations[id];
     const [kind,flow,origin]=id.split('/');
+    if(kind==='flow'&&['goguryeo','sui-burden'].includes(flow)){
+      const source=migrations[origin]||origin;
+      return pages[source]?source:'sui-end--sui-end';
+    }
     if(kind==='flow'&&flow==='map-reading')return 'tang-relations--map-669';
     if(kind==='flow'&&flows[flow]&&migrations[origin])return flowRoute(flow,migrations[origin]);
     return id;
@@ -44,16 +48,17 @@
   const nextModule=s=>modules[modules.findIndex(m=>m.id===s.module)+1];
   function moduleCards(){return `<div class="module-grid">${modules.map((m,i)=>`<a class="module-card" href="#${m.id}"><span class="number">0${i+1} / ${m.eyebrow}</span><span class="arrow" aria-hidden="true">↗</span><h2>${m.title}</h2><p>${m.description}</p><small class="module-time">参考 ${m.targetMinutes} 分钟 · 累计 ${cumulative(i)} 分钟</small></a>`).join('')}</div>`;}
   const items=()=>flows[current.flow]?.items||[];
-  const evidenceLabel=type=>({'textbook-supported':'教材事实','teacher-extension':'课堂拓展','needs-verification':'待核对','pending':'答案待填充'}[type]||'待核对');
+  // Classroom presentation excludes audit metadata; evidence states remain in data.
   function contentBlocks(blocks,cls='content-blocks'){
-    return `<div class="${cls}">${blocks.map(b=>`<section class="content-block"><span class="evidence-label">${evidenceLabel(b.evidenceType)}</span><h3>${esc(b.title)}</h3><p>${esc(b.text)}</p></section>`).join('')}</div>`;
+    return `<div class="${cls}">${blocks.filter(b=>b.presentationOnly!==false).map(b=>`<section class="content-block"><h3>${esc(b.title)}</h3><p>${esc(b.text)}</p></section>`).join('')}</div>`;
   }
   function teachingNote(id){
     const note=window.LESSON.teachingNotes?.[id];if(!note)return '';
-    return `<aside class="teaching-note" aria-label="教材后的讲解要点"><h2>${esc(note.title)}</h2>${contentBlocks(note.blocks)}${sequence(note.sequence)}${note.note?`<p class="note-boundary">${esc(note.note)}</p>`:''}<p class="note-source">来源：${esc(note.sourceRef)}</p></aside>`;
+    const caption=note.presentationNote??note.note;
+    return `<aside class="teaching-note" aria-label="教材后的讲解要点"><h2>${esc(note.title)}</h2>${contentBlocks(note.blocks)}${sequence(note.sequence)}${caption?`<p class="note-boundary">${esc(caption)}</p>`:''}</aside>`;
   }
   function sequence(data){
-    return data?`<figure class="history-sequence"><figcaption>${esc(data.title)}</figcaption><ol>${data.nodes.map(b=>`<li><span class="evidence-label">${evidenceLabel(b.evidenceType)}</span><h3>${esc(b.title)}</h3><p>${esc(b.text)}</p></li>`).join('')}</ol><p class="sequence-source">来源：${esc(data.sourceRef)}</p></figure>`:'';
+    return data?`<figure class="history-sequence"><figcaption>${esc(data.title)}</figcaption><ol>${data.nodes.map(b=>`<li><h3>${esc(b.title)}</h3><p>${esc(b.text)}</p></li>`).join('')}</ol></figure>`:'';
   }
   let mapSelection=null;
   function mountMap(s){
@@ -70,14 +75,15 @@
     });
   }
   function answerContent(q){
+    if(q.presentation==='four-stages')return fourStages(q.timeline);
+    if(q.answerSections)return `<div class="answer-sections ${esc(q.presentation)}">${q.answerSections.map(b=>`<section><h3>${esc(b.title)}</h3>${b.items.length===1?`<p>${esc(b.items[0])}</p>`:`<ol>${b.items.map(t=>`<li>${esc(t)}</li>`).join('')}</ol>`}</section>`).join('')}</div>`;
     if(q.compact)return `<p class="core-answer">${esc(q.answer)}</p>${q.image?`<figure class="teacher-map"><img src="${esc(q.image.path)}" width="${q.image.width}" height="${q.image.height}" alt="${esc(q.image.alt)}"></figure>`:''}`;
-    const title=q.contentStatus==='needs-verification'?'待核对：讨论思路':q.contentStatus==='teacher-extension'?'课堂拓展：讲解模型':'答案与解释';
-    const core=q.answerBlocks?contentBlocks(q.answerBlocks):`<p class="core-answer">${esc(q.answer||'答案与解析待第五／六阶段填充。')}</p>`;
+    const core=q.answerBlocks?contentBlocks(q.answerBlocks):`<p class="core-answer">${esc(q.answer||'')}</p>`;
     const diagram=q.diagram?`<figure class="concept-model"><figcaption>${esc(q.diagram.title)}</figcaption><ol>${q.diagram.nodes.map(n=>`<li>${esc(n)}</li>`).join('')}</ol></figure>`:'';
-    const timeline=q.timeline?`<h3 class="timeline-title">四个复习节点 · 待纵向核验</h3>${contentBlocks(q.timeline,'content-blocks timeline')}`:'';
-    return `<h3>${title}</h3>${core}${diagram}${timeline}${sequence(q.sequence)}<p class="answer-explanation">${esc(q.explanation||'')}</p>${q.reviewNote?`<p class="review-note"><strong>证据边界：</strong>${esc(q.reviewNote)}</p>`:''}`;
+    return `${core}${diagram}${sequence(q.sequence)}${q.explanation?`<p class="answer-explanation">${esc(q.explanation)}</p>`:''}`;
   }
-  function questionLabel(){return items().length?`第 ${question.index+1}/${items().length} 题 · ${question.revealed?'答案栏已揭示':'答案待揭示'}`:'预备题组 · 内容待配置';}
+  function fourStages(rows){return `<dl class="four-stages">${rows.map(r=>`<div><dt>${esc(r.title)}</dt><dd>${esc(r.text)}</dd></div>`).join('')}</dl>`;}
+  function questionLabel(){return items().length?`第 ${question.index+1}/${items().length} 题 · ${question.revealed?'答案栏已揭示':'答案待揭示'}`:'课堂问题';}
   function renderProgress(s){
     const i=modules.findIndex(m=>m.id===s.module),m=modules[i];
     const detail=s.level===4?`${sections[s.section].title} · ${questionLabel()}`:s.level===3?`${sections[s.section].title} · 片段 ${s.index+1}/${sections[s.section].assets.length}`:s.module==='review'?`回顾 ${(s.reviewIndex??0)+1}/${reviews.length} · 题目与答案栏同时展示`:m?'模块目录 · 可自由选择教学路线':'课程准备 · 选择模块开始授课';
@@ -88,8 +94,8 @@
     // The first question retains the former group board key; later questions are isolated.
     s.boardKey=question.index===0?`flow/${s.flow}`:`flow/${s.flow}/question/${q.questionId}`;
     s.questionId=q?.questionId||null;
-    s.readableFlow=['stage5','stage6'].includes(q?.contentVersion);
-    return `<div class="${s.readableFlow?'teaching-flow':''}">`+head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card">${q?.compact?'':`<span class="badge">${q?.contentStatus==='pending'?'预备题组 · 答案待填充':evidenceLabel(q?.contentStatus)}</span>${s.readableFlow?'<span class="reading-hint">滚轮向下阅读答案、解析与来源</span>':''}`} <h2 id="question-prompt">${esc(q?.prompt||'此问题组内容待后续阶段配置')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert>${answerContent(q)}</div>${q.compact?'':`<p class="question-source">来源：${esc(q.sourceRef||'待对应来源')}<br>内容状态：${evidenceLabel(q.contentStatus)}${f.audits.length?` · 审核项 ${esc(f.audits.join('、'))}`:''}</p>`}`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}</section></div>`;
+    s.readableFlow=!!q;
+    return `<div class="teaching-flow">`+head('课堂问题 / 第四级',esc(f.title))+`<section class="flow-box qa-card"><h2 id="question-prompt">${esc(q?.prompt||'课堂问题')}</h2>${q?`<div class="qa-answer" id="qa-answer" hidden aria-hidden="true" inert>${answerContent(q)}</div>`:'<p class="empty-group">请返回教材，继续其他教学内容。</p>'}</section></div>`;
   }
   function advanceQuestion(event,previous=false){
     if(current.level!==4||event?.repeat||event?.detail>1)return;
@@ -155,7 +161,7 @@
       main.innerHTML=head('课程导入 / 03','课堂脉络','选择一个模块，开始阅读与思考。')+moduleCards();
     }else if(s.module==='review'){
       s.readableFlow=true;
-      main.innerHTML=head('模块 06 / 二级内容','内容回顾','四项题答直接展示 · 向下滚动阅读')+`<div class="review-grid review-complete">${window.LESSON.reviewItems.map((q,i)=>`<article id="review-card-${i}" class="review-card ${i===(s.reviewIndex??0)?'active':''}"><a href="#review/${i}" aria-label="选择回顾${i+1}：${esc(q.prompt)}"><span class="badge">回顾 0${i+1}</span><h2>${esc(q.prompt)}</h2></a>${q.compact?'':`<span class="evidence-label">${evidenceLabel(q.contentStatus)}</span>`}<p class="review-answer">${esc(q.answer)}</p>${q.compact?'':`<p class="review-boundary">${esc(q.reviewNote)}</p><p class="review-source">来源：${esc(q.sourceRef)}</p>`}</article>`).join('')}</div>`;
+      main.innerHTML=head('模块 06 / 二级内容','内容回顾','四项题答直接展示 · 向下滚动阅读')+`<div class="review-grid review-complete">${window.LESSON.reviewItems.map((q,i)=>`<article id="review-card-${i}" class="review-card ${i===(s.reviewIndex??0)?'active':''}"><a href="#review/${i}" aria-label="选择回顾${i+1}：${esc(q.prompt)}"><span class="badge">回顾 0${i+1}</span><h2>${esc(q.prompt)}</h2></a><div class="review-answer">${q.presentation==='four-stages'?fourStages(q.timeline):esc(q.answer)}</div></article>`).join('')}</div>`;
     }else if(s.level===2){
       const m=moduleById[s.module];main.innerHTML=head(`模块 0${modules.indexOf(m)+1} / ${m.eyebrow}`,m.title,m.description)+`<div class="section-menu">${m.sections.map((id,i)=>`<a class="section-link" href="#${first(id)}"><span>0${i+1}</span><strong>${sections[id].title}</strong><small>${sections[id].assets.length} 个教材片段</small><span aria-hidden="true">→</span></a>`).join('')}</div>`;
     }else if(s.level===3){
