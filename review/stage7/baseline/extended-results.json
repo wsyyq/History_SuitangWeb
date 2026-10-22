@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-10-22T11:09:36.271Z",
+  "results": [
+    {
+      "width": 1600,
+      "height": 900,
+      "overlaps": [],
+      "offscreen": [],
+      "board": {
+        "x": 80,
+        "y": 64,
+        "width": 1508,
+        "height": 824,
+        "top": 64,
+        "right": 1588,
+        "bottom": 888,
+        "left": 80
+      }
+    },
+    {
+      "width": 960,
+      "height": 600,
+      "overlaps": [],
+      "offscreen": [],
+      "board": {
+        "x": 80,
+        "y": 64,
+        "width": 868,
+        "height": 524,
+        "top": 64,
+        "right": 948,
+        "bottom": 588,
+        "left": 80
+      }
+    },
+    {
+      "width": 1024,
+      "height": 576,
+      "overlaps": [
+        [
+          "展开辅助工具",
+          "返回本模块菜单"
+        ]
+      ],
+      "offscreen": [],
+      "board": {
+        "x": 80,
+        "y": 64,
+        "width": 932,
+        "height": 500,
+        "top": 64,
+        "right": 1012,
+        "bottom": 564,
+        "left": 80
+      }
+    },
+    {
+      "width": 853,
+      "height": 480,
+      "overlaps": [
+        [
+          "放大",
+          "返回本模块菜单"
+        ],
+        [
+          "缩小画面",
+          "返回本模块菜单"
+        ],
+        [
+          "缩小画面",
+          "← 上一页"
+        ],
+        [
+          "展开辅助工具",
+          "← 上一页"
+        ],
+        [
+          "展开辅助工具",
+          "下一子目 →"
+        ]
+      ],
+      "offscreen": [],
+      "board": {
+        "x": 80,
+        "y": 64,
+        "width": 761,
+        "height": 404,
+        "top": 64,
+        "right": 841,
+        "bottom": 468,
+        "left": 80
+      }
+    }
+  ],
+  "browserZoom": "Not tested; 1024x576 and 853x480 are CSS viewport stress cases, not real 125%/150% browser zoom."
+}

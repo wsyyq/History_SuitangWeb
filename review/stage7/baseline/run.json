@@ -1,0 +1,37 @@
+{
+  "start": "2026-10-22T11:06:58.407Z",
+  "end": "2026-10-22T11:07:38.474Z",
+  "platform": "win32",
+  "node": "v24.19.0",
+  "run": "baseline",
+  "tests": [
+    {
+      "name": "routes",
+      "started": "2026-10-22T11:06:58.418Z",
+      "ended": "2026-10-22T11:07:38.474Z",
+      "exitCode": 0,
+      "command": "node tools/check_stage7_routes.cjs"
+    },
+    {
+      "name": "whiteboard",
+      "started": "2026-10-22T11:06:58.437Z",
+      "ended": "2026-10-22T11:07:20.343Z",
+      "exitCode": 0,
+      "command": "node tools/check_stage7_whiteboard.cjs"
+    },
+    {
+      "name": "details",
+      "started": "2026-10-22T11:06:58.447Z",
+      "ended": "2026-10-22T11:07:17.613Z",
+      "exitCode": 0,
+      "command": "node tools/check_stage7_details.cjs"
+    },
+    {
+      "name": "ui",
+      "started": "2026-10-22T11:06:58.457Z",
+      "ended": "2026-10-22T11:07:09.850Z",
+      "exitCode": 0,
+      "command": "node tools/check_stage7_ui.cjs"
+    }
+  ]
+}

@@ -1,0 +1,1520 @@
+{
+  "status": "passed",
+  "started": "2026-10-22T11:10:29.105Z",
+  "ended": "2026-10-22T11:10:47.911Z",
+  "actualSeconds": 18.806,
+  "referenceMinutes": 40,
+  "isRealTeaching": false,
+  "clicks": 131,
+  "modules": [
+    {
+      "id": "standards",
+      "minutes": 3,
+      "actualMilliseconds": 681,
+      "clicks": 4,
+      "pages": 0,
+      "questions": 0,
+      "textCharacters": 0
+    },
+    {
+      "id": "sui",
+      "minutes": 8,
+      "actualMilliseconds": 7980,
+      "clicks": 41,
+      "pages": 4,
+      "questions": 8,
+      "textCharacters": 2326,
+      "longestConsecutiveFragments": 2
+    },
+    {
+      "id": "tang",
+      "minutes": 13,
+      "actualMilliseconds": 5320,
+      "clicks": 44,
+      "pages": 12,
+      "questions": 4,
+      "textCharacters": 5168,
+      "longestConsecutiveFragments": 6
+    },
+    {
+      "id": "anshi",
+      "minutes": 7,
+      "actualMilliseconds": 2467,
+      "clicks": 26,
+      "pages": 4,
+      "questions": 2,
+      "textCharacters": 1251,
+      "longestConsecutiveFragments": 2
+    },
+    {
+      "id": "fall",
+      "minutes": 6,
+      "actualMilliseconds": 972,
+      "clicks": 7,
+      "pages": 3,
+      "questions": 1,
+      "textCharacters": 1887,
+      "longestConsecutiveFragments": 2
+    },
+    {
+      "id": "review",
+      "minutes": 3,
+      "actualMilliseconds": 508,
+      "clicks": 5,
+      "pages": 0,
+      "questions": 4,
+      "textCharacters": 209
+    }
+  ],
+  "visited": [
+    "sui-found--sui-found",
+    "sui-prosper--sui-prosper",
+    "sui-end--sui-end",
+    "sui-end--sui-poem",
+    "tang-found--tang-found",
+    "tang-prosper--tang-zhenguan",
+    "tang-prosper--tang-prosper",
+    "tang-prosper--plough-text",
+    "tang-prosper--plough-image",
+    "tang-prosper--sancai",
+    "tang-relations--turks-intro",
+    "tang-relations--turks",
+    "tang-relations--huihe",
+    "tang-relations--tubo",
+    "tang-relations--frontier",
+    "tang-relations--map-669",
+    "an-cause--an-cause",
+    "an-process--an-process",
+    "an-impact--an-impact",
+    "an-impact--fanzhen",
+    "tang-end--huangchao",
+    "five--five",
+    "five--map-five"
+  ],
+  "displayed": [
+    {
+      "id": "Q02",
+      "group": "two-capitals",
+      "origin": "sui-prosper--sui-prosper",
+      "boardKey": "flow/two-capitals",
+      "prompt": "为什么同时出现长安、洛阳两都？",
+      "renderedAnswer": "两京制。隋文帝定都长安，隋炀帝迁都洛阳，将长安降为陪都。",
+      "questionId": "Q02",
+      "answer": "两京制。隋文帝定都长安，隋炀帝迁都洛阳，将长安降为陪都。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛1；审核 A01；question-bank.md · Q02",
+      "evidenceType": "needs-verification",
+      "reviewNote": "“迁都洛阳”“长安降为陪都”及“两京制”的具体制度、时点仍待补证；不作为教材直接结论。",
+      "contentVersion": "stage5",
+      "compact": true
+    },
+    {
+      "id": "Q03",
+      "group": "granaries",
+      "origin": "sui-prosper--sui-prosper",
+      "boardKey": "flow/granaries",
+      "prompt": "义仓的功能及影响是什么？",
+      "renderedAnswer": "功能：秋收后按收成缴纳粮食，饥荒时开仓赈灾。\n影响：初期备荒救灾稳定社会，后期官办化、赋税化。",
+      "questionId": "Q03",
+      "answer": "功能：秋收后按收成缴纳粮食，饥荒时开仓赈灾。\n影响：初期备荒救灾稳定社会，后期官办化、赋税化。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛2；审核 A02、A13；question-bank.md · Q03",
+      "evidenceType": "needs-verification",
+      "reviewNote": "具体征粮规则、官办化与赋税化的演变及开仓审批制度，尚缺本课教材之外的依据。",
+      "contentVersion": "stage5",
+      "compact": true
+    },
+    {
+      "id": "Q04",
+      "group": "canal",
+      "origin": "sui-prosper--sui-prosper",
+      "boardKey": "flow/canal",
+      "prompt": "修大运河或修路有什么政治、经济、文化作用？",
+      "renderedAnswer": "答案与解释\n教材事实\n政治\n\n巩固统一。\n\n教材事实\n经济\n\n促进南北经济交流，带动运河沿岸城市发展。\n\n课堂拓展\n文化\n\n有利于人员往来与南北文化交流。\n\n运河作为水路，解决南北交通和物资转输问题。迁移到“修路作用”题时，按政治、经济、文化组织分析，但须结合具体材料选择角度，不能把三点机械套用于所有交通工程。\n\n证据边界：“加强中央与地方联系”和文化影响属于课堂分析；不冒充教材第34页原句。",
+      "questionId": "Q04",
+      "answer": "政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。",
+      "explanation": "运河作为水路，解决南北交通和物资转输问题。迁移到“修路作用”题时，按政治、经济、文化组织分析，但须结合具体材料选择角度，不能把三点机械套用于所有交通工程。",
+      "contentStatus": "textbook-supported",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；讲稿·修路的好处；框架·隋/兴盛3；审核 A03；question-bank.md · Q04",
+      "evidenceType": "textbook-supported",
+      "reviewNote": "“加强中央与地方联系”和文化影响属于课堂分析；不冒充教材第34页原句。",
+      "contentVersion": "stage5",
+      "answerBlocks": [
+        {
+          "title": "政治",
+          "text": "巩固统一。",
+          "evidenceType": "textbook-supported"
+        },
+        {
+          "title": "经济",
+          "text": "促进南北经济交流，带动运河沿岸城市发展。",
+          "evidenceType": "textbook-supported"
+        },
+        {
+          "title": "文化",
+          "text": "有利于人员往来与南北文化交流。",
+          "evidenceType": "teacher-extension"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "group": "canal",
+      "origin": "sui-prosper--sui-prosper",
+      "boardKey": "flow/canal/question/Q05",
+      "prompt": "仓库、洛阳与运河为什么一起建设，怎样联系？",
+      "renderedAnswer": "大运河连接经济与政治军事中心。",
+      "questionId": "Q05",
+      "answer": "大运河连接经济与政治军事中心。",
+      "contentStatus": "teacher-extension",
+      "sourceRef": "教师提供图片 assets/teacher/sui_canal_granary_map.png；MX-FIX01；question-bank.md · Q05",
+      "evidenceType": "teacher-extension",
+      "reviewNote": "教师指定课堂概括，配图已按交付SHA-256验证；非教材PDF原图。",
+      "contentVersion": "stage5",
+      "assetStatus": "asset-missing",
+      "compact": true,
+      "image": {
+        "path": "./assets/teacher/sui_canal_granary_map.png",
+        "alt": "隋运河、粮仓分布示意图（教师提供）",
+        "width": 416,
+        "height": 404
+      }
+    },
+    {
+      "id": "Q06",
+      "group": "canal",
+      "origin": "sui-prosper--sui-prosper",
+      "boardKey": "flow/canal/question/Q06",
+      "prompt": "经济重心南移经历了哪些阶段？",
+      "renderedAnswer": "待核对：讨论思路\n\n沿教师框架，用四个时间节点回顾经济重心南移这一长期过程；以下是复习线索，不是本课教材已经完整论证的断代结论。\n\n四个复习节点 · 待纵向核验\n待核对\n魏晋以前\n\n北方为主的经济格局：复习线索。\n\n待核对\n魏晋南北朝\n\n江南逐步开发：复习线索。\n\n待核对\n安史之乱后\n\n南方进一步发展与南移：待纵向核验。\n\n待核对\n靖康之变后\n\n联系南宋阶段；完成标准与时点待核。\n\n江南开发、重心逐渐南移与完成南移不是同一概念。不能把某次战乱当作唯一原因，或把一个事件直接当作开始、完成的精确时点。此处不展开安史之乱的详细影响。\n\n证据边界：四阶段简语仍待纵向教材与教师核定，尤其“开始/完成”的标准和断代；不将靖康事件与完成南移机械等同。",
+      "questionId": "Q06",
+      "answer": "沿教师框架，用四个时间节点回顾经济重心南移这一长期过程；以下是复习线索，不是本课教材已经完整论证的断代结论。",
+      "explanation": "江南开发、重心逐渐南移与完成南移不是同一概念。不能把某次战乱当作唯一原因，或把一个事件直接当作开始、完成的精确时点。此处不展开安史之乱的详细影响。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教师框架·隋/兴盛3；讲稿·经济重心南移回顾；本课教材 PDF 1—6/6｜印刷第34—39页未完整论证该过程；审核 A04、A09；question-bank.md · Q06",
+      "evidenceType": "needs-verification",
+      "reviewNote": "四阶段简语仍待纵向教材与教师核定，尤其“开始/完成”的标准和断代；不将靖康事件与完成南移机械等同。",
+      "contentVersion": "stage5",
+      "timeline": [
+        {
+          "title": "魏晋以前",
+          "text": "北方为主的经济格局：复习线索。",
+          "evidenceType": "needs-verification"
+        },
+        {
+          "title": "魏晋南北朝",
+          "text": "江南逐步开发：复习线索。",
+          "evidenceType": "needs-verification"
+        },
+        {
+          "title": "安史之乱后",
+          "text": "南方进一步发展与南移：待纵向核验。",
+          "evidenceType": "needs-verification"
+        },
+        {
+          "title": "靖康之变后",
+          "text": "联系南宋阶段；完成标准与时点待核。",
+          "evidenceType": "needs-verification"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "group": "goguryeo",
+      "origin": "sui-end--sui-end",
+      "boardKey": "flow/goguryeo",
+      "prompt": "高句丽与高丽如何区分？教材“征伐高丽”如何读？",
+      "renderedAnswer": "待核对：讨论思路\n\n先核对时代、政权名称、活动地域与史料称谓，不能仅凭名称相同就认定为同一政权。教材“高丽”原字保留，不直接宣布教材错误。\n\n教材记载隋炀帝三次大举征伐“高丽”；教师讲稿拟辨析高句丽与后世同名政权。辨名需将教材用语、历史异称和不同时代政权分开核验。\n\n证据边界：本仓库尚无独立可靠资料补齐精确起讫年代、疆界和称谓沿革；此页提供核对方法，不给未经验证的标准断代。",
+      "questionId": "Q07",
+      "answer": "先核对时代、政权名称、活动地域与史料称谓，不能仅凭名称相同就认定为同一政权。教材“高丽”原字保留，不直接宣布教材错误。",
+      "explanation": "教材记载隋炀帝三次大举征伐“高丽”；教师讲稿拟辨析高句丽与后世同名政权。辨名需将教材用语、历史异称和不同时代政权分开核验。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·高句丽和高丽的区别；审核 A05；question-bank.md · Q07",
+      "evidenceType": "needs-verification",
+      "reviewNote": "本仓库尚无独立可靠资料补齐精确起讫年代、疆界和称谓沿革；此页提供核对方法，不给未经验证的标准断代。",
+      "contentVersion": "stage5"
+    },
+    {
+      "id": "Q08",
+      "group": "goguryeo",
+      "origin": "sui-end--sui-end",
+      "boardKey": "flow/goguryeo/question/Q08",
+      "prompt": "征伐是否为了防止突厥与高句丽联合？",
+      "renderedAnswer": "待核对：讨论思路\n\n仅据本课教材，不能确认“防止突厥与高句丽联合”就是征伐动机，更不能把它作为唯一原因。\n\n教材记载的是三次大举征伐及生产破坏、民生困境等后果。“防止联合”来自教师讲解，是可以讨论、但仍需史料支持的背景假说。\n\n证据边界：需要核对战争背景、同时代政治关系及可追溯史料；目前不输出确定的动机结论。",
+      "questionId": "Q08",
+      "answer": "仅据本课教材，不能确认“防止突厥与高句丽联合”就是征伐动机，更不能把它作为唯一原因。",
+      "explanation": "教材记载的是三次大举征伐及生产破坏、民生困境等后果。“防止联合”来自教师讲解，是可以讨论、但仍需史料支持的背景假说。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；框架·隋/灭亡；讲稿·防止两个政权联合；审核 A06；question-bank.md · Q08",
+      "evidenceType": "needs-verification",
+      "reviewNote": "需要核对战争背景、同时代政治关系及可追溯史料；目前不输出确定的动机结论。",
+      "contentVersion": "stage5"
+    },
+    {
+      "id": "Q09",
+      "group": "sui-burden",
+      "origin": "sui-end--sui-end",
+      "boardKey": "flow/sui-burden",
+      "prompt": "隋朝富强为何仍灭亡？建设如何影响生产？",
+      "renderedAnswer": "答案与解释\n\n大兴土木、穷奢极欲与三次大举征伐，加重社会负担，生产严重破坏、民不聊生，最终引发大规模起义。618年，隋炀帝在江都被部将杀死，隋朝灭亡。\n\n课堂解释：“夺农时”可理解为徭役、兵役占用关键农时会妨碍生产，不能据此断定具体征役的月份。工程功效与民力负担应分开评价；国家工程和物资积累反映国力，治理仍须顾及社会承受能力。\n\n证据边界：不以修大运河解释隋亡全部原因；不使用仓粮可食五六十年或地方官一律无权开仓等未经核实说法。“国富民困”只作材料讨论。",
+      "questionId": "Q09",
+      "answer": "大兴土木、穷奢极欲与三次大举征伐，加重社会负担，生产严重破坏、民不聊生，最终引发大规模起义。618年，隋炀帝在江都被部将杀死，隋朝灭亡。",
+      "explanation": "课堂解释：“夺农时”可理解为徭役、兵役占用关键农时会妨碍生产，不能据此断定具体征役的月份。工程功效与民力负担应分开评价；国家工程和物资积累反映国力，治理仍须顾及社会承受能力。",
+      "contentStatus": "textbook-supported",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；讲稿·国富而不与民共享；审核 A12、A13；question-bank.md · Q09",
+      "evidenceType": "textbook-supported",
+      "reviewNote": "不以修大运河解释隋亡全部原因；不使用仓粮可食五六十年或地方官一律无权开仓等未经核实说法。“国富民困”只作材料讨论。",
+      "contentVersion": "stage5"
+    },
+    {
+      "id": "Q11",
+      "group": "economy",
+      "origin": "tang-prosper--tang-zhenguan",
+      "boardKey": "flow/economy",
+      "prompt": "曲辕犁和唐三彩分别说明什么？",
+      "renderedAnswer": "答案与解释\n\n曲辕犁体现农业生产工具的改进：短曲辕、加装犁评以调节深浅、改进犁壁；在江南水田推广。\n唐三彩盘可从手工业中的陶瓷工艺与装饰技术角度观察（课堂归纳）。\n\n教材图注：三彩盘出土于陕西乾县唐永泰公主墓，釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。短曲辕比长直辕轻便；工具改良提高耕作便利性、适应性是课堂分析。\n\n证据边界：保留“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”图题，不由壁画地点推断技术起源或推广地域；不凭一件文物推定贸易规模，不把三色当唐三彩的严格定义。",
+      "questionId": "Q11",
+      "answer": "曲辕犁体现农业生产工具的改进：短曲辕、加装犁评以调节深浅、改进犁壁；在江南水田推广。\n唐三彩盘可从手工业中的陶瓷工艺与装饰技术角度观察（课堂归纳）。",
+      "explanation": "教材图注：三彩盘出土于陕西乾县唐永泰公主墓，釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。短曲辕比长直辕轻便；工具改良提高耕作便利性、适应性是课堂分析。",
+      "contentStatus": "textbook-supported",
+      "sourceRef": "教材 PDF 2/6｜印刷第35页｜历史纵横·唐朝曲辕犁及唐三彩盘图注；框架·唐/繁荣/经济；审核 A14；question-bank.md · Q11",
+      "evidenceType": "textbook-supported",
+      "reviewNote": "保留“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”图题，不由壁画地点推断技术起源或推广地域；不凭一件文物推定贸易规模，不把三色当唐三彩的严格定义。",
+      "contentVersion": "stage5"
+    },
+    {
+      "id": "Q12",
+      "group": "relations",
+      "origin": "tang-relations--map-669",
+      "boardKey": "flow/relations",
+      "prompt": "与突厥、回纥、吐蕃、靺鞨分别怎样交往？",
+      "renderedAnswer": "答案与解释\n\n突厥：战争、联合行动；唐在西域设置安西、北庭都护府。\n回纥：合作、册封首领。\n吐蕃：和亲、会盟。\n靺鞨粟末部：册封首领。\n\n唐太宗反击东突厥，被草原各族尊为“天可汗”；唐高宗联合回纥灭西突厥。682年后突厥建立，744年唐与回纥等联手平定。玄宗册封骨力裴罗为怀仁可汗、大祚荣为渤海郡王。周边民族政权为边疆开发作出积极贡献。\n\n证据边界：这些事件跨越不同时期，不都发生在669年；一种交往方式不等于永久关系，设置都护府也不等于直接管辖图中所有周边政权。",
+      "questionId": "Q12",
+      "answer": "突厥：战争、联合行动；唐在西域设置安西、北庭都护府。\n回纥：合作、册封首领。\n吐蕃：和亲、会盟。\n靺鞨粟末部：册封首领。",
+      "explanation": "唐太宗反击东突厥，被草原各族尊为“天可汗”；唐高宗联合回纥灭西突厥。682年后突厥建立，744年唐与回纥等联手平定。玄宗册封骨力裴罗为怀仁可汗、大祚荣为渤海郡王。周边民族政权为边疆开发作出积极贡献。",
+      "contentStatus": "textbook-supported",
+      "sourceRef": "教材 PDF 3/6｜印刷第36页突厥正文、回纥栏、吐蕃段；教材 PDF 4/6｜印刷第37页靺鞨与边疆开发；question-bank.md · Q12",
+      "reviewNote": "这些事件跨越不同时期，不都发生在669年；一种交往方式不等于永久关系，设置都护府也不等于直接管辖图中所有周边政权。",
+      "contentVersion": "stage6",
+      "evidenceType": "textbook-supported"
+    },
+    {
+      "id": "Q15",
+      "group": "perspectives",
+      "origin": "tang-relations--map-669",
+      "boardKey": "flow/perspectives",
+      "prompt": "两者关系类题如何找分析角度？",
+      "renderedAnswer": "课堂拓展：讲解模型\n\n一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n角度用于组织思路，每项结论仍须史实支持，不必凑齐四项。\n\n例：唐与吐蕃。吐蕃方面可找工艺、技术、书籍交流；双方可谈友好和经济文化交流。唐朝治理稳定是有条件的分析角度，不能直接冒充本段结论。迁移到甲午题，只提出中国、日本、双方关系、其他国家的观察问题，不用本课教材编写近代史答案。\n\n证据边界：其他因素须题目涉及且有证据；甲午与1931不是同一事件，方法不能替代史实。",
+      "questionId": "Q15",
+      "answer": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n角度用于组织思路，每项结论仍须史实支持，不必凑齐四项。",
+      "explanation": "例：唐与吐蕃。吐蕃方面可找工艺、技术、书籍交流；双方可谈友好和经济文化交流。唐朝治理稳定是有条件的分析角度，不能直接冒充本段结论。迁移到甲午题，只提出中国、日本、双方关系、其他国家的观察问题，不用本课教材编写近代史答案。",
+      "contentStatus": "teacher-extension",
+      "sourceRef": "教师框架·唐/民族2及讲稿“一方、另一方”；教材 PDF 3/6｜印刷第36页—教材 PDF 4/6｜印刷第37页仅支持唐蕃交流例证；审核A16；question-bank.md · Q15",
+      "reviewNote": "其他因素须题目涉及且有证据；甲午与1931不是同一事件，方法不能替代史实。",
+      "contentVersion": "stage6",
+      "evidenceType": "teacher-extension"
+    },
+    {
+      "id": "Q16",
+      "group": "concepts",
+      "origin": "tang-relations--map-669",
+      "boardKey": "flow/concepts",
+      "prompt": "民族/边疆关系与外交/对外关系怎样区分？",
+      "renderedAnswer": "核心判断标准：现在中国有没有当前领土。",
+      "questionId": "Q16",
+      "answer": "核心判断标准：现在中国有没有当前领土。",
+      "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教师 MX-FIX01 定稿；教材 PDF 4—5/6｜印刷37—38页及教师讲稿；审核 A08；question-bank.md · Q16",
+      "compact": true,
+      "reviewNote": "教师简化口诀，有局限，待课堂审定；现代疆域不等于古代直接管辖。",
+      "contentVersion": "stage6",
+      "evidenceType": "needs-verification"
+    },
+    {
+      "id": "Q18",
+      "group": "impact",
+      "origin": "an-impact--an-impact",
+      "boardKey": "flow/impact",
+      "prompt": "安史之乱的影响",
+      "renderedAnswer": "中央集权削弱\n边防空虚\n唐朝由盛转衰\n藩镇割据\n严重破坏北方经济\n经济重心开始南移",
+      "questionId": "Q18",
+      "answer": "中央集权削弱\n边防空虚\n唐朝由盛转衰\n藩镇割据\n严重破坏北方经济\n经济重心开始南移",
+      "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教师 MX-FIX01 定稿；教材 PDF 4—5/6｜印刷37—38页及教师讲稿；审核 A04/A09；question-bank.md · Q18",
+      "compact": true,
+      "reviewNote": "前四条教材支持；北方经济受损与南移开始的断代需跨课核验。",
+      "contentVersion": "stage6",
+      "evidenceType": "needs-verification"
+    },
+    {
+      "id": "Q21",
+      "group": "fanzhen-flow",
+      "origin": "an-impact--an-impact",
+      "boardKey": "flow/fanzhen-flow",
+      "prompt": "藩镇割据的影响",
+      "renderedAnswer": "不利于中央集权\n客观上延续了唐朝的统治",
+      "questionId": "Q21",
+      "answer": "不利于中央集权\n客观上延续了唐朝的统治",
+      "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教师 MX-FIX01 定稿；教材 PDF 4—5/6｜印刷37—38页及教师讲稿；审核 A10；question-bank.md · Q21",
+      "compact": true,
+      "reviewNote": "削弱中央控制有教材支持；延续唐统治机制属待证教师解释。",
+      "contentVersion": "stage6",
+      "evidenceType": "needs-verification"
+    },
+    {
+      "id": "Q23",
+      "group": "five-flow",
+      "origin": "five--five",
+      "boardKey": "flow/five-flow",
+      "prompt": "什么是五代十国？它与唐末藩镇割据有何联系？",
+      "renderedAnswer": "答案与解释\n\n五代：黄河流域先后出现后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余四代都开封。\n十国：南方先后九个割据政权，加五代末期在山西建立的北汉。\n\n唐末至五代十国 · 教材事件与课堂时序整理\n教材事实\n875年 · 黄巢起义\n\n起义军一度攻占长安，沉重打击唐朝统治。\n\n教材事实\n朱温降唐 · 逐渐掌权\n\n由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。\n\n教材事实\n907年 · 废唐建梁\n\n朱温废唐称帝，建梁，史称后梁；唐朝灭亡。\n\n教材事实\n五代相继更替\n\n后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。\n\n教材事实\n后周世宗柴荣\n\n清除弊政、增强实力，为后来北宋结束分裂奠定基础。\n\n来源：教材 PDF 5/6｜印刷第38页黄巢、五代十国及柴荣段\n\n课堂历史归纳：五代十国分裂局面承续并演变了唐末藩镇割据格局，不是毫无变化的等号。后周世宗柴荣清除弊政、增强实力，为北宋结束分裂奠定基础。\n\n证据边界：地图是后周时点，不是十国同时存在的全景；建立者身份与具体延续机制不作无证扩写。",
+      "questionId": "Q23",
+      "answer": "五代：黄河流域先后出现后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余四代都开封。\n十国：南方先后九个割据政权，加五代末期在山西建立的北汉。",
+      "explanation": "课堂历史归纳：五代十国分裂局面承续并演变了唐末藩镇割据格局，不是毫无变化的等号。后周世宗柴荣清除弊政、增强实力，为北宋结束分裂奠定基础。",
+      "contentStatus": "textbook-supported",
+      "sourceRef": "教材 PDF 5/6｜印刷第38页五代十国段、柴荣段、《五代十国形势图（后周时期）》；审核A15；question-bank.md · Q23",
+      "reviewNote": "地图是后周时点，不是十国同时存在的全景；建立者身份与具体延续机制不作无证扩写。",
+      "sequence": {
+        "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+        "nodes": [
+          {
+            "title": "875年 · 黄巢起义",
+            "text": "起义军一度攻占长安，沉重打击唐朝统治。",
+            "evidenceType": "textbook-supported"
+          },
+          {
+            "title": "朱温降唐 · 逐渐掌权",
+            "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。",
+            "evidenceType": "textbook-supported"
+          },
+          {
+            "title": "907年 · 废唐建梁",
+            "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。",
+            "evidenceType": "textbook-supported"
+          },
+          {
+            "title": "五代相继更替",
+            "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。",
+            "evidenceType": "textbook-supported"
+          },
+          {
+            "title": "后周世宗柴荣",
+            "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。",
+            "evidenceType": "textbook-supported"
+          }
+        ],
+        "sourceRef": "教材 PDF 5/6｜印刷第38页黄巢、五代十国及柴荣段"
+      },
+      "contentVersion": "stage6",
+      "evidenceType": "textbook-supported"
+    },
+    {
+      "questionId": "R01",
+      "prompt": "修路、修运河作用",
+      "answer": "政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。",
+      "contentStatus": "textbook-supported",
+      "sourceRef": "教材 PDF 1/6｜印刷第34页；Q04",
+      "reviewNote": "文化交流为课堂拓展；按题目材料选角度。",
+      "contentVersion": "stage6",
+      "evidenceType": "textbook-supported",
+      "renderedAnswer": "政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。"
+    },
+    {
+      "questionId": "R02",
+      "prompt": "经济重心南移阶段",
+      "answer": "魏晋以前：北方为主的经济格局：复习线索。\n魏晋南北朝：江南逐步开发：复习线索。\n安史之乱后：南方进一步发展与南移：待纵向核验。\n靖康之变后：联系南宋阶段；完成标准与时点待核。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教师框架四节点；Q06；本课六页无完整断代依据",
+      "reviewNote": "跨课知识复习：分期需核对。安史、靖康不是瞬时完成南移的时点。",
+      "contentVersion": "stage6",
+      "evidenceType": "needs-verification",
+      "renderedAnswer": "魏晋以前：北方为主的经济格局：复习线索。\n魏晋南北朝：江南逐步开发：复习线索。\n安史之乱后：南方进一步发展与南移：待纵向核验。\n靖康之变后：联系南宋阶段；完成标准与时点待核。"
+    },
+    {
+      "questionId": "R03",
+      "prompt": "如何回答两者之间的关系类问题",
+      "answer": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n先找角度，再用史实证明；不强凑四点。",
+      "contentStatus": "teacher-extension",
+      "sourceRef": "教师框架·内容回顾3；Q15；唐蕃例证见教材 PDF 3—4/6｜印刷36—37页",
+      "reviewNote": "方法不能替代历史证据。",
+      "contentVersion": "stage6",
+      "evidenceType": "teacher-extension",
+      "renderedAnswer": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n先找角度，再用史实证明；不强凑四点。"
+    },
+    {
+      "questionId": "R04",
+      "prompt": "如何区分民族边疆关系与对外外交关系",
+      "answer": "核心判断标准：现在中国有没有当前领土。",
+      "contentStatus": "needs-verification",
+      "sourceRef": "教师MX-FIX01定稿·内容回顾4；Q16；教材 PDF 3—4/6｜印刷36—37页为背景，不证明现代国界通则",
+      "compact": true,
+      "reviewNote": "教师简化表述/有局限，待课堂审定；详见MX_FIX01_CONTENT_AUDIT.md。",
+      "contentVersion": "stage6",
+      "evidenceType": "needs-verification",
+      "renderedAnswer": "核心判断标准：现在中国有没有当前领土。"
+    }
+  ],
+  "events": [
+    {
+      "elapsedMs": 936,
+      "module": "standards",
+      "action": "click",
+      "detail": "开始授课　→"
+    },
+    {
+      "elapsedMs": 1203,
+      "module": "standards",
+      "action": "click",
+      "detail": "下一页 →"
+    },
+    {
+      "elapsedMs": 1305,
+      "module": "standards",
+      "action": "click",
+      "detail": "01 / 明晰目标\n↗\n课标研读\n\n从课程要求出发，把握本课学习线索。\n\n参考 3 分钟 · 累计 3 分钟"
+    },
+    {
+      "elapsedMs": 1370,
+      "module": "standards",
+      "action": "click",
+      "detail": "课堂脉络"
+    },
+    {
+      "elapsedMs": 1461,
+      "module": "sui",
+      "action": "click",
+      "detail": "02 / 统一与兴亡\n↗\n隋\n\n建立、兴盛与灭亡，读懂盛极一时的隋朝。\n\n参考 8 分钟 · 累计 11 分钟"
+    },
+    {
+      "elapsedMs": 1589,
+      "module": "sui",
+      "action": "click",
+      "detail": "进入下一级"
+    },
+    {
+      "elapsedMs": 1607,
+      "module": "sui",
+      "action": "fragment",
+      "detail": "sui-found--sui-found"
+    },
+    {
+      "elapsedMs": 1739,
+      "module": "sui",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 1756,
+      "module": "sui",
+      "action": "fragment",
+      "detail": "sui-prosper--sui-prosper"
+    },
+    {
+      "elapsedMs": 1871,
+      "module": "sui",
+      "action": "click",
+      "detail": "长安、洛阳与两京制 ↗"
+    },
+    {
+      "elapsedMs": 2253,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 2278,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q02"
+    },
+    {
+      "elapsedMs": 2773,
+      "module": "sui",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 2890,
+      "module": "sui",
+      "action": "click",
+      "detail": "义仓的含义与制度演变 ↗"
+    },
+    {
+      "elapsedMs": 3266,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 3277,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q03"
+    },
+    {
+      "elapsedMs": 3677,
+      "module": "sui",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 3773,
+      "module": "sui",
+      "action": "click",
+      "detail": "大运河：作用、联系与经济重心 ↗"
+    },
+    {
+      "elapsedMs": 4086,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 4095,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q04"
+    },
+    {
+      "elapsedMs": 4488,
+      "module": "sui",
+      "action": "click",
+      "detail": "下一题 →"
+    },
+    {
+      "elapsedMs": 4800,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 4805,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q05"
+    },
+    {
+      "elapsedMs": 4841,
+      "module": "sui",
+      "action": "click",
+      "detail": "展开辅助工具"
+    },
+    {
+      "elapsedMs": 4952,
+      "module": "sui",
+      "action": "click",
+      "detail": "画笔"
+    },
+    {
+      "elapsedMs": 5036,
+      "module": "sui",
+      "action": "draw",
+      "detail": "teacher-canal"
+    },
+    {
+      "elapsedMs": 5063,
+      "module": "sui",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 5083,
+      "module": "sui",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 5118,
+      "module": "sui",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 5150,
+      "module": "sui",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 5173,
+      "module": "sui",
+      "action": "click",
+      "detail": "移动"
+    },
+    {
+      "elapsedMs": 5189,
+      "module": "sui",
+      "action": "move",
+      "detail": "teacher-canal"
+    },
+    {
+      "elapsedMs": 5504,
+      "module": "sui",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 5537,
+      "module": "sui",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 5573,
+      "module": "sui",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 5597,
+      "module": "sui",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 5628,
+      "module": "sui",
+      "action": "click",
+      "detail": "适应屏幕"
+    },
+    {
+      "elapsedMs": 5661,
+      "module": "sui",
+      "action": "click",
+      "detail": "收起辅助工具"
+    },
+    {
+      "elapsedMs": 5775,
+      "module": "sui",
+      "action": "click",
+      "detail": "点选"
+    },
+    {
+      "elapsedMs": 6214,
+      "module": "sui",
+      "action": "click",
+      "detail": "下一题 →"
+    },
+    {
+      "elapsedMs": 6555,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 6565,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q06"
+    },
+    {
+      "elapsedMs": 6949,
+      "module": "sui",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 7024,
+      "module": "sui",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 7033,
+      "module": "sui",
+      "action": "fragment",
+      "detail": "sui-end--sui-end"
+    },
+    {
+      "elapsedMs": 7110,
+      "module": "sui",
+      "action": "click",
+      "detail": "高句丽、高丽与征伐背景 ↗"
+    },
+    {
+      "elapsedMs": 7411,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 7416,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q07"
+    },
+    {
+      "elapsedMs": 7808,
+      "module": "sui",
+      "action": "click",
+      "detail": "下一题 →"
+    },
+    {
+      "elapsedMs": 8112,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 8118,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q08"
+    },
+    {
+      "elapsedMs": 8507,
+      "module": "sui",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 8578,
+      "module": "sui",
+      "action": "click",
+      "detail": "隋亡：建设与民力负担 ↗"
+    },
+    {
+      "elapsedMs": 8881,
+      "module": "sui",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 8886,
+      "module": "sui",
+      "action": "answer",
+      "detail": "Q09"
+    },
+    {
+      "elapsedMs": 9271,
+      "module": "sui",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 9343,
+      "module": "sui",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 9355,
+      "module": "sui",
+      "action": "fragment",
+      "detail": "sui-end--sui-poem"
+    },
+    {
+      "elapsedMs": 9405,
+      "module": "sui",
+      "action": "click",
+      "detail": "课堂脉络"
+    },
+    {
+      "elapsedMs": 9477,
+      "module": "tang",
+      "action": "click",
+      "detail": "03 / 盛世与交融\n↗\n唐\n\n从繁荣景象走向民族关系与区域开发。\n\n参考 13 分钟 · 累计 24 分钟"
+    },
+    {
+      "elapsedMs": 9548,
+      "module": "tang",
+      "action": "click",
+      "detail": "进入下一级"
+    },
+    {
+      "elapsedMs": 9567,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-found--tang-found"
+    },
+    {
+      "elapsedMs": 9640,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 9653,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-prosper--tang-zhenguan"
+    },
+    {
+      "elapsedMs": 9738,
+      "module": "tang",
+      "action": "click",
+      "detail": "曲辕犁与唐三彩 ↗"
+    },
+    {
+      "elapsedMs": 10106,
+      "module": "tang",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 10169,
+      "module": "tang",
+      "action": "answer",
+      "detail": "Q11"
+    },
+    {
+      "elapsedMs": 10638,
+      "module": "tang",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 10723,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 10736,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-prosper--tang-prosper"
+    },
+    {
+      "elapsedMs": 10801,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 10812,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-prosper--plough-text"
+    },
+    {
+      "elapsedMs": 10896,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 10906,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-prosper--plough-image"
+    },
+    {
+      "elapsedMs": 10972,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 10984,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-prosper--sancai"
+    },
+    {
+      "elapsedMs": 11061,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 11078,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-relations--turks-intro"
+    },
+    {
+      "elapsedMs": 11184,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 11199,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-relations--turks"
+    },
+    {
+      "elapsedMs": 11264,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 11276,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-relations--huihe"
+    },
+    {
+      "elapsedMs": 11332,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 11340,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-relations--tubo"
+    },
+    {
+      "elapsedMs": 11411,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 11422,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-relations--frontier"
+    },
+    {
+      "elapsedMs": 11490,
+      "module": "tang",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 11512,
+      "module": "tang",
+      "action": "fragment",
+      "detail": "tang-relations--map-669"
+    },
+    {
+      "elapsedMs": 11562,
+      "module": "tang",
+      "action": "click",
+      "detail": "突厥"
+    },
+    {
+      "elapsedMs": 11615,
+      "module": "tang",
+      "action": "click",
+      "detail": "回纥"
+    },
+    {
+      "elapsedMs": 11660,
+      "module": "tang",
+      "action": "click",
+      "detail": "吐蕃"
+    },
+    {
+      "elapsedMs": 11704,
+      "module": "tang",
+      "action": "click",
+      "detail": "靺鞨／粟末"
+    },
+    {
+      "elapsedMs": 11739,
+      "module": "tang",
+      "action": "click",
+      "detail": "展开辅助工具"
+    },
+    {
+      "elapsedMs": 11861,
+      "module": "tang",
+      "action": "click",
+      "detail": "画笔"
+    },
+    {
+      "elapsedMs": 11933,
+      "module": "tang",
+      "action": "draw",
+      "detail": "map669"
+    },
+    {
+      "elapsedMs": 11961,
+      "module": "tang",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 11994,
+      "module": "tang",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 12029,
+      "module": "tang",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 12064,
+      "module": "tang",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 12099,
+      "module": "tang",
+      "action": "click",
+      "detail": "移动"
+    },
+    {
+      "elapsedMs": 12123,
+      "module": "tang",
+      "action": "move",
+      "detail": "map669"
+    },
+    {
+      "elapsedMs": 12216,
+      "module": "tang",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 12252,
+      "module": "tang",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 12282,
+      "module": "tang",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 12302,
+      "module": "tang",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 12331,
+      "module": "tang",
+      "action": "click",
+      "detail": "适应屏幕"
+    },
+    {
+      "elapsedMs": 12355,
+      "module": "tang",
+      "action": "click",
+      "detail": "收起辅助工具"
+    },
+    {
+      "elapsedMs": 12476,
+      "module": "tang",
+      "action": "click",
+      "detail": "点选"
+    },
+    {
+      "elapsedMs": 12532,
+      "module": "tang",
+      "action": "click",
+      "detail": "民族关系的处理方式 ↗"
+    },
+    {
+      "elapsedMs": 12846,
+      "module": "tang",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 12853,
+      "module": "tang",
+      "action": "answer",
+      "detail": "Q12"
+    },
+    {
+      "elapsedMs": 13245,
+      "module": "tang",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 13320,
+      "module": "tang",
+      "action": "click",
+      "detail": "两者关系题的四个视角 ↗"
+    },
+    {
+      "elapsedMs": 13631,
+      "module": "tang",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 13639,
+      "module": "tang",
+      "action": "answer",
+      "detail": "Q15"
+    },
+    {
+      "elapsedMs": 14019,
+      "module": "tang",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 14067,
+      "module": "tang",
+      "action": "click",
+      "detail": "民族边疆与对外外交关系 ↗"
+    },
+    {
+      "elapsedMs": 14375,
+      "module": "tang",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 14378,
+      "module": "tang",
+      "action": "answer",
+      "detail": "Q16"
+    },
+    {
+      "elapsedMs": 14720,
+      "module": "tang",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 14764,
+      "module": "tang",
+      "action": "click",
+      "detail": "课堂脉络"
+    },
+    {
+      "elapsedMs": 14800,
+      "module": "anshi",
+      "action": "click",
+      "detail": "04 / 盛衰的转折\n↗\n安史之乱\n\n梳理原因、过程与影响，辨析藩镇割据。\n\n参考 7 分钟 · 累计 31 分钟"
+    },
+    {
+      "elapsedMs": 14838,
+      "module": "anshi",
+      "action": "click",
+      "detail": "进入下一级"
+    },
+    {
+      "elapsedMs": 14850,
+      "module": "anshi",
+      "action": "fragment",
+      "detail": "an-cause--an-cause"
+    },
+    {
+      "elapsedMs": 14897,
+      "module": "anshi",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 14905,
+      "module": "anshi",
+      "action": "fragment",
+      "detail": "an-process--an-process"
+    },
+    {
+      "elapsedMs": 14968,
+      "module": "anshi",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 14981,
+      "module": "anshi",
+      "action": "fragment",
+      "detail": "an-impact--an-impact"
+    },
+    {
+      "elapsedMs": 15010,
+      "module": "anshi",
+      "action": "click",
+      "detail": "展开辅助工具"
+    },
+    {
+      "elapsedMs": 15119,
+      "module": "anshi",
+      "action": "click",
+      "detail": "画笔"
+    },
+    {
+      "elapsedMs": 15194,
+      "module": "anshi",
+      "action": "draw",
+      "detail": "merged-impact"
+    },
+    {
+      "elapsedMs": 15211,
+      "module": "anshi",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 15232,
+      "module": "anshi",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 15252,
+      "module": "anshi",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 15272,
+      "module": "anshi",
+      "action": "click",
+      "detail": "放大一级"
+    },
+    {
+      "elapsedMs": 15294,
+      "module": "anshi",
+      "action": "click",
+      "detail": "移动"
+    },
+    {
+      "elapsedMs": 15314,
+      "module": "anshi",
+      "action": "move",
+      "detail": "merged-impact"
+    },
+    {
+      "elapsedMs": 15402,
+      "module": "anshi",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 15444,
+      "module": "anshi",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 15473,
+      "module": "anshi",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 15509,
+      "module": "anshi",
+      "action": "click",
+      "detail": "缩小画面"
+    },
+    {
+      "elapsedMs": 15537,
+      "module": "anshi",
+      "action": "click",
+      "detail": "适应屏幕"
+    },
+    {
+      "elapsedMs": 15571,
+      "module": "anshi",
+      "action": "click",
+      "detail": "收起辅助工具"
+    },
+    {
+      "elapsedMs": 15696,
+      "module": "anshi",
+      "action": "click",
+      "detail": "点选"
+    },
+    {
+      "elapsedMs": 15752,
+      "module": "anshi",
+      "action": "click",
+      "detail": "安史之乱的影响 ↗"
+    },
+    {
+      "elapsedMs": 16065,
+      "module": "anshi",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 16072,
+      "module": "anshi",
+      "action": "answer",
+      "detail": "Q18"
+    },
+    {
+      "elapsedMs": 16436,
+      "module": "anshi",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 16495,
+      "module": "anshi",
+      "action": "click",
+      "detail": "藩镇割据与唐朝统治 ↗"
+    },
+    {
+      "elapsedMs": 16802,
+      "module": "anshi",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 16807,
+      "module": "anshi",
+      "action": "answer",
+      "detail": "Q21"
+    },
+    {
+      "elapsedMs": 17169,
+      "module": "anshi",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 17219,
+      "module": "anshi",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 17231,
+      "module": "anshi",
+      "action": "fragment",
+      "detail": "an-impact--fanzhen"
+    },
+    {
+      "elapsedMs": 17274,
+      "module": "anshi",
+      "action": "click",
+      "detail": "课堂脉络"
+    },
+    {
+      "elapsedMs": 17320,
+      "module": "fall",
+      "action": "click",
+      "detail": "05 / 王朝与分合\n↗\n唐的灭亡\n\n黄巢起义、朱温废唐与五代十国。\n\n参考 6 分钟 · 累计 37 分钟"
+    },
+    {
+      "elapsedMs": 17397,
+      "module": "fall",
+      "action": "click",
+      "detail": "进入下一级"
+    },
+    {
+      "elapsedMs": 17403,
+      "module": "fall",
+      "action": "fragment",
+      "detail": "tang-end--huangchao"
+    },
+    {
+      "elapsedMs": 17451,
+      "module": "fall",
+      "action": "click",
+      "detail": "下一子目 →"
+    },
+    {
+      "elapsedMs": 17460,
+      "module": "fall",
+      "action": "fragment",
+      "detail": "five--five"
+    },
+    {
+      "elapsedMs": 17517,
+      "module": "fall",
+      "action": "click",
+      "detail": "五代十国与唐末藩镇 ↗"
+    },
+    {
+      "elapsedMs": 17821,
+      "module": "fall",
+      "action": "click",
+      "detail": "揭示答案"
+    },
+    {
+      "elapsedMs": 17828,
+      "module": "fall",
+      "action": "answer",
+      "detail": "Q23"
+    },
+    {
+      "elapsedMs": 18183,
+      "module": "fall",
+      "action": "click",
+      "detail": "完成并返回教材"
+    },
+    {
+      "elapsedMs": 18237,
+      "module": "fall",
+      "action": "click",
+      "detail": "下一片段 →"
+    },
+    {
+      "elapsedMs": 18250,
+      "module": "fall",
+      "action": "fragment",
+      "detail": "five--map-five"
+    },
+    {
+      "elapsedMs": 18294,
+      "module": "fall",
+      "action": "click",
+      "detail": "课堂脉络"
+    },
+    {
+      "elapsedMs": 18353,
+      "module": "review",
+      "action": "click",
+      "detail": "06 / 回望与贯通\n↗\n内容回顾\n\n回到四个问题，整理本课的思考方法。\n\n参考 3 分钟 · 累计 40 分钟"
+    },
+    {
+      "elapsedMs": 18360,
+      "module": "review",
+      "action": "review",
+      "detail": "R01"
+    },
+    {
+      "elapsedMs": 18472,
+      "module": "review",
+      "action": "click",
+      "detail": "下一页 →"
+    },
+    {
+      "elapsedMs": 18478,
+      "module": "review",
+      "action": "review",
+      "detail": "R02"
+    },
+    {
+      "elapsedMs": 18576,
+      "module": "review",
+      "action": "click",
+      "detail": "下一页 →"
+    },
+    {
+      "elapsedMs": 18582,
+      "module": "review",
+      "action": "review",
+      "detail": "R03"
+    },
+    {
+      "elapsedMs": 18687,
+      "module": "review",
+      "action": "click",
+      "detail": "下一页 →"
+    },
+    {
+      "elapsedMs": 18694,
+      "module": "review",
+      "action": "review",
+      "detail": "R04"
+    },
+    {
+      "elapsedMs": 18800,
+      "module": "review",
+      "action": "click",
+      "detail": "结束回顾 · 返回课堂脉络"
+    }
+  ],
+  "errors": []
+}

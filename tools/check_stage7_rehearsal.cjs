@@ -1,0 +1,33 @@
+const {chromium}=require('playwright'),fs=require('fs'),path=require('path'),assert=require('assert');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'review/stage7/rehearsal');fs.mkdirSync(out,{recursive:true});
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE});const start=Date.now(),started=new Date().toISOString();try{
+const p=await browser.newPage({offline:true,viewport:{width:1366,height:768}}),events=[],errors=[],modules=[],displayed=[],visited=[];let clicks=0,activeModule='preparation';
+p.on('pageerror',e=>errors.push(e.message));const record=(action,detail)=>events.push({elapsedMs:Date.now()-start,module:activeModule,action,detail});
+const ready=()=>p.waitForFunction(()=>window.LessonBoard?.snapshot()?.ready),state=()=>p.evaluate(()=>LessonApp.getState());
+async function click(locator){const label=await locator.getAttribute('aria-label')||await locator.innerText();await locator.click();clicks++;record('click',label);await ready();}
+async function go(id){await p.evaluate(id=>location.hash=id,id);await p.waitForFunction(id=>LessonApp.getState().id===id&&LessonBoard.snapshot()?.ready,id);record('hash-shortcut',id);}
+async function step(){await p.waitForTimeout(270);await click(p.locator('[data-qa-action="continue"]'));}
+async function combo(tag){await click(p.locator('#tool-panel-toggle'));await p.waitForTimeout(80);await click(p.locator('[data-tool="pen"]'));const box=await p.locator('#board-viewport').boundingBox();await p.mouse.move(box.x+box.width*.5,box.y+box.height*.5);await p.mouse.down();await p.mouse.move(box.x+box.width*.5+40,box.y+box.height*.5+20,{steps:8});await p.mouse.up();clicks++;record('draw',tag);for(let i=0;i<4;i++)await click(p.locator('[data-action="plus"]'));await click(p.locator('[data-mode="move"]').first());await p.mouse.move(box.x+box.width*.5,box.y+box.height*.5);await p.mouse.down();await p.mouse.move(box.x+box.width*.5-40,box.y+box.height*.5-25);await p.mouse.up();record('move',tag);await p.screenshot({path:path.join(out,tag+'-3x.png')});for(let i=0;i<4;i++)await click(p.locator('[data-action="minus"]'));await click(p.locator('[data-action="reset"]'));await click(p.locator('#tool-panel-close'));await p.waitForTimeout(80);await click(p.locator('#interaction-toolbar [data-mode="select"]'));}
+await p.goto(require('url').pathToFileURL(path.join(root,'index.html')).href);await ready();
+const data=await p.evaluate(()=>({modules:LESSON.modules,sections:LESSON.sections,flows:LESSON.flows,reviews:LESSON.reviewItems,pages:LessonApp.getPages(),assets:TEXTBOOK_ASSETS}));fs.writeFileSync(path.join(out,'active-model.json'),JSON.stringify(data,null,2));
+activeModule='standards';let ms=Date.now(),cs=clicks;await click(p.getByRole('link',{name:'开始授课　→',exact:true}));await p.screenshot({path:path.join(out,'standards.png')});await click(p.locator('#navigation a').filter({has:p.locator('span')}).last());assert.equal((await state()).id,'outline');await click(p.locator('.module-card[href="#standards"]'));await click(p.locator('.outline-link'));modules.push({id:'standards',minutes:3,actualMilliseconds:Date.now()-ms,clicks:clicks-cs,pages:0,questions:0,textCharacters:0});
+const done=new Set();
+for(const m of data.modules.filter(m=>m.sections.length)){activeModule=m.id;ms=Date.now();cs=clicks;let count=0,qcount=0,chars=0;await click(p.locator(`.module-card[href="#${m.id}"]`));await click(p.locator('#navigation .primary'));
+ const ids=m.sections.flatMap(s=>data.sections[s].assets.map(a=>`${s}--${a}`));
+ for(let i=0;i<ids.length;i++){const id=ids[i];assert.equal((await state()).id,id);visited.push(id);count++;chars+=await p.locator('.board-content').innerText().then(t=>t.length);record('fragment',id);
+  const duplicate=await p.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(e=>e.id);return ids.filter((id,i)=>ids.indexOf(id)!==i);});assert.deepEqual(duplicate,[]);
+  if(id==='tang-relations--map-669'){for(const object of ['turks','huihe','tubo','mohe'])await click(p.locator(`[data-map-object="${object}"]`));await combo('map669');}
+  if(id==='an-impact--an-impact')await combo('merged-impact');
+  const section=data.sections[data.pages[id].section];const runGroups=section.id!=='tang-relations'||id.endsWith('map-669');
+  if(runGroups)for(const f of section.flows){if(done.has(f))continue;done.add(f);await click(p.locator(`.hotspot[href="#flow/${f}/${id}"]`));const qs=data.flows[f].items;
+   for(const q of qs){assert.equal((await state()).questionId,q.questionId);const key=await p.evaluate(()=>LessonBoard.snapshot().key);await step();const text=await p.locator('#qa-answer').innerText();displayed.push({id:q.questionId,group:f,origin:id,boardKey:key,prompt:q.prompt,renderedAnswer:text,...q});qcount++;chars+=text.length;record('answer',q.questionId);if(q.questionId==='Q05')await combo('teacher-canal');await p.screenshot({path:path.join(out,q.questionId+'-answer.png')});await step();}
+   assert.equal((await state()).id,id);
+  }
+  if(i+1<ids.length)await click(p.locator(`#navigation a[href="#${ids[i+1]}"]`));
+ }
+ modules.push({id:m.id,minutes:m.targetMinutes,actualMilliseconds:Date.now()-ms,clicks:clicks-cs,pages:count,questions:qcount,textCharacters:chars,longestConsecutiveFragments:Math.max(...m.sections.map(s=>data.sections[s].assets.length))});await click(p.locator('.outline-link'));
+}
+activeModule='review';ms=Date.now();cs=clicks;await click(p.locator('.module-card[href="#review"]'));for(let i=0;i<4;i++){if(i)await click(p.locator(`#navigation a[href="#review/${i}"]`));const q=data.reviews[i];displayed.push({...q,renderedAnswer:await p.locator(`#review-card-${i} .review-answer`).innerText()});record('review',q.questionId);await p.screenshot({path:path.join(out,`review-${i}.png`)});}await click(p.locator('#navigation .primary'));assert.equal((await state()).id,'outline');modules.push({id:'review',minutes:3,actualMilliseconds:Date.now()-ms,clicks:clicks-cs,pages:0,questions:4,textCharacters:data.reviews.reduce((n,q)=>n+q.answer.length,0)});
+assert.equal(visited.length,23);assert.equal(done.size,12);assert.equal(displayed.filter(q=>q.questionId.startsWith('Q')).length,15);assert.deepEqual(errors,[]);
+fs.writeFileSync(path.join(out,'results.json'),JSON.stringify({status:'passed',started,ended:new Date().toISOString(),actualSeconds:(Date.now()-start)/1000,referenceMinutes:40,isRealTeaching:false,clicks,modules,visited,displayed,events,errors},null,2));console.log('Rehearsal passed: '+((Date.now()-start)/1000)+' seconds, '+clicks+' clicks');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

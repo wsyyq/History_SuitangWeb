@@ -1,0 +1,918 @@
+{
+  "status": "passed",
+  "references": [
+    {
+      "path": "./assets/lesson/an-impact-crosspage-merged.png",
+      "bytes": 123906,
+      "caseExact": true,
+      "sha256": "106fb1e3eb2c46ceefe4629c51d2c76b142aa8e2a931fbb152d01c04c6106c45"
+    },
+    {
+      "path": "./assets/lesson/tang-thinking-point.png",
+      "bytes": 22658,
+      "caseExact": true,
+      "sha256": "aecfae63169575788a44c03acaab14c1ba1467f4695a7499047740907ca9010a"
+    },
+    {
+      "path": "./assets/teacher/sui_canal_granary_map.png",
+      "bytes": 369709,
+      "caseExact": true,
+      "sha256": "5a0a0492417368bb290ebe702317f9b6f3ec0dbb8093ad3e26e29a048785591f"
+    },
+    {
+      "path": "./assets/textbook/alliance.png",
+      "bytes": 248551,
+      "caseExact": true,
+      "sha256": "43f80417f262f2b29d9258738907351b29e07aa89fea1b41a450a423db8db78a"
+    },
+    {
+      "path": "./assets/textbook/an-cause.png",
+      "bytes": 111505,
+      "caseExact": true,
+      "sha256": "00d881a6fb374e776c330071691f0067b53d2a550cf38f82e26f6d12799c7ead"
+    },
+    {
+      "path": "./assets/textbook/an-process.png",
+      "bytes": 101854,
+      "caseExact": true,
+      "sha256": "8808874aac625bbdb0166d47bc94279d340bd0478ae8306fb8eee3957603158b"
+    },
+    {
+      "path": "./assets/textbook/army-source.png",
+      "bytes": 320788,
+      "caseExact": true,
+      "sha256": "4ab1c25ff06ded3aa23b8dc4d2a1593d25f9ebfc508281b34d59dd4c362f1220"
+    },
+    {
+      "path": "./assets/textbook/canal-photo.png",
+      "bytes": 211768,
+      "caseExact": true,
+      "sha256": "4a20059496534e689b4e24a3a6b5ffeb42eabab6f3151fe063054c6b5eabc9b6"
+    },
+    {
+      "path": "./assets/textbook/chairong.png",
+      "bytes": 66197,
+      "caseExact": true,
+      "sha256": "b04aa5448efb298832de0ee5ed8b4904dae0acd39818db1c4d5d0f1414c132cb"
+    },
+    {
+      "path": "./assets/textbook/ethnic-policy.png",
+      "bytes": 72695,
+      "caseExact": true,
+      "sha256": "a267dee35438428283f019d2087287320568334801e72ac1a0dc2733f974438f"
+    },
+    {
+      "path": "./assets/textbook/fanzhen.png",
+      "bytes": 97025,
+      "caseExact": true,
+      "sha256": "c61a10f2a6078072277c91c3238c74daea26252fc2a52dc22a14198ff7b5ca18"
+    },
+    {
+      "path": "./assets/textbook/five.png",
+      "bytes": 110768,
+      "caseExact": true,
+      "sha256": "53bff78ca1c74fa73ed731cc830521b11f2f67a82d0016036a09ea32223d3b88"
+    },
+    {
+      "path": "./assets/textbook/frontier.png",
+      "bytes": 109023,
+      "caseExact": true,
+      "sha256": "ef389a4e463c893c9d2bb98d5d70cec3e11d3138ede8cf0b74a1357885f3a889"
+    },
+    {
+      "path": "./assets/textbook/granary.png",
+      "bytes": 186291,
+      "caseExact": true,
+      "sha256": "b42b5aaa5394634e9b7c2c3050d8bca6c772ef146f26cc5d484e29b45c495348"
+    },
+    {
+      "path": "./assets/textbook/huangchao.png",
+      "bytes": 159516,
+      "caseExact": true,
+      "sha256": "d6a874f2450913afa61b841240e3b3aaed109b6baa2dfc1dcbdf8cdd987ff0c8"
+    },
+    {
+      "path": "./assets/textbook/huihe.png",
+      "bytes": 255884,
+      "caseExact": true,
+      "sha256": "79801e5e0fa277d5997e906088b67e789ce7e8eefc12f4d4147c63fe67919fc5"
+    },
+    {
+      "path": "./assets/textbook/jiaohe.png",
+      "bytes": 664488,
+      "caseExact": true,
+      "sha256": "e9eea2d7b2d80720df51c2956264ca7ef8131fba10e1fca1755c9cec4b74436c"
+    },
+    {
+      "path": "./assets/textbook/map-669.png",
+      "bytes": 405186,
+      "caseExact": true,
+      "sha256": "c44351404719684cfc32b437d935be3f1ad2ec5ffe270ffd480c715611000708"
+    },
+    {
+      "path": "./assets/textbook/map-five.png",
+      "bytes": 199933,
+      "caseExact": true,
+      "sha256": "9a9f7349ad8a9e2756f6234754767d9111074703251db5a545340f7a40c1b16f"
+    },
+    {
+      "path": "./assets/textbook/plough-image.png",
+      "bytes": 320890,
+      "caseExact": true,
+      "sha256": "39274ffc51d40bdd91d933dea316b5dfb8d66044a6f5ab8d477884910d091b7c"
+    },
+    {
+      "path": "./assets/textbook/plough-text.png",
+      "bytes": 189046,
+      "caseExact": true,
+      "sha256": "910c769213fa6f167d342a951ab17bbcd363f55887090db3580d8b2bb07bb7c8"
+    },
+    {
+      "path": "./assets/textbook/sancai.png",
+      "bytes": 165964,
+      "caseExact": true,
+      "sha256": "7224667ef08a6013b2bdac4971f1282479abda3396f588aa49a86ca914648d94"
+    },
+    {
+      "path": "./assets/textbook/sui-end.png",
+      "bytes": 99606,
+      "caseExact": true,
+      "sha256": "ea96d6eccba4d44652fb849d8858fc330debda5e3ca2df9fd871b05c51bc99d6"
+    },
+    {
+      "path": "./assets/textbook/sui-found.png",
+      "bytes": 105340,
+      "caseExact": true,
+      "sha256": "9f6d4943b2cfc3e2fb53a5dc57fa84c02bc5738b1cb7c3c511dd53b67d8bc5b5"
+    },
+    {
+      "path": "./assets/textbook/sui-poem.png",
+      "bytes": 116303,
+      "caseExact": true,
+      "sha256": "f788f9232f1507014eebb93fa031e438d4b02a7a5c1a42601a99f2f5f056a0c9"
+    },
+    {
+      "path": "./assets/textbook/sui-prosper.png",
+      "bytes": 153051,
+      "caseExact": true,
+      "sha256": "d7935698721c690679c53bbaf6fb085ab8595c09a64c12d2742db42d1f519094"
+    },
+    {
+      "path": "./assets/textbook/tang-found.png",
+      "bytes": 51375,
+      "caseExact": true,
+      "sha256": "f0a8d5c948cb63fbbd62e548b16d7823ce8fd9767b79e81162a93a90924f3e97"
+    },
+    {
+      "path": "./assets/textbook/tang-prosper.png",
+      "bytes": 157342,
+      "caseExact": true,
+      "sha256": "bc9f6a911767976d5927b9efafd22734144d16c0db68e0a4d8c9b8ab36a1af46"
+    },
+    {
+      "path": "./assets/textbook/tang-zhenguan.png",
+      "bytes": 82298,
+      "caseExact": true,
+      "sha256": "ea9132e7a8e6cabb11cc1bb18eea26f0cad7a206bade941a8bd0499ae14b3c47"
+    },
+    {
+      "path": "./assets/textbook/tribute.png",
+      "bytes": 824218,
+      "caseExact": true,
+      "sha256": "a706659435bb5667ee95d0555f65f132f99cd867dece298e78190fa77a772551"
+    },
+    {
+      "path": "./assets/textbook/tubo.png",
+      "bytes": 112680,
+      "caseExact": true,
+      "sha256": "0e17c5fcfba2eb3775196ac79f8f845c343e96d7e6a40424e067841a405860f3"
+    },
+    {
+      "path": "./assets/textbook/turks-intro.png",
+      "bytes": 62905,
+      "caseExact": true,
+      "sha256": "2e9382ed65645ed99fbd46679e27513c97424d1aa49560ae5beb0055e3a79571"
+    },
+    {
+      "path": "./assets/textbook/turks.png",
+      "bytes": 203432,
+      "caseExact": true,
+      "sha256": "29ce843244679a586ecf93747c0eedb3f4c8abe7bf9e3f3a7ea49d06a2dbdef5"
+    },
+    {
+      "path": "./assets/textbook/yangdi.png",
+      "bytes": 407336,
+      "caseExact": true,
+      "sha256": "9666b46eff824c980ad52c30de97f120b8f3187f837f52575b9990294eeb6dcd"
+    },
+    {
+      "path": "./css/fix01.css",
+      "bytes": 5776,
+      "caseExact": true,
+      "sha256": "fb758a45041391c83bb608e03d2540742613379700fdbe2a13850fd71b044adf"
+    },
+    {
+      "path": "./css/lesson-flow.css",
+      "bytes": 5696,
+      "caseExact": true,
+      "sha256": "87ef866c237c7406d81a61a497ed5ec25cc11e5c86833bb4454f5ac3ff245ffe"
+    },
+    {
+      "path": "./css/style.css",
+      "bytes": 8815,
+      "caseExact": true,
+      "sha256": "aba89962bccb68f9c538383379bea3009139dcdfd4cb4a4ce003d7eb73ec32ff"
+    },
+    {
+      "path": "./css/tools.css",
+      "bytes": 5619,
+      "caseExact": true,
+      "sha256": "7872523289da81ba80ceafdf2bb5a42f73e9d0af1976bbc552e270b9acd9539a"
+    },
+    {
+      "path": "./js/app.js",
+      "bytes": 21703,
+      "caseExact": true,
+      "sha256": "061518f141ef1a95ae10dbf867fb539f140aeb238797c743e8088cabd01d47e7"
+    },
+    {
+      "path": "./js/interaction.js",
+      "bytes": 17050,
+      "caseExact": true,
+      "sha256": "5b703416f0f1f8cbe6d17aa47d93bec196572493b07765b123b0dc3806daa521"
+    },
+    {
+      "path": "./js/lesson-data.js",
+      "bytes": 3639,
+      "caseExact": true,
+      "sha256": "4cb0d81ea0caf0c564f9f60de28c21d3bcb684a368fcc19b0c1edff32a84c9af"
+    },
+    {
+      "path": "./js/question-data.js",
+      "bytes": 13188,
+      "caseExact": true,
+      "sha256": "f753d497ab39bd60461ab8bf5b9fb5ecc23cdb9067e64deee1eec0735021cf19"
+    },
+    {
+      "path": "./js/stage6-content.js",
+      "bytes": 12846,
+      "caseExact": true,
+      "sha256": "cc8de381a6420f80fec928c40b2d7180d36014e48e08fb2f9f41c7a6f7ae463c"
+    },
+    {
+      "path": "./js/teaching-notes.js",
+      "bytes": 4975,
+      "caseExact": true,
+      "sha256": "2066775d4548a6de352d56081845f646c12ca1e8358e9d75af7e8af3d96cac95"
+    },
+    {
+      "path": "./js/textbook-assets.js",
+      "bytes": 20516,
+      "caseExact": true,
+      "sha256": "583c47a4e0922bd2441c3ec57219a4558117e9c00b58636238cd0e06baeeb858"
+    },
+    {
+      "path": "./课标截图.png",
+      "bytes": 192648,
+      "caseExact": true,
+      "sha256": "579d0631cbac74e9ee188082ab6bcd88eda508cd8672dff5907971420e004889"
+    }
+  ],
+  "decodedImages": [
+    {
+      "path": "assets\\lesson\\an-impact-crosspage-merged.png",
+      "size": [
+        1160,
+        370
+      ]
+    },
+    {
+      "path": "assets\\lesson\\tang-thinking-point.png",
+      "size": [
+        530,
+        217
+      ]
+    },
+    {
+      "path": "assets\\teacher\\sui_canal_granary_map.png",
+      "size": [
+        416,
+        404
+      ]
+    },
+    {
+      "path": "assets\\textbook\\alliance.png",
+      "size": [
+        976,
+        798
+      ]
+    },
+    {
+      "path": "assets\\textbook\\an-cause.png",
+      "size": [
+        1122,
+        370
+      ]
+    },
+    {
+      "path": "assets\\textbook\\an-impact.png",
+      "size": [
+        1160,
+        70
+      ]
+    },
+    {
+      "path": "assets\\textbook\\an-process.png",
+      "size": [
+        1122,
+        350
+      ]
+    },
+    {
+      "path": "assets\\textbook\\army-source.png",
+      "size": [
+        546,
+        1964
+      ]
+    },
+    {
+      "path": "assets\\textbook\\canal-photo.png",
+      "size": [
+        634,
+        500
+      ]
+    },
+    {
+      "path": "assets\\textbook\\chairong.png",
+      "size": [
+        1170,
+        214
+      ]
+    },
+    {
+      "path": "assets\\textbook\\ethnic-policy.png",
+      "size": [
+        1256,
+        316
+      ]
+    },
+    {
+      "path": "assets\\textbook\\fanzhen.png",
+      "size": [
+        1160,
+        284
+      ]
+    },
+    {
+      "path": "assets\\textbook\\five.png",
+      "size": [
+        1170,
+        356
+      ]
+    },
+    {
+      "path": "assets\\textbook\\frontier.png",
+      "size": [
+        686,
+        598
+      ]
+    },
+    {
+      "path": "assets\\textbook\\granary.png",
+      "size": [
+        1256,
+        662
+      ]
+    },
+    {
+      "path": "assets\\textbook\\huangchao.png",
+      "size": [
+        1170,
+        456
+      ]
+    },
+    {
+      "path": "assets\\textbook\\huihe.png",
+      "size": [
+        544,
+        1372
+      ]
+    },
+    {
+      "path": "assets\\textbook\\jiaohe.png",
+      "size": [
+        1126,
+        722
+      ]
+    },
+    {
+      "path": "assets\\textbook\\map-669.png",
+      "size": [
+        1696,
+        894
+      ]
+    },
+    {
+      "path": "assets\\textbook\\map-five.png",
+      "size": [
+        920,
+        1002
+      ]
+    },
+    {
+      "path": "assets\\textbook\\plough-image.png",
+      "size": [
+        616,
+        634
+      ]
+    },
+    {
+      "path": "assets\\textbook\\plough-text.png",
+      "size": [
+        1118,
+        584
+      ]
+    },
+    {
+      "path": "assets\\textbook\\sancai.png",
+      "size": [
+        518,
+        568
+      ]
+    },
+    {
+      "path": "assets\\textbook\\sui-end.png",
+      "size": [
+        1170,
+        300
+      ]
+    },
+    {
+      "path": "assets\\textbook\\sui-found.png",
+      "size": [
+        1170,
+        310
+      ]
+    },
+    {
+      "path": "assets\\textbook\\sui-poem.png",
+      "size": [
+        540,
+        1006
+      ]
+    },
+    {
+      "path": "assets\\textbook\\sui-prosper.png",
+      "size": [
+        1170,
+        440
+      ]
+    },
+    {
+      "path": "assets\\textbook\\tang-found.png",
+      "size": [
+        1110,
+        160
+      ]
+    },
+    {
+      "path": "assets\\textbook\\tang-prosper.png",
+      "size": [
+        1110,
+        452
+      ]
+    },
+    {
+      "path": "assets\\textbook\\tang-zhenguan.png",
+      "size": [
+        1110,
+        204
+      ]
+    },
+    {
+      "path": "assets\\textbook\\tribute.png",
+      "size": [
+        1700,
+        700
+      ]
+    },
+    {
+      "path": "assets\\textbook\\tubo.png",
+      "size": [
+        1154,
+        374
+      ]
+    },
+    {
+      "path": "assets\\textbook\\turks-intro.png",
+      "size": [
+        1720,
+        148
+      ]
+    },
+    {
+      "path": "assets\\textbook\\turks.png",
+      "size": [
+        1150,
+        588
+      ]
+    },
+    {
+      "path": "assets\\textbook\\yangdi.png",
+      "size": [
+        1256,
+        1008
+      ]
+    },
+    {
+      "path": "课标截图.png",
+      "size": [
+        1064,
+        226
+      ]
+    }
+  ],
+  "readDocuments": [
+    {
+      "path": "AGENTS.md",
+      "characters": 416,
+      "sha256": "ea1f5d10913f6896e1d4bd8000c4810a219ec4babe4b70066f7494a914b6d8d6"
+    },
+    {
+      "path": "MX_FIX01_REVIEW.md",
+      "characters": 7482,
+      "sha256": "8996df439414d0b49b17f1790fcd935d56f23a7fe4a390c56031dfc018dd562f"
+    },
+    {
+      "path": "MX_FIX01_CONTENT_AUDIT.md",
+      "characters": 3766,
+      "sha256": "91cf3207c35e68c3e6b34227dcabd0bfccaed5aef344107ace2dc8cffd3c8eaf"
+    },
+    {
+      "path": "MX_FIX02_REVIEW.md",
+      "characters": 4606,
+      "sha256": "2561dcf87f0a417a0154fbed8de9b0485084be1ea7acf224778fcd260dc2815d"
+    },
+    {
+      "path": "STAGE5_CONTENT_AUDIT.md",
+      "characters": 2598,
+      "sha256": "c39e93db2a9f2c917691c1a538dc341120b3bf0d3144265bf96fdf3db49be3d7"
+    },
+    {
+      "path": "STAGE6_CONTENT_AUDIT.md",
+      "characters": 4909,
+      "sha256": "802c78c31a3c2d368ae0fb6c62b294ae72c36efd81f0c8ed8b567043833466d9"
+    },
+    {
+      "path": "隋唐讲解框架.md",
+      "characters": 1220,
+      "sha256": "25353d34e15813425abb6e24cff65ec3dc49cc93958265f125a0cc23f640312b"
+    },
+    {
+      "path": "隋唐讲解原文.md",
+      "characters": 10082,
+      "sha256": "a372d2f67027211d8418b7f41680a5e0377a23a787370120ead8dc404260dbd9"
+    },
+    {
+      "path": ".agents\\skills\\sui-tang-lesson\\SKILL.md",
+      "characters": 1957,
+      "sha256": "e81ce13473909fde548ec1bd0fd95576e075d64c39c275fc9fd0b79d418b68ad"
+    },
+    {
+      "path": ".agents\\skills\\sui-tang-lesson\\references\\historical-fact-audit.md",
+      "characters": 5339,
+      "sha256": "d73f0fe4510291f0ea50748eb6d255cade3f8a069483fe267ef39ad254efed83"
+    },
+    {
+      "path": ".agents\\skills\\sui-tang-lesson\\references\\lesson-outline.md",
+      "characters": 5738,
+      "sha256": "02abc34d21e9046562bbf650296d56e042d5f6cd6914fe56f663020a1fdc504c"
+    },
+    {
+      "path": ".agents\\skills\\sui-tang-lesson\\references\\question-bank.md",
+      "characters": 8468,
+      "sha256": "7d259d13dc2c1b8d28de452372017b48c66cdd393492535afa0a46af0534cde6"
+    },
+    {
+      "path": ".agents\\skills\\sui-tang-lesson\\references\\source-manifest.md",
+      "characters": 2920,
+      "sha256": "0a9eab672c21cfa75a53909b0435b799a4d581df00ff0790a442288154637ff5"
+    },
+    {
+      "path": ".agents\\skills\\sui-tang-lesson\\references\\textbook-map.md",
+      "characters": 5190,
+      "sha256": "1b167e29a429309e10d4eb68d9d411411b0662ee048b8a08aa70f03272cfbe7a"
+    }
+  ],
+  "pages": [
+    {
+      "route": "sui-found--sui-found",
+      "module": "sui",
+      "section": "sui-found",
+      "index": 0,
+      "asset": "./assets/textbook/sui-found.png",
+      "title": "隋朝建立与统一",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "flows": []
+    },
+    {
+      "route": "sui-prosper--sui-prosper",
+      "module": "sui",
+      "section": "sui-prosper",
+      "index": 0,
+      "asset": "./assets/textbook/sui-prosper.png",
+      "title": "仓储、两都与大运河",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "flows": [
+        "two-capitals",
+        "granaries",
+        "canal"
+      ]
+    },
+    {
+      "route": "sui-end--sui-end",
+      "module": "sui",
+      "section": "sui-end",
+      "index": 0,
+      "asset": "./assets/textbook/sui-end.png",
+      "title": "隋朝灭亡",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "flows": [
+        "goguryeo",
+        "sui-burden"
+      ]
+    },
+    {
+      "route": "sui-end--sui-poem",
+      "module": "sui",
+      "section": "sui-end",
+      "index": 1,
+      "asset": "./assets/textbook/sui-poem.png",
+      "title": "学思之窗：皮日休诗与提问",
+      "pdfPage": 1,
+      "printedPage": 34,
+      "flows": [
+        "goguryeo",
+        "sui-burden"
+      ]
+    },
+    {
+      "route": "tang-found--tang-found",
+      "module": "tang",
+      "section": "tang-found",
+      "index": 0,
+      "asset": "./assets/textbook/tang-found.png",
+      "title": "唐朝建立",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": []
+    },
+    {
+      "route": "tang-prosper--tang-zhenguan",
+      "module": "tang",
+      "section": "tang-prosper",
+      "index": 0,
+      "asset": "./assets/textbook/tang-zhenguan.png",
+      "title": "贞观之治",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": [
+        "economy"
+      ]
+    },
+    {
+      "route": "tang-prosper--tang-prosper",
+      "module": "tang",
+      "section": "tang-prosper",
+      "index": 1,
+      "asset": "./assets/textbook/tang-prosper.png",
+      "title": "武则天时期与开元盛世",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": [
+        "economy"
+      ]
+    },
+    {
+      "route": "tang-prosper--plough-text",
+      "module": "tang",
+      "section": "tang-prosper",
+      "index": 2,
+      "asset": "./assets/textbook/plough-text.png",
+      "title": "历史纵横：唐朝曲辕犁",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": [
+        "economy"
+      ]
+    },
+    {
+      "route": "tang-prosper--plough-image",
+      "module": "tang",
+      "section": "tang-prosper",
+      "index": 3,
+      "asset": "./assets/textbook/plough-image.png",
+      "title": "敦煌莫高窟壁画唐朝牛耕图中的曲辕犁",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": [
+        "economy"
+      ]
+    },
+    {
+      "route": "tang-prosper--sancai",
+      "module": "tang",
+      "section": "tang-prosper",
+      "index": 4,
+      "asset": "./assets/textbook/sancai.png",
+      "title": "唐三彩盘及说明",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": [
+        "economy"
+      ]
+    },
+    {
+      "route": "tang-relations--turks-intro",
+      "module": "tang",
+      "section": "tang-relations",
+      "index": 0,
+      "asset": "./assets/textbook/turks-intro.png",
+      "title": "突厥兴起与分裂（接下片）",
+      "pdfPage": 2,
+      "printedPage": 35,
+      "flows": [
+        "relations",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    {
+      "route": "tang-relations--turks",
+      "module": "tang",
+      "section": "tang-relations",
+      "index": 1,
+      "asset": "./assets/textbook/turks.png",
+      "title": "突厥、安西与北庭都护府",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "flows": [
+        "relations",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    {
+      "route": "tang-relations--huihe",
+      "module": "tang",
+      "section": "tang-relations",
+      "index": 2,
+      "asset": "./assets/textbook/huihe.png",
+      "title": "历史纵横：回纥",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "flows": [
+        "relations",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    {
+      "route": "tang-relations--tubo",
+      "module": "tang",
+      "section": "tang-relations",
+      "index": 3,
+      "asset": "./assets/textbook/tubo.png",
+      "title": "吐蕃与文成公主（末句接下片）",
+      "pdfPage": 3,
+      "printedPage": 36,
+      "flows": [
+        "relations",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    {
+      "route": "tang-relations--frontier",
+      "module": "tang",
+      "section": "tang-relations",
+      "index": 4,
+      "asset": "./assets/textbook/frontier.png",
+      "title": "唐蕃会盟、靺鞨与边疆开发（续前片）",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "flows": [
+        "relations",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    {
+      "route": "tang-relations--map-669",
+      "module": "tang",
+      "section": "tang-relations",
+      "index": 5,
+      "asset": "./assets/textbook/map-669.png",
+      "title": "唐朝前期形势和边疆各族分布图（669年）及古今地名表",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "flows": [
+        "relations",
+        "perspectives",
+        "concepts"
+      ]
+    },
+    {
+      "route": "an-cause--an-cause",
+      "module": "anshi",
+      "section": "an-cause",
+      "index": 0,
+      "asset": "./assets/textbook/an-cause.png",
+      "title": "安史之乱原因",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "flows": []
+    },
+    {
+      "route": "an-process--an-process",
+      "module": "anshi",
+      "section": "an-process",
+      "index": 0,
+      "asset": "./assets/textbook/an-process.png",
+      "title": "安史之乱过程及影响开端（续下页）",
+      "pdfPage": 4,
+      "printedPage": 37,
+      "flows": []
+    },
+    {
+      "route": "an-impact--an-impact",
+      "module": "anshi",
+      "section": "an-impact",
+      "index": 0,
+      "asset": "./assets/lesson/an-impact-crosspage-merged.png",
+      "title": "安史之乱的影响",
+      "pdfPage": "4—5",
+      "printedPage": "37—38",
+      "flows": [
+        "impact",
+        "fanzhen-flow"
+      ]
+    },
+    {
+      "route": "an-impact--fanzhen",
+      "module": "anshi",
+      "section": "an-impact",
+      "index": 1,
+      "asset": "./assets/textbook/fanzhen.png",
+      "title": "藩镇割据",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "flows": [
+        "impact",
+        "fanzhen-flow"
+      ]
+    },
+    {
+      "route": "tang-end--huangchao",
+      "module": "fall",
+      "section": "tang-end",
+      "index": 0,
+      "asset": "./assets/textbook/huangchao.png",
+      "title": "黄巢起义与朱温废唐（末行接下片）",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "flows": []
+    },
+    {
+      "route": "five--five",
+      "module": "fall",
+      "section": "five",
+      "index": 0,
+      "asset": "./assets/textbook/five.png",
+      "title": "五代与十国的定义（含衔接上文）",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "flows": [
+        "five-flow"
+      ]
+    },
+    {
+      "route": "five--map-five",
+      "module": "fall",
+      "section": "five",
+      "index": 1,
+      "asset": "./assets/textbook/map-five.png",
+      "title": "五代十国形势图（后周时期）",
+      "pdfPage": 5,
+      "printedPage": 38,
+      "flows": [
+        "five-flow"
+      ]
+    }
+  ],
+  "htmlCheck": "Python HTMLParser + browser duplicate-ID checks; no Nu/W3C validator installed or claimed",
+  "gitHead": "3dbdb7f56e87280286a8aed03a9ac1af696370ef"
+}

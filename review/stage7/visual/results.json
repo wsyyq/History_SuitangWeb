@@ -1,0 +1,286 @@
+{
+  "status": "passed",
+  "scope": "representative screenshots, not full visual certification",
+  "rows": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "home",
+      "actual": "title",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "standards",
+      "actual": "standards",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "outline",
+      "actual": "outline",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "sui",
+      "actual": "sui",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "sui-found--sui-found",
+      "actual": "sui-found--sui-found",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "tang-relations--huihe",
+      "actual": "tang-relations--huihe",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "tang-relations--map-669",
+      "actual": "tang-relations--map-669",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "an-impact--an-impact",
+      "actual": "an-impact--an-impact",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "flow/canal/sui-prosper--sui-prosper",
+      "actual": "flow/canal/sui-prosper--sui-prosper",
+      "brokenImages": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "requested": "review/3",
+      "actual": "review/3",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "home",
+      "actual": "title",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "standards",
+      "actual": "standards",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "outline",
+      "actual": "outline",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "sui",
+      "actual": "sui",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "sui-found--sui-found",
+      "actual": "sui-found--sui-found",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "tang-relations--huihe",
+      "actual": "tang-relations--huihe",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "tang-relations--map-669",
+      "actual": "tang-relations--map-669",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "an-impact--an-impact",
+      "actual": "an-impact--an-impact",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "flow/canal/sui-prosper--sui-prosper",
+      "actual": "flow/canal/sui-prosper--sui-prosper",
+      "brokenImages": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "requested": "review/3",
+      "actual": "review/3",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "home",
+      "actual": "title",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "standards",
+      "actual": "standards",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "outline",
+      "actual": "outline",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "sui",
+      "actual": "sui",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "sui-found--sui-found",
+      "actual": "sui-found--sui-found",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "tang-relations--huihe",
+      "actual": "tang-relations--huihe",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "tang-relations--map-669",
+      "actual": "tang-relations--map-669",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "an-impact--an-impact",
+      "actual": "an-impact--an-impact",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "flow/canal/sui-prosper--sui-prosper",
+      "actual": "flow/canal/sui-prosper--sui-prosper",
+      "brokenImages": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "requested": "review/3",
+      "actual": "review/3",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "home",
+      "actual": "title",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "standards",
+      "actual": "standards",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "outline",
+      "actual": "outline",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "sui",
+      "actual": "sui",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "sui-found--sui-found",
+      "actual": "sui-found--sui-found",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "tang-relations--huihe",
+      "actual": "tang-relations--huihe",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "tang-relations--map-669",
+      "actual": "tang-relations--map-669",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "an-impact--an-impact",
+      "actual": "an-impact--an-impact",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "flow/canal/sui-prosper--sui-prosper",
+      "actual": "flow/canal/sui-prosper--sui-prosper",
+      "brokenImages": []
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "requested": "review/3",
+      "actual": "review/3",
+      "brokenImages": []
+    }
+  ]
+}

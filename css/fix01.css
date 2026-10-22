@@ -38,3 +38,9 @@ footer .primary span{max-width:28px}
 #navigation [aria-label]:is(:hover,:focus-visible)::after,.mode-dock [aria-label]:is(:hover,:focus-visible)::after,.outline-link:is(:hover,:focus-visible)::after{content:attr(aria-label);position:absolute;left:calc(100% + 12px);top:50%;translate:0 -50%;white-space:nowrap;padding:6px 10px;border:1px solid var(--line);border-radius:5px;background:#fbf8f1;color:var(--ink);font:14px var(--sans);pointer-events:none;z-index:30}
 footer{z-index:6}.masthead{z-index:6}
 @media(max-height:680px){.mode-dock{gap:2px}#interaction-toolbar{top:108px}footer #navigation{gap:2px}}
+/* Stage 7 P1-S01: short windows need adjacent left columns, not overlapping controls. */
+@media(max-height:600px){
+  body{--dock-space:144px}body.tools-open{--dock-space:384px}
+  footer{left:76px}
+  #tool-panel{left:136px}
+}
