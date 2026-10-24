@@ -1,0 +1,3544 @@
+{
+  "model": {
+    "lesson": {
+      "modules": [
+        {
+          "id": "standards",
+          "targetMinutes": 3,
+          "title": "课标研读",
+          "eyebrow": "明晰目标",
+          "description": "从课程要求出发，把握本课学习线索。",
+          "sections": []
+        },
+        {
+          "id": "sui",
+          "targetMinutes": 8,
+          "title": "隋",
+          "eyebrow": "统一与兴亡",
+          "description": "建立、兴盛与灭亡，读懂盛极一时的隋朝。",
+          "sections": [
+            "sui-found",
+            "sui-prosper",
+            "sui-end"
+          ]
+        },
+        {
+          "id": "tang",
+          "targetMinutes": 13,
+          "title": "唐",
+          "eyebrow": "盛世与交融",
+          "description": "从繁荣景象走向民族关系与区域开发。",
+          "sections": [
+            "tang-found",
+            "tang-prosper",
+            "tang-relations"
+          ]
+        },
+        {
+          "id": "anshi",
+          "targetMinutes": 7,
+          "title": "安史之乱",
+          "eyebrow": "盛衰的转折",
+          "description": "梳理原因、过程与影响，辨析藩镇割据。",
+          "sections": [
+            "an-cause",
+            "an-process",
+            "an-impact"
+          ]
+        },
+        {
+          "id": "fall",
+          "targetMinutes": 6,
+          "title": "唐的灭亡",
+          "eyebrow": "王朝与分合",
+          "description": "黄巢起义、朱温废唐与五代十国。",
+          "sections": [
+            "tang-end",
+            "five"
+          ]
+        },
+        {
+          "id": "review",
+          "targetMinutes": 3,
+          "title": "内容回顾",
+          "eyebrow": "回望与贯通",
+          "description": "回到四个问题，整理本课的思考方法。",
+          "sections": []
+        }
+      ],
+      "sections": {
+        "sui-found": {
+          "id": "sui-found",
+          "title": "建立",
+          "module": "sui",
+          "assets": [
+            "sui-found"
+          ],
+          "flows": []
+        },
+        "sui-prosper": {
+          "id": "sui-prosper",
+          "title": "兴盛",
+          "module": "sui",
+          "assets": [
+            "sui-prosper"
+          ],
+          "flows": [
+            "two-capitals",
+            "granaries",
+            "canal"
+          ]
+        },
+        "sui-end": {
+          "id": "sui-end",
+          "title": "灭亡",
+          "module": "sui",
+          "assets": [
+            "sui-end",
+            "sui-poem"
+          ],
+          "flows": [
+            "sui-qin-comparison",
+            "sui-canal-merits"
+          ]
+        },
+        "tang-found": {
+          "id": "tang-found",
+          "title": "建立",
+          "module": "tang",
+          "assets": [
+            "tang-found"
+          ],
+          "flows": []
+        },
+        "tang-prosper": {
+          "id": "tang-prosper",
+          "title": "繁荣与盛世表现",
+          "module": "tang",
+          "assets": [
+            "tang-zhenguan",
+            "tang-prosper",
+            "plough-text",
+            "plough-image",
+            "sancai"
+          ],
+          "flows": [
+            "economy",
+            "sui-tang-prosperity-causes"
+          ]
+        },
+        "tang-relations": {
+          "id": "tang-relations",
+          "title": "民族关系与区域开发",
+          "module": "tang",
+          "assets": [
+            "turks-intro",
+            "turks",
+            "huihe",
+            "tubo",
+            "frontier",
+            "map-669"
+          ],
+          "flows": [
+            "relations",
+            "perspectives",
+            "concepts"
+          ]
+        },
+        "an-cause": {
+          "id": "an-cause",
+          "title": "原因",
+          "module": "anshi",
+          "assets": [
+            "an-cause"
+          ],
+          "flows": []
+        },
+        "an-process": {
+          "id": "an-process",
+          "title": "过程",
+          "module": "anshi",
+          "assets": [
+            "an-process"
+          ],
+          "flows": []
+        },
+        "an-impact": {
+          "id": "an-impact",
+          "title": "影响",
+          "module": "anshi",
+          "assets": [
+            "an-impact",
+            "fanzhen"
+          ],
+          "flows": [
+            "impact",
+            "fanzhen-flow"
+          ]
+        },
+        "tang-end": {
+          "id": "tang-end",
+          "title": "黄巢起义与朱温废唐称帝",
+          "module": "fall",
+          "assets": [
+            "huangchao"
+          ],
+          "flows": []
+        },
+        "five": {
+          "id": "five",
+          "title": "五代十国",
+          "module": "fall",
+          "assets": [
+            "five",
+            "map-five"
+          ],
+          "flows": [
+            "five-flow"
+          ]
+        }
+      },
+      "flows": {
+        "two-capitals": {
+          "id": "two-capitals",
+          "title": "长安、洛阳与两京制",
+          "qids": [
+            "Q02"
+          ],
+          "audits": [
+            "A01"
+          ],
+          "status": "pending",
+          "moduleId": "sui",
+          "subtopicId": "sui-prosper",
+          "items": [
+            {
+              "questionId": "Q02",
+              "prompt": "为什么同时出现长安、洛阳两都？",
+              "answer": "两京制。隋文帝定都长安，隋炀帝迁都洛阳，将长安降为陪都。",
+              "contentStatus": "needs-verification",
+              "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛1；审核 A01；question-bank.md · Q02",
+              "evidenceType": "needs-verification",
+              "reviewNote": "“迁都洛阳”“长安降为陪都”及“两京制”的具体制度、时点仍待补证；不作为教材直接结论。",
+              "contentVersion": "stage5",
+              "compact": true
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "granaries": {
+          "id": "granaries",
+          "title": "义仓的含义与制度演变",
+          "qids": [
+            "Q03"
+          ],
+          "audits": [
+            "A02"
+          ],
+          "status": "pending",
+          "moduleId": "sui",
+          "subtopicId": "sui-prosper",
+          "items": [
+            {
+              "questionId": "Q03",
+              "prompt": "义仓的功能及影响是什么？",
+              "answer": "功能：秋收后按收成缴纳粮食，饥荒时开仓赈灾。\n影响：初期备荒救灾稳定社会，后期官办化、赋税化。",
+              "contentStatus": "needs-verification",
+              "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；教材 PDF 6/6｜印刷第39页｜问题探究；框架·隋/兴盛2；审核 A02、A13；question-bank.md · Q03",
+              "evidenceType": "needs-verification",
+              "reviewNote": "具体征粮规则、官办化与赋税化的演变及开仓审批制度，尚缺本课教材之外的依据。",
+              "contentVersion": "stage5",
+              "compact": true
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "canal": {
+          "id": "canal",
+          "title": "大运河：作用、联系与经济重心",
+          "qids": [
+            "Q04",
+            "Q05",
+            "Q06"
+          ],
+          "audits": [
+            "A03",
+            "A04"
+          ],
+          "status": "pending",
+          "moduleId": "sui",
+          "subtopicId": "sui-prosper",
+          "items": [
+            {
+              "questionId": "Q04",
+              "prompt": "修大运河或修路有什么政治、经济、文化作用？",
+              "answer": "政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。",
+              "explanation": "运河作为水路，解决南北交通和物资转输问题。迁移到“修路作用”题时，按政治、经济、文化组织分析，但须结合具体材料选择角度，不能把三点机械套用于所有交通工程。",
+              "contentStatus": "textbook-supported",
+              "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入；讲稿·修路的好处；框架·隋/兴盛3；审核 A03；question-bank.md · Q04",
+              "evidenceType": "textbook-supported",
+              "reviewNote": "“加强中央与地方联系”和文化影响属于课堂分析；不冒充教材第34页原句。",
+              "contentVersion": "stage5",
+              "answerBlocks": [
+                {
+                  "title": "政治",
+                  "text": "巩固统一。",
+                  "evidenceType": "textbook-supported"
+                },
+                {
+                  "title": "经济",
+                  "text": "促进南北经济交流，带动运河沿岸城市发展。",
+                  "evidenceType": "textbook-supported"
+                },
+                {
+                  "title": "文化",
+                  "text": "有利于人员往来与南北文化交流。",
+                  "evidenceType": "teacher-extension"
+                }
+              ]
+            },
+            {
+              "questionId": "Q05",
+              "prompt": "仓库、洛阳与运河为什么一起建设，怎样联系？",
+              "answer": "大运河连接经济与政治军事中心。",
+              "contentStatus": "teacher-extension",
+              "sourceRef": "教师提供图片 assets/teacher/sui_canal_granary_map.png；MX-FIX01；question-bank.md · Q05",
+              "evidenceType": "teacher-extension",
+              "reviewNote": "教师指定课堂概括，配图已按交付SHA-256验证；非教材PDF原图。",
+              "contentVersion": "stage5",
+              "assetStatus": "available",
+              "compact": true,
+              "image": {
+                "path": "./assets/teacher/sui_canal_granary_map.png",
+                "alt": "隋运河、粮仓分布示意图（教师提供）",
+                "width": 416,
+                "height": 404
+              }
+            },
+            {
+              "questionId": "Q06",
+              "prompt": "经济重心南移经历了哪些阶段？",
+              "answer": "魏晋以前：经济重心主要在北方。\n魏晋南北朝：江南逐步开发，南北经济差距缩小。\n安史之乱后：南方经济进一步发展，经济重心逐渐南移。\n靖康之变后：南方经济地位进一步提升，至南宋时期经济重心南移完成。",
+              "explanation": "江南开发、重心逐渐南移与完成南移不是同一概念。不能把某次战乱当作唯一原因，或把一个事件直接当作开始、完成的精确时点。此处不展开安史之乱的详细影响。",
+              "contentStatus": "needs-verification",
+              "sourceRef": "教师框架·隋/兴盛3；讲稿·经济重心南移回顾；本课教材 PDF 1—6/6｜印刷第34—39页未完整论证该过程；审核 A04、A09；question-bank.md · Q06；MX-FIX03教师四行定稿",
+              "evidenceType": "needs-verification",
+              "reviewNote": "教师已批准四节点与四条现状的课堂措辞；纵向分期仍需跨课补证，不将靖康当天视作完成南移。",
+              "contentVersion": "stage5",
+              "timeline": [
+                {
+                  "title": "魏晋以前",
+                  "text": "经济重心主要在北方。",
+                  "evidenceType": "needs-verification"
+                },
+                {
+                  "title": "魏晋南北朝",
+                  "text": "江南逐步开发，南北经济差距缩小。",
+                  "evidenceType": "needs-verification"
+                },
+                {
+                  "title": "安史之乱后",
+                  "text": "南方经济进一步发展，经济重心逐渐南移。",
+                  "evidenceType": "needs-verification"
+                },
+                {
+                  "title": "靖康之变后",
+                  "text": "南方经济地位进一步提升，至南宋时期经济重心南移完成。",
+                  "evidenceType": "needs-verification"
+                }
+              ],
+              "presentation": "four-stages"
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "sui-qin-comparison": {
+          "id": "sui-qin-comparison",
+          "title": "秦和隋朝的相似之处",
+          "qids": [
+            "Q24"
+          ],
+          "audits": [
+            "F03-A01"
+          ],
+          "status": "pending",
+          "moduleId": "sui",
+          "subtopicId": "sui-end",
+          "items": [
+            {
+              "questionId": "Q24",
+              "prompt": "秦和隋朝的相似之处",
+              "answer": "建立：结束了长期分裂的局面，实现了全国的统一。\n发展：都修建了举世闻名的工程，都制定了许多影响深远的制度。\n灭亡：统治时间短，都因为暴政二世而亡。",
+              "presentation": "comparison",
+              "answerSections": [
+                {
+                  "title": "建立",
+                  "items": [
+                    "结束了长期分裂的局面，实现了全国的统一。"
+                  ]
+                },
+                {
+                  "title": "发展",
+                  "items": [
+                    "都修建了举世闻名的工程，都制定了许多影响深远的制度。"
+                  ]
+                },
+                {
+                  "title": "灭亡",
+                  "items": [
+                    "统治时间短，都因为暴政二世而亡。"
+                  ]
+                }
+              ],
+              "contentVersion": "fix03",
+              "contentStatus": "teacher-extension",
+              "evidenceType": "teacher-extension",
+              "sourceRef": "教师MX-FIX03§2定稿；教材PDF1—4/6｜印刷34—37页相关背景；MX_FIX03_CONTENT_AUDIT.md",
+              "reviewNote": "二世而亡是高度概括，不能当作无例外的帝王人数统计；秦朝部分需跨课补证。"
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "sui-canal-merits": {
+          "id": "sui-canal-merits",
+          "title": "隋朝大运河的功过",
+          "qids": [
+            "Q25"
+          ],
+          "audits": [
+            "F03-A02"
+          ],
+          "status": "pending",
+          "moduleId": "sui",
+          "subtopicId": "sui-end",
+          "items": [
+            {
+              "questionId": "Q25",
+              "prompt": "隋朝大运河的功过",
+              "answer": "利：连接了经济中心与政治中心。 连接南北，加强中央集权，加强了对地方的控制。\n弊：滥用民力。 破坏农业。 激化了阶级矛盾。",
+              "presentation": "merits",
+              "answerSections": [
+                {
+                  "title": "利",
+                  "items": [
+                    "连接了经济中心与政治中心。",
+                    "连接南北，加强中央集权，加强了对地方的控制。"
+                  ]
+                },
+                {
+                  "title": "弊",
+                  "items": [
+                    "滥用民力。",
+                    "破坏农业。",
+                    "激化了阶级矛盾。"
+                  ]
+                }
+              ],
+              "contentVersion": "fix03",
+              "contentStatus": "teacher-extension",
+              "evidenceType": "teacher-extension",
+              "sourceRef": "教师MX-FIX03§2定稿；教材PDF1—4/6｜印刷34—37页相关背景；MX_FIX03_CONTENT_AUDIT.md",
+              "reviewNote": "教师组织的评价角度，不逐句等同教材原文，不将隋亡全部归因于运河。"
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "economy": {
+          "id": "economy",
+          "title": "曲辕犁与唐三彩",
+          "qids": [
+            "Q11"
+          ],
+          "audits": [
+            "A14"
+          ],
+          "status": "pending",
+          "moduleId": "tang",
+          "subtopicId": "tang-prosper",
+          "items": [
+            {
+              "questionId": "Q11",
+              "prompt": "曲辕犁和唐三彩分别说明什么？",
+              "answer": "曲辕犁体现农业生产工具的改进：短曲辕、加装犁评以调节深浅、改进犁壁；在江南水田推广。\n唐三彩盘可从手工业中的陶瓷工艺与装饰技术角度观察（课堂归纳）。",
+              "explanation": "教材图注：三彩盘出土于陕西乾县唐永泰公主墓，釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。短曲辕比长直辕轻便；工具改良提高耕作便利性、适应性是课堂分析。",
+              "contentStatus": "textbook-supported",
+              "sourceRef": "教材 PDF 2/6｜印刷第35页｜历史纵横·唐朝曲辕犁及唐三彩盘图注；框架·唐/繁荣/经济；审核 A14；question-bank.md · Q11",
+              "evidenceType": "textbook-supported",
+              "reviewNote": "保留“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”图题，不由壁画地点推断技术起源或推广地域；不凭一件文物推定贸易规模，不把三色当唐三彩的严格定义。",
+              "contentVersion": "stage5"
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "sui-tang-prosperity-causes": {
+          "id": "sui-tang-prosperity-causes",
+          "title": "隋唐盛世的形成原因",
+          "qids": [
+            "Q26"
+          ],
+          "audits": [
+            "F03-A03"
+          ],
+          "status": "pending",
+          "moduleId": "tang",
+          "subtopicId": "tang-prosper",
+          "items": [
+            {
+              "questionId": "Q26",
+              "prompt": "隋唐盛世的形成原因",
+              "answer": "政治：国家统一，疆域辽阔。 三省六部制、科举制的确立，对于国家治理和人才选拔起到了积极作用。 统治者吸取历史教训，保证了政局的稳定和政策的连续性。\n经济：生产力的进步。 统治者重视发展生产，施行有利于经济发展的措施。\n文化：科举制重视人才的选拔。 开放的对外政策与频繁的中外文化交流。\n军事：兵制改革，提升军队战斗力。\n民族关系：开明的民族政策，促进了民族交融与边疆地区的稳定。",
+              "presentation": "causes",
+              "answerSections": [
+                {
+                  "title": "政治",
+                  "items": [
+                    "国家统一，疆域辽阔。",
+                    "三省六部制、科举制的确立，对于国家治理和人才选拔起到了积极作用。",
+                    "统治者吸取历史教训，保证了政局的稳定和政策的连续性。"
+                  ]
+                },
+                {
+                  "title": "经济",
+                  "items": [
+                    "生产力的进步。",
+                    "统治者重视发展生产，施行有利于经济发展的措施。"
+                  ]
+                },
+                {
+                  "title": "文化",
+                  "items": [
+                    "科举制重视人才的选拔。",
+                    "开放的对外政策与频繁的中外文化交流。"
+                  ]
+                },
+                {
+                  "title": "军事",
+                  "items": [
+                    "兵制改革，提升军队战斗力。"
+                  ]
+                },
+                {
+                  "title": "民族关系",
+                  "items": [
+                    "开明的民族政策，促进了民族交融与边疆地区的稳定。"
+                  ]
+                }
+              ],
+              "contentVersion": "fix03",
+              "contentStatus": "teacher-extension",
+              "evidenceType": "teacher-extension",
+              "sourceRef": "教师MX-FIX03§2定稿；教材PDF1—4/6｜印刷34—37页相关背景；MX_FIX03_CONTENT_AUDIT.md",
+              "reviewNote": "制度形成发展有隋唐阶段差异；军事直接因果及部分制度文化结论需相应史料支持。"
+            }
+          ],
+          "contentStatus": "populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "relations": {
+          "id": "relations",
+          "title": "民族关系的处理方式",
+          "qids": [
+            "Q12"
+          ],
+          "audits": [],
+          "status": "pending",
+          "moduleId": "tang",
+          "subtopicId": "tang-relations",
+          "items": [
+            {
+              "questionId": "Q12",
+              "prompt": "与突厥、回纥、吐蕃、靺鞨分别怎样交往？",
+              "answer": "突厥：战争、联合行动；唐在西域设置安西、北庭都护府。\n回纥：合作、册封首领。\n吐蕃：和亲、会盟。\n靺鞨粟末部：册封首领。",
+              "explanation": "唐太宗反击东突厥，被草原各族尊为“天可汗”；唐高宗联合回纥灭西突厥。682年后突厥建立，744年唐与回纥等联手平定。玄宗册封骨力裴罗为怀仁可汗、大祚荣为渤海郡王。周边民族政权为边疆开发作出积极贡献。",
+              "contentStatus": "textbook-supported",
+              "sourceRef": "教材 PDF 3/6｜印刷第36页突厥正文、回纥栏、吐蕃段；教材 PDF 4/6｜印刷第37页靺鞨与边疆开发；question-bank.md · Q12",
+              "reviewNote": "这些事件跨越不同时期，不都发生在669年；一种交往方式不等于永久关系，设置都护府也不等于直接管辖图中所有周边政权。",
+              "contentVersion": "stage6",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentStatus": "stage6-populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "perspectives": {
+          "id": "perspectives",
+          "title": "两者关系题的四个视角",
+          "qids": [
+            "Q15"
+          ],
+          "audits": [
+            "A16"
+          ],
+          "status": "pending",
+          "moduleId": "tang",
+          "subtopicId": "tang-relations",
+          "items": [
+            {
+              "questionId": "Q15",
+              "prompt": "两者关系类题如何找分析角度？",
+              "answer": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n角度用于组织思路，每项结论仍须史实支持，不必凑齐四项。",
+              "explanation": "例：唐与吐蕃。吐蕃方面可找工艺、技术、书籍交流；双方可谈友好和经济文化交流。唐朝治理稳定是有条件的分析角度，不能直接冒充本段结论。迁移到甲午题，只提出中国、日本、双方关系、其他国家的观察问题，不用本课教材编写近代史答案。",
+              "contentStatus": "teacher-extension",
+              "sourceRef": "教师框架·唐/民族2及讲稿“一方、另一方”；教材 PDF 3/6｜印刷第36页—教材 PDF 4/6｜印刷第37页仅支持唐蕃交流例证；审核A16；question-bank.md · Q15",
+              "reviewNote": "其他因素须题目涉及且有证据；甲午与1931不是同一事件，方法不能替代史实。",
+              "contentVersion": "stage6",
+              "evidenceType": "teacher-extension"
+            }
+          ],
+          "contentStatus": "stage6-populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "concepts": {
+          "id": "concepts",
+          "title": "民族边疆与对外外交关系",
+          "qids": [
+            "Q16"
+          ],
+          "audits": [
+            "A08"
+          ],
+          "status": "pending",
+          "moduleId": "tang",
+          "subtopicId": "tang-relations",
+          "items": [
+            {
+              "questionId": "Q16",
+              "prompt": "民族/边疆关系与外交/对外关系怎样区分？",
+              "answer": "核心判断标准：现在中国有没有当前领土。",
+              "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
+              "contentStatus": "needs-verification",
+              "sourceRef": "教师 MX-FIX01 定稿；教材 PDF 4—5/6｜印刷37—38页及教师讲稿；审核 A08；question-bank.md · Q16",
+              "compact": true,
+              "reviewNote": "教师简化口诀，有局限，待课堂审定；现代疆域不等于古代直接管辖。",
+              "contentVersion": "stage6",
+              "evidenceType": "needs-verification"
+            }
+          ],
+          "contentStatus": "stage6-populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "impact": {
+          "id": "impact",
+          "title": "安史之乱的影响",
+          "qids": [
+            "Q18"
+          ],
+          "audits": [
+            "A09",
+            "A16"
+          ],
+          "status": "pending",
+          "moduleId": "anshi",
+          "subtopicId": "an-impact",
+          "items": [
+            {
+              "questionId": "Q18",
+              "prompt": "安史之乱的影响",
+              "answer": "中央集权削弱\n边防空虚\n唐朝由盛转衰\n藩镇割据\n严重破坏北方经济\n经济重心开始南移",
+              "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
+              "contentStatus": "needs-verification",
+              "sourceRef": "教师 MX-FIX01 定稿；教材 PDF 4—5/6｜印刷37—38页及教师讲稿；审核 A04/A09；question-bank.md · Q18",
+              "compact": true,
+              "reviewNote": "前四条教材支持；北方经济受损与南移开始的断代需跨课核验。",
+              "contentVersion": "stage6",
+              "evidenceType": "needs-verification"
+            }
+          ],
+          "contentStatus": "stage6-populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "fanzhen-flow": {
+          "id": "fanzhen-flow",
+          "title": "藩镇割据与唐朝统治",
+          "qids": [
+            "Q21"
+          ],
+          "audits": [
+            "A10"
+          ],
+          "status": "pending",
+          "moduleId": "anshi",
+          "subtopicId": "an-impact",
+          "items": [
+            {
+              "questionId": "Q21",
+              "prompt": "藩镇割据的影响",
+              "answer": "不利于中央集权\n客观上延续了唐朝的统治",
+              "explanation": "本阶段仅建立问答流程，尚未形成正式历史答案。",
+              "contentStatus": "needs-verification",
+              "sourceRef": "教师 MX-FIX01 定稿；教材 PDF 4—5/6｜印刷37—38页及教师讲稿；审核 A10；question-bank.md · Q21",
+              "compact": true,
+              "reviewNote": "削弱中央控制有教材支持；延续唐统治机制属待证教师解释。",
+              "contentVersion": "stage6",
+              "evidenceType": "needs-verification"
+            }
+          ],
+          "contentStatus": "stage6-populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        },
+        "five-flow": {
+          "id": "five-flow",
+          "title": "五代十国与唐末藩镇",
+          "qids": [
+            "Q23"
+          ],
+          "audits": [
+            "A15"
+          ],
+          "status": "pending",
+          "moduleId": "fall",
+          "subtopicId": "five",
+          "items": [
+            {
+              "questionId": "Q23",
+              "prompt": "什么是五代十国？它与唐末藩镇割据有何联系？",
+              "answer": "五代：黄河流域先后出现后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余四代都开封。\n十国：南方先后九个割据政权，加五代末期在山西建立的北汉。",
+              "explanation": "课堂历史归纳：五代十国分裂局面承续并演变了唐末藩镇割据格局，不是毫无变化的等号。后周世宗柴荣清除弊政、增强实力，为北宋结束分裂奠定基础。",
+              "contentStatus": "textbook-supported",
+              "sourceRef": "教材 PDF 5/6｜印刷第38页五代十国段、柴荣段、《五代十国形势图（后周时期）》；审核A15；question-bank.md · Q23",
+              "reviewNote": "地图是后周时点，不是十国同时存在的全景；建立者身份与具体延续机制不作无证扩写。",
+              "sequence": {
+                "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+                "nodes": [
+                  {
+                    "title": "875年 · 黄巢起义",
+                    "text": "起义军一度攻占长安，沉重打击唐朝统治。",
+                    "evidenceType": "textbook-supported"
+                  },
+                  {
+                    "title": "朱温降唐 · 逐渐掌权",
+                    "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。",
+                    "evidenceType": "textbook-supported"
+                  },
+                  {
+                    "title": "907年 · 废唐建梁",
+                    "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。",
+                    "evidenceType": "textbook-supported"
+                  },
+                  {
+                    "title": "五代相继更替",
+                    "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。",
+                    "evidenceType": "textbook-supported"
+                  },
+                  {
+                    "title": "后周世宗柴荣",
+                    "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。",
+                    "evidenceType": "textbook-supported"
+                  }
+                ],
+                "sourceRef": "教材 PDF 5/6｜印刷第38页黄巢、五代十国及柴荣段"
+              },
+              "contentVersion": "stage6",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentStatus": "stage6-populated",
+          "mappingStatus": "既有分组沿用，题序待教师复查"
+        }
+      },
+      "reviews": [
+        "修路、修运河作用",
+        "经济重心南移阶段",
+        "如何回答两者之间的关系类问题",
+        "如何区分民族边疆关系与对外外交关系"
+      ],
+      "totalMinutes": 40,
+      "interactionMode": "select",
+      "futureModes": [
+        "move",
+        "zoom",
+        "select",
+        "draw"
+      ],
+      "reviewItems": [
+        {
+          "questionId": "R01",
+          "prompt": "修路、修运河作用",
+          "answer": "政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。",
+          "contentStatus": "textbook-supported",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页；Q04",
+          "reviewNote": "文化交流为课堂拓展；按题目材料选角度。",
+          "contentVersion": "stage6",
+          "evidenceType": "textbook-supported"
+        },
+        {
+          "questionId": "R02",
+          "prompt": "经济重心南移阶段",
+          "answer": "魏晋以前：经济重心主要在北方。\n魏晋南北朝：江南逐步开发，南北经济差距缩小。\n安史之乱后：南方经济进一步发展，经济重心逐渐南移。\n靖康之变后：南方经济地位进一步提升，至南宋时期经济重心南移完成。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教师框架四节点；Q06；本课六页无完整断代依据",
+          "presentation": "four-stages",
+          "timeline": [
+            {
+              "title": "魏晋以前",
+              "text": "经济重心主要在北方。",
+              "evidenceType": "needs-verification"
+            },
+            {
+              "title": "魏晋南北朝",
+              "text": "江南逐步开发，南北经济差距缩小。",
+              "evidenceType": "needs-verification"
+            },
+            {
+              "title": "安史之乱后",
+              "text": "南方经济进一步发展，经济重心逐渐南移。",
+              "evidenceType": "needs-verification"
+            },
+            {
+              "title": "靖康之变后",
+              "text": "南方经济地位进一步提升，至南宋时期经济重心南移完成。",
+              "evidenceType": "needs-verification"
+            }
+          ],
+          "reviewNote": "跨课知识复习：分期需核对。安史、靖康不是瞬时完成南移的时点。",
+          "contentVersion": "stage6",
+          "evidenceType": "needs-verification"
+        },
+        {
+          "questionId": "R03",
+          "prompt": "如何回答两者之间的关系类问题",
+          "answer": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n先找角度，再用史实证明；不强凑四点。",
+          "contentStatus": "teacher-extension",
+          "sourceRef": "教师框架·内容回顾3；Q15；唐蕃例证见教材 PDF 3—4/6｜印刷36—37页",
+          "reviewNote": "方法不能替代历史证据。",
+          "contentVersion": "stage6",
+          "evidenceType": "teacher-extension"
+        },
+        {
+          "questionId": "R04",
+          "prompt": "如何区分民族边疆关系与对外外交关系",
+          "answer": "核心判断标准：现在中国有没有当前领土。",
+          "contentStatus": "needs-verification",
+          "sourceRef": "教师MX-FIX01定稿·内容回顾4；Q16；教材 PDF 3—4/6｜印刷36—37页为背景，不证明现代国界通则",
+          "compact": true,
+          "reviewNote": "教师简化表述/有局限，待课堂审定；详见MX_FIX01_CONTENT_AUDIT.md。",
+          "contentVersion": "stage6",
+          "evidenceType": "needs-verification"
+        }
+      ],
+      "teachingNotes": {
+        "sui-found--sui-found": {
+          "title": "建立与统一：分清两个时间",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡",
+          "blocks": [
+            {
+              "title": "581年 · 杨坚建隋",
+              "text": "北周外戚杨坚代周称帝，改国号隋，定都长安，是为隋文帝。励精图治、实行改革，国力日强。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "589年 · 灭陈统一",
+              "text": "隋文帝派次子杨广率军灭陈，结束南北长期分裂。文帝死后杨广即位，是为隋炀帝。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "sui-prosper--sui-prosper": {
+          "title": "兴盛的三个观察点",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡正文与大运河导入",
+          "blocks": [
+            {
+              "title": "仓储",
+              "text": "两都及地方广设仓库；供应朝廷粮物，义仓备水旱赈济。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "洛阳",
+              "text": "隋炀帝兴建洛阳城，规模宏大。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "大运河",
+              "text": "南北贯通、沟通五大水系；巩固统一，促进南北经济交流和沿岸城市发展。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "sui-end--sui-end": {
+          "title": "隋亡主线：负担、生产与反抗",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜隋朝兴亡；教材 PDF 2/6｜印刷第35页｜唐朝的繁荣与民族交融",
+          "blocks": [
+            {
+              "title": "负担与起义",
+              "text": "大兴土木、穷奢极欲、三次大举征伐（教材称“高丽”）→生产遭到严重破坏、民不聊生→大规模起义。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "618年 · 隋朝灭亡",
+              "text": "隋炀帝在江都被部将杀死。李渊建唐是同年的另一事件，不能混作同一政权。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "sui-end--sui-poem": {
+          "title": "读诗：功效与负担分开评价",
+          "sourceRef": "教材 PDF 1/6｜印刷第34页｜皮日休《汴河怀古二首》及隋朝兴亡",
+          "blocks": [
+            {
+              "title": "材料讨论",
+              "text": "结合诗歌与正文，分别讨论运河的长期功效、统治者奢侈用度与民力负担。诗歌是评价材料，不能单独证明修河动机。",
+              "evidenceType": "teacher-extension"
+            },
+            {
+              "title": "历史启示",
+              "text": "国家工程需要顾及社会承受能力；不能把修运河说成隋亡唯一原因。",
+              "evidenceType": "teacher-extension"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "tang-found--tang-found": {
+          "title": "唐朝建立与随后统一",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜唐朝的繁荣与民族交融",
+          "blocks": [
+            {
+              "title": "618年 · 李渊 · 长安",
+              "text": "李渊在长安称帝，建立唐朝，是为唐高祖。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "随后 · 逐渐统一",
+              "text": "唐军逐渐消灭各支起义军和割据势力，统一全国；建唐不等于当日已经完成统一。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "tang-prosper--tang-zhenguan": {
+          "title": "唐太宗：吸取隋亡教训",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜唐朝的繁荣与民族交融",
+          "blocks": [
+            {
+              "title": "治理措施",
+              "text": "李世民轻徭薄赋、劝课农桑、戒奢从简、知人善任、虚怀纳谏。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "贞观之治",
+              "text": "统治时期出现开明政治局面。与唐玄宗时期的开元盛世相区别。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "tang-prosper--tang-prosper": {
+          "title": "走向盛世的三个教学阶段",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜唐朝的繁荣与民族交融",
+          "blocks": [
+            {
+              "title": "唐太宗 · 贞观之治",
+              "text": "吸取隋亡教训，轻徭薄赋、劝课农桑，戒奢从简、知人善任、虚怀纳谏。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "武则天当权时期",
+              "text": "唐高宗时参与朝政，后废唐称帝、改国号周。当权期间社会经济持续发展。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "唐玄宗 · 开元盛世",
+              "text": "李隆基选贤任能、改革吏治、发展生产、大兴文治、改革兵制，将唐朝推向全盛。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "presentationNote": "“承上启下”指发展线索，不把武周与唐朝混成同一朝号。",
+          "note": "课堂概括：“承上启下”指发展线索，不把武周与唐朝混成同一朝号；兵制细节仍待补证。",
+          "contentVersion": "stage5"
+        },
+        "tang-prosper--plough-text": {
+          "title": "曲辕犁：三项改进",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜历史纵横·唐朝曲辕犁",
+          "blocks": [
+            {
+              "title": "短曲辕",
+              "text": "由长直辕改为轻便的短曲辕。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "犁评",
+              "text": "加装犁评，调节耕作深浅。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "犁壁",
+              "text": "改进犁壁；这种犁在江南水田推广，耕犁基本定型。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "tang-prosper--plough-image": {
+          "title": "观察牛耕图：图像与传播范围要区分",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜敦煌莫高窟壁画唐朝牛耕图中的曲辕犁",
+          "blocks": [
+            {
+              "title": "配图定位",
+              "text": "图题明确为“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”；结合旁栏三项改进观察农具。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "观察方法",
+              "text": "壁画所在地不能单独证明技术起源或实际推广范围；不据此推定敦煌为曲辕犁发源地。",
+              "evidenceType": "teacher-extension"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "tang-prosper--sancai": {
+          "title": "唐三彩盘：观察工艺",
+          "sourceRef": "教材 PDF 2/6｜印刷第35页｜唐三彩盘图注",
+          "blocks": [
+            {
+              "title": "器物信息",
+              "text": "出土于陕西乾县唐永泰公主墓；该盘釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "经济门类",
+              "text": "可归入手工业中的陶瓷工艺与装饰技术。该盘的三色不是全部唐三彩颜色的严格定义，也不能由一件文物推算贸易规模。",
+              "evidenceType": "teacher-extension"
+            }
+          ],
+          "contentVersion": "stage5"
+        },
+        "tang-relations--turks-intro": {
+          "title": "突厥：从兴起到分裂",
+          "blocks": [
+            {
+              "title": "衔接下一片",
+              "text": "突厥兴起于阿尔泰山地区，建立政权，后分为东、西突厥。下一片继续读唐朝的战争、联合行动与西域管理。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 2/6｜印刷第35页末段；教材 PDF 3/6｜印刷第36页首段",
+          "contentVersion": "stage6"
+        },
+        "tang-relations--turks": {
+          "title": "突厥与西域管理",
+          "blocks": [
+            {
+              "title": "战争与合作",
+              "text": "唐太宗反击东突厥；草原各族尊奉其为“天可汗”。唐高宗联合回纥灭西突厥。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "设置管理机构",
+              "text": "先后设安西、北庭都护府，统辖天山南北，加强西域管理。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "时序要分清",
+              "text": "682年后突厥建立；744年唐与回纥、葛逻禄等联手平定。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 3/6｜印刷第36页突厥正文",
+          "contentVersion": "stage6",
+          "note": "这是跨时期的交往线索，不能全归入669年，更不能推定唐直接统治所有周边政权。"
+        },
+        "tang-relations--huihe": {
+          "title": "回纥、回鹘与交融",
+          "blocks": [
+            {
+              "title": "合作与册封",
+              "text": "回纥与唐合作；唐玄宗册封骨力裴罗为怀仁可汗。后来改称回鹘。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "迁徙与融合",
+              "text": "9世纪回鹘政权瓦解，部分迁入内地，大部分西迁河西走廊和西域，与当地居民融合。教材称隋唐回纥人为维吾尔族先民的主体。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 3/6｜印刷第36页历史纵横·回纥",
+          "contentVersion": "stage6",
+          "note": "历史演变不等于名称、政权与现代族群完全不变的简单等号。"
+        },
+        "tang-relations--tubo": {
+          "title": "吐蕃：和亲与交流",
+          "blocks": [
+            {
+              "title": "人物与方式",
+              "text": "7世纪前期，松赞干布统一青藏高原；唐太宗以文成公主和亲。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "影响与后续",
+              "text": "手工艺品、技术、医药书籍交流促进汉藏友好。9世纪前期会盟的结尾须接读下一页。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 3/6｜印刷第36页吐蕃段续教材 PDF 4/6｜印刷第37页首段",
+          "contentVersion": "stage6"
+        },
+        "tang-relations--frontier": {
+          "title": "会盟、册封与边疆开发",
+          "blocks": [
+            {
+              "title": "吐蕃 · 会盟",
+              "text": "9世纪前期唐蕃会盟，此后基本停止纷争。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "靺鞨粟末部 · 册封",
+              "text": "唐玄宗封大祚荣为渤海郡王。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "区域开发",
+              "text": "周边少数民族建立的政权对边疆地区开发作出积极贡献。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 4/6｜印刷第37页首部三段",
+          "contentVersion": "stage6"
+        },
+        "an-process--an-process": {
+          "title": "755年起兵，历时八年",
+          "blocks": [
+            {
+              "title": "人物与地点",
+              "text": "身兼三镇节度使的安禄山在范阳起兵，与部将史思明发动叛乱。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "结束与转折",
+              "text": "叛乱历时八年，后被唐平定；影响跨页接读第38页。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 4/6｜印刷第37页过程段",
+          "contentVersion": "stage6",
+          "note": "沿用教材“历时八年”，不凭推算补写精确结束年份或皇帝行程。",
+          "presentationNote": "沿用教材“历时八年”。"
+        },
+        "an-impact--an-impact": {
+          "title": "安史之乱的影响",
+          "blocks": [
+            {
+              "title": "平叛与盛衰转折",
+              "text": "将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "期间及以后 · 部分藩镇割据",
+              "text": "内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 4/6｜印刷第37页—教材 PDF 5/6｜印刷第38页跨页正文",
+          "contentVersion": "stage6",
+          "sequence": {
+            "title": "因果关系示意 · 教师据教材整理（不是单因决定论）",
+            "nodes": [
+              {
+                "title": "三类背景",
+                "text": "边疆形势紧张；军镇增设、节度使兵力扩大，外重内轻；玄宗后期朝政腐败。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "755年起 · 历时八年",
+                "text": "安禄山在范阳起兵，与史思明发动叛乱，后被唐平定。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "平叛与盛衰转折",
+                "text": "将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "期间及以后 · 部分藩镇割据",
+                "text": "内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "长期政治格局",
+                "text": "上述变化是理解唐末衰败及五代十国分裂的重要线索之一，并非唯一原因。",
+                "evidenceType": "teacher-extension"
+              }
+            ],
+            "sourceRef": "教材 PDF 4/6｜印刷第37页原因、过程；教材 PDF 5/6｜印刷第38页影响、藩镇与五代十国"
+          }
+        },
+        "an-impact--fanzhen": {
+          "title": "藩镇不等于割据",
+          "blocks": [
+            {
+              "title": "范围与影响",
+              "text": "有些藩镇独立性强，形成割据局面；持续100多年，严重削弱唐朝统治。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "讨论边界",
+              "text": "不同藩镇互相制约而延续统治是待证解释，不能从“持续100多年”直接推出因果。",
+              "evidenceType": "needs-verification",
+              "presentationOnly": false
+            }
+          ],
+          "sourceRef": "教材 PDF 5/6｜印刷第38页藩镇段；审核A10",
+          "contentVersion": "stage6"
+        },
+        "tang-end--huangchao": {
+          "title": "黄巢与朱温：打击统治和政治终结",
+          "blocks": [
+            {
+              "title": "背景与起义",
+              "text": "唐后期宦官专权、朋党之争加剧。875年黄巢起义，一度攻占长安，沉重打击统治。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "谁在907年废唐？",
+              "text": "朱温先降唐任节度使，联合藩镇镇压起义并逐渐掌权；907年废唐建后梁。黄巢没有建立后梁。",
+              "evidenceType": "textbook-supported"
+            }
+          ],
+          "sourceRef": "教材 PDF 5/6｜印刷第38页黄巢起义至五代十国段",
+          "contentVersion": "stage6",
+          "sequence": {
+            "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+            "nodes": [
+              {
+                "title": "875年 · 黄巢起义",
+                "text": "起义军一度攻占长安，沉重打击唐朝统治。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "朱温降唐 · 逐渐掌权",
+                "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "907年 · 废唐建梁",
+                "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "五代相继更替",
+                "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "后周世宗柴荣",
+                "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。",
+                "evidenceType": "textbook-supported"
+              }
+            ],
+            "sourceRef": "教材 PDF 5/6｜印刷第38页黄巢、五代十国及柴荣段"
+          }
+        },
+        "five--five": {
+          "title": "五代十国：顺序与构成",
+          "blocks": [
+            {
+              "title": "五代",
+              "text": "后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余都开封。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "十国",
+              "text": "南方先后九个割据政权，加山西的北汉；不是南方十国，也不都同时存在。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "课堂历史归纳",
+              "text": "唐末藩镇割据局面的延续与演变，不是完全不变的等号。",
+              "evidenceType": "teacher-extension"
+            }
+          ],
+          "sourceRef": "教材 PDF 5/6｜印刷第38页五代十国段",
+          "contentVersion": "stage6",
+          "sequence": {
+            "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+            "nodes": [
+              {
+                "title": "875年 · 黄巢起义",
+                "text": "起义军一度攻占长安，沉重打击唐朝统治。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "朱温降唐 · 逐渐掌权",
+                "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "907年 · 废唐建梁",
+                "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "五代相继更替",
+                "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。",
+                "evidenceType": "textbook-supported"
+              },
+              {
+                "title": "后周世宗柴荣",
+                "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。",
+                "evidenceType": "textbook-supported"
+              }
+            ],
+            "sourceRef": "教材 PDF 5/6｜印刷第38页黄巢、五代十国及柴荣段"
+          }
+        },
+        "five--map-five": {
+          "title": "后周时点，不是十国全同期",
+          "blocks": [
+            {
+              "title": "先读图题与注记",
+              "text": "图为后周时期，标951—960年，并有“951年，南唐灭楚”注记。",
+              "evidenceType": "textbook-supported"
+            },
+            {
+              "title": "结合正文看构成",
+              "text": "正文的十国是南方先后九政权加北汉，不能只数这一个时点的图上政权。",
+              "evidenceType": "teacher-extension"
+            }
+          ],
+          "sourceRef": "教材 PDF 5/6｜印刷第38页《五代十国形势图（后周时期）》与正文",
+          "contentVersion": "stage6"
+        }
+      },
+      "map669": {
+        "width": 1696,
+        "height": 894,
+        "sourceRef": "教材 PDF 4/6｜印刷第37页669年图；交往事实见教材 PDF 3/6｜印刷第36页—教材 PDF 4/6｜印刷第37页",
+        "objects": [
+          {
+            "id": "turks",
+            "name": "突厥",
+            "position": "西部“西突厥”及北部“东突厥”字样",
+            "boxes": [
+              [
+                205,
+                215,
+                260,
+                125
+              ],
+              [
+                605,
+                275,
+                180,
+                105
+              ]
+            ],
+            "text": "战争、联合行动；在西域设置安西、北庭都护府。事件跨时期，不能视为669年同时发生。"
+          },
+          {
+            "id": "huihe",
+            "name": "回纥",
+            "position": "北部“回纥”字样，安北都护府附近",
+            "boxes": [
+              [
+                610,
+                151,
+                70,
+                125
+              ]
+            ],
+            "text": "与唐合作；玄宗册封骨力裴罗为怀仁可汗。后改称回鹘，迁徙与融合不能简化为政权始终不变。"
+          },
+          {
+            "id": "tubo",
+            "name": "吐蕃",
+            "position": "西南“吐蕃”字样，逻些以北",
+            "boxes": [
+              [
+                413,
+                482,
+                167,
+                59
+              ]
+            ],
+            "text": "唐太宗以文成公主和亲；9世纪前期会盟。促进友好与经济文化交流，不等于唐直接管辖吐蕃全境。"
+          },
+          {
+            "id": "mohe",
+            "name": "靺鞨／粟末",
+            "position": "东北靺鞨字样及粟末部位置",
+            "boxes": [
+              [
+                970,
+                88,
+                150,
+                216
+              ]
+            ],
+            "text": "唐玄宗册封粟末部首领大祚荣为渤海郡王。注意图上渤海713年、黑水726年的后置注记。"
+          }
+        ]
+      }
+    },
+    "assets": {
+      "canal-photo": {
+        "id": "canal-photo",
+        "path": "./assets/textbook/canal-photo.png",
+        "pdfPage": 1,
+        "printedPage": 34,
+        "title": "大运河今貌（含图注）",
+        "section": "cover",
+        "pageId": "title",
+        "sourceBounds": [
+          116,
+          740,
+          750,
+          1240
+        ],
+        "referenceBounds": [
+          58,
+          370,
+          375,
+          620
+        ],
+        "width": 634,
+        "height": 500,
+        "displayWidth": 480,
+        "sha256": "4a20059496534e689b4e24a3a6b5ffeb42eabab6f3151fe063054c6b5eabc9b6",
+        "pageIds": [
+          "title"
+        ]
+      },
+      "sui-found": {
+        "id": "sui-found",
+        "path": "./assets/textbook/sui-found.png",
+        "pdfPage": 1,
+        "printedPage": 34,
+        "title": "隋朝建立与统一",
+        "section": "sui-found",
+        "pageId": "sui-found--sui-found",
+        "sourceBounds": [
+          780,
+          1430,
+          1950,
+          1740
+        ],
+        "referenceBounds": [
+          390,
+          715,
+          975,
+          870
+        ],
+        "width": 1170,
+        "height": 310,
+        "displayWidth": 1080,
+        "sha256": "9f6d4943b2cfc3e2fb53a5dc57fa84c02bc5738b1cb7c3c511dd53b67d8bc5b5",
+        "pageIds": [
+          "sui-found--sui-found"
+        ]
+      },
+      "sui-prosper": {
+        "id": "sui-prosper",
+        "path": "./assets/textbook/sui-prosper.png",
+        "pdfPage": 1,
+        "printedPage": 34,
+        "title": "仓储、两都与大运河",
+        "section": "sui-prosper",
+        "pageId": "sui-prosper--sui-prosper",
+        "sourceBounds": [
+          780,
+          1740,
+          1950,
+          2180
+        ],
+        "referenceBounds": [
+          390,
+          870,
+          975,
+          1090
+        ],
+        "width": 1170,
+        "height": 440,
+        "displayWidth": 1080,
+        "sha256": "d7935698721c690679c53bbaf6fb085ab8595c09a64c12d2742db42d1f519094",
+        "pageIds": [
+          "sui-prosper--sui-prosper"
+        ]
+      },
+      "sui-end": {
+        "id": "sui-end",
+        "path": "./assets/textbook/sui-end.png",
+        "pdfPage": 1,
+        "printedPage": 34,
+        "title": "隋朝灭亡",
+        "section": "sui-end",
+        "pageId": "sui-end--sui-end",
+        "sourceBounds": [
+          780,
+          2180,
+          1950,
+          2480
+        ],
+        "referenceBounds": [
+          390,
+          1090,
+          975,
+          1240
+        ],
+        "width": 1170,
+        "height": 300,
+        "displayWidth": 1080,
+        "sha256": "ea96d6eccba4d44652fb849d8858fc330debda5e3ca2df9fd871b05c51bc99d6",
+        "pageIds": [
+          "sui-end--sui-end"
+        ]
+      },
+      "sui-poem": {
+        "id": "sui-poem",
+        "path": "./assets/textbook/sui-poem.png",
+        "pdfPage": 1,
+        "printedPage": 34,
+        "title": "学思之窗：皮日休诗与提问",
+        "section": "sui-end",
+        "pageId": "sui-end--sui-poem",
+        "sourceBounds": [
+          200,
+          1690,
+          740,
+          2696
+        ],
+        "referenceBounds": [
+          100,
+          845,
+          370,
+          1348
+        ],
+        "width": 540,
+        "height": 1006,
+        "displayWidth": 530,
+        "sha256": "f788f9232f1507014eebb93fa031e438d4b02a7a5c1a42601a99f2f5f056a0c9",
+        "pageIds": [
+          "sui-end--sui-poem"
+        ]
+      },
+      "tang-found": {
+        "id": "tang-found",
+        "path": "./assets/textbook/tang-found.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "唐朝建立",
+        "section": "tang-found",
+        "pageId": "tang-found--tang-found",
+        "sourceBounds": [
+          230,
+          324,
+          1340,
+          484
+        ],
+        "referenceBounds": [
+          115,
+          162,
+          670,
+          242
+        ],
+        "width": 1110,
+        "height": 160,
+        "displayWidth": 1080,
+        "sha256": "f0a8d5c948cb63fbbd62e548b16d7823ce8fd9767b79e81162a93a90924f3e97",
+        "pageIds": [
+          "tang-found--tang-found"
+        ]
+      },
+      "tang-zhenguan": {
+        "id": "tang-zhenguan",
+        "path": "./assets/textbook/tang-zhenguan.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "贞观之治",
+        "section": "tang-prosper",
+        "pageId": "tang-prosper--tang-zhenguan",
+        "sourceBounds": [
+          230,
+          484,
+          1340,
+          688
+        ],
+        "referenceBounds": [
+          115,
+          242,
+          670,
+          344
+        ],
+        "width": 1110,
+        "height": 204,
+        "displayWidth": 1080,
+        "sha256": "ea9132e7a8e6cabb11cc1bb18eea26f0cad7a206bade941a8bd0499ae14b3c47",
+        "pageIds": [
+          "tang-prosper--tang-zhenguan"
+        ]
+      },
+      "tang-prosper": {
+        "id": "tang-prosper",
+        "path": "./assets/textbook/tang-prosper.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "武则天时期与开元盛世",
+        "section": "tang-prosper",
+        "pageId": "tang-prosper--tang-prosper",
+        "sourceBounds": [
+          230,
+          696,
+          1340,
+          1148
+        ],
+        "referenceBounds": [
+          115,
+          348,
+          670,
+          574
+        ],
+        "width": 1110,
+        "height": 452,
+        "displayWidth": 1080,
+        "sha256": "bc9f6a911767976d5927b9efafd22734144d16c0db68e0a4d8c9b8ab36a1af46",
+        "pageIds": [
+          "tang-prosper--tang-prosper"
+        ]
+      },
+      "plough-text": {
+        "id": "plough-text",
+        "path": "./assets/textbook/plough-text.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "历史纵横：唐朝曲辕犁",
+        "section": "tang-prosper",
+        "pageId": "tang-prosper--plough-text",
+        "sourceBounds": [
+          228,
+          1220,
+          1346,
+          1804
+        ],
+        "referenceBounds": [
+          114,
+          610,
+          673,
+          902
+        ],
+        "width": 1118,
+        "height": 584,
+        "displayWidth": 1060,
+        "sha256": "910c769213fa6f167d342a951ab17bbcd363f55887090db3580d8b2bb07bb7c8",
+        "pageIds": [
+          "tang-prosper--plough-text"
+        ]
+      },
+      "plough-image": {
+        "id": "plough-image",
+        "path": "./assets/textbook/plough-image.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "敦煌莫高窟壁画唐朝牛耕图中的曲辕犁",
+        "section": "tang-prosper",
+        "pageId": "tang-prosper--plough-image",
+        "sourceBounds": [
+          224,
+          1860,
+          840,
+          2494
+        ],
+        "referenceBounds": [
+          112,
+          930,
+          420,
+          1247
+        ],
+        "width": 616,
+        "height": 634,
+        "displayWidth": 650,
+        "sha256": "39274ffc51d40bdd91d933dea316b5dfb8d66044a6f5ab8d477884910d091b7c",
+        "pageIds": [
+          "tang-prosper--plough-image"
+        ]
+      },
+      "sancai": {
+        "id": "sancai",
+        "path": "./assets/textbook/sancai.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "唐三彩盘及说明",
+        "section": "tang-prosper",
+        "pageId": "tang-prosper--sancai",
+        "sourceBounds": [
+          842,
+          1860,
+          1360,
+          2428
+        ],
+        "referenceBounds": [
+          421,
+          930,
+          680,
+          1214
+        ],
+        "width": 518,
+        "height": 568,
+        "displayWidth": 580,
+        "sha256": "7224667ef08a6013b2bdac4971f1282479abda3396f588aa49a86ca914648d94",
+        "pageIds": [
+          "tang-prosper--sancai"
+        ]
+      },
+      "turks-intro": {
+        "id": "turks-intro",
+        "path": "./assets/textbook/turks-intro.png",
+        "pdfPage": 2,
+        "printedPage": 35,
+        "title": "突厥兴起与分裂（接下片）",
+        "section": "tang-relations",
+        "pageId": "tang-relations--turks-intro",
+        "sourceBounds": [
+          230,
+          2556,
+          1950,
+          2704
+        ],
+        "referenceBounds": [
+          115,
+          1278,
+          975,
+          1352
+        ],
+        "width": 1720,
+        "height": 148,
+        "displayWidth": 1150,
+        "sha256": "2e9382ed65645ed99fbd46679e27513c97424d1aa49560ae5beb0055e3a79571",
+        "pageIds": [
+          "tang-relations--turks-intro"
+        ]
+      },
+      "turks": {
+        "id": "turks",
+        "path": "./assets/textbook/turks.png",
+        "pdfPage": 3,
+        "printedPage": 36,
+        "title": "突厥、安西与北庭都护府",
+        "section": "tang-relations",
+        "pageId": "tang-relations--turks",
+        "sourceBounds": [
+          780,
+          200,
+          1930,
+          788
+        ],
+        "referenceBounds": [
+          390,
+          100,
+          965,
+          394
+        ],
+        "width": 1150,
+        "height": 588,
+        "displayWidth": 1080,
+        "sha256": "29ce843244679a586ecf93747c0eedb3f4c8abe7bf9e3f3a7ea49d06a2dbdef5",
+        "pageIds": [
+          "tang-relations--turks"
+        ]
+      },
+      "huihe": {
+        "id": "huihe",
+        "path": "./assets/textbook/huihe.png",
+        "pdfPage": 3,
+        "printedPage": 36,
+        "title": "历史纵横：回纥",
+        "section": "tang-relations",
+        "pageId": "tang-relations--huihe",
+        "sourceBounds": [
+          202,
+          200,
+          746,
+          1572
+        ],
+        "referenceBounds": [
+          101,
+          100,
+          373,
+          786
+        ],
+        "width": 544,
+        "height": 1372,
+        "displayWidth": 550,
+        "sha256": "79801e5e0fa277d5997e906088b67e789ce7e8eefc12f4d4147c63fe67919fc5",
+        "pageIds": [
+          "tang-relations--huihe"
+        ]
+      },
+      "jiaohe": {
+        "id": "jiaohe",
+        "path": "./assets/textbook/jiaohe.png",
+        "pdfPage": 3,
+        "printedPage": 36,
+        "title": "交河故城及图注",
+        "section": "tang-relations",
+        "pageId": null,
+        "sourceBounds": [
+          780,
+          832,
+          1906,
+          1554
+        ],
+        "referenceBounds": [
+          390,
+          416,
+          953,
+          777
+        ],
+        "width": 1126,
+        "height": 722,
+        "displayWidth": 1000,
+        "sha256": "e9eea2d7b2d80720df51c2956264ca7ef8131fba10e1fca1755c9cec4b74436c",
+        "pageIds": []
+      },
+      "tribute": {
+        "id": "tribute",
+        "path": "./assets/textbook/tribute.png",
+        "pdfPage": 3,
+        "printedPage": 36,
+        "title": "《职贡图》及图注",
+        "section": "tang-relations",
+        "pageId": null,
+        "sourceBounds": [
+          202,
+          1590,
+          1902,
+          2290
+        ],
+        "referenceBounds": [
+          101,
+          795,
+          951,
+          1145
+        ],
+        "width": 1700,
+        "height": 700,
+        "displayWidth": 1150,
+        "sha256": "a706659435bb5667ee95d0555f65f132f99cd867dece298e78190fa77a772551",
+        "pageIds": []
+      },
+      "tubo": {
+        "id": "tubo",
+        "path": "./assets/textbook/tubo.png",
+        "pdfPage": 3,
+        "printedPage": 36,
+        "title": "吐蕃与文成公主（末句接下片）",
+        "section": "tang-relations",
+        "pageId": "tang-relations--tubo",
+        "sourceBounds": [
+          780,
+          2298,
+          1934,
+          2672
+        ],
+        "referenceBounds": [
+          390,
+          1149,
+          967,
+          1336
+        ],
+        "width": 1154,
+        "height": 374,
+        "displayWidth": 1080,
+        "sha256": "0e17c5fcfba2eb3775196ac79f8f845c343e96d7e6a40424e067841a405860f3",
+        "pageIds": [
+          "tang-relations--tubo"
+        ]
+      },
+      "frontier": {
+        "id": "frontier",
+        "path": "./assets/textbook/frontier.png",
+        "pdfPage": 4,
+        "printedPage": 37,
+        "title": "唐蕃会盟、靺鞨与边疆开发（续前片）",
+        "section": "tang-relations",
+        "pageId": "tang-relations--frontier",
+        "sourceBounds": [
+          230,
+          200,
+          916,
+          798
+        ],
+        "referenceBounds": [
+          115,
+          100,
+          458,
+          399
+        ],
+        "width": 686,
+        "height": 598,
+        "displayWidth": 700,
+        "sha256": "ef389a4e463c893c9d2bb98d5d70cec3e11d3138ede8cf0b74a1357885f3a889",
+        "pageIds": [
+          "tang-relations--frontier"
+        ]
+      },
+      "alliance": {
+        "id": "alliance",
+        "path": "./assets/textbook/alliance.png",
+        "pdfPage": 4,
+        "printedPage": 37,
+        "title": "唐蕃会盟碑及说明（保留邻近思考点）",
+        "section": "tang-relations",
+        "pageId": null,
+        "sourceBounds": [
+          954,
+          172,
+          1930,
+          970
+        ],
+        "referenceBounds": [
+          477,
+          86,
+          965,
+          485
+        ],
+        "width": 976,
+        "height": 798,
+        "displayWidth": 950,
+        "sha256": "43f80417f262f2b29d9258738907351b29e07aa89fea1b41a450a423db8db78a",
+        "pageIds": []
+      },
+      "map-669": {
+        "id": "map-669",
+        "path": "./assets/textbook/map-669.png",
+        "pdfPage": 4,
+        "printedPage": 37,
+        "title": "唐朝前期形势和边疆各族分布图（669年）及古今地名表",
+        "section": "tang-relations",
+        "pageId": "tang-relations--map-669",
+        "sourceBounds": [
+          224,
+          982,
+          1920,
+          1876
+        ],
+        "referenceBounds": [
+          112,
+          491,
+          960,
+          938
+        ],
+        "width": 1696,
+        "height": 894,
+        "displayWidth": 1380,
+        "sha256": "c44351404719684cfc32b437d935be3f1ad2ec5ffe270ffd480c715611000708",
+        "pageIds": [
+          "tang-relations--map-669"
+        ]
+      },
+      "an-cause": {
+        "id": "an-cause",
+        "path": "./assets/textbook/an-cause.png",
+        "pdfPage": 4,
+        "printedPage": 37,
+        "title": "安史之乱原因",
+        "section": "an-cause",
+        "pageId": "an-cause--an-cause",
+        "sourceBounds": [
+          230,
+          2032,
+          1352,
+          2402
+        ],
+        "referenceBounds": [
+          115,
+          1016,
+          676,
+          1201
+        ],
+        "width": 1122,
+        "height": 370,
+        "displayWidth": 1080,
+        "sha256": "00d881a6fb374e776c330071691f0067b53d2a550cf38f82e26f6d12799c7ead",
+        "pageIds": [
+          "an-cause--an-cause"
+        ]
+      },
+      "an-process": {
+        "id": "an-process",
+        "path": "./assets/textbook/an-process.png",
+        "pdfPage": 4,
+        "printedPage": 37,
+        "title": "安史之乱过程及影响开端（续下页）",
+        "section": "an-process",
+        "pageId": "an-process--an-process",
+        "sourceBounds": [
+          230,
+          2412,
+          1352,
+          2762
+        ],
+        "referenceBounds": [
+          115,
+          1206,
+          676,
+          1381
+        ],
+        "width": 1122,
+        "height": 350,
+        "displayWidth": 1080,
+        "sha256": "8808874aac625bbdb0166d47bc94279d340bd0478ae8306fb8eee3957603158b",
+        "pageIds": [
+          "an-process--an-process"
+        ]
+      },
+      "an-impact": {
+        "id": "an-impact",
+        "path": "./assets/lesson/an-impact-crosspage-merged.png",
+        "pdfPage": "4—5",
+        "printedPage": "37—38",
+        "title": "安史之乱的影响",
+        "section": "an-impact",
+        "pageId": "an-impact--an-impact",
+        "width": 1160,
+        "height": 370,
+        "displayWidth": 1100,
+        "sha256": "106fb1e3eb2c46ceefe4629c51d2c76b142aa8e2a931fbb152d01c04c6106c45",
+        "pageIds": [
+          "an-impact--an-impact"
+        ],
+        "originalPath": "./assets/textbook/an-impact.png",
+        "derivation": {
+          "sources": [
+            {
+              "path": "assets/textbook/an-process.png",
+              "crop": [
+                0,
+                0,
+                1122,
+                292
+              ],
+              "destination": [
+                0,
+                0
+              ],
+              "pdfPage": 4,
+              "printedPage": 37
+            },
+            {
+              "path": "assets/textbook/an-impact.png",
+              "crop": [
+                0,
+                0,
+                1160,
+                70
+              ],
+              "destination": [
+                0,
+                300
+              ],
+              "pdfPage": 5,
+              "printedPage": 38
+            }
+          ],
+          "note": "原像素1:1；仅去除第37页段落末尾白边，保留完整四行，下一行接“占领河西陇右地区”。",
+          "sha256": "106fb1e3eb2c46ceefe4629c51d2c76b142aa8e2a931fbb152d01c04c6106c45",
+          "size": [
+            1160,
+            370
+          ]
+        }
+      },
+      "fanzhen": {
+        "id": "fanzhen",
+        "path": "./assets/textbook/fanzhen.png",
+        "pdfPage": 5,
+        "printedPage": 38,
+        "title": "藩镇割据",
+        "section": "an-impact",
+        "pageId": "an-impact--fanzhen",
+        "sourceBounds": [
+          780,
+          276,
+          1940,
+          560
+        ],
+        "referenceBounds": [
+          390,
+          138,
+          970,
+          280
+        ],
+        "width": 1160,
+        "height": 284,
+        "displayWidth": 1080,
+        "sha256": "c61a10f2a6078072277c91c3238c74daea26252fc2a52dc22a14198ff7b5ca18",
+        "pageIds": [
+          "an-impact--fanzhen"
+        ]
+      },
+      "army-source": {
+        "id": "army-source",
+        "path": "./assets/textbook/army-source.png",
+        "pdfPage": 5,
+        "printedPage": 38,
+        "title": "史料阅读：《新唐书·兵志》",
+        "section": "an-impact",
+        "pageId": null,
+        "sourceBounds": [
+          202,
+          202,
+          748,
+          2166
+        ],
+        "referenceBounds": [
+          101,
+          101,
+          374,
+          1083
+        ],
+        "width": 546,
+        "height": 1964,
+        "displayWidth": 560,
+        "sha256": "4ab1c25ff06ded3aa23b8dc4d2a1593d25f9ebfc508281b34d59dd4c362f1220",
+        "pageIds": []
+      },
+      "huangchao": {
+        "id": "huangchao",
+        "path": "./assets/textbook/huangchao.png",
+        "pdfPage": 5,
+        "printedPage": 38,
+        "title": "黄巢起义与朱温废唐（末行接下片）",
+        "section": "tang-end",
+        "pageId": "tang-end--huangchao",
+        "sourceBounds": [
+          780,
+          570,
+          1950,
+          1026
+        ],
+        "referenceBounds": [
+          390,
+          285,
+          975,
+          513
+        ],
+        "width": 1170,
+        "height": 456,
+        "displayWidth": 1080,
+        "sha256": "d6a874f2450913afa61b841240e3b3aaed109b6baa2dfc1dcbdf8cdd987ff0c8",
+        "pageIds": [
+          "tang-end--huangchao"
+        ]
+      },
+      "five": {
+        "id": "five",
+        "path": "./assets/textbook/five.png",
+        "pdfPage": 5,
+        "printedPage": 38,
+        "title": "五代与十国的定义（含衔接上文）",
+        "section": "five",
+        "pageId": "five--five",
+        "sourceBounds": [
+          780,
+          960,
+          1950,
+          1316
+        ],
+        "referenceBounds": [
+          390,
+          480,
+          975,
+          658
+        ],
+        "width": 1170,
+        "height": 356,
+        "displayWidth": 1080,
+        "sha256": "53bff78ca1c74fa73ed731cc830521b11f2f67a82d0016036a09ea32223d3b88",
+        "pageIds": [
+          "five--five"
+        ]
+      },
+      "chairong": {
+        "id": "chairong",
+        "path": "./assets/textbook/chairong.png",
+        "pdfPage": 5,
+        "printedPage": 38,
+        "title": "后周世宗柴荣",
+        "section": "five",
+        "pageId": null,
+        "sourceBounds": [
+          780,
+          1322,
+          1950,
+          1536
+        ],
+        "referenceBounds": [
+          390,
+          661,
+          975,
+          768
+        ],
+        "width": 1170,
+        "height": 214,
+        "displayWidth": 1080,
+        "sha256": "b04aa5448efb298832de0ee5ed8b4904dae0acd39818db1c4d5d0f1414c132cb",
+        "pageIds": []
+      },
+      "map-five": {
+        "id": "map-five",
+        "path": "./assets/textbook/map-five.png",
+        "pdfPage": 5,
+        "printedPage": 38,
+        "title": "五代十国形势图（后周时期）",
+        "section": "five",
+        "pageId": "five--map-five",
+        "sourceBounds": [
+          780,
+          1588,
+          1700,
+          2590
+        ],
+        "referenceBounds": [
+          390,
+          794,
+          850,
+          1295
+        ],
+        "width": 920,
+        "height": 1002,
+        "displayWidth": 1050,
+        "sha256": "9a9f7349ad8a9e2756f6234754767d9111074703251db5a545340f7a40c1b16f",
+        "pageIds": [
+          "five--map-five"
+        ]
+      },
+      "granary": {
+        "id": "granary",
+        "path": "./assets/textbook/granary.png",
+        "pdfPage": 6,
+        "printedPage": 39,
+        "title": "问题探究：《通典·食货典》仓储材料",
+        "section": "sui-prosper",
+        "pageId": null,
+        "sourceBounds": [
+          658,
+          360,
+          1914,
+          1022
+        ],
+        "referenceBounds": [
+          329,
+          180,
+          957,
+          511
+        ],
+        "width": 1256,
+        "height": 662,
+        "displayWidth": 1080,
+        "sha256": "b42b5aaa5394634e9b7c2c3050d8bca6c772ef146f26cc5d484e29b45c495348",
+        "pageIds": []
+      },
+      "yangdi": {
+        "id": "yangdi",
+        "path": "./assets/textbook/yangdi.png",
+        "pdfPage": 6,
+        "printedPage": 39,
+        "title": "《资治通鉴》炀帝材料与隋亡提问",
+        "section": "sui-end",
+        "pageId": null,
+        "sourceBounds": [
+          658,
+          1040,
+          1914,
+          2048
+        ],
+        "referenceBounds": [
+          329,
+          520,
+          957,
+          1024
+        ],
+        "width": 1256,
+        "height": 1008,
+        "displayWidth": 1080,
+        "sha256": "9666b46eff824c980ad52c30de97f120b8f3187f837f52575b9990294eeb6dcd",
+        "pageIds": []
+      },
+      "ethnic-policy": {
+        "id": "ethnic-policy",
+        "path": "./assets/textbook/ethnic-policy.png",
+        "pdfPage": 6,
+        "printedPage": 39,
+        "title": "学习拓展：隋唐民族政策",
+        "section": "tang-relations",
+        "pageId": null,
+        "sourceBounds": [
+          658,
+          2096,
+          1914,
+          2412
+        ],
+        "referenceBounds": [
+          329,
+          1048,
+          957,
+          1206
+        ],
+        "width": 1256,
+        "height": 316,
+        "displayWidth": 1080,
+        "sha256": "a267dee35438428283f019d2087287320568334801e72ac1a0dc2733f974438f",
+        "pageIds": []
+      }
+    },
+    "pages": {
+      "sui-found--sui-found": {
+        "id": "sui-found--sui-found",
+        "asset": "sui-found",
+        "section": "sui-found",
+        "module": "sui",
+        "index": 0
+      },
+      "sui-prosper--sui-prosper": {
+        "id": "sui-prosper--sui-prosper",
+        "asset": "sui-prosper",
+        "section": "sui-prosper",
+        "module": "sui",
+        "index": 0
+      },
+      "sui-end--sui-end": {
+        "id": "sui-end--sui-end",
+        "asset": "sui-end",
+        "section": "sui-end",
+        "module": "sui",
+        "index": 0
+      },
+      "sui-end--sui-poem": {
+        "id": "sui-end--sui-poem",
+        "asset": "sui-poem",
+        "section": "sui-end",
+        "module": "sui",
+        "index": 1
+      },
+      "tang-found--tang-found": {
+        "id": "tang-found--tang-found",
+        "asset": "tang-found",
+        "section": "tang-found",
+        "module": "tang",
+        "index": 0
+      },
+      "tang-prosper--tang-zhenguan": {
+        "id": "tang-prosper--tang-zhenguan",
+        "asset": "tang-zhenguan",
+        "section": "tang-prosper",
+        "module": "tang",
+        "index": 0
+      },
+      "tang-prosper--tang-prosper": {
+        "id": "tang-prosper--tang-prosper",
+        "asset": "tang-prosper",
+        "section": "tang-prosper",
+        "module": "tang",
+        "index": 1
+      },
+      "tang-prosper--plough-text": {
+        "id": "tang-prosper--plough-text",
+        "asset": "plough-text",
+        "section": "tang-prosper",
+        "module": "tang",
+        "index": 2
+      },
+      "tang-prosper--plough-image": {
+        "id": "tang-prosper--plough-image",
+        "asset": "plough-image",
+        "section": "tang-prosper",
+        "module": "tang",
+        "index": 3
+      },
+      "tang-prosper--sancai": {
+        "id": "tang-prosper--sancai",
+        "asset": "sancai",
+        "section": "tang-prosper",
+        "module": "tang",
+        "index": 4
+      },
+      "tang-relations--turks-intro": {
+        "id": "tang-relations--turks-intro",
+        "asset": "turks-intro",
+        "section": "tang-relations",
+        "module": "tang",
+        "index": 0
+      },
+      "tang-relations--turks": {
+        "id": "tang-relations--turks",
+        "asset": "turks",
+        "section": "tang-relations",
+        "module": "tang",
+        "index": 1
+      },
+      "tang-relations--huihe": {
+        "id": "tang-relations--huihe",
+        "asset": "huihe",
+        "section": "tang-relations",
+        "module": "tang",
+        "index": 2
+      },
+      "tang-relations--tubo": {
+        "id": "tang-relations--tubo",
+        "asset": "tubo",
+        "section": "tang-relations",
+        "module": "tang",
+        "index": 3
+      },
+      "tang-relations--frontier": {
+        "id": "tang-relations--frontier",
+        "asset": "frontier",
+        "section": "tang-relations",
+        "module": "tang",
+        "index": 4
+      },
+      "tang-relations--map-669": {
+        "id": "tang-relations--map-669",
+        "asset": "map-669",
+        "section": "tang-relations",
+        "module": "tang",
+        "index": 5
+      },
+      "an-cause--an-cause": {
+        "id": "an-cause--an-cause",
+        "asset": "an-cause",
+        "section": "an-cause",
+        "module": "anshi",
+        "index": 0
+      },
+      "an-process--an-process": {
+        "id": "an-process--an-process",
+        "asset": "an-process",
+        "section": "an-process",
+        "module": "anshi",
+        "index": 0
+      },
+      "an-impact--an-impact": {
+        "id": "an-impact--an-impact",
+        "asset": "an-impact",
+        "section": "an-impact",
+        "module": "anshi",
+        "index": 0
+      },
+      "an-impact--fanzhen": {
+        "id": "an-impact--fanzhen",
+        "asset": "fanzhen",
+        "section": "an-impact",
+        "module": "anshi",
+        "index": 1
+      },
+      "tang-end--huangchao": {
+        "id": "tang-end--huangchao",
+        "asset": "huangchao",
+        "section": "tang-end",
+        "module": "fall",
+        "index": 0
+      },
+      "five--five": {
+        "id": "five--five",
+        "asset": "five",
+        "section": "five",
+        "module": "fall",
+        "index": 0
+      },
+      "five--map-five": {
+        "id": "five--map-five",
+        "asset": "map-five",
+        "section": "five",
+        "module": "fall",
+        "index": 1
+      }
+    }
+  },
+  "rendered": {
+    "title": {
+      "title": "从隋唐盛世\n到五代十国",
+      "body": "高中历史 · 第六课\n从隋唐盛世\n到五代十国\n\n循着统一、繁荣与分合的脉络，\n走进隋唐历史。\n\n开始授课　→\n中外历史纲要 · 上　/　40 分钟课堂\n大运河今貌 · 教材原图\nPDF 第 1/6 页｜教材第 34 页",
+      "notes": [],
+      "nav": [
+        {
+          "label": "下一页 →",
+          "href": "standard"
+        }
+      ]
+    },
+    "standard": {
+      "title": "课标要求",
+      "body": "课程导入 / 02\n课标要求\n课程标准 · 教师提供截图",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "title"
+        },
+        {
+          "label": "← 上一页",
+          "href": "title"
+        },
+        {
+          "label": "下一页 →",
+          "href": "outline"
+        }
+      ]
+    },
+    "outline": {
+      "title": "课堂脉络",
+      "body": "课程导入 / 03\n课堂脉络\n\n选择一个模块，开始阅读与思考。\n\n01 / 明晰目标\n↗\n课标研读\n\n从课程要求出发，把握本课学习线索。\n\n参考 3 分钟 · 累计 3 分钟\n02 / 统一与兴亡\n↗\n隋\n\n建立、兴盛与灭亡，读懂盛极一时的隋朝。\n\n参考 8 分钟 · 累计 11 分钟\n03 / 盛世与交融\n↗\n唐\n\n从繁荣景象走向民族关系与区域开发。\n\n参考 13 分钟 · 累计 24 分钟\n04 / 盛衰的转折\n↗\n安史之乱\n\n梳理原因、过程与影响，辨析藩镇割据。\n\n参考 7 分钟 · 累计 31 分钟\n05 / 王朝与分合\n↗\n唐的灭亡\n\n黄巢起义、朱温废唐与五代十国。\n\n参考 6 分钟 · 累计 37 分钟\n06 / 回望与贯通\n↗\n内容回顾\n\n回到四个问题，整理本课的思考方法。\n\n参考 3 分钟 · 累计 40 分钟",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "title"
+        },
+        {
+          "label": "← 上一页",
+          "href": "standard"
+        },
+        {
+          "label": "进入下一级",
+          "href": "standards"
+        }
+      ]
+    },
+    "standards": {
+      "title": "课标要求",
+      "body": "模块 01 / 课标研读\n课标要求\n课程标准 · 教师提供截图",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "outline"
+        },
+        {
+          "label": "下一模块：隋 →",
+          "href": "sui"
+        }
+      ]
+    },
+    "sui": {
+      "title": "隋",
+      "body": "模块 02 / 统一与兴亡\n隋\n\n建立、兴盛与灭亡，读懂盛极一时的隋朝。\n\n01\n建立\n1 个教材片段\n→\n02\n兴盛\n1 个教材片段\n→\n03\n灭亡\n2 个教材片段\n→",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "outline"
+        },
+        {
+          "label": "← 上一页",
+          "href": "standards"
+        },
+        {
+          "label": "下一模块：唐 →",
+          "href": "tang"
+        },
+        {
+          "label": "进入下一级",
+          "href": "sui-found--sui-found"
+        }
+      ]
+    },
+    "tang": {
+      "title": "唐",
+      "body": "模块 03 / 盛世与交融\n唐\n\n从繁荣景象走向民族关系与区域开发。\n\n01\n建立\n1 个教材片段\n→\n02\n繁荣与盛世表现\n5 个教材片段\n→\n03\n民族关系与区域开发\n6 个教材片段\n→",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "outline"
+        },
+        {
+          "label": "← 上一页",
+          "href": "sui"
+        },
+        {
+          "label": "下一模块：安史之乱 →",
+          "href": "anshi"
+        },
+        {
+          "label": "进入下一级",
+          "href": "tang-found--tang-found"
+        }
+      ]
+    },
+    "anshi": {
+      "title": "安史之乱",
+      "body": "模块 04 / 盛衰的转折\n安史之乱\n\n梳理原因、过程与影响，辨析藩镇割据。\n\n01\n原因\n1 个教材片段\n→\n02\n过程\n1 个教材片段\n→\n03\n影响\n2 个教材片段\n→",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "outline"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang"
+        },
+        {
+          "label": "下一模块：唐的灭亡 →",
+          "href": "fall"
+        },
+        {
+          "label": "进入下一级",
+          "href": "an-cause--an-cause"
+        }
+      ]
+    },
+    "fall": {
+      "title": "唐的灭亡",
+      "body": "模块 05 / 王朝与分合\n唐的灭亡\n\n黄巢起义、朱温废唐与五代十国。\n\n01\n黄巢起义与朱温废唐称帝\n1 个教材片段\n→\n02\n五代十国\n2 个教材片段\n→",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "outline"
+        },
+        {
+          "label": "← 上一页",
+          "href": "anshi"
+        },
+        {
+          "label": "下一模块：内容回顾 →",
+          "href": "review"
+        },
+        {
+          "label": "进入下一级",
+          "href": "tang-end--huangchao"
+        }
+      ]
+    },
+    "review": {
+      "title": "内容回顾",
+      "body": "模块 06 / 二级内容\n内容回顾\n\n四项题答直接展示 · 向下滚动阅读\n\n回顾 01\n修路、修运河作用\n政治：巩固统一。\n经济：促进南北经济交流和运河沿岸城市发展。\n文化：有利于人员往来与文化交流（课堂延伸）。\n回顾 02\n经济重心南移阶段\n魏晋以前\n经济重心主要在北方。\n魏晋南北朝\n江南逐步开发，南北经济差距缩小。\n安史之乱后\n南方经济进一步发展，经济重心逐渐南移。\n靖康之变后\n南方经济地位进一步提升，至南宋时期经济重心南移完成。\n回顾 03\n如何回答两者之间的关系类问题\n一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n先找角度，再用史实证明；不强凑四点。\n回顾 04\n如何区分民族边疆关系与对外外交关系\n核心判断标准：现在中国有没有当前领土。",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回上一级",
+          "href": "outline"
+        },
+        {
+          "label": "下一页 →",
+          "href": "review/1"
+        }
+      ]
+    },
+    "sui-found--sui-found": {
+      "title": "建立隋朝建立与统一",
+      "body": "教材研读 / 第三级\n建立隋朝建立与统一\n教材片段\n1/1 · 隋朝建立与统一\nPDF 第 1/6 页｜教材第 34 页 · 滚轮阅读 · 白板可缩放移动\n建立与统一：分清两个时间\n581年 · 杨坚建隋\n\n北周外戚杨坚代周称帝，改国号隋，定都长安，是为隋文帝。励精图治、实行改革，国力日强。\n\n589年 · 灭陈统一\n\n隋文帝派次子杨广率军灭陈，结束南北长期分裂。文帝死后杨广即位，是为隋炀帝。\n\n本段无四级问题入口　",
+      "notes": [
+        {
+          "title": "建立与统一：分清两个时间",
+          "blocks": [
+            {
+              "title": "581年 · 杨坚建隋",
+              "text": "北周外戚杨坚代周称帝，改国号隋，定都长安，是为隋文帝。励精图治、实行改革，国力日强。"
+            },
+            {
+              "title": "589年 · 灭陈统一",
+              "text": "隋文帝派次子杨广率军灭陈，结束南北长期分裂。文帝死后杨广即位，是为隋炀帝。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "sui"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "sui-prosper--sui-prosper"
+        }
+      ]
+    },
+    "sui-prosper--sui-prosper": {
+      "title": "兴盛仓储、两都与大运河",
+      "body": "教材研读 / 第三级\n兴盛仓储、两都与大运河\n教材片段\n1/1 · 仓储、两都与大运河\nPDF 第 1/6 页｜教材第 34 页 · 滚轮阅读 · 白板可缩放移动\n兴盛的三个观察点\n仓储\n\n两都及地方广设仓库；供应朝廷粮物，义仓备水旱赈济。\n\n洛阳\n\n隋炀帝兴建洛阳城，规模宏大。\n\n大运河\n\n南北贯通、沟通五大水系；巩固统一，促进南北经济交流和沿岸城市发展。\n\n课堂问题 · 点选进入　\n长安、洛阳与两京制 ↗\n义仓的含义与制度演变 ↗\n大运河：作用、联系与经济重心 ↗",
+      "notes": [
+        {
+          "title": "兴盛的三个观察点",
+          "blocks": [
+            {
+              "title": "仓储",
+              "text": "两都及地方广设仓库；供应朝廷粮物，义仓备水旱赈济。"
+            },
+            {
+              "title": "洛阳",
+              "text": "隋炀帝兴建洛阳城，规模宏大。"
+            },
+            {
+              "title": "大运河",
+              "text": "南北贯通、沟通五大水系；巩固统一，促进南北经济交流和沿岸城市发展。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "sui"
+        },
+        {
+          "label": "← 上一页",
+          "href": "sui-found--sui-found"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "sui-end--sui-end"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/two-capitals/sui-prosper--sui-prosper"
+        }
+      ]
+    },
+    "sui-end--sui-end": {
+      "title": "灭亡隋朝灭亡",
+      "body": "教材研读 / 第三级\n灭亡隋朝灭亡\n教材片段\n1/2 · 隋朝灭亡\n2/2 · 学思之窗：皮日休诗与提问\nPDF 第 1/6 页｜教材第 34 页 · 滚轮阅读 · 白板可缩放移动\n隋亡主线：负担、生产与反抗\n负担与起义\n\n大兴土木、穷奢极欲、三次大举征伐（教材称“高丽”）→生产遭到严重破坏、民不聊生→大规模起义。\n\n618年 · 隋朝灭亡\n\n隋炀帝在江都被部将杀死。李渊建唐是同年的另一事件，不能混作同一政权。\n\n课堂问题 · 点选进入　\n秦和隋朝的相似之处 ↗\n隋朝大运河的功过 ↗",
+      "notes": [
+        {
+          "title": "隋亡主线：负担、生产与反抗",
+          "blocks": [
+            {
+              "title": "负担与起义",
+              "text": "大兴土木、穷奢极欲、三次大举征伐（教材称“高丽”）→生产遭到严重破坏、民不聊生→大规模起义。"
+            },
+            {
+              "title": "618年 · 隋朝灭亡",
+              "text": "隋炀帝在江都被部将杀死。李渊建唐是同年的另一事件，不能混作同一政权。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "sui"
+        },
+        {
+          "label": "← 上一页",
+          "href": "sui-prosper--sui-prosper"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "sui-end--sui-poem"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/sui-qin-comparison/sui-end--sui-end"
+        }
+      ]
+    },
+    "sui-end--sui-poem": {
+      "title": "灭亡学思之窗：皮日休诗与提问",
+      "body": "教材研读 / 第三级\n灭亡学思之窗：皮日休诗与提问\n教材片段\n1/2 · 隋朝灭亡\n2/2 · 学思之窗：皮日休诗与提问\nPDF 第 1/6 页｜教材第 34 页 · 滚轮阅读 · 白板可缩放移动\n读诗：功效与负担分开评价\n材料讨论\n\n结合诗歌与正文，分别讨论运河的长期功效、统治者奢侈用度与民力负担。诗歌是评价材料，不能单独证明修河动机。\n\n历史启示\n\n国家工程需要顾及社会承受能力；不能把修运河说成隋亡唯一原因。\n\n课堂问题 · 点选进入　\n秦和隋朝的相似之处 ↗\n隋朝大运河的功过 ↗",
+      "notes": [
+        {
+          "title": "读诗：功效与负担分开评价",
+          "blocks": [
+            {
+              "title": "材料讨论",
+              "text": "结合诗歌与正文，分别讨论运河的长期功效、统治者奢侈用度与民力负担。诗歌是评价材料，不能单独证明修河动机。"
+            },
+            {
+              "title": "历史启示",
+              "text": "国家工程需要顾及社会承受能力；不能把修运河说成隋亡唯一原因。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "sui"
+        },
+        {
+          "label": "← 上一页",
+          "href": "sui-end--sui-end"
+        },
+        {
+          "label": "下一模块：唐 →",
+          "href": "tang"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/sui-qin-comparison/sui-end--sui-poem"
+        }
+      ]
+    },
+    "tang-found--tang-found": {
+      "title": "建立唐朝建立",
+      "body": "教材研读 / 第三级\n建立唐朝建立\n教材片段\n1/1 · 唐朝建立\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n唐朝建立与随后统一\n618年 · 李渊 · 长安\n\n李渊在长安称帝，建立唐朝，是为唐高祖。\n\n随后 · 逐渐统一\n\n唐军逐渐消灭各支起义军和割据势力，统一全国；建唐不等于当日已经完成统一。\n\n本段无四级问题入口　",
+      "notes": [
+        {
+          "title": "唐朝建立与随后统一",
+          "blocks": [
+            {
+              "title": "618年 · 李渊 · 长安",
+              "text": "李渊在长安称帝，建立唐朝，是为唐高祖。"
+            },
+            {
+              "title": "随后 · 逐渐统一",
+              "text": "唐军逐渐消灭各支起义军和割据势力，统一全国；建唐不等于当日已经完成统一。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "tang-prosper--tang-zhenguan"
+        }
+      ]
+    },
+    "tang-prosper--tang-zhenguan": {
+      "title": "繁荣与盛世表现贞观之治",
+      "body": "教材研读 / 第三级\n繁荣与盛世表现贞观之治\n教材片段\n1/5 · 贞观之治\n2/5 · 武则天时期与开元盛世\n3/5 · 历史纵横：唐朝曲辕犁\n4/5 · 敦煌莫高窟壁画唐朝牛耕图中的曲辕犁\n5/5 · 唐三彩盘及说明\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n唐太宗：吸取隋亡教训\n治理措施\n\n李世民轻徭薄赋、劝课农桑、戒奢从简、知人善任、虚怀纳谏。\n\n贞观之治\n\n统治时期出现开明政治局面。与唐玄宗时期的开元盛世相区别。\n\n课堂问题 · 点选进入　\n曲辕犁与唐三彩 ↗\n隋唐盛世的形成原因 ↗",
+      "notes": [
+        {
+          "title": "唐太宗：吸取隋亡教训",
+          "blocks": [
+            {
+              "title": "治理措施",
+              "text": "李世民轻徭薄赋、劝课农桑、戒奢从简、知人善任、虚怀纳谏。"
+            },
+            {
+              "title": "贞观之治",
+              "text": "统治时期出现开明政治局面。与唐玄宗时期的开元盛世相区别。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-found--tang-found"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-prosper--tang-prosper"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/economy/tang-prosper--tang-zhenguan"
+        }
+      ]
+    },
+    "tang-prosper--tang-prosper": {
+      "title": "繁荣与盛世表现武则天时期与开元盛世",
+      "body": "教材研读 / 第三级\n繁荣与盛世表现武则天时期与开元盛世\n教材片段\n1/5 · 贞观之治\n2/5 · 武则天时期与开元盛世\n3/5 · 历史纵横：唐朝曲辕犁\n4/5 · 敦煌莫高窟壁画唐朝牛耕图中的曲辕犁\n5/5 · 唐三彩盘及说明\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n走向盛世的三个教学阶段\n唐太宗 · 贞观之治\n\n吸取隋亡教训，轻徭薄赋、劝课农桑，戒奢从简、知人善任、虚怀纳谏。\n\n武则天当权时期\n\n唐高宗时参与朝政，后废唐称帝、改国号周。当权期间社会经济持续发展。\n\n唐玄宗 · 开元盛世\n\n李隆基选贤任能、改革吏治、发展生产、大兴文治、改革兵制，将唐朝推向全盛。\n\n“承上启下”指发展线索，不把武周与唐朝混成同一朝号。\n\n课堂问题 · 点选进入　\n曲辕犁与唐三彩 ↗\n隋唐盛世的形成原因 ↗",
+      "notes": [
+        {
+          "title": "走向盛世的三个教学阶段",
+          "blocks": [
+            {
+              "title": "唐太宗 · 贞观之治",
+              "text": "吸取隋亡教训，轻徭薄赋、劝课农桑，戒奢从简、知人善任、虚怀纳谏。"
+            },
+            {
+              "title": "武则天当权时期",
+              "text": "唐高宗时参与朝政，后废唐称帝、改国号周。当权期间社会经济持续发展。"
+            },
+            {
+              "title": "唐玄宗 · 开元盛世",
+              "text": "李隆基选贤任能、改革吏治、发展生产、大兴文治、改革兵制，将唐朝推向全盛。"
+            }
+          ],
+          "sequence": null,
+          "caption": "“承上启下”指发展线索，不把武周与唐朝混成同一朝号。"
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-prosper--tang-zhenguan"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-prosper--plough-text"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/economy/tang-prosper--tang-prosper"
+        }
+      ]
+    },
+    "tang-prosper--plough-text": {
+      "title": "繁荣与盛世表现历史纵横：唐朝曲辕犁",
+      "body": "教材研读 / 第三级\n繁荣与盛世表现历史纵横：唐朝曲辕犁\n教材片段\n1/5 · 贞观之治\n2/5 · 武则天时期与开元盛世\n3/5 · 历史纵横：唐朝曲辕犁\n4/5 · 敦煌莫高窟壁画唐朝牛耕图中的曲辕犁\n5/5 · 唐三彩盘及说明\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n曲辕犁：三项改进\n短曲辕\n\n由长直辕改为轻便的短曲辕。\n\n犁评\n\n加装犁评，调节耕作深浅。\n\n犁壁\n\n改进犁壁；这种犁在江南水田推广，耕犁基本定型。\n\n课堂问题 · 点选进入　\n曲辕犁与唐三彩 ↗\n隋唐盛世的形成原因 ↗",
+      "notes": [
+        {
+          "title": "曲辕犁：三项改进",
+          "blocks": [
+            {
+              "title": "短曲辕",
+              "text": "由长直辕改为轻便的短曲辕。"
+            },
+            {
+              "title": "犁评",
+              "text": "加装犁评，调节耕作深浅。"
+            },
+            {
+              "title": "犁壁",
+              "text": "改进犁壁；这种犁在江南水田推广，耕犁基本定型。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-prosper--tang-prosper"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-prosper--plough-image"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/economy/tang-prosper--plough-text"
+        }
+      ]
+    },
+    "tang-prosper--plough-image": {
+      "title": "繁荣与盛世表现敦煌莫高窟壁画唐朝牛耕图中的曲辕犁",
+      "body": "教材研读 / 第三级\n繁荣与盛世表现敦煌莫高窟壁画唐朝牛耕图中的曲辕犁\n教材片段\n1/5 · 贞观之治\n2/5 · 武则天时期与开元盛世\n3/5 · 历史纵横：唐朝曲辕犁\n4/5 · 敦煌莫高窟壁画唐朝牛耕图中的曲辕犁\n5/5 · 唐三彩盘及说明\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n观察牛耕图：图像与传播范围要区分\n配图定位\n\n图题明确为“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”；结合旁栏三项改进观察农具。\n\n观察方法\n\n壁画所在地不能单独证明技术起源或实际推广范围；不据此推定敦煌为曲辕犁发源地。\n\n课堂问题 · 点选进入　\n曲辕犁与唐三彩 ↗\n隋唐盛世的形成原因 ↗",
+      "notes": [
+        {
+          "title": "观察牛耕图：图像与传播范围要区分",
+          "blocks": [
+            {
+              "title": "配图定位",
+              "text": "图题明确为“敦煌莫高窟壁画唐朝牛耕图中的曲辕犁”；结合旁栏三项改进观察农具。"
+            },
+            {
+              "title": "观察方法",
+              "text": "壁画所在地不能单独证明技术起源或实际推广范围；不据此推定敦煌为曲辕犁发源地。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-prosper--plough-text"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-prosper--sancai"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/economy/tang-prosper--plough-image"
+        }
+      ]
+    },
+    "tang-prosper--sancai": {
+      "title": "繁荣与盛世表现唐三彩盘及说明",
+      "body": "教材研读 / 第三级\n繁荣与盛世表现唐三彩盘及说明\n教材片段\n1/5 · 贞观之治\n2/5 · 武则天时期与开元盛世\n3/5 · 历史纵横：唐朝曲辕犁\n4/5 · 敦煌莫高窟壁画唐朝牛耕图中的曲辕犁\n5/5 · 唐三彩盘及说明\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n唐三彩盘：观察工艺\n器物信息\n\n出土于陕西乾县唐永泰公主墓；该盘釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。\n\n经济门类\n\n可归入手工业中的陶瓷工艺与装饰技术。该盘的三色不是全部唐三彩颜色的严格定义，也不能由一件文物推算贸易规模。\n\n课堂问题 · 点选进入　\n曲辕犁与唐三彩 ↗\n隋唐盛世的形成原因 ↗",
+      "notes": [
+        {
+          "title": "唐三彩盘：观察工艺",
+          "blocks": [
+            {
+              "title": "器物信息",
+              "text": "出土于陕西乾县唐永泰公主墓；该盘釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。"
+            },
+            {
+              "title": "经济门类",
+              "text": "可归入手工业中的陶瓷工艺与装饰技术。该盘的三色不是全部唐三彩颜色的严格定义，也不能由一件文物推算贸易规模。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-prosper--plough-image"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "tang-relations--turks-intro"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/economy/tang-prosper--sancai"
+        }
+      ]
+    },
+    "tang-relations--turks-intro": {
+      "title": "民族关系与区域开发突厥兴起与分裂（接下片）",
+      "body": "教材研读 / 第三级\n民族关系与区域开发突厥兴起与分裂（接下片）\n教材片段\n1/6 · 突厥兴起与分裂（接下片）\n2/6 · 突厥、安西与北庭都护府\n3/6 · 历史纵横：回纥\n4/6 · 吐蕃与文成公主（末句接下片）\n5/6 · 唐蕃会盟、靺鞨与边疆开发（续前片）\n6/6 · 唐朝前期形势和边疆各族分布图（669年）及古今地名表\nPDF 第 2/6 页｜教材第 35 页 · 滚轮阅读 · 白板可缩放移动\n突厥：从兴起到分裂\n衔接下一片\n\n突厥兴起于阿尔泰山地区，建立政权，后分为东、西突厥。下一片继续读唐朝的战争、联合行动与西域管理。\n\n课堂问题 · 点选进入　\n民族关系的处理方式 ↗\n两者关系题的四个视角 ↗\n民族边疆与对外外交关系 ↗",
+      "notes": [
+        {
+          "title": "突厥：从兴起到分裂",
+          "blocks": [
+            {
+              "title": "衔接下一片",
+              "text": "突厥兴起于阿尔泰山地区，建立政权，后分为东、西突厥。下一片继续读唐朝的战争、联合行动与西域管理。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-prosper--sancai"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-relations--turks"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/relations/tang-relations--turks-intro"
+        }
+      ]
+    },
+    "tang-relations--turks": {
+      "title": "民族关系与区域开发突厥、安西与北庭都护府",
+      "body": "教材研读 / 第三级\n民族关系与区域开发突厥、安西与北庭都护府\n教材片段\n1/6 · 突厥兴起与分裂（接下片）\n2/6 · 突厥、安西与北庭都护府\n3/6 · 历史纵横：回纥\n4/6 · 吐蕃与文成公主（末句接下片）\n5/6 · 唐蕃会盟、靺鞨与边疆开发（续前片）\n6/6 · 唐朝前期形势和边疆各族分布图（669年）及古今地名表\nPDF 第 3/6 页｜教材第 36 页 · 滚轮阅读 · 白板可缩放移动\n突厥与西域管理\n战争与合作\n\n唐太宗反击东突厥；草原各族尊奉其为“天可汗”。唐高宗联合回纥灭西突厥。\n\n设置管理机构\n\n先后设安西、北庭都护府，统辖天山南北，加强西域管理。\n\n时序要分清\n\n682年后突厥建立；744年唐与回纥、葛逻禄等联手平定。\n\n这是跨时期的交往线索，不能全归入669年，更不能推定唐直接统治所有周边政权。\n\n课堂问题 · 点选进入　\n民族关系的处理方式 ↗\n两者关系题的四个视角 ↗\n民族边疆与对外外交关系 ↗",
+      "notes": [
+        {
+          "title": "突厥与西域管理",
+          "blocks": [
+            {
+              "title": "战争与合作",
+              "text": "唐太宗反击东突厥；草原各族尊奉其为“天可汗”。唐高宗联合回纥灭西突厥。"
+            },
+            {
+              "title": "设置管理机构",
+              "text": "先后设安西、北庭都护府，统辖天山南北，加强西域管理。"
+            },
+            {
+              "title": "时序要分清",
+              "text": "682年后突厥建立；744年唐与回纥、葛逻禄等联手平定。"
+            }
+          ],
+          "sequence": null,
+          "caption": "这是跨时期的交往线索，不能全归入669年，更不能推定唐直接统治所有周边政权。"
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-relations--turks-intro"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-relations--huihe"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/relations/tang-relations--turks"
+        }
+      ]
+    },
+    "tang-relations--huihe": {
+      "title": "民族关系与区域开发历史纵横：回纥",
+      "body": "教材研读 / 第三级\n民族关系与区域开发历史纵横：回纥\n教材片段\n1/6 · 突厥兴起与分裂（接下片）\n2/6 · 突厥、安西与北庭都护府\n3/6 · 历史纵横：回纥\n4/6 · 吐蕃与文成公主（末句接下片）\n5/6 · 唐蕃会盟、靺鞨与边疆开发（续前片）\n6/6 · 唐朝前期形势和边疆各族分布图（669年）及古今地名表\nPDF 第 3/6 页｜教材第 36 页 · 滚轮阅读 · 白板可缩放移动\n回纥、回鹘与交融\n合作与册封\n\n回纥与唐合作；唐玄宗册封骨力裴罗为怀仁可汗。后来改称回鹘。\n\n迁徙与融合\n\n9世纪回鹘政权瓦解，部分迁入内地，大部分西迁河西走廊和西域，与当地居民融合。教材称隋唐回纥人为维吾尔族先民的主体。\n\n历史演变不等于名称、政权与现代族群完全不变的简单等号。\n\n课堂问题 · 点选进入　\n民族关系的处理方式 ↗\n两者关系题的四个视角 ↗\n民族边疆与对外外交关系 ↗",
+      "notes": [
+        {
+          "title": "回纥、回鹘与交融",
+          "blocks": [
+            {
+              "title": "合作与册封",
+              "text": "回纥与唐合作；唐玄宗册封骨力裴罗为怀仁可汗。后来改称回鹘。"
+            },
+            {
+              "title": "迁徙与融合",
+              "text": "9世纪回鹘政权瓦解，部分迁入内地，大部分西迁河西走廊和西域，与当地居民融合。教材称隋唐回纥人为维吾尔族先民的主体。"
+            }
+          ],
+          "sequence": null,
+          "caption": "历史演变不等于名称、政权与现代族群完全不变的简单等号。"
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-relations--turks"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-relations--tubo"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/relations/tang-relations--huihe"
+        }
+      ]
+    },
+    "tang-relations--tubo": {
+      "title": "民族关系与区域开发吐蕃与文成公主（末句接下片）",
+      "body": "教材研读 / 第三级\n民族关系与区域开发吐蕃与文成公主（末句接下片）\n教材片段\n1/6 · 突厥兴起与分裂（接下片）\n2/6 · 突厥、安西与北庭都护府\n3/6 · 历史纵横：回纥\n4/6 · 吐蕃与文成公主（末句接下片）\n5/6 · 唐蕃会盟、靺鞨与边疆开发（续前片）\n6/6 · 唐朝前期形势和边疆各族分布图（669年）及古今地名表\nPDF 第 3/6 页｜教材第 36 页 · 滚轮阅读 · 白板可缩放移动\n吐蕃：和亲与交流\n人物与方式\n\n7世纪前期，松赞干布统一青藏高原；唐太宗以文成公主和亲。\n\n影响与后续\n\n手工艺品、技术、医药书籍交流促进汉藏友好。9世纪前期会盟的结尾须接读下一页。\n\n课堂问题 · 点选进入　\n民族关系的处理方式 ↗\n两者关系题的四个视角 ↗\n民族边疆与对外外交关系 ↗",
+      "notes": [
+        {
+          "title": "吐蕃：和亲与交流",
+          "blocks": [
+            {
+              "title": "人物与方式",
+              "text": "7世纪前期，松赞干布统一青藏高原；唐太宗以文成公主和亲。"
+            },
+            {
+              "title": "影响与后续",
+              "text": "手工艺品、技术、医药书籍交流促进汉藏友好。9世纪前期会盟的结尾须接读下一页。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-relations--huihe"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-relations--frontier"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/relations/tang-relations--tubo"
+        }
+      ]
+    },
+    "tang-relations--frontier": {
+      "title": "民族关系与区域开发唐蕃会盟、靺鞨与边疆开发（续前片）",
+      "body": "教材研读 / 第三级\n民族关系与区域开发唐蕃会盟、靺鞨与边疆开发（续前片）\n教材片段\n1/6 · 突厥兴起与分裂（接下片）\n2/6 · 突厥、安西与北庭都护府\n3/6 · 历史纵横：回纥\n4/6 · 吐蕃与文成公主（末句接下片）\n5/6 · 唐蕃会盟、靺鞨与边疆开发（续前片）\n6/6 · 唐朝前期形势和边疆各族分布图（669年）及古今地名表\nPDF 第 4/6 页｜教材第 37 页 · 滚轮阅读 · 白板可缩放移动\n教材 PDF 第4/6页｜印刷第37页 · 保留思考点\n会盟、册封与边疆开发\n吐蕃 · 会盟\n\n9世纪前期唐蕃会盟，此后基本停止纷争。\n\n靺鞨粟末部 · 册封\n\n唐玄宗封大祚荣为渤海郡王。\n\n区域开发\n\n周边少数民族建立的政权对边疆地区开发作出积极贡献。\n\n课堂问题 · 点选进入　\n民族关系的处理方式 ↗\n两者关系题的四个视角 ↗\n民族边疆与对外外交关系 ↗",
+      "notes": [
+        {
+          "title": "会盟、册封与边疆开发",
+          "blocks": [
+            {
+              "title": "吐蕃 · 会盟",
+              "text": "9世纪前期唐蕃会盟，此后基本停止纷争。"
+            },
+            {
+              "title": "靺鞨粟末部 · 册封",
+              "text": "唐玄宗封大祚荣为渤海郡王。"
+            },
+            {
+              "title": "区域开发",
+              "text": "周边少数民族建立的政权对边疆地区开发作出积极贡献。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-relations--tubo"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "tang-relations--map-669"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/relations/tang-relations--frontier"
+        }
+      ]
+    },
+    "tang-relations--map-669": {
+      "title": "民族关系与区域开发唐朝前期形势和边疆各族分布图（669年）及古今地名表",
+      "body": "教材研读 / 第三级\n民族关系与区域开发唐朝前期形势和边疆各族分布图（669年）及古今地名表\n教材片段\n1/6 · 突厥兴起与分裂（接下片）\n2/6 · 突厥、安西与北庭都护府\n3/6 · 历史纵横：回纥\n4/6 · 吐蕃与文成公主（末句接下片）\n5/6 · 唐蕃会盟、靺鞨与边疆开发（续前片）\n6/6 · 唐朝前期形势和边疆各族分布图（669年）及古今地名表\nPDF 第 4/6 页｜教材第 37 页 · 滚轮阅读 · 白板可缩放移动\n突厥\n回纥\n吐蕃\n靺鞨／粟末\n清除定位\n\n先选择对象，再向下读图。朱砂框只定位文字，不代表疆域。可使用白板放大、移动；图题、图例与全部年代注记均保留。\n\n教材 PDF 4/6｜印刷第37页669年图；交往事实见教材 PDF 3/6｜印刷第36页—教材 PDF 4/6｜印刷第37页 · 定位示意，非政治边界\n\n交往方式问答 ↗\n课堂问题 · 点选进入　\n民族关系的处理方式 ↗\n两者关系题的四个视角 ↗\n民族边疆与对外外交关系 ↗",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "tang"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-relations--frontier"
+        },
+        {
+          "label": "下一模块：安史之乱 →",
+          "href": "anshi"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/relations/tang-relations--map-669"
+        }
+      ]
+    },
+    "an-cause--an-cause": {
+      "title": "原因安史之乱原因",
+      "body": "教材研读 / 第三级\n原因安史之乱原因\n教材片段\n1/1 · 安史之乱原因\nPDF 第 4/6 页｜教材第 37 页 · 滚轮阅读 · 白板可缩放移动\n本段无四级问题入口　",
+      "notes": [],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "anshi"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "an-process--an-process"
+        }
+      ]
+    },
+    "an-process--an-process": {
+      "title": "过程安史之乱过程及影响开端（续下页）",
+      "body": "教材研读 / 第三级\n过程安史之乱过程及影响开端（续下页）\n教材片段\n1/1 · 安史之乱过程及影响开端（续下页）\nPDF 第 4/6 页｜教材第 37 页 · 滚轮阅读 · 白板可缩放移动\n755年起兵，历时八年\n人物与地点\n\n身兼三镇节度使的安禄山在范阳起兵，与部将史思明发动叛乱。\n\n结束与转折\n\n叛乱历时八年，后被唐平定；影响跨页接读第38页。\n\n沿用教材“历时八年”。\n\n本段无四级问题入口　",
+      "notes": [
+        {
+          "title": "755年起兵，历时八年",
+          "blocks": [
+            {
+              "title": "人物与地点",
+              "text": "身兼三镇节度使的安禄山在范阳起兵，与部将史思明发动叛乱。"
+            },
+            {
+              "title": "结束与转折",
+              "text": "叛乱历时八年，后被唐平定；影响跨页接读第38页。"
+            }
+          ],
+          "sequence": null,
+          "caption": "沿用教材“历时八年”。"
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "anshi"
+        },
+        {
+          "label": "← 上一页",
+          "href": "an-cause--an-cause"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "an-impact--an-impact"
+        }
+      ]
+    },
+    "an-impact--an-impact": {
+      "title": "影响安史之乱的影响",
+      "body": "教材研读 / 第三级\n影响安史之乱的影响\n教材片段\n1/2 · 安史之乱的影响\n2/2 · 藩镇割据\nPDF 第 4—5/6 页｜教材第 37—38 页 · 滚轮阅读 · 白板可缩放移动\n安史之乱的影响\n平叛与盛衰转折\n\n将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。\n\n期间及以后 · 部分藩镇割据\n\n内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。\n\n因果关系示意 · 教师据教材整理（不是单因决定论）\n三类背景\n\n边疆形势紧张；军镇增设、节度使兵力扩大，外重内轻；玄宗后期朝政腐败。\n\n755年起 · 历时八年\n\n安禄山在范阳起兵，与史思明发动叛乱，后被唐平定。\n\n平叛与盛衰转折\n\n将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。\n\n期间及以后 · 部分藩镇割据\n\n内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。\n\n长期政治格局\n\n上述变化是理解唐末衰败及五代十国分裂的重要线索之一，并非唯一原因。\n\n课堂问题 · 点选进入　\n安史之乱的影响 ↗\n藩镇割据与唐朝统治 ↗",
+      "notes": [
+        {
+          "title": "安史之乱的影响",
+          "blocks": [
+            {
+              "title": "平叛与盛衰转折",
+              "text": "将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。"
+            },
+            {
+              "title": "期间及以后 · 部分藩镇割据",
+              "text": "内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。"
+            }
+          ],
+          "sequence": {
+            "title": "因果关系示意 · 教师据教材整理（不是单因决定论）",
+            "nodes": [
+              {
+                "title": "三类背景",
+                "text": "边疆形势紧张；军镇增设、节度使兵力扩大，外重内轻；玄宗后期朝政腐败。"
+              },
+              {
+                "title": "755年起 · 历时八年",
+                "text": "安禄山在范阳起兵，与史思明发动叛乱，后被唐平定。"
+              },
+              {
+                "title": "平叛与盛衰转折",
+                "text": "将领拥兵自重，中央集权削弱；边防空虚；唐由盛转衰。"
+              },
+              {
+                "title": "期间及以后 · 部分藩镇割据",
+                "text": "内地增设藩镇，有些独立性强；割据持续100多年，严重削弱统治力量。"
+              },
+              {
+                "title": "长期政治格局",
+                "text": "上述变化是理解唐末衰败及五代十国分裂的重要线索之一，并非唯一原因。"
+              }
+            ]
+          }
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "anshi"
+        },
+        {
+          "label": "← 上一页",
+          "href": "an-process--an-process"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "an-impact--fanzhen"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/impact/an-impact--an-impact"
+        }
+      ]
+    },
+    "an-impact--fanzhen": {
+      "title": "影响藩镇割据",
+      "body": "教材研读 / 第三级\n影响藩镇割据\n教材片段\n1/2 · 安史之乱的影响\n2/2 · 藩镇割据\nPDF 第 5/6 页｜教材第 38 页 · 滚轮阅读 · 白板可缩放移动\n藩镇不等于割据\n范围与影响\n\n有些藩镇独立性强，形成割据局面；持续100多年，严重削弱唐朝统治。\n\n课堂问题 · 点选进入　\n安史之乱的影响 ↗\n藩镇割据与唐朝统治 ↗",
+      "notes": [
+        {
+          "title": "藩镇不等于割据",
+          "blocks": [
+            {
+              "title": "范围与影响",
+              "text": "有些藩镇独立性强，形成割据局面；持续100多年，严重削弱唐朝统治。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "anshi"
+        },
+        {
+          "label": "← 上一页",
+          "href": "an-impact--an-impact"
+        },
+        {
+          "label": "下一模块：唐的灭亡 →",
+          "href": "fall"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/impact/an-impact--fanzhen"
+        }
+      ]
+    },
+    "tang-end--huangchao": {
+      "title": "黄巢起义与朱温废唐称帝黄巢起义与朱温废唐（末行接下片）",
+      "body": "教材研读 / 第三级\n黄巢起义与朱温废唐称帝黄巢起义与朱温废唐（末行接下片）\n教材片段\n1/1 · 黄巢起义与朱温废唐（末行接下片）\nPDF 第 5/6 页｜教材第 38 页 · 滚轮阅读 · 白板可缩放移动\n黄巢与朱温：打击统治和政治终结\n背景与起义\n\n唐后期宦官专权、朋党之争加剧。875年黄巢起义，一度攻占长安，沉重打击统治。\n\n谁在907年废唐？\n\n朱温先降唐任节度使，联合藩镇镇压起义并逐渐掌权；907年废唐建后梁。黄巢没有建立后梁。\n\n唐末至五代十国 · 教材事件与课堂时序整理\n875年 · 黄巢起义\n\n起义军一度攻占长安，沉重打击唐朝统治。\n\n朱温降唐 · 逐渐掌权\n\n由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。\n\n907年 · 废唐建梁\n\n朱温废唐称帝，建梁，史称后梁；唐朝灭亡。\n\n五代相继更替\n\n后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。\n\n后周世宗柴荣\n\n清除弊政、增强实力，为后来北宋结束分裂奠定基础。\n\n本段无四级问题入口　",
+      "notes": [
+        {
+          "title": "黄巢与朱温：打击统治和政治终结",
+          "blocks": [
+            {
+              "title": "背景与起义",
+              "text": "唐后期宦官专权、朋党之争加剧。875年黄巢起义，一度攻占长安，沉重打击统治。"
+            },
+            {
+              "title": "谁在907年废唐？",
+              "text": "朱温先降唐任节度使，联合藩镇镇压起义并逐渐掌权；907年废唐建后梁。黄巢没有建立后梁。"
+            }
+          ],
+          "sequence": {
+            "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+            "nodes": [
+              {
+                "title": "875年 · 黄巢起义",
+                "text": "起义军一度攻占长安，沉重打击唐朝统治。"
+              },
+              {
+                "title": "朱温降唐 · 逐渐掌权",
+                "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。"
+              },
+              {
+                "title": "907年 · 废唐建梁",
+                "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。"
+              },
+              {
+                "title": "五代相继更替",
+                "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。"
+              },
+              {
+                "title": "后周世宗柴荣",
+                "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。"
+              }
+            ]
+          }
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "fall"
+        },
+        {
+          "label": "下一子目 →",
+          "href": "five--five"
+        }
+      ]
+    },
+    "five--five": {
+      "title": "五代十国五代与十国的定义（含衔接上文）",
+      "body": "教材研读 / 第三级\n五代十国五代与十国的定义（含衔接上文）\n教材片段\n1/2 · 五代与十国的定义（含衔接上文）\n2/2 · 五代十国形势图（后周时期）\nPDF 第 5/6 页｜教材第 38 页 · 滚轮阅读 · 白板可缩放移动\n五代十国：顺序与构成\n五代\n\n后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余都开封。\n\n十国\n\n南方先后九个割据政权，加山西的北汉；不是南方十国，也不都同时存在。\n\n课堂历史归纳\n\n唐末藩镇割据局面的延续与演变，不是完全不变的等号。\n\n唐末至五代十国 · 教材事件与课堂时序整理\n875年 · 黄巢起义\n\n起义军一度攻占长安，沉重打击唐朝统治。\n\n朱温降唐 · 逐渐掌权\n\n由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。\n\n907年 · 废唐建梁\n\n朱温废唐称帝，建梁，史称后梁；唐朝灭亡。\n\n五代相继更替\n\n后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。\n\n后周世宗柴荣\n\n清除弊政、增强实力，为后来北宋结束分裂奠定基础。\n\n课堂问题 · 点选进入　\n五代十国与唐末藩镇 ↗",
+      "notes": [
+        {
+          "title": "五代十国：顺序与构成",
+          "blocks": [
+            {
+              "title": "五代",
+              "text": "后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余都开封。"
+            },
+            {
+              "title": "十国",
+              "text": "南方先后九个割据政权，加山西的北汉；不是南方十国，也不都同时存在。"
+            },
+            {
+              "title": "课堂历史归纳",
+              "text": "唐末藩镇割据局面的延续与演变，不是完全不变的等号。"
+            }
+          ],
+          "sequence": {
+            "title": "唐末至五代十国 · 教材事件与课堂时序整理",
+            "nodes": [
+              {
+                "title": "875年 · 黄巢起义",
+                "text": "起义军一度攻占长安，沉重打击唐朝统治。"
+              },
+              {
+                "title": "朱温降唐 · 逐渐掌权",
+                "text": "由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。"
+              },
+              {
+                "title": "907年 · 废唐建梁",
+                "text": "朱温废唐称帝，建梁，史称后梁；唐朝灭亡。"
+              },
+              {
+                "title": "五代相继更替",
+                "text": "后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。"
+              },
+              {
+                "title": "后周世宗柴荣",
+                "text": "清除弊政、增强实力，为后来北宋结束分裂奠定基础。"
+              }
+            ]
+          }
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "fall"
+        },
+        {
+          "label": "← 上一页",
+          "href": "tang-end--huangchao"
+        },
+        {
+          "label": "下一片段 →",
+          "href": "five--map-five"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/five-flow/five--five"
+        }
+      ]
+    },
+    "five--map-five": {
+      "title": "五代十国五代十国形势图（后周时期）",
+      "body": "教材研读 / 第三级\n五代十国五代十国形势图（后周时期）\n教材片段\n1/2 · 五代与十国的定义（含衔接上文）\n2/2 · 五代十国形势图（后周时期）\nPDF 第 5/6 页｜教材第 38 页 · 滚轮阅读 · 白板可缩放移动\n后周时点，不是十国全同期\n先读图题与注记\n\n图为后周时期，标951—960年，并有“951年，南唐灭楚”注记。\n\n结合正文看构成\n\n正文的十国是南方先后九政权加北汉，不能只数这一个时点的图上政权。\n\n课堂问题 · 点选进入　\n五代十国与唐末藩镇 ↗",
+      "notes": [
+        {
+          "title": "后周时点，不是十国全同期",
+          "blocks": [
+            {
+              "title": "先读图题与注记",
+              "text": "图为后周时期，标951—960年，并有“951年，南唐灭楚”注记。"
+            },
+            {
+              "title": "结合正文看构成",
+              "text": "正文的十国是南方先后九政权加北汉，不能只数这一个时点的图上政权。"
+            }
+          ],
+          "sequence": null
+        }
+      ],
+      "nav": [
+        {
+          "label": "返回本模块菜单",
+          "href": "fall"
+        },
+        {
+          "label": "← 上一页",
+          "href": "five--five"
+        },
+        {
+          "label": "下一模块：内容回顾 →",
+          "href": "review"
+        },
+        {
+          "label": "进入问题链",
+          "href": "flow/five-flow/five--map-five"
+        }
+      ]
+    }
+  },
+  "answers": {
+    "Q02": "两京制。隋文帝定都长安，隋炀帝迁都洛阳，将长安降为陪都。",
+    "Q03": "功能：秋收后按收成缴纳粮食，饥荒时开仓赈灾。\n影响：初期备荒救灾稳定社会，后期官办化、赋税化。",
+    "Q04": "政治\n\n巩固统一。\n\n经济\n\n促进南北经济交流，带动运河沿岸城市发展。\n\n文化\n\n有利于人员往来与南北文化交流。\n\n运河作为水路，解决南北交通和物资转输问题。迁移到“修路作用”题时，按政治、经济、文化组织分析，但须结合具体材料选择角度，不能把三点机械套用于所有交通工程。",
+    "Q05": "大运河连接经济与政治军事中心。",
+    "Q06": "魏晋以前\n经济重心主要在北方。\n魏晋南北朝\n江南逐步开发，南北经济差距缩小。\n安史之乱后\n南方经济进一步发展，经济重心逐渐南移。\n靖康之变后\n南方经济地位进一步提升，至南宋时期经济重心南移完成。",
+    "Q24": "建立\n\n结束了长期分裂的局面，实现了全国的统一。\n\n发展\n\n都修建了举世闻名的工程，都制定了许多影响深远的制度。\n\n灭亡\n\n统治时间短，都因为暴政二世而亡。",
+    "Q25": "利\n连接了经济中心与政治中心。\n连接南北，加强中央集权，加强了对地方的控制。\n弊\n滥用民力。\n破坏农业。\n激化了阶级矛盾。",
+    "Q11": "曲辕犁体现农业生产工具的改进：短曲辕、加装犁评以调节深浅、改进犁壁；在江南水田推广。\n唐三彩盘可从手工业中的陶瓷工艺与装饰技术角度观察（课堂归纳）。\n\n教材图注：三彩盘出土于陕西乾县唐永泰公主墓，釉色绿、褐、白相间，兼具图案规律与釉色自然流动的特点。短曲辕比长直辕轻便；工具改良提高耕作便利性、适应性是课堂分析。",
+    "Q26": "政治\n国家统一，疆域辽阔。\n三省六部制、科举制的确立，对于国家治理和人才选拔起到了积极作用。\n统治者吸取历史教训，保证了政局的稳定和政策的连续性。\n经济\n生产力的进步。\n统治者重视发展生产，施行有利于经济发展的措施。\n文化\n科举制重视人才的选拔。\n开放的对外政策与频繁的中外文化交流。\n军事\n\n兵制改革，提升军队战斗力。\n\n民族关系\n\n开明的民族政策，促进了民族交融与边疆地区的稳定。",
+    "Q12": "突厥：战争、联合行动；唐在西域设置安西、北庭都护府。\n回纥：合作、册封首领。\n吐蕃：和亲、会盟。\n靺鞨粟末部：册封首领。\n\n唐太宗反击东突厥，被草原各族尊为“天可汗”；唐高宗联合回纥灭西突厥。682年后突厥建立，744年唐与回纥等联手平定。玄宗册封骨力裴罗为怀仁可汗、大祚荣为渤海郡王。周边民族政权为边疆开发作出积极贡献。",
+    "Q15": "一方 → 另一方 → 双方关系 → 其他相关因素（有材料时）。\n角度用于组织思路，每项结论仍须史实支持，不必凑齐四项。\n\n例：唐与吐蕃。吐蕃方面可找工艺、技术、书籍交流；双方可谈友好和经济文化交流。唐朝治理稳定是有条件的分析角度，不能直接冒充本段结论。迁移到甲午题，只提出中国、日本、双方关系、其他国家的观察问题，不用本课教材编写近代史答案。",
+    "Q16": "核心判断标准：现在中国有没有当前领土。",
+    "Q18": "中央集权削弱\n边防空虚\n唐朝由盛转衰\n藩镇割据\n严重破坏北方经济\n经济重心开始南移",
+    "Q21": "不利于中央集权\n客观上延续了唐朝的统治",
+    "Q23": "五代：黄河流域先后出现后梁、后唐、后晋、后汉、后周。后唐都洛阳，其余四代都开封。\n十国：南方先后九个割据政权，加五代末期在山西建立的北汉。\n\n唐末至五代十国 · 教材事件与课堂时序整理\n875年 · 黄巢起义\n\n起义军一度攻占长安，沉重打击唐朝统治。\n\n朱温降唐 · 逐渐掌权\n\n由起义军将领降唐，任节度使，与其他藩镇镇压起义，逐渐控制政权。\n\n907年 · 废唐建梁\n\n朱温废唐称帝，建梁，史称后梁；唐朝灭亡。\n\n五代相继更替\n\n后梁 → 后唐 → 后晋 → 后汉 → 后周；十国为南方先后九个政权加北汉。\n\n后周世宗柴荣\n\n清除弊政、增强实力，为后来北宋结束分裂奠定基础。\n\n课堂历史归纳：五代十国分裂局面承续并演变了唐末藩镇割据格局，不是毫无变化的等号。后周世宗柴荣清除弊政、增强实力，为北宋结束分裂奠定基础。"
+  }
+}
